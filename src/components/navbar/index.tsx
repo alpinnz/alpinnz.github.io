@@ -50,14 +50,20 @@ export default function Navbar(): React.ReactElement {
                 <div
                     className={`block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"} ${isOpen ? "absolute -right-0 mx-8 md:mx-20 lg:mx-24 mt-20" : ""}`}>
                     <div className="text-sm lg:flex-grow text-end">
-                        <a href="#"
-                           className="block mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 mr-4">
+                        <button
+                            onClick={() => {
+                                setIsOpen(false);
+                            }}
+                            className="block mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 mr-4">
                             About Me
-                        </a>
-                        <a href="#"
-                           className="block mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 mr-4">
+                        </button>
+                        <button
+                            onClick={() => {
+                                setIsOpen(false);
+                            }}
+                            className="block mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 mr-4">
                             Portofolio
-                        </a>
+                        </button>
                     </div>
                 </div>
 
