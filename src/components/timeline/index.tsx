@@ -62,7 +62,7 @@ export default function Timeline(): React.ReactElement {
             descriptions: 'Managing ERP application to handle product, financial and employee scheduling. Makes ure every game is up to date and have no issue.',
             date_start: new Date(2017, 7),
             date_end: new Date(2020, 1),
-            icon: ic_school,
+            icon: ic_desktop,
         }
     ];
 
