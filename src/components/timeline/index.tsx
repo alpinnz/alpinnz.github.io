@@ -2,7 +2,6 @@ import React, {createRef, useLayoutEffect, useRef, useState} from "react";
 import ic_school from "../../assets/svg/ic_school.svg";
 import ic_mobile from "../../assets/svg/ic_mobile.svg";
 import ic_desktop from "../../assets/svg/ic_dekstop.svg";
-import profile from "../../assets/png/profile.png";
 
 type TimelineItem = {
     title: string,
@@ -10,43 +9,59 @@ type TimelineItem = {
     date_start: Date,
     date_end: Date,
     icon: string,
+    currently?: boolean,
 }
 
 export default function Timeline(): React.ReactElement {
     const timelineItem: TimelineItem[] = [
         {
-            title: 'Mobile Developer Officer at \nPT. Ada Ide Langsung Jalan',
-            descriptions: 'Developing POS And Laundry Management Apps, \nNew Features, UI Changing and Write reusable modular code',
-            date_start: new Date(),
+            title: 'Android Engineer Lead (Flutter) at PT. Ada Ide Langsung Jalan',
+            descriptions: 'Lead a Front-End team focused on Product Owner and Cashier, User Management at Smartllink. Breaking down tasks, managing team resources, communicating well with CO, providing solutions for the team, doing one on one and other good things for the team, Work across module, create some technical base, and do code review for team..',
+            date_start: new Date(2022, 0),
             date_end: new Date(),
+            icon: ic_mobile,
+            currently: true,
+        },
+        {
+            title: 'Android Engineer (Flutter) at PT. Ada Ide Langsung Jalan',
+            descriptions: 'Helping Smartlink to build awesome features for Cashier, We use DDD, Clean Architecture, Write reusable modular code and other.',
+            date_start: new Date(2021, 5),
+            date_end: new Date(2021, 12),
             icon: ic_mobile,
         },
         {
-            title: 'Fullstack Developer at \nCV. Gumcode',
-            descriptions: 'Working in several projects, collaboration such as, using flutter and codeigniter',
-            date_start: new Date(),
-            date_end: new Date(),
-            icon: ic_desktop,
-        },
-        {
-            title: 'Back End Developer at \nStellarlab',
+            title: 'Back End Engineer at Stellarlab',
             descriptions: 'Work here in partime, using Node Js. New features to learn, tryout, discussion with the best Teacher and improve their skill for the higher degree\n',
-            date_start: new Date(),
-            date_end: new Date(),
+            date_start: new Date(2021, 9),
+            date_end: new Date(2022, 9,),
             icon: ic_desktop,
         },
         {
-            title: 'Mobile Developer at \nPT. Aku Peduli Indonesia',
-            descriptions: 'Internship, also worked on several collaboration projects',
-            date_start: new Date(),
-            date_end: new Date(),
+            title: 'Fullstack Developer at CV. Gumcode',
+            descriptions: 'Working in several projects, collaboration such as, using flutter and codeigniter',
+            date_start: new Date(2021, 2),
+            date_end: new Date(2020, 4),
+            icon: ic_desktop,
+        },
+        {
+            title: 'Android Engineer at PT. Aku Peduli Indonesia',
+            descriptions: 'Internship, Focus on learning to develop android applications using kotlin and flutter, I contributed to the IzzyResto App project, IzzyIventory App, and Rema App.',
+            date_start: new Date(2020, 1),
+            date_end: new Date(2020, 7),
             icon: ic_mobile,
         },
         {
-            title: 'Institut Teknologi \n& Bisnis ASIA',
+            title: 'Institut Teknologi & Bisnis ASIA',
             descriptions: 'Computer Science (GPA : 3,66)',
-            date_start: new Date(),
-            date_end: new Date(),
+            date_start: new Date(2017, 7),
+            date_end: new Date(2020, 1),
+            icon: ic_school,
+        },
+        {
+            title: 'System Administrator at Star Nt Game Center',
+            descriptions: 'Managing ERP application to handle product, financial and employee scheduling. Makes ure every game is up to date and have no issue.',
+            date_start: new Date(2017, 7),
+            date_end: new Date(2020, 1),
             icon: ic_school,
         }
     ];
@@ -64,7 +79,8 @@ export default function Timeline(): React.ReactElement {
                         <div className="relative text-gray-700 antialiased text-sm font-semibold">
                             {
                                 timelineItem.map((item, index): React.ReactElement => (
-                                        <Card data={item} key={index} index={index} is_last={(timelineItem.length - 1) == index}/>
+                                        <Card data={item} key={index} index={index}
+                                              is_last={(timelineItem.length - 1) == index}/>
                                     )
                                 )
                             }
@@ -112,7 +128,7 @@ function Card(props: CardProps): React.ReactElement {
                         <div className="w-full sm:w-1/2 sm:pr-12">
                             <div className="p-4 bg-5952601A rounded shadow">
                                 <p
-                                    className="font-light text-2C2E43 text-xs">{format(props.data.date_start)} - {format(props.data.date_end)}</p>
+                                    className="font-light text-2C2E43 text-xs">{format(props.data.date_start)} - {props.data.currently ? 'Now' : format(props.data.date_end)}</p>
                                 <div
                                     className="mt-2 font-bold text-2C2E43">{props.data.title}</div>
                                 <p className="mt-1 font-light">{props.data.descriptions}</p>

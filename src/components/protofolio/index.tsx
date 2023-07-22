@@ -80,7 +80,7 @@ function Card(props: CardProps): React.ReactElement {
                     <div style={{
                         display: "block",
                         position: "relative",
-                        backgroundImage: "url(https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                        backgroundImage: "url(https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/gray-background-7131-98db5e6ffc4972baa4087760291cbc3e@1x.jpg)",
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                     }}

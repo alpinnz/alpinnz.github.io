@@ -9,8 +9,8 @@ export default function Personal(): React.ReactElement {
     const personalItem: PersonalItem = {
         title: 'Hello, my name is Alfin Noviaji.',
         descriptions: [
-            'I am 25 years old. Born in Malang, 21 November 1996. I live on Jalan Raya Losawi No. 15, Malang. My nationality is Indonesian, and my religion is Islam. This time, I have graduated from the Institut Teknologi dan Bisnis ASIA Malang majoring in Computer Science. My hobbies are Coding and Basketball.',
-            'I am interested in technology so I have expertise in fullstack web and mobile development, the language most proficient on the javascript and dart platforms. I often use node.js and flutter in developing mobile applications, I always keep abreast of developing technologies.'
+            'I am born in Malang, \'96. I live on Jalan Raya Losawi No. 15, Malang. My nationality is Indonesian, and my religion is Islam. This time, I have graduated from the Institut Teknologi dan Bisnis ASIA Malang majoring in Computer Science. My hobbies are Coding and Basketball.',
+            'I code using dart and javascript language, for design architecture i could use both MVP, MVVM, DDD, and Clean Architecture, Because of restructuring, since June \'21 i work as Android Enginner Lead (Flutter) at my current company , I always keep abreast of developing technologies.'
         ],
     };
     return (

@@ -15,8 +15,8 @@ export default function Ability(): React.ReactElement {
         {
             ic: ic_android,
             title: 'Android Skill',
-            description: 'While developing android application. i\'m able to use some library Flutter, and React Native\n',
-            tools: ['Flutter', 'Dart', 'React Native', 'Javascript', 'Typescript', 'Android Studio', 'Java', 'Kotlin']
+            description: 'While developing android application. i\'m able to use some library Flutter, and React Native\n, but not limited to',
+            tools: ['Flutter', 'Dart', 'React Native', 'Javascript', 'Typescript', 'Android Studio', 'Java', 'Kotlin','MVVM Patern', 'MVP Patern', 'Clean Architecture', 'DDD']
         },
         {
             ic: ic_front_end,
@@ -28,7 +28,7 @@ export default function Ability(): React.ReactElement {
             ic: ic_back_end,
             title: 'Back-end Skill',
             description: 'At developing android system Rest API, i\'m able to use some library Node.js, Express.js\n',
-            tools: ['Node.js', 'Express.js', 'MySQL', 'MongoDB']
+            tools: ['Node.js', 'Express.js', 'MySQL', 'MongoDB','Sequalize', 'Mongoose']
         }
     ];
 
