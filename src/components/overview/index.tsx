@@ -31,7 +31,6 @@ export default function Overview(): React.ReactElement {
                         </button>
                     </div>
                     <img src={profile} alt='profile' className='w-full max-w-sm md:w-1/2 rounded-xl m-auto md:m-0 '/>
-
                 </div>
             </section>
         </>

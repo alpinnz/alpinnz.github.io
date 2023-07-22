@@ -2,6 +2,7 @@ import React, {createRef, useLayoutEffect, useRef, useState} from "react";
 import ic_school from "../../assets/svg/ic_school.svg";
 import ic_mobile from "../../assets/svg/ic_mobile.svg";
 import ic_desktop from "../../assets/svg/ic_dekstop.svg";
+import profile from "../../assets/png/profile.png";
 
 type TimelineItem = {
     title: string,
@@ -52,8 +53,12 @@ export default function Timeline(): React.ReactElement {
 
     return (
         <>
-            <section id="personal" className='mt-16 px-8 md:px-20 lg:px-24 py-4'>
-                <div className="min-h-screen flex flex-col justify-center">
+            <section id="timeline" className='mt-16 px-8 md:px-20 py-4 lg:px-24 '>
+                <div className='flex flex-row justify-center'>
+                    <div className='font-bold text-2xl text-595260'>Timeline</div>
+                </div>
+                <div className='m-1 sm:m-2 md:m-3'/>
+                <div className="min-h-min flex flex-col justify-center">
                     {/*<div className="sm:max-w-xl sm:mx-auto w-full">*/}
                     <div className="w-full">
                         <div className="relative text-gray-700 antialiased text-sm font-semibold">
@@ -85,7 +90,7 @@ function Card(props: CardProps): React.ReactElement {
 
     const Line = () => {
         if (props.is_last) return (<></>);
-        const css: string = '"hidden sm:block w-1 bg-2C2E43 absolute left-1/2 transform -translate-x-1/2"-0';
+        const css: string = 'hidden sm:block w-1 bg-2C2E43 absolute left-1/2 transform -translate-x-1/2';
         return (<div style={{height: height}} className={css}/>);
     }
 
