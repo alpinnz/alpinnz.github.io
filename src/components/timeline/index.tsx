@@ -1,4 +1,4 @@
-import React from "react";
+import React, {createRef, useLayoutEffect, useRef, useState} from "react";
 import ic_school from "../../assets/svg/ic_school.svg";
 import ic_mobile from "../../assets/svg/ic_mobile.svg";
 import ic_desktop from "../../assets/svg/ic_dekstop.svg";
@@ -54,142 +54,15 @@ export default function Timeline(): React.ReactElement {
         <>
             <section id="personal" className='mt-16 px-8 md:px-20 lg:px-24 py-4'>
                 <div className="min-h-screen flex flex-col justify-center">
-                    <div className="sm:max-w-xl sm:mx-auto w-full">
-
+                    {/*<div className="sm:max-w-xl sm:mx-auto w-full">*/}
+                    <div className="w-full">
                         <div className="relative text-gray-700 antialiased text-sm font-semibold">
-
-                            <div
-                                className="hidden sm:block w-1 bg-2C2E43 absolute h-full left-1/2 transform -translate-x-1/2"></div>
-
                             {
-                                timelineItem.map((item, index) => {
-                                    if (index % 2 === 0) {
-                                        return (
-                                            <div className="mt-6 sm:mt-0 sm:mb-12">
-                                                <div className="flex flex-col sm:flex-row items-center">
-                                                    <div className="flex justify-start w-full mx-auto items-center">
-                                                        <div className="w-full sm:w-1/2 sm:pr-8">
-                                                            <div className="p-4 bg-5952601A rounded shadow">
-                                                                <p
-                                                                    className="font-light text-2C2E43 text-xs">{format(item.date_start)} - {format(item.date_end)}</p>
-                                                                <div
-                                                                    className="mt-2 font-bold text-2C2E43">{item.title}</div>
-                                                                <p className="mt-1 font-light">{item.descriptions}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        className="rounded-full bg-2C2E43 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                                                        <img className='w-4 h-4' src={item.icon} alt={item.title}/>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        )
-                                    } else {
-                                        return (
-                                            <div className="mt-6 sm:mt-0 sm:mb-12">
-                                                <div className="flex flex-col sm:flex-row items-center">
-                                                    <div className="flex justify-end w-full mx-auto items-center">
-                                                        <div className="w-full sm:w-1/2 sm:pl-8">
-                                                            <div className="p-4 bg-5952601A rounded shadow">
-                                                                <p
-                                                                    className="font-light text-2C2E43 text-xs">{format(item.date_start)} - {format(item.date_end)}</p>
-                                                                <div
-                                                                    className="mt-2 font-bold text-2C2E43">{item.title}</div>
-                                                                <p className="mt-1 font-light">{item.descriptions}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        className="rounded-full bg-2C2E43 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                                                        <img className='w-4 h-4' src={item.icon} alt={item.title}/>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        )
-                                    }
-                                })
+                                timelineItem.map((item, index): React.ReactElement => (
+                                        <Card data={item} index={index} is_last={(timelineItem.length - 1) == index}/>
+                                    )
+                                )
                             }
-
-                            {/*<div className="mt-6 sm:mt-0 sm:mb-12">*/}
-                            {/*    <div className="flex flex-col sm:flex-row items-center">*/}
-                            {/*        <div className="flex justify-start w-full mx-auto items-center">*/}
-                            {/*            <div className="w-full sm:w-1/2 sm:pr-8">*/}
-                            {/*                <div className="p-4 bg-white rounded shadow">*/}
-                            {/*                    Now this is a story all about how,*/}
-                            {/*                </div>*/}
-                            {/*            </div>*/}
-                            {/*        </div>*/}
-                            {/*        <div*/}
-                            {/*            className="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">*/}
-                            {/*            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white"*/}
-                            {/*                 fill="none" viewBox="0 0 24 24" stroke="currentColor">*/}
-                            {/*                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"*/}
-                            {/*                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>*/}
-                            {/*            </svg>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-
-                            {/*<div className="mt-6 sm:mt-0 sm:mb-12">*/}
-                            {/*    <div className="flex flex-col sm:flex-row items-center">*/}
-                            {/*        <div className="flex justify-end w-full mx-auto items-center">*/}
-                            {/*            <div className="w-full sm:w-1/2 sm:pl-8">*/}
-                            {/*                <div className="p-4 bg-white rounded shadow">*/}
-                            {/*                    My life got flipped turned upside down,*/}
-                            {/*                </div>*/}
-                            {/*            </div>*/}
-                            {/*        </div>*/}
-                            {/*        <div*/}
-                            {/*            className="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">*/}
-                            {/*            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white"*/}
-                            {/*                 fill="none" viewBox="0 0 24 24" stroke="currentColor">*/}
-                            {/*                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"*/}
-                            {/*                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>*/}
-                            {/*            </svg>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-
-                            {/*<div className="mt-6 sm:mt-0 sm:mb-12">*/}
-                            {/*    <div className="flex flex-col sm:flex-row items-center">*/}
-                            {/*        <div className="flex justify-start w-full mx-auto items-center">*/}
-                            {/*            <div className="w-full sm:w-1/2 sm:pr-8">*/}
-                            {/*                <div className="p-4 bg-white rounded shadow">*/}
-                            {/*                    And I'd like to take a minute, just sit right there,*/}
-                            {/*                </div>*/}
-                            {/*            </div>*/}
-                            {/*        </div>*/}
-                            {/*        <div*/}
-                            {/*            className="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">*/}
-                            {/*            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white"*/}
-                            {/*                 fill="none" viewBox="0 0 24 24" stroke="currentColor">*/}
-                            {/*                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"*/}
-                            {/*                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>*/}
-                            {/*            </svg>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-
-                            {/*<div className="mt-6 sm:mt-0">*/}
-                            {/*    <div className="flex flex-col sm:flex-row items-center">*/}
-                            {/*        <div className="flex justify-end w-full mx-auto items-center">*/}
-                            {/*            <div className="w-full sm:w-1/2 sm:pl-8">*/}
-                            {/*                <div className="p-4 bg-white rounded shadow">*/}
-                            {/*                    I'll tell you how I became the Prince of a town called Bel Air.*/}
-                            {/*                </div>*/}
-                            {/*            </div>*/}
-                            {/*        </div>*/}
-                            {/*        <div*/}
-                            {/*            className="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">*/}
-                            {/*            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white"*/}
-                            {/*                 fill="none" viewBox="0 0 24 24" stroke="currentColor">*/}
-                            {/*                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"*/}
-                            {/*                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>*/}
-                            {/*            </svg>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
                         </div>
 
                     </div>
@@ -197,6 +70,103 @@ export default function Timeline(): React.ReactElement {
             </section>
         </>
     );
+}
+
+type CardProps = {
+    data: TimelineItem,
+    index: number,
+    is_last: boolean,
+}
+
+function Card(props: CardProps): React.ReactElement {
+    const ref: React.RefObject<any> = createRef()
+    const dimensions = useRefDimensions(ref)
+    const height = dimensions.height + 48
+
+    const Line = () => {
+        if (props.is_last) return (<></>);
+        const css: string = '"hidden sm:block w-1 bg-2C2E43 absolute left-1/2 transform -translate-x-1/2"-0';
+        return (<div style={{height: height}} className={css}/>);
+    }
+
+
+    if (props.index % 2 === 0) {
+        return (
+            <div ref={ref} className="mt-6 sm:mt-0 sm:mb-12">
+                <div className="hidden sm:block absolute bg-2C2E43 w-1/2 h-1">
+                    <div className="flex justify-end me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-10 sm:w-14" viewBox="0 0 105 41"
+                             fill="none">
+                            <path d="M104.5 0H0V5H21.5L104.5 40.5V0Z" fill="#2C2E43"/>
+                        </svg>
+                    </div>
+                </div>
+                <Line/>
+                <div className="flex flex-col sm:flex-row items-start">
+                    <div className="flex justify-start w-full mx-auto items-center">
+                        <div className="w-full sm:w-1/2 sm:pr-12">
+                            <div className="p-4 bg-5952601A rounded shadow">
+                                <p
+                                    className="font-light text-2C2E43 text-xs">{format(props.data.date_start)} - {format(props.data.date_end)}</p>
+                                <div
+                                    className="mt-2 font-bold text-2C2E43">{props.data.title}</div>
+                                <p className="mt-1 font-light">{props.data.descriptions}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className="rounded-full bg-2C2E43 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                        <img className='w-4 h-4' src={props.data.icon} alt={props.data.title}/>
+                    </div>
+                </div>
+            </div>
+        )
+    } else {
+        return (
+            <div ref={ref} className="mt-6 sm:mt-0 sm:mb-12">
+                <div className="hidden sm:block absolute right-0 bg-2C2E43 w-1/2 h-1">
+                    <div className="flex justify-start ms-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-10 sm:w-14" viewBox="0 0 105 41"
+                             fill="none">
+                            <path d="M0.5 0H105V5H83.5L0.5 40.5V0Z" fill="#2C2E43"/>
+                        </svg>
+                    </div>
+                </div>
+                <Line/>
+                <div className="flex flex-col sm:flex-row items-start">
+                    <div className="flex justify-end w-full mx-auto items-center">
+                        <div className="w-full sm:w-1/2 sm:pl-12">
+                            <div className="p-4 bg-5952601A rounded shadow">
+                                <p
+                                    className="font-light text-2C2E43 text-xs">{format(props.data.date_start)} - {format(props.data.date_end)}</p>
+                                <div
+                                    className="mt-2 font-bold text-2C2E43">{props.data.title}</div>
+                                <p className="mt-1 font-light">{props.data.descriptions}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className="rounded-full bg-2C2E43 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                        <img className='w-4 h-4' src={props.data.icon} alt={props.data.title}/>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
+
+
+const useRefDimensions = (ref: React.RefObject<any>) => {
+    const [dimensions, setDimensions] = useState({width: 1, height: 2})
+    React.useEffect((): void => {
+        if (ref.current) {
+            const {current} = ref
+            const boundingRect = current.getBoundingClientRect()
+            const {width, height} = boundingRect
+            setDimensions({width: Math.round(width), height: Math.round(height)})
+        }
+    }, [ref])
+    return dimensions
 }
 
 function format(date: Date) {
