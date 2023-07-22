@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.087f47f5.css",
-    "main.js": "/static/js/main.8a84193c.js",
+    "main.css": "/static/css/main.e75663a5.css",
+    "main.js": "/static/js/main.923cbd42.js",
     "static/media/profile.png": "/static/media/profile.895ed3502cda089dc4b6.png",
     "static/media/ic_android.svg": "/static/media/ic_android.24f302e2f10fefbedeff439ffb2d1bc2.svg",
     "static/media/ic_front_end.svg": "/static/media/ic_front_end.3a6855e80232af5329fa51fb5bc8a780.svg",
@@ -10,11 +10,11 @@
     "static/media/ic_dekstop.svg": "/static/media/ic_dekstop.dd42734fbbfd5078fb26b3324d3d3c9f.svg",
     "index.html": "/index.html",
     "static/media/ic_school.svg": "/static/media/ic_school.58ba5943ebffe12cbe6f51883fb13938.svg",
-    "main.087f47f5.css.map": "/static/css/main.087f47f5.css.map",
-    "main.8a84193c.js.map": "/static/js/main.8a84193c.js.map"
+    "main.e75663a5.css.map": "/static/css/main.e75663a5.css.map",
+    "main.923cbd42.js.map": "/static/js/main.923cbd42.js.map"
   },
   "entrypoints": [
-    "static/css/main.087f47f5.css",
-    "static/js/main.8a84193c.js"
+    "static/css/main.e75663a5.css",
+    "static/js/main.923cbd42.js"
   ]
 }
