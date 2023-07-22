@@ -64,7 +64,7 @@ export default function Timeline(): React.ReactElement {
                         <div className="relative text-gray-700 antialiased text-sm font-semibold">
                             {
                                 timelineItem.map((item, index): React.ReactElement => (
-                                        <Card data={item} index={index} is_last={(timelineItem.length - 1) == index}/>
+                                        <Card data={item} key={index} index={index} is_last={(timelineItem.length - 1) == index}/>
                                     )
                                 )
                             }
@@ -170,7 +170,7 @@ const useRefDimensions = (ref: React.RefObject<any>) => {
             const {width, height} = boundingRect
             setDimensions({width: Math.round(width), height: Math.round(height)})
         }
-    }, [ref])
+    }, [])
     return dimensions
 }
 
