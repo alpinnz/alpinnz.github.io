@@ -73,7 +73,7 @@ function Card(props: CardProps): React.ReactElement {
     };
     return (
         <>
-            <div className="flex flex-col items-center p-1 md:p-2 w-1/2 md:w-1/3 xl:w-1/4"
+            <div className="flex flex-col items-center p-1 md:p-2 w-1/2 md:w-1/3 xl:w-1/4 2xl:w-1/6"
                  onMouseOver={handleMouseOver}
                  onMouseOut={handleMouseOut}>
                 <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex w-full">
