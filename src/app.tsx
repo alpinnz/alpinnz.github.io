@@ -5,6 +5,7 @@ import Personal from "./components/personal";
 import Ability from "./components/ability";
 import Timeline from "./components/timeline";
 import Portofolio from "./components/protofolio";
+import Footer from "./components/footer";
 
 export default function App(): React.ReactElement {
     return (
@@ -14,7 +15,8 @@ export default function App(): React.ReactElement {
             <Personal/>
             <Ability/>
             <Timeline/>
-            <Portofolio />
+            <Portofolio/>
+            {/*<Footer/>*/}
         </>
     );
 }
