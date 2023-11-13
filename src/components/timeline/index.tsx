@@ -102,12 +102,11 @@ type CardProps = {
 function Card(props: CardProps): React.ReactElement {
     const ref: React.RefObject<any> = createRef()
     const dimensions = useRefDimensions(ref)
-    const height = dimensions.height + 48
 
     const Line = () => {
         if (props.is_last) return (<></>);
         const css: string = 'hidden sm:block w-1 bg-2C2E43 absolute left-1/2 transform -translate-x-1/2';
-        return (<div style={{height: height}} className={css}/>);
+        return (<div style={{height: dimensions.height + 48}} className={css}/>);
     }
 
 
@@ -178,17 +177,44 @@ function Card(props: CardProps): React.ReactElement {
 
 
 const useRefDimensions = (ref: React.RefObject<any>) => {
-    const [dimensions, setDimensions] = useState({width: 1, height: 2})
+    const [dimensions, setDimensions] = useState({
+        width: 2,
+        height: 2
+    })
+    const [screenSize, setScreenSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
     React.useEffect((): void => {
         if (ref.current) {
             const {current} = ref
             const boundingRect = current.getBoundingClientRect()
             const {width, height} = boundingRect
+            if (width === dimensions.width && height === dimensions.height) return
             setDimensions({width: Math.round(width), height: Math.round(height)})
+
         }
-    }, [])
+    }, [ref])
+
+
+    React.useEffect(() => {
+        const updateDimension = () => {
+            setScreenSize({
+                width: window.innerWidth,
+                height: window.innerHeight
+            })
+        }
+        window.addEventListener('resize', updateDimension);
+
+
+        return (() => {
+            window.removeEventListener('resize', updateDimension);
+        })
+    }, [screenSize])
+
     return dimensions
 }
+
 
 function format(date: Date) {
     const year = date.getFullYear();
