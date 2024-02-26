@@ -1,4 +1,4 @@
-import React, {createRef, useLayoutEffect, useRef, useState} from "react";
+import React, {createRef, useEffect, useLayoutEffect, useState} from "react";
 import ic_school from "../../assets/svg/ic_school.svg";
 import ic_mobile from "../../assets/svg/ic_mobile.svg";
 import ic_desktop from "../../assets/svg/ic_dekstop.svg";
@@ -99,14 +99,32 @@ type CardProps = {
     is_last: boolean,
 }
 
+const useWindowSize = () => {
+    const [size, setSize] = useState([0, 0]);
+    useLayoutEffect(() => {
+        const updateSize = () => {
+            setSize([window.innerWidth, window.innerHeight]);
+        };
+        window.addEventListener("resize", updateSize);
+        updateSize();
+        return () => window.removeEventListener("resize", updateSize);
+    }, []);
+    return size;
+};
+
 function Card(props: CardProps): React.ReactElement {
+    const [heightElement, setHeight] = useState(0)
     const ref: React.RefObject<any> = createRef()
-    const dimensions = useRefDimensions(ref)
+    const [width, height] = useWindowSize();
+
+    useEffect(() => {
+        setHeight(ref.current.clientHeight)
+    }, [ref])
 
     const Line = () => {
         if (props.is_last) return (<></>);
         const css: string = 'hidden sm:block w-1 bg-2C2E43 absolute left-1/2 transform -translate-x-1/2';
-        return (<div style={{height: dimensions.height + 48}} className={css}/>);
+        return (<div style={{height: heightElement + 48}} className={css}/>);
     }
 
 
@@ -173,46 +191,6 @@ function Card(props: CardProps): React.ReactElement {
             </div>
         )
     }
-}
-
-
-const useRefDimensions = (ref: React.RefObject<any>) => {
-    const [dimensions, setDimensions] = useState({
-        width: 2,
-        height: 2
-    })
-    const [screenSize, setScreenSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight
-    });
-    React.useEffect((): void => {
-        if (ref.current) {
-            const {current} = ref
-            const boundingRect = current.getBoundingClientRect()
-            const {width, height} = boundingRect
-            if (width === dimensions.width && height === dimensions.height) return
-            setDimensions({width: Math.round(width), height: Math.round(height)})
-
-        }
-    }, [ref])
-
-
-    React.useEffect(() => {
-        const updateDimension = () => {
-            setScreenSize({
-                width: window.innerWidth,
-                height: window.innerHeight
-            })
-        }
-        window.addEventListener('resize', updateDimension);
-
-
-        return (() => {
-            window.removeEventListener('resize', updateDimension);
-        })
-    }, [screenSize])
-
-    return dimensions
 }
 
 
