@@ -1,13 +1,13 @@
-import React, {createRef, useState} from "react";
+import * as React from "react";
 
-type PotofolioItem = {
+type PortofolioItem = {
     title: string,
     descriptions: string,
     thumbnail?: string | undefined,
 }
 
-export default function Potofolio(): React.ReactElement {
-    const potofolioItems: PotofolioItem[] = [
+export function Portofolio(): React.ReactElement {
+    const portofolioItems: PortofolioItem[] = [
         {
             title: 'Protofolio 1',
             descriptions: 'Protofolio 1 description',
@@ -43,7 +43,7 @@ export default function Potofolio(): React.ReactElement {
                 <div className='m-1 sm:m-2 md:m-3'/>
                 <div className="container">
                     <div className="-m-1 flex flex-wrap md:-m-2">
-                        {potofolioItems.map((item, index) => (
+                        {portofolioItems.map((item, index) => (
                             <Card data={item} key={index}/>
                         ))}
                     </div>
@@ -54,15 +54,11 @@ export default function Potofolio(): React.ReactElement {
 }
 
 type CardProps = {
-    data: PotofolioItem,
+    data: PortofolioItem,
 }
 
 function Card(props: CardProps): React.ReactElement {
-    const [isHovering, setIsHovering] = useState(false);
-
-    const dimensions = useViewport()
-
-    const width: number = dimensions.width - (dimensions.width * 0.15);
+    const [isHovering, setIsHovering] = React.useState(false);
 
     const handleMouseOver = () => {
         setIsHovering(true);
@@ -110,24 +106,4 @@ function Card(props: CardProps): React.ReactElement {
             </div>
         </>
     );
-}
-
-const useViewport = () => {
-    const [width, setWidth] = React.useState(window.innerWidth);
-    // Add a second state variable "height" and default it to the current window height
-    const [height, setHeight] = React.useState(window.innerHeight);
-
-    React.useEffect(() => {
-        const handleWindowResize = () => {
-            setWidth(window.innerWidth);
-            // Set the height in state as well as the width
-            setHeight(window.innerHeight);
-        }
-
-        window.addEventListener("resize", handleWindowResize);
-        return () => window.removeEventListener("resize", handleWindowResize);
-    }, []);
-
-    // Return both the height and width
-    return {width, height};
 }

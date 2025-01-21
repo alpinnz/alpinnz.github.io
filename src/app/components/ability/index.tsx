@@ -1,7 +1,7 @@
 import React from "react";
-import ic_android from "../../assets/svg/ic_android.svg";
-import ic_front_end from "../../assets/svg/ic_front_end.svg";
-import ic_back_end from "../../assets/svg/ic_back_end.svg";
+import ic_android from "../../../assets/svg/ic_android.svg";
+import ic_front_end from "../../../assets/svg/ic_front_end.svg";
+import ic_back_end from "../../../assets/svg/ic_back_end.svg";
 
 type AbilityItem = {
     title: string,
@@ -10,13 +10,13 @@ type AbilityItem = {
     ic: string,
 }
 
-export default function Ability(): React.ReactElement {
+export function Ability(): React.ReactElement {
     const abilityItems: AbilityItem[] = [
         {
             ic: ic_android,
             title: 'Android Skill',
             description: 'While developing android application. i\'m able to use some library Flutter, and React Native\n, but not limited to',
-            tools: ['Flutter', 'Dart', 'React Native', 'Javascript', 'Typescript', 'Android Studio', 'Java', 'Kotlin','MVVM Patern', 'MVP Patern', 'Clean Architecture', 'DDD']
+            tools: ['Flutter', 'Dart', 'React Native', 'Javascript', 'Typescript', 'Android Studio', 'Java', 'Kotlin', 'MVVM Patern', 'MVP Patern', 'Clean Architecture', 'DDD']
         },
         {
             ic: ic_front_end,
@@ -28,7 +28,7 @@ export default function Ability(): React.ReactElement {
             ic: ic_back_end,
             title: 'Back-end Skill',
             description: 'At developing android system Rest API, i\'m able to use some library Node.js, Express.js\n',
-            tools: ['Node.js', 'Express.js', 'MySQL', 'MongoDB','Sequalize', 'Mongoose']
+            tools: ['Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Sequalize', 'Mongoose']
         }
     ];
 

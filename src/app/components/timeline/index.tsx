@@ -1,7 +1,7 @@
-import React, {createRef, useEffect, useLayoutEffect, useState} from "react";
-import ic_school from "../../assets/svg/ic_school.svg";
-import ic_mobile from "../../assets/svg/ic_mobile.svg";
-import ic_desktop from "../../assets/svg/ic_dekstop.svg";
+import React, {createRef, useEffect, useState} from "react";
+import ic_school from "../../../assets/svg/ic_school.svg";
+import ic_mobile from "../../../assets/svg/ic_mobile.svg";
+import ic_desktop from "../../../assets/svg/ic_dekstop.svg";
 
 type TimelineItem = {
     title: string,
@@ -12,7 +12,7 @@ type TimelineItem = {
     currently?: boolean,
 }
 
-export default function Timeline(): React.ReactElement {
+export function Timeline(): React.ReactElement {
     const timelineItem: TimelineItem[] = [
         {
             title: 'Android Engineer Lead (Flutter) at PT. Ada Ide Langsung Jalan',
@@ -99,23 +99,10 @@ type CardProps = {
     is_last: boolean,
 }
 
-const useWindowSize = () => {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-        const updateSize = () => {
-            setSize([window.innerWidth, window.innerHeight]);
-        };
-        window.addEventListener("resize", updateSize);
-        updateSize();
-        return () => window.removeEventListener("resize", updateSize);
-    }, []);
-    return size;
-};
 
 function Card(props: CardProps): React.ReactElement {
     const [heightElement, setHeight] = useState(0)
     const ref: React.RefObject<any> = createRef()
-    const [width, height] = useWindowSize();
 
     useEffect(() => {
         setHeight(ref.current.clientHeight)

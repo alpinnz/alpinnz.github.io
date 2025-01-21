@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-export default function Navbar(): React.ReactElement {
+export function Navbar(): React.ReactElement {
 
     const [isOpen, setIsOpen] = useState(false);
 

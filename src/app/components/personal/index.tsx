@@ -5,7 +5,7 @@ type PersonalItem = {
     descriptions: string[],
 }
 
-export default function Personal(): React.ReactElement {
+export  function Personal(): React.ReactElement {
     const personalItem: PersonalItem = {
         title: 'Hello, my name is Alfin Noviaji.',
         descriptions: [

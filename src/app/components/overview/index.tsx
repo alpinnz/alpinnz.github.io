@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../assets/png/profile.png";
+import profile from "../../../assets/png/profile.png";
 
 type OverviewItem = {
     title: string,
@@ -7,7 +7,7 @@ type OverviewItem = {
     descriptions: string[],
 }
 
-export default function Overview(): React.ReactElement {
+export  function Overview(): React.ReactElement {
     const overviewItem: OverviewItem = {
         title: 'Hello, I`am Alfin',
         subtitle: 'Software Developer',

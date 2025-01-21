@@ -1,14 +1,14 @@
 import React from "react";
-import ic_android from "../../assets/svg/ic_android.svg";
-import ic_front_end from "../../assets/svg/ic_front_end.svg";
-import ic_back_end from "../../assets/svg/ic_back_end.svg";
+import ic_android from "../../../assets/svg/ic_android.svg";
+import ic_front_end from "../../../assets/svg/ic_front_end.svg";
+import ic_back_end from "../../../assets/svg/ic_back_end.svg";
 
 type ContactItem = {
     title: string,
     ic: string,
 }
 
-export default function Footer(): React.ReactElement {
+export function Footer(): React.ReactElement {
     const contactItems: ContactItem[] = [
         {
             ic: ic_android,
