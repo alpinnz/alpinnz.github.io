@@ -10,24 +10,27 @@ type TimelineItem = {
     date_end: Date,
     icon: string,
     currently?: boolean,
+    link?: string,
 }
 
 export function Timeline(): React.ReactElement {
     const timelineItem: TimelineItem[] = [
         {
-            title: 'Android Engineer Lead (Flutter) at PT. Ada Ide Langsung Jalan',
+            title: 'Mobile Engineer Lead at PT. Ada Ide Langsung Jalan',
             descriptions: 'Lead a Front-End team focused on Product Owner and Cashier, User Management at Smartllink. Breaking down tasks, managing team resources, communicating well with CO, providing solutions for the team, doing one on one and other good things for the team, Work across module, create some technical base, and do code review for team..',
             date_start: new Date(2022, 0),
             date_end: new Date(),
             icon: ic_mobile,
             currently: true,
+            link: "https://smartlink.id"
         },
         {
-            title: 'Android Engineer (Flutter) at PT. Ada Ide Langsung Jalan',
+            title: 'Mobile Engineer at PT. Ada Ide Langsung Jalan',
             descriptions: 'Helping Smartlink to build awesome features for Cashier, We use DDD, Clean Architecture, Write reusable modular code and other.',
             date_start: new Date(2021, 5),
             date_end: new Date(2021, 12),
             icon: ic_mobile,
+            link: "https://smartlink.id"
         },
         {
             title: 'Back End Engineer at Stellarlab',
@@ -35,6 +38,7 @@ export function Timeline(): React.ReactElement {
             date_start: new Date(2021, 9),
             date_end: new Date(2022, 9,),
             icon: ic_desktop,
+            link: "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
         },
         {
             title: 'Fullstack Developer at CV. Gumcode',
@@ -56,6 +60,7 @@ export function Timeline(): React.ReactElement {
             date_start: new Date(2017, 7),
             date_end: new Date(2020, 1),
             icon: ic_school,
+            link: "https://asia.ac.id"
         },
         {
             title: 'System Administrator at Star Nt Game Center',
@@ -115,7 +120,7 @@ function Card(props: CardProps): React.ReactElement {
 
     const Line = () => {
         if (props.is_last) return (<></>);
-        const css: string = 'hidden sm:block w-1 bg-neutral-800 absolute left-1/2 transform -translate-x-1/2';
+        const css: string = 'hidden sm:block w-1 bg-neutral-300 absolute left-1/2 transform -translate-x-1/2';
         return (<div style={{height: heightElement + 48}} className={css}/>);
     }
 
@@ -123,7 +128,7 @@ function Card(props: CardProps): React.ReactElement {
     if (props.index % 2 === 0) {
         return (
             <div ref={ref} className="mt-6 sm:mt-0 sm:mb-12">
-                <div className="hidden sm:block absolute bg-neutral-800 w-1/2 h-1">
+                <div className="hidden sm:block absolute bg-neutral-300 w-1/2 h-1">
                     <div className="flex justify-end me-2">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-10 sm:w-14" viewBox="0 0 105 41"
                              fill="none">
@@ -154,7 +159,7 @@ function Card(props: CardProps): React.ReactElement {
     } else {
         return (
             <div ref={ref} className="mt-6 sm:mt-0 sm:mb-12">
-                <div className="hidden sm:block absolute right-0 bg-neutral-800 w-1/2 h-1">
+                <div className="hidden sm:block absolute right-0 bg-neutral-300 w-1/2 h-1">
                     <div className="flex justify-start ms-2">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-10 sm:w-14" viewBox="0 0 105 41"
                              fill="none">
