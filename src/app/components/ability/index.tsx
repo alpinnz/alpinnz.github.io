@@ -44,11 +44,11 @@ export function Ability(): React.ReactElement {
                                     <div className='flex flex-row justify-center'>
                                         <img src={item.ic} alt={item.title} className='w-1/4'/>
                                     </div>
-                                    <div className='mt-2 font-bold text-xl text-595260 text-center'>{item.title}</div>
+                                    <div className='mt-2 font-bold text-xl text-neutral-700 text-center'>{item.title}</div>
                                     <div
-                                        className='mt-2 font-light  text-2C2E43 text-center'>{item.description}</div>
-                                    <div className='mt-2 font-bold text-595260 text-center'>Dev Tools</div>
-                                    <div className='mt-2 font-light  text-2C2E43 flex text-center'>{tools}</div>
+                                        className='mt-2 font-light  text-neutral-800 text-center'>{item.description}</div>
+                                    <div className='mt-2 font-bold text-neutral-700 text-center'>Dev Tools</div>
+                                    <div className='mt-2 font-light  text-neutral-800 flex text-center'>{tools}</div>
                                 </div>
                             )
                         }

@@ -5,6 +5,7 @@ import {Personal} from "./components/personal";
 import {Timeline} from "./components/timeline";
 import {Ability} from "./components/ability";
 import {Portofolio} from "./components/protofolio";
+import {Footer} from "./components/footer";
 
 export function App(): React.ReactElement {
     return (
@@ -15,7 +16,7 @@ export function App(): React.ReactElement {
             <Ability/>
             <Timeline/>
             <Portofolio/>
-            {/*<Footer/>*/}
+            <Footer/>
         </>
     );
 }

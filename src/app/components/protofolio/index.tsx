@@ -38,7 +38,7 @@ export function Portofolio(): React.ReactElement {
         <>
             <section id="portofolio" className='mt-16 px-8 md:px-20 py-4 lg:px-24'>
                 <div className='flex flex-row justify-center'>
-                    <div className='font-bold text-2xl text-595260'>Some Things I’ve Built</div>
+                    <div className='font-bold text-2xl text-neutral-700'>Some Things I’ve Built</div>
                 </div>
                 <div className='m-1 sm:m-2 md:m-3'/>
                 <div className="container">
