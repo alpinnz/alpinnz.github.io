@@ -58,21 +58,10 @@ type CardProps = {
 }
 
 function Card(props: CardProps): React.ReactElement {
-    const [isHovering, setIsHovering] = React.useState(false);
-
-    const handleMouseOver = () => {
-        setIsHovering(true);
-    };
-
-    const handleMouseOut = () => {
-        setIsHovering(false);
-    };
     return (
         <>
-            <div className="flex flex-col items-center p-1 md:p-2 w-1/2 md:w-1/3 xl:w-1/4 2xl:w-1/6"
-                 onMouseOver={handleMouseOver}
-                 onMouseOut={handleMouseOut}>
-                <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex w-full">
+            <div className="p-1 md:p-2 w-1/2 md:w-1/3 xl:w-1/4 2xl:w-1/6">
+                <div className="group bg-gray-100 rounded-lg overflow-hidden shadow-lg flex w-full">
                     <div style={{
                         display: "block",
                         position: "relative",
@@ -82,13 +71,9 @@ function Card(props: CardProps): React.ReactElement {
                     }}
                          className="relative w-full h-32 md:h-48"
                     >
-                        {isHovering && (
-                            <div className='absolute w-full h-full'>
-                                <div className='h-full flex rounded-full justify-center justify-items-center align-middle'>
-                                    <h2>{props.data.title}</h2>
-                                </div>
-                            </div>
-                        )}
+                        <div className="bg-neutral-50/5 backdrop-contrast-50 invisible group-hover:visible flex items-center justify-center h-full">
+                            <h2 className="text-neutral-800">{props.data.title}</h2>
+                        </div>
                     </div>
                     {/*<img*/}
                     {/*    alt={props.data.title}*/}

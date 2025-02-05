@@ -17,7 +17,7 @@ export function Timeline(): React.ReactElement {
     const timelineItem: TimelineItem[] = [
         {
             title: 'Mobile Engineer Lead at PT. Ada Ide Langsung Jalan',
-            descriptions: 'Lead a Front-End team focused on Product Owner and Cashier, User Management at Smartllink. Breaking down tasks, managing team resources, communicating well with CO, providing solutions for the team, doing one on one and other good things for the team, Work across module, create some technical base, and do code review for team..',
+            descriptions: 'Lead a Mobile Engineer team focused on Product Owner and Cashier, User Management at Smartllink. Breaking down tasks, managing team resources, communicating well with CO, providing solutions for the team, doing one on one and other good things for the team, Work across module, create some technical base, and do code review for team..',
             date_start: new Date(2022, 0),
             date_end: new Date(),
             icon: ic_mobile,
@@ -41,7 +41,7 @@ export function Timeline(): React.ReactElement {
             link: "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
         },
         {
-            title: 'Fullstack Developer at CV. Gumcode',
+            title: 'Full Stack Engineer at CV. Gumcode',
             descriptions: 'Working in several projects, collaboration such as, using flutter and codeigniter',
             date_start: new Date(2021, 2),
             date_end: new Date(2020, 4),

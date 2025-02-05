@@ -27,8 +27,8 @@ export function Ability(): React.ReactElement {
         {
             ic: ic_back_end,
             title: 'Back-end Skill',
-            description: 'At developing android system Rest API, i\'m able to use some library Node.js, Express.js\n',
-            tools: ['Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Sequalize', 'Mongoose']
+            description: 'At developing android system Rest API, i\'m able to use some library Node.js, ExpressJs.\nother using library Golang, Gin',
+            tools: ['Golang', 'Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Sequalize', 'Gin', 'Gorm', 'Mongoose']
         }
     ];
 
