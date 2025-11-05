@@ -18,6 +18,9 @@ type PortfolioItem = {
     techStack: string[];
     liveUrl?: string;
     repoUrl?: string;
+    webUrl?: string;
+    playStoreUrl?: string;
+    appStoreUrl?: string;
 };
 
 export function Portfolio(): React.ReactElement {
@@ -178,7 +181,7 @@ export function Portfolio(): React.ReactElement {
                                         </div>
                                         {/* Modal Footer */}
                                         <div className="flex justify-between items-center mt-6">
-                                            <div className="flex gap-3">
+                                            <div className="flex flex-wrap gap-3">
                                                 {selectedItem.liveUrl && (
                                                     <a
                                                         href={selectedItem.liveUrl}
@@ -197,13 +200,34 @@ export function Portfolio(): React.ReactElement {
                                                         Repository
                                                     </a>
                                                 )}
+                                                {selectedItem.webUrl && (
+                                                    <a
+                                                        href={selectedItem.webUrl}
+                                                        target="_blank"
+                                                        className="px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-neutral-0 rounded-lg hover:from-purple-600 hover:to-purple-700 transition"
+                                                    >
+                                                        Website
+                                                    </a>
+                                                )}
+                                                {selectedItem.playStoreUrl && (
+                                                    <a
+                                                        href={selectedItem.playStoreUrl}
+                                                        target="_blank"
+                                                        className="px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-neutral-0 rounded-lg hover:from-orange-600 hover:to-orange-700 transition"
+                                                    >
+                                                        Play Store
+                                                    </a>
+                                                )}
+                                                {selectedItem.appStoreUrl && (
+                                                    <a
+                                                        href={selectedItem.appStoreUrl}
+                                                        target="_blank"
+                                                        className="px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-600 text-neutral-0 rounded-lg hover:from-gray-600 hover:to-gray-700 transition"
+                                                    >
+                                                        App Store
+                                                    </a>
+                                                )}
                                             </div>
-                                            {/*<button*/}
-                                            {/*    onClick={closeModal}*/}
-                                            {/*    className="px-4 py-2 bg-neutral-200 text-neutral-800 rounded-lg hover:bg-neutral-300 transition"*/}
-                                            {/*>*/}
-                                            {/*    Close*/}
-                                            {/*</button>*/}
                                         </div>
                                     </>
                                 )}
