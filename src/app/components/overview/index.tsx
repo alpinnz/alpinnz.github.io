@@ -1,6 +1,5 @@
 import * as React from "react";
 import {motion} from "framer-motion";
-import profile from "../../../assets/png/profile.png";
 import {useTranslation} from "react-i18next";
 
 type OverviewItem = {
@@ -71,7 +70,7 @@ export function Overview(): React.ReactElement {
                 viewport={{once: true}}
             >
                 <img
-                    src={profile}
+                    src={"/assets/images/profile.png"}
                     alt="Alfin Noviaji"
                     className="rounded-2xl shadow-lg w-64 md:w-80 lg:w-96 object-cover"
                 />

@@ -1,14 +1,11 @@
-import React from "react";
+import * as React from "react";
 import {motion} from "framer-motion";
 import {useTranslation} from "react-i18next";
-import ic_address from "../../../assets/svg/ic_address.svg";
-import ic_email from "../../../assets/svg/ic_email.svg";
-import ic_github from "../../../assets/svg/ic_github.svg";
 
 const iconMap: Record<string, string> = {
-    "ic_address": ic_address,
-    "ic_email": ic_email,
-    "ic_github": ic_github,
+    "ic_address": "/assets/icons/ic_address.svg",
+    "ic_email": "/assets/icons/ic_email.svg",
+    "ic_github": "/assets/icons/ic_github.svg",
 };
 
 interface InputProps {

@@ -1,9 +1,6 @@
-import React from "react";
+import * as React from "react";
 import {motion} from "framer-motion";
 
-import ic_android from "../../../assets/svg/ic_android.svg";
-import ic_front_end from "../../../assets/svg/ic_front_end.svg";
-import ic_back_end from "../../../assets/svg/ic_back_end.svg";
 import {useTranslation} from "react-i18next";
 
 type SkillHeader = {
@@ -23,7 +20,7 @@ export function Skill(): React.ReactElement {
     const header: SkillHeader = t('header', {returnObjects: true}) as SkillHeader;
     const skills: SkillItem[] = t('skills', {returnObjects: true}) as SkillItem[];
 
-    const icons: string[] = [ic_android, ic_front_end, ic_back_end];
+    const icons: string[] = ["/assets/icons/ic_android.svg", "/assets/icons/ic_front_end.svg", "/assets/icons/ic_back_end.svg"];
 
     return (
         <section

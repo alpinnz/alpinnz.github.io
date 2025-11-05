@@ -1,9 +1,6 @@
-import React from "react";
+import * as React from "react";
 import {motion} from "framer-motion";
 import {useTranslation} from "react-i18next";
-import ic_school from "../../../assets/svg/ic_school.svg";
-import ic_mobile from "../../../assets/svg/ic_mobile.svg";
-import ic_desktop from "../../../assets/svg/ic_dekstop.svg";
 
 type TimelineIHeader = {
     title: string;
@@ -22,9 +19,9 @@ type TimelineItem = {
 
 
 const iconMap: Record<string, string> = {
-    "ic_school": ic_school,
-    "ic_mobile": ic_mobile,
-    "ic_desktop": ic_desktop,
+    "ic_school": "/assets/icons/ic_school.svg",
+    "ic_mobile": "/assets/icons/ic_mobile.svg",
+    "ic_desktop": "/assets/icons/ic_dekstop.svg",
 };
 
 
@@ -109,8 +106,6 @@ function TimelineCard({data, index}: CardProps): React.ReactElement {
             )}
         </motion.div>
     );
-
-
 
 
     const iconBase = (
