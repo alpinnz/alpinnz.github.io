@@ -1,10 +1,10 @@
 import React from 'react';
 import {Overview} from "./components/overview";
 import {Navbar} from "./components/navbar";
-import {Personal} from "./components/personal";
+import {Personal} from "./components/about_me";
 import {Timeline} from "./components/timeline";
-import {Ability} from "./components/ability";
-import {Portofolio} from "./components/protofolio";
+import {Ability} from "./components/skills";
+import {Portfolio} from "./components/portfolio";
 import {Footer} from "./components/footer";
 
 export function App(): React.ReactElement {
@@ -15,7 +15,7 @@ export function App(): React.ReactElement {
             <Personal/>
             <Ability/>
             <Timeline/>
-            <Portofolio/>
+            <Portfolio/>
             <Footer/>
         </>
     );
