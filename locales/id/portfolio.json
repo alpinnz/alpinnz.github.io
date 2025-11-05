@@ -12,6 +12,27 @@
   },
   "items": [
     {
+      "title": "HORA Pro",
+      "descriptions": "Sistem Manajemen SDM & Karyawan — Aplikasi Mobile untuk Absensi, Shift, dan Penilaian Kinerja",
+      "details": "HORA Pro adalah sistem manajemen SDM dan karyawan yang memberikan kendali penuh atas pegawai Anda. Fitur utama meliputi pengelolaan shift kerja, timer kehadiran, deteksi wajah, pengajuan cuti, obrolan teks, pelacakan lokasi GPS real-time, peringkat kinerja, log aktivitas, rekap bulanan custom, anti-fake GPS, dan promosi. Digunakan oleh lebih dari 100 perusahaan dan 1.000 pengguna aktif, HORA Pro membantu meningkatkan kedisiplinan karyawan dan efisiensi HR.",
+      "thumbnail": "/portfolio/hora-pro/hora-pro-1.jpg",
+      "gallery": [
+        "/portfolio/hora-pro/hora-pro-1.jpg",
+        "/portfolio/hora-pro/hora-pro-2.jpg"
+      ],
+      "category": "mobile",
+      "techStack": [
+        "Flutter",
+        ".NET",
+        "MySQL",
+        "Integrasi GPS",
+        "Deteksi Wajah"
+      ],
+      "webUrl": "https://horaapp.id",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en",
+      "appStoreUrl": "https://apps.apple.com/id/app/id6748695513"
+    },
+    {
       "title": "Smartlink App",
       "descriptions": "Sistem POS & Manajemen — Flutter, Node.js, MySQL",
       "details": "Smartlink App adalah sistem Point of Sales (POS) modern yang mengintegrasikan penjualan, stok, laporan, dan manajemen cabang dalam satu aplikasi mobile. Dibangun dengan Flutter untuk UI lintas platform dan Node.js + MySQL untuk data real-time. Fitur utama termasuk manajemen kasir, laporan harian, dan sinkronisasi cloud.",
@@ -22,7 +43,11 @@
         "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%203"
       ],
       "category": "mobile",
-      "techStack": ["Flutter", "Node.js", "MySQL"],
+      "techStack": [
+        "Flutter",
+        "Node.js",
+        "MySQL"
+      ],
       "liveUrl": "#",
       "repoUrl": "#"
     },
@@ -37,7 +62,10 @@
         "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan%203"
       ],
       "category": "frontend",
-      "techStack": ["React", "TailwindCSS"],
+      "techStack": [
+        "React",
+        "TailwindCSS"
+      ],
       "liveUrl": "#",
       "repoUrl": "#"
     },
@@ -52,7 +80,10 @@
         "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce%203"
       ],
       "category": "mobile",
-      "techStack": ["Flutter", "Firebase"],
+      "techStack": [
+        "Flutter",
+        "Firebase"
+      ],
       "liveUrl": "#",
       "repoUrl": "#"
     },
@@ -67,7 +98,11 @@
         "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio%203"
       ],
       "category": "frontend",
-      "techStack": ["Next.js", "Vite", "TailwindCSS"],
+      "techStack": [
+        "Next.js",
+        "Vite",
+        "TailwindCSS"
+      ],
       "liveUrl": "#",
       "repoUrl": "#"
     },
@@ -82,7 +117,11 @@
         "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%203"
       ],
       "category": "frontend",
-      "techStack": ["React", "TypeScript", "TailwindCSS"],
+      "techStack": [
+        "React",
+        "TypeScript",
+        "TailwindCSS"
+      ],
       "liveUrl": "#",
       "repoUrl": "#"
     },
@@ -97,7 +136,11 @@
         "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%203"
       ],
       "category": "backend",
-      "techStack": ["Golang", "Gin", "PostgreSQL"],
+      "techStack": [
+        "Golang",
+        "Gin",
+        "PostgreSQL"
+      ],
       "liveUrl": "#",
       "repoUrl": "#"
     }

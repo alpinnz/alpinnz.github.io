@@ -12,6 +12,27 @@
   },
   "items": [
     {
+      "title": "HORA Pro",
+      "descriptions": "HR & Employee Management System — Mobile App for Attendance, Shift, and Performance Tracking",
+      "details": "HORA Pro is a comprehensive HR and employee management system that puts workforce control in your hands. Features include shift management, attendance timer, facial recognition, leave requests, text chat, real-time GPS tracking, performance ranking, activity logs, monthly custom reports, anti-fake GPS, and promotions. Trusted by over 100 companies and 1,000 active users, HORA Pro helps improve employee discipline and HR efficiency.",
+      "thumbnail": "/portfolio/hora-pro/hora-pro-1.jpg",
+      "gallery": [
+        "/portfolio/hora-pro/hora-pro-1.jpg",
+        "/portfolio/hora-pro/hora-pro-2.jpg"
+      ],
+      "category": "mobile",
+      "techStack": [
+        "Flutter",
+        ".NET",
+        "MySQL",
+        "GPS Integration",
+        "Facial Recognition"
+      ],
+      "webUrl": "https://horaapp.id",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en",
+      "appStoreUrl": "https://apps.apple.com/en/app/id6748695513"
+    },
+    {
       "title": "Smartlink App",
       "descriptions": "POS & Management System — Flutter, Node.js, MySQL",
       "details": "Smartlink App is a modern Point of Sales (POS) system integrating sales, stock, reports, and branch management into a single mobile app. Built with Flutter for cross-platform UI and Node.js + MySQL for real-time data. Key features include cashier management, daily reports, and cloud synchronization.",
