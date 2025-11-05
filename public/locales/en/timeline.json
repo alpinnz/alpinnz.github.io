@@ -1,0 +1,56 @@
+{
+  "header": {
+    "title": "Journey Timeline",
+    "subtitle": "My professional and academic milestones along the way."
+  },
+  "items": [
+    {
+      "title": "Lead Mobile Engineer at PT. Ada Ide Langsung Jalan",
+      "descriptions": "Leading a mobile engineering team focused on Smartlink products, managing resources, conducting code reviews, and ensuring smooth cross-module collaboration.",
+      "date_start": "2022-01-01",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_mobile",
+      "link": "https://smartlink.id"
+    },
+    {
+      "title": "Mobile Engineer at PT. Ada Ide Langsung Jalan",
+      "descriptions": "Developed core features for the Smartlink cashier app using Flutter, following DDD and Clean Architecture principles.",
+      "date_start": "2021-06-01",
+      "date_end": "2021-12-31",
+      "icon": "ic_mobile",
+      "link": "https://smartlink.id"
+    },
+    {
+      "title": "Back End Engineer at Stellarlab",
+      "descriptions": "Worked part-time with Node.js and MongoDB. Collaborated closely with mentors to improve scalable backend systems.",
+      "date_start": "2021-10-01",
+      "date_end": "2022-10-01",
+      "icon": "ic_desktop",
+      "link": "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
+    },
+    {
+      "title": "Full Stack Engineer at CV. Gumcode",
+      "descriptions": "Developed several small-scale projects using Flutter and CodeIgniter, focusing on efficient delivery and reusability.",
+      "date_start": "2021-03-01",
+      "date_end": "2021-05-31",
+      "icon": "ic_desktop"
+    },
+    {
+      "title": "Android Engineer Intern at PT. Aku Peduli Indonesia",
+      "descriptions": "Developed Android apps using Kotlin and Flutter, including IzzyResto, IzzyInventory, and Rema.",
+      "date_start": "2020-02-01",
+      "date_end": "2020-08-01",
+      "icon": "ic_mobile"
+    },
+    {
+      "title": "Institut Teknologi & Bisnis ASIA",
+      "descriptions": "Bachelor in Computer Science (GPA 3.66)",
+      "date_start": "2017-08-01",
+      "date_end": "2020-02-01",
+      "icon": "ic_school",
+      "link": "https://asia.ac.id"
+    }
+  ],
+  "now": "Now"
+}

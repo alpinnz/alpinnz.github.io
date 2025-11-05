@@ -1,0 +1,30 @@
+{
+  "header": {
+    "title": "Hubungi Saya",
+    "subtitle": "Jangan ragu untuk menghubungi saya untuk kolaborasi, pertanyaan, atau sekadar menyapa."
+  },
+  "form": {
+    "name": "Nama",
+    "email": "Email",
+    "phone": "Telepon",
+    "message": "Pesan Anda...",
+    "submit": "Kirim Pesan"
+  },
+  "contactItems": [
+    {
+      "title": "Jalan Raya Losawi No. 15, Malang",
+      "icon": "ic_address"
+    },
+    {
+      "title": "alpinnz@gmail.com",
+      "icon": "ic_email",
+      "link": "mailto:alpinnz@gmail.com"
+    },
+    {
+      "title": "github.com/alpinnz",
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz"
+    }
+  ],
+  "copyright": "© {year} Alfin Noviaji. Semua hak dilindungi."
+}

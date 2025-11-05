@@ -1,6 +1,8 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 
 export function Navbar(): React.ReactElement {
+    const { t, i18n } = useTranslation("navbar");
     const [isOpen, setIsOpen] = React.useState(false);
     const [, setWidth] = React.useState(window.innerWidth);
 
@@ -18,11 +20,21 @@ export function Navbar(): React.ReactElement {
     const genericHamburgerLine =
         "h-1 w-6 my-1 rounded-full bg-neutral-800 transition ease transform duration-300";
 
+    const navItems = t("nav_items", { returnObjects: true }) as Array<{
+        label: string;
+        href: string;
+    }>;
+
+    const toggleLanguage = () => {
+        const newLang = i18n.language === "en" ? "id" : "en";
+        i18n.changeLanguage(newLang);
+    };
+
     return (
         <header className="px-8 md:px-20 lg:px-24 py-4 shadow-sm bg-white/80 backdrop-blur-sm sticky top-0 z-50">
             <div className="flex flex-row justify-between items-center">
                 <a
-                    href="#hero"
+                    href="#alpinnz"
                     className="font-semibold text-3xl text-neutral-800 hover:text-neutral-600 transition-colors"
                 >
                     Alpinnz
@@ -56,19 +68,29 @@ export function Navbar(): React.ReactElement {
                     </button>
                 </div>
 
-                {/* Navigation items */}
+                {/* Navigation items + Language button */}
                 <nav
                     className={`${
                         isOpen
                             ? "absolute top-16 right-8 bg-white rounded-xl shadow-md p-4 flex flex-col gap-2 border border-neutral-100"
-                            : "hidden lg:flex lg:flex-row lg:gap-8"
+                            : "hidden lg:flex lg:flex-row lg:gap-8 items-center"
                     }`}
                 >
-                    <NavButton href="#about-me" label="About Me" onClick={() => setIsOpen(false)} />
-                    <NavButton href="#skills" label="Skills" onClick={() => setIsOpen(false)} />
-                    <NavButton href="#timeline" label="Timeline" onClick={() => setIsOpen(false)} />
-                    <NavButton href="#portfolio" label="Portofolio" onClick={() => setIsOpen(false)} />
-                    <NavButton href="#contact" label="Contact" onClick={() => setIsOpen(false)} />
+                    {navItems.map((item, idx) => (
+                        <NavButton
+                            key={idx}
+                            href={item.href}
+                            label={item.label}
+                            onClick={() => setIsOpen(false)}
+                        />
+                    ))}
+                    {/* Language Toggle Button */}
+                    <button
+                        onClick={toggleLanguage}
+                        className="ml-4 px-3 py-1 border border-neutral-300 rounded-full text-sm hover:bg-neutral-100 transition"
+                    >
+                        {i18n.language === "en" ? "ID" : "EN"}
+                    </button>
                 </nav>
             </div>
         </header>
@@ -92,4 +114,3 @@ function NavButton({ label, href, onClick }: NavButtonProps) {
         </a>
     );
 }
-``

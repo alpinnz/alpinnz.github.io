@@ -1,6 +1,12 @@
 import * as React from "react";
 import {motion} from "framer-motion";
 import {Dialog, Transition} from "@headlessui/react";
+import {useTranslation} from "react-i18next";
+
+type PortfolioHeader = {
+    title: string;
+    subtitle: string;
+};
 
 type PortfolioItem = {
     title: string;
@@ -8,120 +14,26 @@ type PortfolioItem = {
     details: string;
     thumbnail: string;
     gallery: string[];
-    category: "Mobile" | "Web" | "Backend" | "Design";
+    category: "mobile" | "frontend" | "backend" | "design";
     techStack: string[];
     liveUrl?: string;
     repoUrl?: string;
 };
 
 export function Portfolio(): React.ReactElement {
-    const categories = ["All", "Mobile", "Web", "Backend", "Design"];
-    const [activeCategory, setActiveCategory] = React.useState("All");
+    const {t} = useTranslation('portfolio');
+
+    const header: PortfolioHeader = t('header', {returnObjects: true}) as PortfolioHeader;
+    const categories = ["all", "mobile", "frontend", "backend", "design"];
+    const [activeCategory, setActiveCategory] = React.useState(categories[0]);
     const [selectedItem, setSelectedItem] = React.useState<PortfolioItem | null>(null);
     const [isOpen, setIsOpen] = React.useState(false);
     const [currentGalleryIndex, setCurrentGalleryIndex] = React.useState(0);
-    const portfolioItems: PortfolioItem[] = [
-        {
-            title: "Smartlink App",
-            descriptions: "POS & Management System — Flutter, Node.js, MySQL",
-            details:
-                "Smartlink App adalah sistem Point of Sales (POS) modern yang mengintegrasikan penjualan, stok, laporan, dan manajemen cabang dalam satu aplikasi mobile. Dikembangkan dengan Flutter untuk UI lintas platform, serta backend Node.js dan MySQL untuk data real-time. Fitur utama termasuk manajemen kasir, laporan penjualan harian, dan sinkronisasi cloud.",
-            thumbnail: `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Smartlink App")}`,
-            gallery: [
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Smartlink App 1")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Smartlink App 2")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Smartlink App 3")}`,
-            ],
-            category: "Mobile",
-            techStack: ["Flutter", "Node.js", "MySQL"],
-            liveUrl: "#",
-            repoUrl: "#",
-        },
-        {
-            title: "Company Dashboard",
-            descriptions: "Web dashboard built using React + Tailwind",
-            details:
-                "Dashboard perusahaan yang digunakan untuk mengelola data operasional, laporan kinerja, dan statistik real-time. Didesain responsif dan interaktif dengan React serta TailwindCSS, memungkinkan pengguna mengakses insight bisnis dari desktop maupun tablet dengan performa optimal.",
-            thumbnail: `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Company Dashboard")}`,
-            gallery: [
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Company Dashboard 1")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Company Dashboard 2")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Company Dashboard 3")}`,
-            ],
-            category: "Web",
-            techStack: ["React", "TailwindCSS"],
-            liveUrl: "#",
-            repoUrl: "#",
-        },
-        {
-            title: "E-commerce App",
-            descriptions: "Mobile commerce app with real-time synchronization — built with Flutter",
-            details:
-                "Aplikasi e-commerce dengan sistem katalog produk, keranjang belanja, dan pembayaran online. Menggunakan Flutter dengan integrasi Firebase untuk autentikasi, database, dan notifikasi real-time. Dirancang dengan pengalaman pengguna intuitif dan antarmuka modern.",
-            thumbnail: `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("E-commerce App")}`,
-            gallery: [
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("E-commerce App 1")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("E-commerce App 2")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("E-commerce App 3")}`,
-            ],
-            category: "Mobile",
-            techStack: ["Flutter", "Firebase"],
-            liveUrl: "#",
-            repoUrl: "#",
-        },
-        {
-            title: "Portfolio Website",
-            descriptions: "Next.js + Vite + Tailwind — personal website",
-            details:
-                "Website portofolio pribadi yang menampilkan profil, keterampilan, dan proyek. Dibangun menggunakan Next.js dengan sistem routing cepat, Vite sebagai bundler, dan TailwindCSS untuk styling yang konsisten. Fokus pada performa tinggi dan tampilan yang profesional.",
-            thumbnail: `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Portfolio Website")}`,
-            gallery: [
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Portfolio Website 1")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Portfolio Website 2")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Portfolio Website 3")}`,
-            ],
-            category: "Web",
-            techStack: ["Next.js", "Vite", "TailwindCSS"],
-            liveUrl: "#",
-            repoUrl: "#",
-        },
-        {
-            title: "Admin Panel",
-            descriptions: "Modern UI for CMS — React + TypeScript",
-            details:
-                "Panel administrasi modern yang digunakan untuk mengelola konten dan pengguna di sistem CMS internal. Menggunakan React dan TypeScript untuk skalabilitas, serta TailwindCSS untuk tampilan antarmuka yang bersih dan mudah disesuaikan.",
-            thumbnail: `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Admin Panel")}`,
-            gallery: [
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Admin Panel 1")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Admin Panel 2")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("Admin Panel 3")}`,
-            ],
-            category: "Web",
-            techStack: ["React", "TypeScript", "TailwindCSS"],
-            liveUrl: "#",
-            repoUrl: "#",
-        },
-        {
-            title: "API Services",
-            descriptions: "Golang + Gin + PostgreSQL RESTful APIs",
-            details:
-                "Kumpulan RESTful API yang dibangun menggunakan Golang dengan framework Gin. Dirancang untuk kecepatan dan keamanan tinggi dengan PostgreSQL sebagai database utama. Mendukung autentikasi JWT, upload file, dan sistem logging terstruktur.",
-            thumbnail: `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("API Services")}`,
-            gallery: [
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("API Services 1")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("API Services 2")}`,
-                `https://dummyimage.com/600x400/808080/d3d3d3&text=${encodeURIComponent("API Services 3")}`,
-            ],
-            category: "Backend",
-            techStack: ["Golang", "Gin", "PostgreSQL"],
-            liveUrl: "#",
-            repoUrl: "#",
-        },
-    ];
+    const portfolioItems: PortfolioItem[] = t('items', {returnObjects: true}) as PortfolioItem[];
 
 
     const filteredItems =
-        activeCategory === "All"
+        activeCategory === "all"
             ? portfolioItems
             : portfolioItems.filter((item) => item.category === activeCategory);
 
@@ -153,10 +65,8 @@ export function Portfolio(): React.ReactElement {
                 transition={{duration: 0.6}}
                 viewport={{once: true}}
             >
-                <h2 className="font-bold text-3xl md:text-4xl text-neutral-900 mb-3">Some Things I’ve Built</h2>
-                <p className="text-neutral-600 font-light max-w-2xl mx-auto">
-                    A showcase of selected projects that highlight my engineering and design capabilities.
-                </p>
+                <h2 className="font-bold text-3xl md:text-4xl text-neutral-900 mb-3">{header.title}</h2>
+                <p className="text-neutral-600 font-light max-w-2xl mx-auto">{header.subtitle}</p>
                 <div className="mt-4 w-24 h-1 bg-primary-500 mx-auto rounded-full"></div>
             </motion.div>
 
@@ -170,7 +80,7 @@ export function Portfolio(): React.ReactElement {
                             activeCategory === cat ? "bg-primary-600 text-neutral-0 shadow-sm" : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200"
                         }`}
                     >
-                        {cat}
+                        {t(`categories.${cat}`)}
                     </button>
                 ))}
             </div>

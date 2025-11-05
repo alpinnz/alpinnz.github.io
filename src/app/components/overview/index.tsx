@@ -1,6 +1,7 @@
 import * as React from "react";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import profile from "../../../assets/png/profile.png";
+import {useTranslation} from "react-i18next";
 
 type OverviewItem = {
     title: string;
@@ -9,13 +10,13 @@ type OverviewItem = {
 };
 
 export function Overview(): React.ReactElement {
+    const {t} = useTranslation('overview');
+
+
     const overviewItem: OverviewItem = {
-        title: "Hello, I’m Alfin — a Software Engineer",
-        descriptions: [
-            "I’m passionate about technology, specializing in full-stack web and mobile development..",
-            "Currently, I work as a Lead Mobile Engineer at PT. Ada Ide Langsung Jalan.",
-        ],
-        cta: "Say Hello",
+        title: t('title'),
+        descriptions: t('descriptions', {returnObjects: true}) as string[],
+        cta: t('cta')
     };
 
     return (
@@ -26,10 +27,10 @@ export function Overview(): React.ReactElement {
             {/* Left: Text content */}
             <motion.div
                 className="flex-1 text-center md:text-left"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
+                initial={{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 0.6}}
+                viewport={{once: true}}
             >
                 <h1 className="font-bold text-3xl md:text-4xl text-neutral-900 leading-snug">
                     {overviewItem.title}
@@ -64,10 +65,10 @@ export function Overview(): React.ReactElement {
             {/* Right: Profile image */}
             <motion.div
                 className="flex-1 flex justify-center md:justify-end"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
+                initial={{opacity: 0, scale: 0.9}}
+                whileInView={{opacity: 1, scale: 1}}
+                transition={{duration: 0.6, delay: 0.2}}
+                viewport={{once: true}}
             >
                 <img
                     src={profile}
