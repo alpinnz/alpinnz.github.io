@@ -1,0 +1,56 @@
+{
+  "header": {
+    "title": "Timeline Perjalanan",
+    "subtitle": "Tonggak profesional dan akademik saya sepanjang perjalanan."
+  },
+  "items": [
+    {
+      "title": "Lead Mobile Engineer di PT. Ada Ide Langsung Jalan",
+      "descriptions": "Memimpin tim mobile engineering untuk produk Smartlink, mengelola sumber daya, melakukan review kode, dan memastikan kolaborasi lintas modul berjalan lancar.",
+      "date_start": "2022-01-01",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_mobile",
+      "link": "https://smartlink.id"
+    },
+    {
+      "title": "Mobile Engineer di PT. Ada Ide Langsung Jalan",
+      "descriptions": "Mengembangkan fitur inti untuk aplikasi kasir Smartlink menggunakan Flutter, menerapkan prinsip DDD dan Clean Architecture.",
+      "date_start": "2021-06-01",
+      "date_end": "2021-12-31",
+      "icon": "ic_mobile",
+      "link": "https://smartlink.id"
+    },
+    {
+      "title": "Back End Engineer di Stellarlab",
+      "descriptions": "Bekerja paruh waktu dengan Node.js dan MongoDB. Bekerja sama dengan mentor untuk meningkatkan sistem backend yang scalable.",
+      "date_start": "2021-10-01",
+      "date_end": "2022-10-01",
+      "icon": "ic_desktop",
+      "link": "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
+    },
+    {
+      "title": "Full Stack Engineer di CV. Gumcode",
+      "descriptions": "Mengembangkan beberapa proyek skala kecil menggunakan Flutter dan CodeIgniter, dengan fokus pada efisiensi pengiriman dan reuse kode.",
+      "date_start": "2021-03-01",
+      "date_end": "2021-05-31",
+      "icon": "ic_desktop"
+    },
+    {
+      "title": "Android Engineer Intern di PT. Aku Peduli Indonesia",
+      "descriptions": "Mengembangkan aplikasi Android menggunakan Kotlin dan Flutter, termasuk IzzyResto, IzzyInventory, dan Rema.",
+      "date_start": "2020-02-01",
+      "date_end": "2020-08-01",
+      "icon": "ic_mobile"
+    },
+    {
+      "title": "Institut Teknologi & Bisnis ASIA",
+      "descriptions": "Sarjana Ilmu Komputer (IPK 3.66)",
+      "date_start": "2017-08-01",
+      "date_end": "2020-02-01",
+      "icon": "ic_school",
+      "link": "https://asia.ac.id"
+    }
+  ],
+  "now": "Sekarang"
+}

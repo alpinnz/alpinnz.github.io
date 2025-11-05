@@ -1,0 +1,7 @@
+{
+  "title": "A little bit about me",
+  "descriptions": [
+    "Born and raised in Malang, Indonesia, I hold a Bachelor’s degree in Computer Science from Institut Teknologi dan Bisnis ASIA Malang. Growing up, I’ve always been fascinated by how technology can simplify people’s lives — which led me to pursue a career in software development.",
+    "I mainly work with Dart and JavaScript, focusing on building scalable mobile applications and implementing clean design patterns such as MVP, MVVM, DDD, and Clean Architecture. Since 2021, I’ve been leading a mobile engineering team, ensuring product quality, mentoring engineers, and exploring new technologies. Outside of work, I enjoy coding side projects and playing basketball."
+  ]
+}

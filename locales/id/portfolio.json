@@ -1,0 +1,105 @@
+{
+  "header": {
+    "title": "Beberapa Proyek yang Saya Buat",
+    "subtitle": "Kumpulan proyek pilihan yang menampilkan kemampuan engineering dan desain saya."
+  },
+  "categories": {
+    "all": "Semua",
+    "mobile": "Mobile",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "design": "Design"
+  },
+  "items": [
+    {
+      "title": "Smartlink App",
+      "descriptions": "Sistem POS & Manajemen — Flutter, Node.js, MySQL",
+      "details": "Smartlink App adalah sistem Point of Sales (POS) modern yang mengintegrasikan penjualan, stok, laporan, dan manajemen cabang dalam satu aplikasi mobile. Dibangun dengan Flutter untuk UI lintas platform dan Node.js + MySQL untuk data real-time. Fitur utama termasuk manajemen kasir, laporan harian, dan sinkronisasi cloud.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%203"
+      ],
+      "category": "mobile",
+      "techStack": ["Flutter", "Node.js", "MySQL"],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "Dashboard Perusahaan",
+      "descriptions": "Dashboard web menggunakan React + Tailwind",
+      "details": "Dashboard perusahaan untuk mengelola data operasional, laporan kinerja, dan statistik real-time. Desain responsif dan interaktif menggunakan React dan TailwindCSS, memungkinkan akses insight bisnis dari desktop maupun tablet dengan performa optimal.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan%203"
+      ],
+      "category": "frontend",
+      "techStack": ["React", "TailwindCSS"],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "Aplikasi E-commerce",
+      "descriptions": "Aplikasi mobile commerce dengan sinkronisasi real-time — dibangun dengan Flutter",
+      "details": "Aplikasi e-commerce dengan katalog produk, keranjang belanja, dan pembayaran online. Dibangun dengan Flutter dan integrasi Firebase untuk autentikasi, database, dan notifikasi real-time. Dirancang dengan UX intuitif dan UI modern.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce%203"
+      ],
+      "category": "mobile",
+      "techStack": ["Flutter", "Firebase"],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "Website Portofolio",
+      "descriptions": "Next.js + Vite + Tailwind — website pribadi",
+      "details": "Website portofolio pribadi yang menampilkan profil, keterampilan, dan proyek. Dibangun menggunakan Next.js dengan sistem routing cepat, Vite sebagai bundler, dan TailwindCSS untuk styling yang konsisten. Fokus pada performa tinggi dan tampilan profesional.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio%203"
+      ],
+      "category": "frontend",
+      "techStack": ["Next.js", "Vite", "TailwindCSS"],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "Admin Panel",
+      "descriptions": "Panel CMS modern — React + TypeScript",
+      "details": "Panel administrasi modern untuk mengelola konten dan pengguna di CMS internal. Menggunakan React dan TypeScript untuk skalabilitas, serta TailwindCSS untuk tampilan antarmuka bersih dan mudah disesuaikan.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%203"
+      ],
+      "category": "frontend",
+      "techStack": ["React", "TypeScript", "TailwindCSS"],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "API Services",
+      "descriptions": "RESTful APIs menggunakan Golang + Gin + PostgreSQL",
+      "details": "Kumpulan RESTful API yang dibangun menggunakan Golang dengan framework Gin. Dirancang untuk kecepatan dan keamanan tinggi dengan PostgreSQL sebagai database utama. Mendukung autentikasi JWT, upload file, dan sistem logging terstruktur.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%203"
+      ],
+      "category": "backend",
+      "techStack": ["Golang", "Gin", "PostgreSQL"],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    }
+  ]
+}

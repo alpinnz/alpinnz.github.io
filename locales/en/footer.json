@@ -1,0 +1,30 @@
+{
+  "header": {
+    "title": "Get in Touch",
+    "subtitle": "Feel free to reach out for collaboration, questions, or just to say hello."
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Your message...",
+    "submit": "Send Message"
+  },
+  "contactItems": [
+    {
+      "title": "Jalan Raya Losawi No. 15, Malang",
+      "icon": "ic_address"
+    },
+    {
+      "title": "alpinnz@gmail.com",
+      "icon": "ic_email",
+      "link": "mailto:alpinnz@gmail.com"
+    },
+    {
+      "title": "github.com/alpinnz",
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz"
+    }
+  ],
+  "copyright": "© {{year}} Alfin Noviaji. All rights reserved."
+}

@@ -1,0 +1,23 @@
+{
+  "header": {
+    "title": "Keahlian Inti Saya",
+    "subtitle": "Perpaduan keahlian mobile, front-end, dan back-end untuk menghadirkan solusi fullstack."
+  },
+  "skills": [
+    {
+      "title": "Pengembangan Mobile",
+      "description": "Berpengalaman dalam membangun aplikasi Android menggunakan Flutter dan React Native, dengan fokus pada arsitektur yang bersih dan kode yang mudah dipelihara.",
+      "tools": ["Flutter","Dart","React Native","JavaScript","TypeScript","Android Studio","Java","Kotlin","MVVM","MVP","Arsitektur Bersih","DDD"]
+    },
+    {
+      "title": "Pengembangan Front-End",
+      "description": "Terampil dalam membuat antarmuka responsif dan dinamis menggunakan React.js dan Next.js, dengan penekanan pada aksesibilitas dan pengalaman pengguna.",
+      "tools": ["React.js","Next.js","TypeScript","Tailwind CSS","Bootstrap","Node.js","Express.js"]
+    },
+    {
+      "title": "Pengembangan Back-End",
+      "description": "Mampu mengembangkan RESTful API yang tangguh menggunakan Node.js dan Golang dengan framework seperti Express.js dan Gin.",
+      "tools": ["Golang","Node.js","Express.js","Gin","GORM","Sequelize","MySQL","MongoDB","Mongoose"]
+    }
+  ]
+}

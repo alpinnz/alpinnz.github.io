@@ -1,0 +1,23 @@
+{
+  "header": {
+    "title": "My Core Skills",
+    "subtitle": "A blend of mobile, front-end, and back-end expertise to deliver fullstack solutions."
+  },
+  "skills": [
+    {
+      "title": "Mobile Development",
+      "description": "Experienced in building Android applications using Flutter and React Native, focusing on clean architecture and maintainable code.",
+      "tools": ["Flutter","Dart","React Native","JavaScript","TypeScript","Android Studio","Java","Kotlin","MVVM","MVP","Clean Architecture","DDD"]
+    },
+    {
+      "title": "Front-End Development",
+      "description": "Skilled in crafting responsive and dynamic interfaces using React.js and Next.js, emphasizing accessibility and user experience.",
+      "tools": ["React.js","Next.js","TypeScript","Tailwind CSS","Bootstrap","Node.js","Express.js"]
+    },
+    {
+      "title": "Back-End Development",
+      "description": "Capable of developing robust RESTful APIs using Node.js and Golang with frameworks like Express.js and Gin.",
+      "tools": ["Golang","Node.js","Express.js","Gin","GORM","Sequelize","MySQL","MongoDB","Mongoose"]
+    }
+  ]
+}

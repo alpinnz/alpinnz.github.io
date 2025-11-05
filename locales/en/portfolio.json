@@ -1,0 +1,127 @@
+{
+  "header": {
+    "title": "Some Things I’ve Built",
+    "subtitle": "A collection of selected projects showcasing my engineering and design skills."
+  },
+  "categories": {
+    "all": "All",
+    "mobile": "Mobile",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "design": "Design"
+  },
+  "items": [
+    {
+      "title": "Smartlink App",
+      "descriptions": "POS & Management System — Flutter, Node.js, MySQL",
+      "details": "Smartlink App is a modern Point of Sales (POS) system integrating sales, stock, reports, and branch management into a single mobile app. Built with Flutter for cross-platform UI and Node.js + MySQL for real-time data. Key features include cashier management, daily reports, and cloud synchronization.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%203"
+      ],
+      "category": "mobile",
+      "techStack": [
+        "Flutter",
+        "Node.js",
+        "MySQL"
+      ],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "Company Dashboard",
+      "descriptions": "Web dashboard built with React + Tailwind",
+      "details": "A company dashboard for managing operational data, performance reports, and real-time statistics. Designed responsively and interactively with React and TailwindCSS, allowing access to business insights from desktop and tablet with optimal performance.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Company%20Dashboard",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Company%20Dashboard%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Company%20Dashboard%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Company%20Dashboard%203"
+      ],
+      "category": "frontend",
+      "techStack": [
+        "React",
+        "TailwindCSS"
+      ],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "E-commerce App",
+      "descriptions": "Mobile commerce app with real-time synchronization — built with Flutter",
+      "details": "An e-commerce application featuring product catalog, shopping cart, and online payments. Built with Flutter and integrated with Firebase for authentication, database, and real-time notifications. Designed with intuitive UX and modern UI.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=E-commerce%20App",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=E-commerce%20App%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=E-commerce%20App%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=E-commerce%20App%203"
+      ],
+      "category": "mobile",
+      "techStack": [
+        "Flutter",
+        "Firebase"
+      ],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "Portfolio Website",
+      "descriptions": "Next.js + Vite + Tailwind — personal website",
+      "details": "A personal portfolio website showcasing profile, skills, and projects. Built using Next.js with fast routing, Vite as the bundler, and TailwindCSS for consistent styling. Focused on high performance and professional appearance.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Portfolio%20Website",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Portfolio%20Website%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Portfolio%20Website%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Portfolio%20Website%203"
+      ],
+      "category": "frontend",
+      "techStack": [
+        "Next.js",
+        "Vite",
+        "TailwindCSS"
+      ],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "Admin Panel",
+      "descriptions": "Modern CMS UI — React + TypeScript",
+      "details": "A modern administration panel for managing content and users in an internal CMS. Built with React and TypeScript for scalability, and TailwindCSS for a clean and easily customizable interface.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%203"
+      ],
+      "category": "frontend",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "TailwindCSS"
+      ],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    },
+    {
+      "title": "API Services",
+      "descriptions": "RESTful APIs with Golang + Gin + PostgreSQL",
+      "details": "A collection of RESTful APIs built using Golang with the Gin framework. Designed for high speed and security with PostgreSQL as the main database. Supports JWT authentication, file uploads, and structured logging.",
+      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services",
+      "gallery": [
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%201",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%202",
+        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%203"
+      ],
+      "category": "backend",
+      "techStack": [
+        "Golang",
+        "Gin",
+        "PostgreSQL"
+      ],
+      "liveUrl": "#",
+      "repoUrl": "#"
+    }
+  ]
+}
