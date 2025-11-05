@@ -1,22 +1,22 @@
 {
   "header": {
-    "title": "My Core Skills",
-    "subtitle": "A blend of mobile, front-end, and back-end expertise to deliver fullstack solutions."
+    "title": "Keahlian Inti Saya",
+    "subtitle": "Perpaduan keahlian mobile, front-end, dan back-end untuk menghadirkan solusi fullstack."
   },
   "skills": [
     {
-      "title": "Mobile Development",
-      "description": "Experienced in building Android applications using Flutter and React Native, focusing on clean architecture and maintainable code.",
-      "tools": ["Flutter","Dart","React Native","JavaScript","TypeScript","Android Studio","Java","Kotlin","MVVM","MVP","Clean Architecture","DDD"]
+      "title": "Pengembangan Mobile",
+      "description": "Berpengalaman dalam membangun aplikasi Android menggunakan Flutter dan React Native, dengan fokus pada arsitektur yang bersih dan kode yang mudah dipelihara.",
+      "tools": ["Flutter","Dart","React Native","JavaScript","TypeScript","Android Studio","Java","Kotlin","MVVM","MVP","Arsitektur Bersih","DDD"]
     },
     {
-      "title": "Front-End Development",
-      "description": "Skilled in crafting responsive and dynamic interfaces using React.js and Next.js, emphasizing accessibility and user experience.",
+      "title": "Pengembangan Front-End",
+      "description": "Terampil dalam membuat antarmuka responsif dan dinamis menggunakan React.js dan Next.js, dengan penekanan pada aksesibilitas dan pengalaman pengguna.",
       "tools": ["React.js","Next.js","TypeScript","Tailwind CSS","Bootstrap","Node.js","Express.js"]
     },
     {
-      "title": "Back-End Development",
-      "description": "Capable of developing robust RESTful APIs using Node.js and Golang with frameworks like Express.js and Gin.",
+      "title": "Pengembangan Back-End",
+      "description": "Mampu mengembangkan RESTful API yang tangguh menggunakan Node.js dan Golang dengan framework seperti Express.js dan Gin.",
       "tools": ["Golang","Node.js","Express.js","Gin","GORM","Sequelize","MySQL","MongoDB","Mongoose"]
     }
   ]

@@ -138,7 +138,7 @@ export function Footer(): React.ReactElement {
 
             {/* Copyright */}
             <div className="mt-16 text-center text-sm text-neutral-500 font-light">
-                {t("copyright", {year: new Date().getFullYear()})}
+                {t("copyright", {year: "2025"})}
             </div>
         </section>
     );

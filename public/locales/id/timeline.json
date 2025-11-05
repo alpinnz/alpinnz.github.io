@@ -1,12 +1,12 @@
 {
   "header": {
-    "title": "Journey Timeline",
+    "title": "Timeline Perjalanan",
     "subtitle": "Tonggak profesional dan akademik saya sepanjang perjalanan."
   },
   "items": [
     {
       "title": "Lead Mobile Engineer di PT. Ada Ide Langsung Jalan",
-      "descriptions": "Memimpin tim mobile engineering untuk produk Smartlink, mengelola sumber daya, melakukan code review, dan memastikan kolaborasi lintas modul berjalan lancar.",
+      "descriptions": "Memimpin tim mobile engineering untuk produk Smartlink, mengelola sumber daya, melakukan review kode, dan memastikan kolaborasi lintas modul berjalan lancar.",
       "date_start": "2022-01-01",
       "date_end": null,
       "currently": true,
@@ -15,7 +15,7 @@
     },
     {
       "title": "Mobile Engineer di PT. Ada Ide Langsung Jalan",
-      "descriptions": "Mengembangkan fitur inti untuk aplikasi kasir Smartlink menggunakan Flutter, mengikuti prinsip DDD dan Clean Architecture.",
+      "descriptions": "Mengembangkan fitur inti untuk aplikasi kasir Smartlink menggunakan Flutter, menerapkan prinsip DDD dan Clean Architecture.",
       "date_start": "2021-06-01",
       "date_end": "2021-12-31",
       "icon": "ic_mobile",
@@ -31,7 +31,7 @@
     },
     {
       "title": "Full Stack Engineer di CV. Gumcode",
-      "descriptions": "Mengembangkan beberapa proyek skala kecil menggunakan Flutter dan CodeIgniter, fokus pada efisiensi pengiriman dan reuse kode.",
+      "descriptions": "Mengembangkan beberapa proyek skala kecil menggunakan Flutter dan CodeIgniter, dengan fokus pada efisiensi pengiriman dan reuse kode.",
       "date_start": "2021-03-01",
       "date_end": "2021-05-31",
       "icon": "ic_desktop"
@@ -45,7 +45,7 @@
     },
     {
       "title": "Institut Teknologi & Bisnis ASIA",
-      "descriptions": "Sarjana Ilmu Komputer (GPA 3.66)",
+      "descriptions": "Sarjana Ilmu Komputer (IPK 3.66)",
       "date_start": "2017-08-01",
       "date_end": "2020-02-01",
       "icon": "ic_school",

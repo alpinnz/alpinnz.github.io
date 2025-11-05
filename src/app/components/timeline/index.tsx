@@ -5,7 +5,6 @@ import ic_school from "../../../assets/svg/ic_school.svg";
 import ic_mobile from "../../../assets/svg/ic_mobile.svg";
 import ic_desktop from "../../../assets/svg/ic_dekstop.svg";
 
-
 type TimelineIHeader = {
     title: string;
     subtitle: string;
@@ -20,6 +19,14 @@ type TimelineItem = {
     currently?: boolean;
     link?: string;
 };
+
+
+const iconMap: Record<string, string> = {
+    "ic_school": ic_school,
+    "ic_mobile": ic_mobile,
+    "ic_desktop": ic_desktop,
+};
+
 
 export function Timeline(): React.ReactElement {
     const {t} = useTranslation('timeline');
@@ -103,23 +110,13 @@ function TimelineCard({data, index}: CardProps): React.ReactElement {
         </motion.div>
     );
 
-    const getIcon = (data: { icon: string }) => {
-        switch (data.icon) {
-            case "ic_school":
-                return ic_school;
-            case "ic_mobile":
-                return ic_mobile;
-            case "ic_desktop":
-                return ic_desktop;
-            default:
-                return ic_school; // default
-        }
-    };
+
+
 
     const iconBase = (
         <div
             className="z-20 rounded-full bg-primary-500 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-2 sm:translate-y-0 flex items-center justify-center shadow-md">
-            <img src={getIcon(data)} alt={data.title} className="w-5 h-5 invert brightness-200"/>
+            <img src={iconMap[data.icon]} alt={data.title} className="w-5 h-5 invert brightness-200"/>
         </div>
     );
 
