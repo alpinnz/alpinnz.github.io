@@ -33,6 +33,57 @@
       "appStoreUrl": "https://apps.apple.com/id/app/id6748695513"
     },
     {
+      "title": "React App Boilerplate",
+      "descriptions": "Scalable React + TypeScript boilerplate — dengan arsitektur modular dan clean architecture",
+      "details": "React App Boilerplate adalah template front-end modern berbasis React 19 + TypeScript 5 dengan arsitektur modular dan terinspirasi dari Clean Architecture & Domain-Driven Design. Menggunakan Vite, TailwindCSS, Zustand, Awilix (DI), dan i18n multi-bahasa. Didesain untuk performa tinggi, maintainability, dan skalabilitas proyek besar. Menyediakan struktur fitur-domain yang terpisah dengan core, shared, dan feature layer.",
+      "thumbnail": "/portfolio/react-app-boilerplate/react-app-boilerplate-1.jpg",
+      "gallery": [
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-1.jpg",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-2.jpg",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-3.jpg",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-4.jpg",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-5.jpg"
+      ],
+      "category": "frontend",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "TailwindCSS",
+        "Zustand",
+        "Awilix",
+        "i18next"
+      ],
+      "liveUrl": "https://github.com/alpinnz/react-app-boilerplate",
+      "repoUrl": "https://github.com/alpinnz/react-app-boilerplate"
+    },
+    {
+      "title": "Go REST API Boilerplate",
+      "descriptions": "Template REST API berbasis Golang — dengan arsitektur modular, multi-environment, dan siap Docker",
+      "details": "Go REST API Boilerplate adalah template REST API siap produksi berbasis Golang dengan arsitektur modular yang terinspirasi dari prinsip Clean Architecture. Mendukung multi-environment (development, testing, production), integrasi penuh dengan Docker, serta dilengkapi fitur penting seperti autentikasi JWT, ORM GORM, manajemen transaksi, dan upload file yang persisten. Cocok untuk membangun aplikasi skala besar seperti platform SaaS, sistem HR, platform pelatihan, atau layanan manajemen data.",
+      "thumbnail": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
+      "gallery": [
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-2.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-3.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-4.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-5.jpg"
+      ],
+      "category": "backend",
+      "techStack": [
+        "Golang",
+        "Gin",
+        "GORM",
+        "Docker",
+        "JWT",
+        "PostgreSQL",
+        "Air"
+      ],
+      "liveUrl": "https://github.com/alpinnz/go-rest-api-boilerplate",
+      "repoUrl": "https://github.com/alpinnz/go-rest-api-boilerplate"
+    },
+
+    {
       "title": "Smartlink App",
       "descriptions": "Sistem POS & Manajemen — Flutter, Node.js, MySQL",
       "details": "Smartlink App adalah sistem Point of Sales (POS) modern yang mengintegrasikan penjualan, stok, laporan, dan manajemen cabang dalam satu aplikasi mobile. Dibangun dengan Flutter untuk UI lintas platform dan Node.js + MySQL untuk data real-time. Fitur utama termasuk manajemen kasir, laporan harian, dan sinkronisasi cloud.",
