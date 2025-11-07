@@ -33,6 +33,56 @@
       "appStoreUrl": "https://apps.apple.com/en/app/id6748695513"
     },
     {
+      "title": "React App Boilerplate",
+      "descriptions": "Scalable React + TypeScript boilerplate — built with modular and clean architecture",
+      "details": "React App Boilerplate is a modern frontend template built with React 19 and TypeScript 5, featuring a modular structure inspired by Clean Architecture and Domain-Driven Design principles. It integrates Vite, TailwindCSS, Zustand, Awilix (DI), and multi-language support via i18next. Designed for high performance, maintainability, and scalability for large-scale projects. Provides clear separation between core, shared, and feature layers for maximum clarity and extensibility.",
+      "thumbnail": "/portfolio/react-app-boilerplate/react-app-boilerplate-1.jpg",
+      "gallery": [
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-1.jpg",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-2.jpg",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-3.jpg",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-4.jpg",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-5.jpg"
+      ],
+      "category": "frontend",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "TailwindCSS",
+        "Zustand",
+        "Awilix",
+        "i18next"
+      ],
+      "liveUrl": "https://github.com/alpinnz/react-app-boilerplate",
+      "repoUrl": "https://github.com/alpinnz/react-app-boilerplate"
+    },
+    {
+      "title": "Go REST API Boilerplate",
+      "descriptions": "Modular Golang REST API template — with multi-environment support and Docker-ready setup",
+      "details": "Go REST API Boilerplate is a production-ready REST API template built with Golang, featuring a modular architecture inspired by Clean Architecture principles. It supports multiple environments (development, testing, production), full Docker integration, and includes essential features such as JWT authentication, GORM ORM, transaction management, and persistent file uploads. Designed for building scalable applications like SaaS platforms, HR systems, training platforms, or data management services.",
+      "thumbnail": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
+      "gallery": [
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-2.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-3.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-4.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-5.jpg"
+      ],
+      "category": "backend",
+      "techStack": [
+        "Golang",
+        "Gin",
+        "GORM",
+        "Docker",
+        "JWT",
+        "PostgreSQL",
+        "Air"
+      ],
+      "liveUrl": "https://github.com/alpinnz/go-rest-api-boilerplate",
+      "repoUrl": "https://github.com/alpinnz/go-rest-api-boilerplate"
+    },
+    {
       "title": "Smartlink App",
       "descriptions": "POS & Management System — Flutter, Node.js, MySQL",
       "details": "Smartlink App is a modern Point of Sales (POS) system integrating sales, stock, reports, and branch management into a single mobile app. Built with Flutter for cross-platform UI and Node.js + MySQL for real-time data. Key features include cashier management, daily reports, and cloud synchronization.",

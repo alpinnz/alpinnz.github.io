@@ -24,16 +24,16 @@ type PortfolioItem = {
 };
 
 export function Portfolio(): React.ReactElement {
-    const {t} = useTranslation('portfolio');
+    const {t} = useTranslation("portfolio");
 
-    const header: PortfolioHeader = t('header', {returnObjects: true}) as PortfolioHeader;
+    const header: PortfolioHeader = t("header", {returnObjects: true}) as PortfolioHeader;
     const categories = ["all", "mobile", "frontend", "backend", "design"];
     const [activeCategory, setActiveCategory] = React.useState(categories[0]);
     const [selectedItem, setSelectedItem] = React.useState<PortfolioItem | null>(null);
     const [isOpen, setIsOpen] = React.useState(false);
     const [currentGalleryIndex, setCurrentGalleryIndex] = React.useState(0);
-    const portfolioItems: PortfolioItem[] = t('items', {returnObjects: true}) as PortfolioItem[];
-
+    const [isImageModalOpen, setIsImageModalOpen] = React.useState(false); // 🆕 state baru
+    const portfolioItems: PortfolioItem[] = t("items", {returnObjects: true}) as PortfolioItem[];
 
     const filteredItems =
         activeCategory === "all"
@@ -80,7 +80,9 @@ export function Portfolio(): React.ReactElement {
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
                         className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                            activeCategory === cat ? "bg-primary-600 text-neutral-0 shadow-sm" : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200"
+                            activeCategory === cat
+                                ? "bg-primary-600 text-neutral-0 shadow-sm"
+                                : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200"
                         }`}
                     >
                         {t(`categories.${cat}`)}
@@ -101,8 +103,10 @@ export function Portfolio(): React.ReactElement {
                         viewport={{once: true}}
                         onClick={() => openModal(item)}
                     >
-                        <div className="h-56 bg-neutral-50 bg-center bg-cover"
-                             style={{backgroundImage: `url(${item.thumbnail})`}}/>
+                        <div
+                            className="h-56 bg-neutral-50 bg-center bg-cover"
+                            style={{backgroundImage: `url(${item.thumbnail})`}}
+                        />
                         <div
                             className="absolute inset-0 bg-primary-600/0 group-hover:bg-primary-600/80 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                             <div className="text-center text-neutral-0 px-6">
@@ -114,7 +118,7 @@ export function Portfolio(): React.ReactElement {
                 ))}
             </motion.div>
 
-            {/* Fullscreen Modal */}
+            {/* Detail Modal */}
             <Transition show={isOpen} as={React.Fragment}>
                 <Dialog as="div" className="fixed inset-0 z-50" open={isOpen} onClose={closeModal}>
                     <div className="fixed inset-0 bg-black/50" aria-hidden="true"/>
@@ -138,8 +142,15 @@ export function Portfolio(): React.ReactElement {
                                             <img
                                                 src={selectedItem.gallery[currentGalleryIndex]}
                                                 alt={selectedItem.title}
-                                                className="w-full h-64 md:h-96 object-cover rounded-lg mb-4"
+                                                className="w-full h-64 md:h-96 object-cover rounded-lg mb-4 cursor-zoom-in transition-transform duration-300 group-hover:scale-[1.02]"
+                                                onClick={() => setIsImageModalOpen(true)}
                                             />
+                                            <div
+                                                className="absolute inset-0 rounded-lg bg-black/0 group-hover:bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-zoom-in"
+                                                onClick={() => setIsImageModalOpen(true)}>
+                                                <span className="text-white text-4xl">🔍</span>
+                                            </div>
+
                                             {selectedItem.gallery.length > 1 && (
                                                 <>
                                                     <button
@@ -159,10 +170,12 @@ export function Portfolio(): React.ReactElement {
                                         </div>
 
                                         {/* Info */}
-                                        <Dialog.Title
-                                            className="text-2xl font-bold text-neutral-900 mb-2">{selectedItem.title}</Dialog.Title>
-                                        <Dialog.Description
-                                            className="text-neutral-700 mb-4">{selectedItem.descriptions}</Dialog.Description>
+                                        <Dialog.Title className="text-2xl font-bold text-neutral-900 mb-2">
+                                            {selectedItem.title}
+                                        </Dialog.Title>
+                                        <Dialog.Description className="text-neutral-700 mb-4">
+                                            {selectedItem.descriptions}
+                                        </Dialog.Description>
                                         <p className="mb-4 text-neutral-600">{selectedItem.details}</p>
 
                                         {/* Tech Stack */}
@@ -179,7 +192,8 @@ export function Portfolio(): React.ReactElement {
                                                 ))}
                                             </div>
                                         </div>
-                                        {/* Modal Footer */}
+
+                                        {/* Footer */}
                                         <div className="flex justify-between items-center mt-6">
                                             <div className="flex flex-wrap gap-3">
                                                 {selectedItem.liveUrl && (
@@ -233,6 +247,30 @@ export function Portfolio(): React.ReactElement {
                                 )}
                             </Dialog.Panel>
                         </Transition.Child>
+                    </div>
+                </Dialog>
+            </Transition>
+
+            {/* 🆕 Full Image Modal */}
+            <Transition show={isImageModalOpen} as={React.Fragment}>
+                <Dialog
+                    as="div"
+                    className="fixed inset-0 z-[60]"
+                    open={isImageModalOpen}
+                    onClose={() => setIsImageModalOpen(false)}
+                >
+                    <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4">
+                        <img
+                            src={selectedItem?.gallery[currentGalleryIndex]}
+                            alt={selectedItem?.title}
+                            className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
+                        />
+                        <button
+                            onClick={() => setIsImageModalOpen(false)}
+                            className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-primary-400 transition"
+                        >
+                            ✕
+                        </button>
                     </div>
                 </Dialog>
             </Transition>
