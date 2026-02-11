@@ -5,6 +5,15 @@
   },
   "items": [
     {
+      "title": "Kontributor Open Source – kekland Inspector BorderRadius (LTRB)",
+      "descriptions": "Menambahkan ekstraksi BorderRadius (LTRB) untuk RenderDecoratedBox/BoxDecoration di Inspector agar audit UI dan verifikasi design token lebih mudah.",
+      "date_start": "2026-02-11",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_github",
+      "link": "https://github.com/kekland/inspector/pull/22"
+    },
+    {
       "title": "Lead Mobile Engineer di PT. Ada Ide Langsung Jalan",
       "descriptions": "Memimpin tim mobile engineering untuk produk Smartlink, mengelola sumber daya, melakukan review kode, dan memastikan kolaborasi lintas modul berjalan lancar.",
       "date_start": "2022-01-01",

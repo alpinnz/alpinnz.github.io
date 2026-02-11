@@ -5,6 +5,23 @@
   },
   "items": [
     {
+      "title": "Open Source Contributor – kekland Inspector BorderRadius (LTRB)",
+      "descriptions": "Added BorderRadius (LTRB) extraction for RenderDecoratedBox/BoxDecoration in the Inspector to improve UI audit and design-token verification workflows.",
+      "date_start": "2026-02-11",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_github",
+      "link": "https://github.com/kekland/inspector/pull/22"
+    },
+    {
+      "title": "Open Source Contributor – flutter_image_compress_common iOS 26 Fix",
+      "descriptions": "Fixed iOS 26 build issues by migrating metadata handling from ALAsset to PHAsset, adding compatibility wrappers, and enabling iCloud asset access.",
+      "date_start": "2025-09-21",
+      "date_end": "2026-02-11",
+      "icon": "ic_github",
+      "link": "https://github.com/fluttercandies/flutter_image_compress/pull/343"
+    },
+    {
       "title": "Lead Mobile Engineer at PT. Ada Ide Langsung Jalan",
       "descriptions": "Leading a mobile engineering team focused on Smartlink products, managing resources, conducting code reviews, and ensuring smooth cross-module collaboration.",
       "date_start": "2022-01-01",

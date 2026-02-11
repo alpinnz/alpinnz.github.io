@@ -8,9 +8,69 @@
     "mobile": "Mobile",
     "frontend": "Frontend",
     "backend": "Backend",
-    "design": "Design"
+    "design": "Design",
+    "packages": "Library"
   },
   "items": [
+    {
+      "title": "localization_gen (pub.dev)",
+      "descriptions": "Generator lokalisasi type-safe untuk Flutter/Dart dengan dukungan nested JSON dan CLI yang lengkap.",
+      "details": "Generator kode lokalisasi yang fokus pada DX: dukungan nested JSON, struktur modular, interpolasi parameter, pluralization, gender/context forms, watch mode, dan workflow CLI multi-perintah. Dirancang agar i18n tetap strongly typed dan scalable seiring aplikasi berkembang.",
+      "thumbnail": "https://dummyimage.com/600x400/7c3aed/ffffff&text=localization_gen",
+      "gallery": [
+        "https://dummyimage.com/1200x800/7c3aed/ffffff&text=localization_gen"
+      ],
+      "category": "packages",
+      "techStack": [
+        "Dart",
+        "Flutter",
+        "Code Generation",
+        "CLI",
+        "i18n"
+      ],
+      "created_at": "2026-01-27",
+      "liveUrl": "https://pub.dev/packages/localization_gen",
+      "repoUrl": "https://github.com/alpinnz/localization_gen"
+    },
+    {
+      "title": "automation_keys_gen (pub.dev)",
+      "descriptions": "Menjaga kontrak automation key untuk UI test Flutter dengan validasi CLI dan generator dokumentasi.",
+      "details": "Utility testing Flutter untuk menstandarkan automation key di seluruh codebase. Tersedia CLI untuk validasi dan generator dokumentasi Markdown agar QA dan developer menggunakan kontrak yang sama. Membantu mengurangi flaky UI test akibat key yang tidak konsisten / tidak terdokumentasi.",
+      "thumbnail": "https://dummyimage.com/600x400/0ea5e9/ffffff&text=automation_keys_gen",
+      "gallery": [
+        "https://dummyimage.com/1200x800/0ea5e9/ffffff&text=automation_keys_gen"
+      ],
+      "category": "packages",
+      "techStack": [
+        "Dart",
+        "Flutter",
+        "Testing",
+        "CLI",
+        "Documentation"
+      ],
+      "created_at": "2026-01-27",
+      "liveUrl": "https://pub.dev/packages/automation_keys_gen",
+      "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
+    },
+    {
+      "title": "idle_activity_detector (pub.dev)",
+      "descriptions": "Mendeteksi user idle/aktif dengan dukungan event browser yang lengkap dan timeout yang bisa dikonfigurasi.",
+      "details": "Package Flutter cross-platform untuk mendeteksi status user idle vs aktif. Di web, package ini mendengarkan event mouse/keyboard/scroll/touch agar lebih akurat. Cocok untuk auto-logout, peringatan session timeout, dan tracking engagement.",
+      "thumbnail": "https://dummyimage.com/600x400/22c55e/ffffff&text=idle_activity_detector",
+      "gallery": [
+        "https://dummyimage.com/1200x800/22c55e/ffffff&text=idle_activity_detector"
+      ],
+      "category": "packages",
+      "techStack": [
+        "Dart",
+        "Flutter",
+        "Web Events",
+        "State Management"
+      ],
+      "created_at": "2025-12-24",
+      "liveUrl": "https://pub.dev/packages/idle_activity_detector",
+      "repoUrl": "https://github.com/alpinnz/idle_activity_detector"
+    },
     {
       "title": "HORA Pro",
       "descriptions": "Sistem Manajemen SDM & Karyawan — Aplikasi Mobile untuk Absensi, Shift, dan Penilaian Kinerja",
@@ -28,6 +88,7 @@
         "Integrasi GPS",
         "Deteksi Wajah"
       ],
+      "created_at": "2025-01-01",
       "webUrl": "https://horaapp.id",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en",
       "appStoreUrl": "https://apps.apple.com/id/app/id6748695513"
@@ -54,6 +115,7 @@
         "Awilix",
         "i18next"
       ],
+      "created_at": "2024-06-01",
       "liveUrl": "https://github.com/alpinnz/react-app-boilerplate",
       "repoUrl": "https://github.com/alpinnz/react-app-boilerplate"
     },
@@ -79,121 +141,9 @@
         "PostgreSQL",
         "Air"
       ],
+      "created_at": "2024-01-01",
       "liveUrl": "https://github.com/alpinnz/go-rest-api-boilerplate",
       "repoUrl": "https://github.com/alpinnz/go-rest-api-boilerplate"
-    },
-
-    {
-      "title": "Smartlink App",
-      "descriptions": "Sistem POS & Manajemen — Flutter, Node.js, MySQL",
-      "details": "Smartlink App adalah sistem Point of Sales (POS) modern yang mengintegrasikan penjualan, stok, laporan, dan manajemen cabang dalam satu aplikasi mobile. Dibangun dengan Flutter untuk UI lintas platform dan Node.js + MySQL untuk data real-time. Fitur utama termasuk manajemen kasir, laporan harian, dan sinkronisasi cloud.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%203"
-      ],
-      "category": "mobile",
-      "techStack": [
-        "Flutter",
-        "Node.js",
-        "MySQL"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "Dashboard Perusahaan",
-      "descriptions": "Dashboard web menggunakan React + Tailwind",
-      "details": "Dashboard perusahaan untuk mengelola data operasional, laporan kinerja, dan statistik real-time. Desain responsif dan interaktif menggunakan React dan TailwindCSS, memungkinkan akses insight bisnis dari desktop maupun tablet dengan performa optimal.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Dashboard%20Perusahaan%203"
-      ],
-      "category": "frontend",
-      "techStack": [
-        "React",
-        "TailwindCSS"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "Aplikasi E-commerce",
-      "descriptions": "Aplikasi mobile commerce dengan sinkronisasi real-time — dibangun dengan Flutter",
-      "details": "Aplikasi e-commerce dengan katalog produk, keranjang belanja, dan pembayaran online. Dibangun dengan Flutter dan integrasi Firebase untuk autentikasi, database, dan notifikasi real-time. Dirancang dengan UX intuitif dan UI modern.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Aplikasi%20E-commerce%203"
-      ],
-      "category": "mobile",
-      "techStack": [
-        "Flutter",
-        "Firebase"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "Website Portofolio",
-      "descriptions": "Next.js + Vite + Tailwind — website pribadi",
-      "details": "Website portofolio pribadi yang menampilkan profil, keterampilan, dan proyek. Dibangun menggunakan Next.js dengan sistem routing cepat, Vite sebagai bundler, dan TailwindCSS untuk styling yang konsisten. Fokus pada performa tinggi dan tampilan profesional.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Website%20Portofolio%203"
-      ],
-      "category": "frontend",
-      "techStack": [
-        "Next.js",
-        "Vite",
-        "TailwindCSS"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "Admin Panel",
-      "descriptions": "Panel CMS modern — React + TypeScript",
-      "details": "Panel administrasi modern untuk mengelola konten dan pengguna di CMS internal. Menggunakan React dan TypeScript untuk skalabilitas, serta TailwindCSS untuk tampilan antarmuka bersih dan mudah disesuaikan.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%203"
-      ],
-      "category": "frontend",
-      "techStack": [
-        "React",
-        "TypeScript",
-        "TailwindCSS"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "API Services",
-      "descriptions": "RESTful APIs menggunakan Golang + Gin + PostgreSQL",
-      "details": "Kumpulan RESTful API yang dibangun menggunakan Golang dengan framework Gin. Dirancang untuk kecepatan dan keamanan tinggi dengan PostgreSQL sebagai database utama. Mendukung autentikasi JWT, upload file, dan sistem logging terstruktur.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%203"
-      ],
-      "category": "backend",
-      "techStack": [
-        "Golang",
-        "Gin",
-        "PostgreSQL"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
     }
   ]
 }

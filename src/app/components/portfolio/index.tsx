@@ -14,8 +14,9 @@ type PortfolioItem = {
     details: string;
     thumbnail: string;
     gallery: string[];
-    category: "mobile" | "frontend" | "backend" | "design";
+    category: "mobile" | "frontend" | "backend" | "design" | "packages";
     techStack: string[];
+    created_at?: string;
     liveUrl?: string;
     repoUrl?: string;
     webUrl?: string;
@@ -27,7 +28,7 @@ export function Portfolio(): React.ReactElement {
     const {t} = useTranslation("portfolio");
 
     const header: PortfolioHeader = t("header", {returnObjects: true}) as PortfolioHeader;
-    const categories = ["all", "mobile", "frontend", "backend", "design"];
+    const categories = ["all", "packages", "mobile", "frontend", "backend", "design"];
     const [activeCategory, setActiveCategory] = React.useState(categories[0]);
     const [selectedItem, setSelectedItem] = React.useState<PortfolioItem | null>(null);
     const [isOpen, setIsOpen] = React.useState(false);
@@ -35,10 +36,18 @@ export function Portfolio(): React.ReactElement {
     const [isImageModalOpen, setIsImageModalOpen] = React.useState(false); // 🆕 state baru
     const portfolioItems: PortfolioItem[] = t("items", {returnObjects: true}) as PortfolioItem[];
 
+    const sortedItems = React.useMemo(() => {
+        return [...portfolioItems].sort((a, b) => {
+            const aTime = a.created_at ? Date.parse(a.created_at) : 0;
+            const bTime = b.created_at ? Date.parse(b.created_at) : 0;
+            return bTime - aTime;
+        });
+    }, [portfolioItems]);
+
     const filteredItems =
         activeCategory === "all"
-            ? portfolioItems
-            : portfolioItems.filter((item) => item.category === activeCategory);
+            ? sortedItems
+            : sortedItems.filter((item) => item.category === activeCategory);
 
     const openModal = (item: PortfolioItem) => {
         setSelectedItem(item);

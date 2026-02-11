@@ -8,9 +8,69 @@
     "mobile": "Mobile",
     "frontend": "Frontend",
     "backend": "Backend",
-    "design": "Design"
+    "design": "Design",
+    "packages": "Packages"
   },
   "items": [
+    {
+      "title": "localization_gen (pub.dev)",
+      "descriptions": "Type-safe localization generator for Flutter/Dart with nested JSON support and a powerful CLI.",
+      "details": "A localization code generator focused on DX: nested JSON support, modular organization, parameter interpolation, pluralization, gender/context forms, watch mode, and multi-command CLI workflows. Designed to keep i18n strongly typed and scalable as your app grows.",
+      "thumbnail": "https://dummyimage.com/600x400/7c3aed/ffffff&text=localization_gen",
+      "gallery": [
+        "https://dummyimage.com/1200x800/7c3aed/ffffff&text=localization_gen"
+      ],
+      "category": "packages",
+      "techStack": [
+        "Dart",
+        "Flutter",
+        "Code Generation",
+        "CLI",
+        "i18n"
+      ],
+      "created_at": "2026-01-27",
+      "liveUrl": "https://pub.dev/packages/localization_gen",
+      "repoUrl": "https://github.com/alpinnz/localization_gen"
+    },
+    {
+      "title": "automation_keys_gen (pub.dev)",
+      "descriptions": "Enforces a consistent automation key contract for Flutter UI tests with CLI validation and docs generation.",
+      "details": "A Flutter testing utility that standardizes automation keys across the codebase. Includes a CLI for validation and generates Markdown documentation so QA and developers share the same contract. Helps prevent flaky UI tests caused by inconsistent or undocumented keys.",
+      "thumbnail": "https://dummyimage.com/600x400/0ea5e9/ffffff&text=automation_keys_gen",
+      "gallery": [
+        "https://dummyimage.com/1200x800/0ea5e9/ffffff&text=automation_keys_gen"
+      ],
+      "category": "packages",
+      "techStack": [
+        "Dart",
+        "Flutter",
+        "Testing",
+        "CLI",
+        "Documentation"
+      ],
+      "created_at": "2026-01-27",
+      "liveUrl": "https://pub.dev/packages/automation_keys_gen",
+      "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
+    },
+    {
+      "title": "idle_activity_detector (pub.dev)",
+      "descriptions": "Detects user idle/activity states with comprehensive browser event support and configurable timeouts.",
+      "details": "A cross-platform Flutter package for detecting user idle vs active state. On web it listens to mouse/keyboard/scroll/touch events for better accuracy. Useful for auto-logout, session timeout warnings, and engagement tracking.",
+      "thumbnail": "https://dummyimage.com/600x400/22c55e/ffffff&text=idle_activity_detector",
+      "gallery": [
+        "https://dummyimage.com/1200x800/22c55e/ffffff&text=idle_activity_detector"
+      ],
+      "category": "packages",
+      "techStack": [
+        "Dart",
+        "Flutter",
+        "Web Events",
+        "State Management"
+      ],
+      "created_at": "2025-12-24",
+      "liveUrl": "https://pub.dev/packages/idle_activity_detector",
+      "repoUrl": "https://github.com/alpinnz/idle_activity_detector"
+    },
     {
       "title": "HORA Pro",
       "descriptions": "HR & Employee Management System — Mobile App for Attendance, Shift, and Performance Tracking",
@@ -28,6 +88,7 @@
         "GPS Integration",
         "Facial Recognition"
       ],
+      "created_at": "2025-01-01",
       "webUrl": "https://horaapp.id",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en",
       "appStoreUrl": "https://apps.apple.com/en/app/id6748695513"
@@ -54,6 +115,7 @@
         "Awilix",
         "i18next"
       ],
+      "created_at": "2024-06-01",
       "liveUrl": "https://github.com/alpinnz/react-app-boilerplate",
       "repoUrl": "https://github.com/alpinnz/react-app-boilerplate"
     },
@@ -79,120 +141,9 @@
         "PostgreSQL",
         "Air"
       ],
+      "created_at": "2024-01-01",
       "liveUrl": "https://github.com/alpinnz/go-rest-api-boilerplate",
       "repoUrl": "https://github.com/alpinnz/go-rest-api-boilerplate"
-    },
-    {
-      "title": "Smartlink App",
-      "descriptions": "POS & Management System — Flutter, Node.js, MySQL",
-      "details": "Smartlink App is a modern Point of Sales (POS) system integrating sales, stock, reports, and branch management into a single mobile app. Built with Flutter for cross-platform UI and Node.js + MySQL for real-time data. Key features include cashier management, daily reports, and cloud synchronization.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Smartlink%20App%203"
-      ],
-      "category": "mobile",
-      "techStack": [
-        "Flutter",
-        "Node.js",
-        "MySQL"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "Company Dashboard",
-      "descriptions": "Web dashboard built with React + Tailwind",
-      "details": "A company dashboard for managing operational data, performance reports, and real-time statistics. Designed responsively and interactively with React and TailwindCSS, allowing access to business insights from desktop and tablet with optimal performance.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Company%20Dashboard",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Company%20Dashboard%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Company%20Dashboard%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Company%20Dashboard%203"
-      ],
-      "category": "frontend",
-      "techStack": [
-        "React",
-        "TailwindCSS"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "E-commerce App",
-      "descriptions": "Mobile commerce app with real-time synchronization — built with Flutter",
-      "details": "An e-commerce application featuring product catalog, shopping cart, and online payments. Built with Flutter and integrated with Firebase for authentication, database, and real-time notifications. Designed with intuitive UX and modern UI.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=E-commerce%20App",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=E-commerce%20App%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=E-commerce%20App%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=E-commerce%20App%203"
-      ],
-      "category": "mobile",
-      "techStack": [
-        "Flutter",
-        "Firebase"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "Portfolio Website",
-      "descriptions": "Next.js + Vite + Tailwind — personal website",
-      "details": "A personal portfolio website showcasing profile, skills, and projects. Built using Next.js with fast routing, Vite as the bundler, and TailwindCSS for consistent styling. Focused on high performance and professional appearance.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Portfolio%20Website",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Portfolio%20Website%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Portfolio%20Website%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Portfolio%20Website%203"
-      ],
-      "category": "frontend",
-      "techStack": [
-        "Next.js",
-        "Vite",
-        "TailwindCSS"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "Admin Panel",
-      "descriptions": "Modern CMS UI — React + TypeScript",
-      "details": "A modern administration panel for managing content and users in an internal CMS. Built with React and TypeScript for scalability, and TailwindCSS for a clean and easily customizable interface.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=Admin%20Panel%203"
-      ],
-      "category": "frontend",
-      "techStack": [
-        "React",
-        "TypeScript",
-        "TailwindCSS"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
-    },
-    {
-      "title": "API Services",
-      "descriptions": "RESTful APIs with Golang + Gin + PostgreSQL",
-      "details": "A collection of RESTful APIs built using Golang with the Gin framework. Designed for high speed and security with PostgreSQL as the main database. Supports JWT authentication, file uploads, and structured logging.",
-      "thumbnail": "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services",
-      "gallery": [
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%201",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%202",
-        "https://dummyimage.com/600x400/808080/d3d3d3&text=API%20Services%203"
-      ],
-      "category": "backend",
-      "techStack": [
-        "Golang",
-        "Gin",
-        "PostgreSQL"
-      ],
-      "liveUrl": "#",
-      "repoUrl": "#"
     }
   ]
 }
