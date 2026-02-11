@@ -5,13 +5,30 @@
   },
   "items": [
     {
+      "title": "Open Source Contributor – kekland Inspector BorderRadius (LTRB)",
+      "descriptions": "Added BorderRadius (LTRB) extraction for RenderDecoratedBox/BoxDecoration in the Inspector to improve UI audit and design-token verification workflows.",
+      "date_start": "2026-02-11",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_github",
+      "link": "https://github.com/kekland/inspector/pull/22"
+    },
+    {
+      "title": "Open Source Contributor – flutter_image_compress_common iOS 26 Fix",
+      "descriptions": "Fixed iOS 26 build issues by migrating metadata handling from ALAsset to PHAsset, adding compatibility wrappers, and enabling iCloud asset access.",
+      "date_start": "2025-09-21",
+      "date_end": "2026-02-11",
+      "icon": "ic_github",
+      "link": "https://github.com/fluttercandies/flutter_image_compress/pull/343"
+    },
+    {
       "title": "Lead Mobile Engineer at PT. Ada Ide Langsung Jalan",
-      "descriptions": "Leading a mobile engineering team focused on Smartlink products, managing resources, conducting code reviews, and ensuring smooth cross-module collaboration.",
+      "descriptions": "Lead the mobile team for Smartlink products: Smartlink Kasir (Android POS) and Smartlink Owner (management dashboard). Own planning and delivery, mentor engineers, set technical standards, review code, and coordinate cross-module work to keep releases stable and maintainable.",
       "date_start": "2022-01-01",
       "date_end": null,
       "currently": true,
       "icon": "ic_mobile",
-      "link": "https://smartlink.id"
+      "link": "https://smartlink.id/"
     },
     {
       "title": "Mobile Engineer at PT. Ada Ide Langsung Jalan",
@@ -44,10 +61,24 @@
       "icon": "ic_mobile"
     },
     {
+      "title": "Microsoft Technology Associate: HTML5 Application Development Fundamentals (MTA)",
+      "descriptions": "Certification by Microsoft. Credential ID: wMRzb-HanT.",
+      "date_start": "2021-02-01",
+      "date_end": null,
+      "icon": "ic_school"
+    },
+    {
+      "title": "Dicoding Indonesia – Belajar Dasar Pemrograman Web",
+      "descriptions": "Web programming fundamentals course certification by Dicoding Indonesia (expired). Credential ID: KEXL41KNYXG2.",
+      "date_start": "2019-09-01",
+      "date_end": "2022-09-01",
+      "icon": "ic_school"
+    },
+    {
       "title": "Institut Teknologi & Bisnis ASIA",
-      "descriptions": "Bachelor in Computer Science (GPA 3.66)",
-      "date_start": "2017-08-01",
-      "date_end": "2020-02-01",
+      "descriptions": "Bachelor in Computer Science (GPA 3.66). Final project: implemented k-means clustering for Bukit Delight cafe orders, categorizing menu items (low/medium/best-selling) in a web ordering system for customers, cashiers, and admins.",
+      "date_start": "2017-10-01",
+      "date_end": "2021-02-01",
       "icon": "ic_school",
       "link": "https://asia.ac.id"
     }
