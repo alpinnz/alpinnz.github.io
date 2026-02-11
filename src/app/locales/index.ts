@@ -14,8 +14,6 @@ i18n
         ns: ['overview', 'timeline', 'about_me', 'skills', 'portfolio', 'navbar', 'footer'],
         defaultNS: 'overview',
         interpolation: {escapeValue: false}
-    }).then(r => {
-    console.log(r);
-});
+    });
 
 export default i18n;
