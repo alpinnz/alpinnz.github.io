@@ -17,11 +17,10 @@ type TimelineItem = {
     link?: string;
 };
 
-
 const iconMap: Record<string, string> = {
     "ic_school": "/assets/icons/ic_school.svg",
     "ic_mobile": "/assets/icons/ic_mobile.svg",
-    "ic_desktop": "/assets/icons/ic_dekstop.svg",
+    "ic_desktop": "/assets/icons/ic_desktop.svg",
     "ic_github": "/assets/icons/ic_github.svg",
 };
 

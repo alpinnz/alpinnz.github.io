@@ -1,23 +1,23 @@
 {
   "header": {
     "title": "My Core Skills",
-    "subtitle": "A blend of mobile, front-end, and back-end expertise to deliver fullstack solutions."
+    "subtitle": "I build maintainable products across mobile, web, and APIs—with clear architecture, strong contracts, and reproducible engineering workflows."
   },
   "skills": [
     {
-      "title": "Mobile Development",
-      "description": "Experienced in building Android applications using Flutter and React Native, focusing on clean architecture and maintainable code.",
-      "tools": ["Flutter","Dart","React Native","JavaScript","TypeScript","Android Studio","Java","Kotlin","MVVM","MVP","Clean Architecture","DDD"]
+      "title": "Mobile Engineer",
+      "description": "Build production mobile apps and reusable modules with clean architecture, scalable navigation/DI, and state management that fits the product and team.",
+      "tools": ["Flutter","Dart","React Native","Kotlin","Provider","Riverpod","BLoC/Cubit","GetX","Redux","get_it","injectable","go_router","Clean Architecture","DDD","MVVM","MVP"]
     },
     {
-      "title": "Front-End Development",
-      "description": "Skilled in crafting responsive and dynamic interfaces using React.js and Next.js, emphasizing accessibility and user experience.",
-      "tools": ["React.js","Next.js","TypeScript","Tailwind CSS","Bootstrap","Node.js","Express.js"]
+      "title": "Frontend Engineer",
+      "description": "Build responsive web UIs and maintain scalable front-end architecture with modern tooling and clean modular patterns.",
+      "tools": ["React","Next.js","Vue","TypeScript","Tailwind CSS","Vite","Zustand","i18next","Redux"]
     },
     {
-      "title": "Back-End Development",
-      "description": "Capable of developing robust RESTful APIs using Node.js and Golang with frameworks like Express.js and Gin.",
-      "tools": ["Golang","Node.js","Express.js","Gin","GORM","Sequelize","MySQL","MongoDB","Mongoose"]
+      "title": "Backend Engineer",
+      "description": "Develop robust RESTful APIs with clean architecture, strong validation, and production-ready practices when needed.",
+      "tools": ["Golang","Gin","Node.js","Express.js","PostgreSQL","MySQL","Redis","Docker"]
     }
   ]
 }
