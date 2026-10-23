@@ -1,0 +1,86 @@
+{
+  "@@module": "timeline",
+  "@@locale": "id",
+  "header": {
+    "title": "Timeline Perjalanan",
+    "subtitle": "Pilihan perjalanan kerja, pendidikan, pengembangan perangkat bantu, dan kontribusi open source."
+  },
+  "items": {
+    "0": {
+      "title": "Kontributor Open Source – kekland Inspector BorderRadius (LTRB)",
+      "descriptions": "Menambahkan nilai radius sudut LTR dari BoxDecoration ke Inspector untuk membantu audit UI dan pemeriksaan design token.",
+      "date_start": "2026-02-11",
+      "date_end": "2026-03-30",
+      "icon": "ic_github",
+      "link": "https://github.com/kekland/inspector/pull/22"
+    },
+    "1": {
+      "title": "Pengembangan Perangkat Bantu Open Source",
+      "descriptions": "Mengembangkan dan memelihara perangkat bantu Dart/Flutter dan TypeScript: localization_gen untuk lokalisasi bertipe, automation_keys_gen untuk konsistensi kunci pengujian UI, serta Valfuse Node untuk validasi formulir, lokalisasi, dan adapter framework.",
+      "date_start": "2025-11-28",
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz/valfuse-node"
+    },
+    "2": {
+      "title": "Kontribusi Open Source – Usulan Kompatibilitas iOS 26",
+      "descriptions": "Mengusulkan migrasi penanganan metadata dari ALAsset ke PHAsset untuk mengatasi masalah kompatibilitas iOS 26. Pull request tersebut kemudian ditutup setelah maintainer menggantinya dengan perbaikan lain.",
+      "date_start": "2025-09-21",
+      "date_end": "2026-07-12",
+      "icon": "ic_github",
+      "link": "https://github.com/fluttercandies/flutter_image_compress/pull/343"
+    },
+    "3": {
+      "title": "Lead Mobile Engineer di PT. Ada Ide Langsung Jalan",
+      "descriptions": "Memimpin tim mobile untuk produk Smartlink Kasir (POS Android) dan Smartlink Owner (dashboard manajemen). Tanggung jawab saya mencakup perencanaan dan peluncuran, membimbing engineer, menetapkan standar teknis, meninjau kode, serta mengoordinasikan pekerjaan lintas modul agar rilis tetap stabil dan mudah dipelihara.",
+      "date_start": "2022-01-01",
+      "icon": "ic_mobile",
+      "link": "https://smartlink.id/"
+    },
+    "4": {
+      "title": "Back End Engineer di Stellarlab",
+      "descriptions": "Bekerja paruh waktu menggunakan Node.js dan MongoDB, serta berkolaborasi dengan mentor untuk mengembangkan sistem backend yang dapat diskalakan.",
+      "date_start": "2021-10-01",
+      "date_end": "2022-10-01",
+      "icon": "ic_desktop",
+      "link": "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
+    },
+    "5": {
+      "title": "Mobile Engineer di PT. Ada Ide Langsung Jalan",
+      "descriptions": "Mengembangkan fitur inti untuk aplikasi kasir Smartlink menggunakan Flutter, menerapkan prinsip DDD dan Clean Architecture.",
+      "date_start": "2021-06-01",
+      "date_end": "2021-12-31",
+      "icon": "ic_mobile",
+      "link": "https://smartlink.id"
+    },
+    "6": {
+      "title": "Full Stack Engineer di CV. Gumcode",
+      "descriptions": "Mengembangkan beberapa proyek skala kecil menggunakan Flutter dan CodeIgniter, dengan fokus pada pengerjaan yang efisien dan penggunaan ulang kode.",
+      "date_start": "2021-03-01",
+      "date_end": "2021-05-31",
+      "icon": "ic_desktop"
+    },
+    "7": {
+      "title": "Microsoft Technology Associate: HTML5 Application Development Fundamentals (MTA)",
+      "descriptions": "Sertifikasi Microsoft. ID kredensial: wMRzb-HanT.",
+      "date_start": "2021-02-01",
+      "icon": "ic_school"
+    },
+    "8": {
+      "title": "Android Engineer Intern di PT. Aku Peduli Indonesia",
+      "descriptions": "Mengembangkan aplikasi Android menggunakan Kotlin dan Flutter, termasuk IzzyResto, IzzyInventory, dan Rema.",
+      "date_start": "2020-02-01",
+      "date_end": "2020-08-01",
+      "icon": "ic_mobile"
+    },
+    "9": {
+      "title": "Institut Teknologi & Bisnis ASIA",
+      "descriptions": "Sarjana Ilmu Komputer (IPK 3,66).",
+      "date_start": "2017-10-01",
+      "date_end": "2021-02-01",
+      "icon": "ic_school",
+      "link": "https://asia.ac.id"
+    }
+  },
+  "now": "Sekarang",
+  "view_link": "Buka tautan"
+}

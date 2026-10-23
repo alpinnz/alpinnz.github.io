@@ -1,0 +1,211 @@
+{
+  "@@module": "portfolio",
+  "@@locale": "en",
+  "header": {
+    "title": "Some Things I’ve Built",
+    "subtitle": "Selected work in product engineering, developer tooling, and application security."
+  },
+  "categories": {
+    "all": "All",
+    "mobile": "Mobile",
+    "frontend": "Frontend",
+    "fullstack": "Full stack",
+    "backend": "Backend",
+    "design": "Design",
+    "packages": "Packages"
+  },
+  "features_label": "What it includes",
+  "empty_state": "No projects in this category yet.",
+  "project_details_label": "View {title} project details",
+  "close_details_label": "Close project details",
+  "tech_stack_label": "Tech stack",
+  "live_label": "Live",
+  "repository_label": "Repository",
+  "website_label": "Website",
+  "play_store_label": "Play Store",
+  "app_store_label": "App Store",
+  "items": {
+    "0": {
+      "title": "Valfuse Node",
+      "descriptions": "A TypeScript toolkit for form state, validation, localization, and code generation across Node.js, React, Vue, and Express.",
+      "details": "A modular toolkit for framework-neutral form state and schema validation, localization, React and Vue adapters, Express middleware, and Node.js asset and barrel generation.",
+      "features": {
+        "0": "@valfuse-node/core/assets and @valfuse-node/core/barrel: Node.js APIs for typed asset paths and TypeScript barrel generation.",
+        "1": "@valfuse-node/core/express: Express middleware for request validation and localization.",
+        "2": "@valfuse-node/form and @valfuse-node/validation: framework-neutral form state, schemas, rules, validation, and transformations.",
+        "3": "@valfuse-node/localization: CLI compiler, locale validators, and browser runtime.",
+        "4": "@valfuse-node/react: useValfuseForm, <ValfuseController>, and <LocalizationProvider>; the core facade exports useReactValfuseForm.",
+        "5": "@valfuse-node/vue: useValfuseForm, localization provider, and composables; the core facade exports useVueValfuseForm."
+      },
+      "thumbnail": "/portfolio/valfuse-node/valfuse-node.svg",
+      "gallery": {
+        "0": "/portfolio/valfuse-node/valfuse-node.svg"
+      },
+      "category": "packages",
+      "techStack": {
+        "0": "TypeScript",
+        "1": "Node.js",
+        "2": "React",
+        "3": "Vue",
+        "4": "Express",
+        "5": "CLI",
+        "6": "i18n"
+      },
+      "created_at": "2026-05-23",
+      "webUrl": "https://www.npmjs.com/org/valfuse-node",
+      "repoUrl": "https://github.com/alpinnz/valfuse-node"
+    },
+    "1": {
+      "title": "localization_gen",
+      "descriptions": "A strongly typed localization generator for Flutter and Dart, with nested JSON support and a CLI.",
+      "details": "A localization code generator for Flutter and Dart. It supports nested JSON, modular organization, parameter interpolation, pluralization, gender and context forms, watch mode, and a multi-command CLI. Generated localization APIs are strongly typed.",
+      "thumbnail": "/portfolio/localization-gen/localization-gen.svg",
+      "gallery": {
+        "0": "/portfolio/localization-gen/localization-gen.svg"
+      },
+      "category": "packages",
+      "techStack": {
+        "0": "Dart",
+        "1": "Flutter",
+        "2": "Code Generation",
+        "3": "CLI",
+        "4": "i18n"
+      },
+      "created_at": "2026-01-27",
+      "liveUrl": "https://pub.dev/packages/localization_gen",
+      "repoUrl": "https://github.com/alpinnz/localization_gen"
+    },
+    "2": {
+      "title": "automation_keys_gen",
+      "descriptions": "Keeps Flutter UI test automation keys consistent with CLI validation and documentation generation.",
+      "details": "A Flutter testing utility that standardizes automation keys across a codebase. Its CLI validates keys and generates Markdown documentation, giving QA and development teams a shared reference and helping prevent UI test failures caused by inconsistent or undocumented keys.",
+      "thumbnail": "/portfolio/automation-keys-gen/automation-keys-gen.svg",
+      "gallery": {
+        "0": "/portfolio/automation-keys-gen/automation-keys-gen.svg"
+      },
+      "category": "packages",
+      "techStack": {
+        "0": "Dart",
+        "1": "Flutter",
+        "2": "Testing",
+        "3": "CLI",
+        "4": "Documentation"
+      },
+      "created_at": "2026-01-27",
+      "liveUrl": "https://pub.dev/packages/automation_keys_gen",
+      "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
+    },
+    "3": {
+      "title": "idle_activity_detector",
+      "descriptions": "Detects user activity and idle states with browser event support and configurable timeouts.",
+      "details": "A cross-platform Flutter package for detecting whether a user is active or idle. On the web, it listens for mouse, keyboard, scroll, and touch events. It can support automatic logout, session timeout warnings, and activity tracking.",
+      "thumbnail": "/portfolio/idle-activity-detector/idle-activity-detector.svg",
+      "gallery": {
+        "0": "/portfolio/idle-activity-detector/idle-activity-detector.svg"
+      },
+      "category": "packages",
+      "techStack": {
+        "0": "Dart",
+        "1": "Flutter",
+        "2": "Web Events",
+        "3": "State Management"
+      },
+      "created_at": "2025-12-24",
+      "liveUrl": "https://pub.dev/packages/idle_activity_detector"
+    },
+    "4": {
+      "title": "Frontend Input Sanitization Study",
+      "descriptions": "A React and Flutter security study with HTML sanitization demos and automated tests against a 60+ case XSS payload set.",
+      "details": "Compares whitelist-based HTML sanitization in React and Flutter. The public repository includes working demos, a shared set of more than 60 XSS payload cases, and automated tests for both implementations.",
+      "features": {
+        "0": "React demo with whitelist-based HTML sanitization.",
+        "1": "Flutter demo with a matching sanitization flow.",
+        "2": "Automated test suites using more than 60 XSS payload cases."
+      },
+      "thumbnail": "/portfolio/research-sanitazion-frontend/input-sanitization-study.svg",
+      "gallery": {
+        "0": "/portfolio/research-sanitazion-frontend/input-sanitization-study.svg"
+      },
+      "category": "frontend",
+      "techStack": {
+        "0": "React",
+        "1": "TypeScript",
+        "2": "Flutter",
+        "3": "Dart",
+        "4": "XSS Testing"
+      },
+      "created_at": "2025-10-17",
+      "repoUrl": "https://github.com/alpinnz/research-sanitazion-frontend"
+    },
+    "5": {
+      "title": "Bukit Delight Cafe Ordering System",
+      "descriptions": "A full-stack cafe ordering and management app with menu sales grouping using k-means clustering.",
+      "details": "An academic full-stack project for customer ordering, cashier operations, and administration. It applies k-means clustering to order data to group menu items by sales performance.",
+      "features": {
+        "0": "Customer ordering and menu browsing.",
+        "1": "Cashier and administrator workflows.",
+        "2": "K-means clustering to group menu items by sales performance."
+      },
+      "thumbnail": "/portfolio/bukit-delight-node/bukit-delight.svg",
+      "gallery": {
+        "0": "/portfolio/bukit-delight-node/bukit-delight.svg"
+      },
+      "category": "fullstack",
+      "techStack": {
+        "0": "React",
+        "1": "Express",
+        "2": "MongoDB",
+        "3": "JavaScript",
+        "4": "K-means"
+      },
+      "created_at": "2020-11-10"
+    },
+    "6": {
+      "title": "HORA Pro",
+      "descriptions": "Mobile app for employee attendance, location-based check-ins, leave requests, and team communication.",
+      "details": "HORA Pro supports location-based check-in and check-out with selfie verification. The app also includes geolocation, leave management, chat, and attendance reports.",
+      "thumbnail": "/portfolio/hora-pro/hora-pro-1.jpg",
+      "gallery": {
+        "0": "/portfolio/hora-pro/hora-pro-1.jpg",
+        "1": "/portfolio/hora-pro/hora-pro-2.jpg"
+      },
+      "category": "mobile",
+      "techStack": {
+        "0": "Flutter",
+        "1": ".NET",
+        "2": "MySQL",
+        "3": "GPS Integration",
+        "4": "Facial Recognition"
+      },
+      "created_at": "2025-01-01",
+      "webUrl": "https://horaapp.id",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en",
+      "appStoreUrl": "https://apps.apple.com/en/app/id6748695513"
+    },
+    "7": {
+      "title": "Go REST API Boilerplate",
+      "descriptions": "A modular Go REST API starter with environment configuration and Docker support.",
+      "details": "A Go REST API starter with separate development, testing, and production configuration. It includes Docker support, JWT authentication, GORM, transaction handling, and persistent file uploads. Its modular structure draws on Clean Architecture principles.",
+      "thumbnail": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
+      "gallery": {
+        "0": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
+        "1": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-2.jpg",
+        "2": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-3.jpg",
+        "3": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-4.jpg",
+        "4": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-5.jpg"
+      },
+      "category": "backend",
+      "techStack": {
+        "0": "Golang",
+        "1": "Gin",
+        "2": "GORM",
+        "3": "Docker",
+        "4": "JWT",
+        "5": "PostgreSQL",
+        "6": "Air"
+      },
+      "created_at": "2024-01-01",
+      "repoUrl": "https://github.com/alpinnz/go-rest-api-boilerplate"
+    }
+  }
+}

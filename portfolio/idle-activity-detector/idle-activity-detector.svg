@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="66" y1="42" x2="1116" y2="639" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102923"/>
+      <stop offset="1" stop-color="#174c40"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="795" y1="299" x2="1085" y2="299" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#86efac"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v675H0z"/>
+  <circle cx="925" cy="335" r="253" fill="#34d399" fill-opacity=".08"/>
+  <text x="78" y="96" fill="#86efac" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="3">FLUTTER · WEB EVENTS</text>
+  <text x="78" y="189" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700">Know when users</text>
+  <text x="78" y="249" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700">are active.</text>
+  <text x="80" y="305" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="21">Configurable idle detection for</text>
+  <text x="80" y="337" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="21">session-aware app experiences.</text>
+  <rect x="78" y="383" width="166" height="44" rx="22" fill="#fff" fill-opacity=".1" stroke="#86efac" stroke-opacity=".4"/>
+  <text x="106" y="411" fill="#dcfce7" font-family="Arial,sans-serif" font-size="16" font-weight="600">Active · listening</text>
+  <text x="78" y="563" fill="#9bb9ae" font-family="Arial,sans-serif" font-size="16" letter-spacing="1">IDLE ACTIVITY DETECTOR</text>
+  <rect x="690" y="146" width="395" height="374" rx="24" fill="#0d201b" stroke="#86efac" stroke-opacity=".25" stroke-width="2"/>
+  <circle cx="887" cy="264" r="71" fill="#15372d" stroke="#4ade80" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M887 223v44l31 20" stroke="#86efac" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M887 179v15m0 140v15m85-85h-15m-140 0h-15m145-60-11 11m-99 99-11 11m0-121 11 11m99 99 11 11" stroke="#6ee7b7" stroke-opacity=".7" stroke-width="4" stroke-linecap="round"/>
+  <text x="811" y="373" fill="#ecfdf5" font-family="Arial,sans-serif" font-size="20" font-weight="700">Activity window</text>
+  <text x="817" y="400" fill="#9ca3af" font-family="Arial,sans-serif" font-size="14">Timeout configurable by the app</text>
+  <path d="M738 450h44l20-24 24 48 25-31 20 7h38l19-23 23 23h88" stroke="url(#pulse)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="738" cy="450" r="5" fill="#86efac"/><circle cx="1039" cy="450" r="5" fill="#2dd4bf"/>
+  <rect x="729" y="478" width="86" height="25" rx="12" fill="#15372d"/><text x="748" y="495" fill="#bbf7d0" font-family="Arial,sans-serif" font-size="12">mouse</text>
+  <rect x="827" y="478" width="86" height="25" rx="12" fill="#15372d"/><text x="847" y="495" fill="#bbf7d0" font-family="Arial,sans-serif" font-size="12">keyboard</text>
+  <rect x="925" y="478" width="86" height="25" rx="12" fill="#15372d"/><text x="948" y="495" fill="#bbf7d0" font-family="Arial,sans-serif" font-size="12">touch</text>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "@@module": "navbar",
+  "@@locale": "en",
+  "language_label": "Language",
+  "menu_open": "Open navigation",
+  "menu_close": "Close navigation",
+  "nav_items": {
+    "0": {
+      "label": "About Me",
+      "href": "#about-me"
+    },
+    "1": {
+      "label": "Skills",
+      "href": "#skills"
+    },
+    "2": {
+      "label": "Timeline",
+      "href": "#timeline"
+    },
+    "3": {
+      "label": "Portfolio",
+      "href": "#portfolio"
+    },
+    "4": {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://alpinnz.github.io/sitemap.xml

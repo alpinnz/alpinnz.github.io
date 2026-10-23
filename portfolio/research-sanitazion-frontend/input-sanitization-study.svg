@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="43" x2="1137" y2="639" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181b31"/>
+      <stop offset="1" stop-color="#222b4b"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="822" y1="210" x2="1002" y2="427" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#86efac"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v675H0z"/>
+  <circle cx="920" cy="330" r="249" fill="#38bdf8" fill-opacity=".06"/>
+  <text x="78" y="96" fill="#93c5fd" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="3">REACT · FLUTTER · SECURITY STUDY</text>
+  <text x="78" y="191" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="700">Safer HTML</text>
+  <text x="78" y="250" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="700">rendering, tested.</text>
+  <text x="80" y="307" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="21">Compare sanitization across two</text>
+  <text x="80" y="339" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="21">front-end implementations.</text>
+  <rect x="78" y="386" width="218" height="46" rx="23" fill="#fff" fill-opacity=".08" stroke="#93c5fd" stroke-opacity=".4"/>
+  <text x="102" y="415" fill="#dbeafe" font-family="Arial,sans-serif" font-size="16" font-weight="600">60+ XSS test cases</text>
+  <text x="78" y="563" fill="#9ba8c3" font-family="Arial,sans-serif" font-size="16" letter-spacing="1">INPUT SANITIZATION RESEARCH</text>
+  <rect x="676" y="158" width="183" height="230" rx="18" fill="#2c1b2b" stroke="#fb7185" stroke-opacity=".5" stroke-width="2"/>
+  <rect x="695" y="179" width="145" height="32" rx="10" fill="#4b2333"/>
+  <circle cx="713" cy="195" r="5" fill="#fb7185"/><text x="727" y="201" fill="#fecdd3" font-family="Arial,sans-serif" font-size="13" font-weight="700">UNTRUSTED</text>
+  <text x="697" y="257" fill="#fda4af" font-family="monospace" font-size="17">&lt;img src=x</text>
+  <text x="697" y="285" fill="#fda4af" font-family="monospace" font-size="17">onerror=...</text>
+  <path d="M697 321h139" stroke="#fb7185" stroke-opacity=".3" stroke-width="2"/>
+  <text x="698" y="353" fill="#fda4af" font-family="Arial,sans-serif" font-size="14">Payload input</text>
+  <path d="M874 273h50m-13-13 13 13-13 13" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1007 168 1094 199v61c0 62-36 107-87 132-51-25-87-70-87-132v-61l87-31Z" fill="#163d38" stroke="url(#shield)" stroke-width="4"/>
+  <path d="m967 277 27 27 55-64" stroke="#bbf7d0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="959" y="427" fill="#d1fae5" font-family="Arial,sans-serif" font-size="16" font-weight="700">SANITIZED OUTPUT</text>
+  <text x="960" y="456" fill="#94a3b8" font-family="Arial,sans-serif" font-size="14">Whitelist-based examples</text>
+  <rect x="677" y="481" width="481" height="43" rx="13" fill="#15283b"/>
+  <text x="710" y="509" fill="#bfdbfe" font-family="Arial,sans-serif" font-size="16" font-weight="600">Automated tests · React + Flutter demos</text>
+</svg>
