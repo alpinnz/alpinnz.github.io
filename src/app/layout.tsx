@@ -37,7 +37,7 @@ const structuredData = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName} | Software Engineer`,
+    default: `${siteName} | Full Stack Developer`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
@@ -47,17 +47,17 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: `${siteUrl}/`,
     siteName,
-    title: `${siteName} | Software Engineer`,
+    title: `${siteName} | Full Stack Developer`,
     description: siteDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} | Software Engineer`,
+    title: `${siteName} | Full Stack Developer`,
     description: siteDescription,
     images: [
       {
         url: `${siteUrl}/opengraph-image`,
-        alt: "Alfin Noviaji, Software Engineer in Malang, Indonesia",
+        alt: "Alfin Noviaji, Full Stack Developer in Malang, Indonesia",
       },
     ],
   },

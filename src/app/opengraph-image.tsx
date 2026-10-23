@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const dynamic = "force-static";
 
 export const alt =
-  "Alfin Noviaji, Software Engineer in Malang, Indonesia";
+  "Alfin Noviaji, Full Stack Developer in Malang, Indonesia";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -55,7 +55,7 @@ export default function OpenGraphImage() {
         <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div style={{ fontSize: 72, fontWeight: 700 }}>Alfin Noviaji</div>
           <div style={{ fontSize: 34, color: "#86c9f1" }}>
-            Software Engineer
+            Full Stack Developer
           </div>
           <div style={{ fontSize: 25, color: "#d3d3d3" }}>
             Web · Mobile · Product Engineering
