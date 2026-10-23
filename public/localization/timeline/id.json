@@ -84,6 +84,7 @@
     },
     "10": {
       "title": "Microsoft Technology Associate: HTML5 Application Development Fundamentals (MTA)",
+      "cv_section": "certification",
       "descriptions": "Sertifikasi Microsoft. ID kredensial: wMRzb-HanT.",
       "date_start": "2021-02-01",
       "icon": "ic_school"
@@ -97,6 +98,7 @@
     },
     "12": {
       "title": "Institut Teknologi & Bisnis ASIA",
+      "cv_section": "education",
       "descriptions": "Sarjana Ilmu Komputer (IPK 3,66).",
       "date_start": "2017-10-01",
       "date_end": "2021-02-01",

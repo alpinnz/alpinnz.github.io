@@ -8,8 +8,8 @@
   },
   "cta": "Hubungi Saya",
   "cv_cta": "Unduh CV",
-  "cv_file": "/Alfin-Noviaji-CV-ID.pdf",
-  "cv_view": "Lihat CV online",
-  "cv_page": "/cv-id.html",
+  "cv_generating": "Menyiapkan CV…",
+  "cv_success": "CV siap. Unduhan telah dimulai.",
+  "cv_error": "CV belum dapat dibuat. Silakan coba lagi.",
   "portrait_alt": "Foto Alfin Noviaji"
 }

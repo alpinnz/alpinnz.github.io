@@ -6,8 +6,8 @@
   ],
   "cta": "Contact Me",
   "cv_cta": "Download CV",
-  "cv_file": "/Alfin-Noviaji-CV-EN.pdf",
-  "cv_view": "View CV online",
-  "cv_page": "/cv-en.html",
+  "cv_generating": "Preparing CV…",
+  "cv_success": "CV is ready. Your download has started.",
+  "cv_error": "Could not create the CV. Please try again.",
   "portrait_alt": "Portrait of Alfin Noviaji"
 }
