@@ -1,56 +1,44 @@
 {
   "name": "alpinnz.github.io",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.1",
-  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
-    "prepare": "husky",
-    "predeploy": "npm run format:check && npm run lint && npm run typecheck && npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "typecheck": "tsc -b --pretty false",
+    "localization:generate": "node scripts/prepare-localizations.mjs && valfuse-localization generate",
+    "localization:validate": "node scripts/prepare-localizations.mjs && valfuse-localization validate",
+    "predeploy": "npm run lint && npm run typecheck && npm run build",
+    "deploy": "gh-pages -d out",
+    "predev": "npm run localization:generate",
+    "dev": "next dev",
+    "prebuild": "npm run localization:generate",
+    "build": "next build",
+    "prelint": "npm run localization:generate",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "preview": "vite preview"
+    "pretypecheck": "npm run localization:generate",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.9",
-    "framer-motion": "^12.23.24",
-    "i18next": "^25.6.0",
-    "i18next-http-backend": "^3.0.2",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-i18next": "^16.2.4"
+    "@headlessui/react": "^2.2.10",
+    "@valfuse-node/form": "^0.3.5",
+    "@valfuse-node/localization": "^0.5.0",
+    "@valfuse-node/react": "^0.4.0",
+    "@valfuse-node/validation": "^0.1.0",
+    "framer-motion": "^12.43.0",
+    "next": "16.4.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react-swc": "^4.2.0",
-    "autoprefixer": "^10.4.21",
-    "baseline-browser-mapping": "^2.9.19",
-    "eslint": "^9.39.1",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.24",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.2",
     "gh-pages": "^6.3.0",
-    "globals": "^16.5.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.4.0",
-    "postcss": "^8.5.6",
-    "prettier": "^3.9.10",
-    "tailwindcss": "^3.4.17",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.46.3",
-    "vite": "^7.1.12"
-  },
-  "lint-staged": {
-    "*.{js,mjs,cjs,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{css,html,json,md,yml,yaml}": "prettier --write"
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5"
   }
 }

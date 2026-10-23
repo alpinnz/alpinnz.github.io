@@ -1,0 +1,100 @@
+{
+  "header": {
+    "title": "Journey Timeline",
+    "subtitle": "Selected roles, education, developer tools, and open-source contributions."
+  },
+  "items": [
+    {
+      "title": "Open Source Contributor – kekland Inspector BorderRadius (LTRB)",
+      "descriptions": "Exposed LTR corner-radius values from BoxDecoration in the Inspector, improving UI audits and design-token checks.",
+      "date_start": "2026-02-11",
+      "date_end": "2026-03-30",
+      "currently": false,
+      "icon": "ic_github",
+      "link": "https://github.com/kekland/inspector/pull/22"
+    },
+    {
+      "title": "Open-source Developer Tooling",
+      "descriptions": "Building and maintaining tools across Dart/Flutter and TypeScript: localization_gen for typed localization, automation_keys_gen for consistent UI test keys, and Valfuse Node for form validation, localization, and framework adapters.",
+      "date_start": "2025-11-28",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz/valfuse-node"
+    },
+    {
+      "title": "Open Source Contribution – iOS 26 Compatibility Proposal",
+      "descriptions": "Proposed migrating metadata handling from ALAsset to PHAsset to address iOS 26 compatibility. The pull request was later closed after maintainers replaced it with another fix.",
+      "date_start": "2025-09-21",
+      "date_end": "2026-07-12",
+      "currently": false,
+      "icon": "ic_github",
+      "link": "https://github.com/fluttercandies/flutter_image_compress/pull/343"
+    },
+    {
+      "title": "Lead Mobile Engineer at PT. Ada Ide Langsung Jalan",
+      "descriptions": "Lead the mobile team for Smartlink products: Smartlink Kasir (Android POS) and Smartlink Owner (management dashboard). Own planning and delivery, mentor engineers, set technical standards, review code, and coordinate cross-module work to keep releases stable and maintainable.",
+      "date_start": "2022-01-01",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_mobile",
+      "link": "https://smartlink.id/"
+    },
+    {
+      "title": "Back End Engineer at Stellarlab",
+      "descriptions": "Worked part-time with Node.js and MongoDB. Collaborated closely with mentors to improve scalable backend systems.",
+      "date_start": "2021-10-01",
+      "date_end": "2022-10-01",
+      "currently": false,
+      "icon": "ic_desktop",
+      "link": "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
+    },
+    {
+      "title": "Mobile Engineer at PT. Ada Ide Langsung Jalan",
+      "descriptions": "Developed core features for the Smartlink cashier app using Flutter, following DDD and Clean Architecture principles.",
+      "date_start": "2021-06-01",
+      "date_end": "2021-12-31",
+      "currently": false,
+      "icon": "ic_mobile",
+      "link": "https://smartlink.id"
+    },
+    {
+      "title": "Full Stack Engineer at CV. Gumcode",
+      "descriptions": "Developed several small-scale projects using Flutter and CodeIgniter, focusing on efficient delivery and reusability.",
+      "date_start": "2021-03-01",
+      "date_end": "2021-05-31",
+      "currently": false,
+      "icon": "ic_desktop",
+      "link": null
+    },
+    {
+      "title": "Microsoft Technology Associate: HTML5 Application Development Fundamentals (MTA)",
+      "descriptions": "Certification by Microsoft. Credential ID: wMRzb-HanT.",
+      "date_start": "2021-02-01",
+      "date_end": null,
+      "currently": false,
+      "icon": "ic_school",
+      "link": null
+    },
+    {
+      "title": "Android Engineer Intern at PT. Aku Peduli Indonesia",
+      "descriptions": "Developed Android apps using Kotlin and Flutter, including IzzyResto, IzzyInventory, and Rema.",
+      "date_start": "2020-02-01",
+      "date_end": "2020-08-01",
+      "currently": false,
+      "icon": "ic_mobile",
+      "link": null
+    },
+    {
+      "title": "Institut Teknologi & Bisnis ASIA",
+      "descriptions": "Bachelor in Computer Science (GPA 3.66).",
+      "date_start": "2017-10-01",
+      "date_end": "2021-02-01",
+      "currently": false,
+      "icon": "ic_school",
+      "link": "https://asia.ac.id"
+    }
+  ],
+  "now": "Now",
+  "view_link": "View link"
+}

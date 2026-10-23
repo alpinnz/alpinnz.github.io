@@ -1,0 +1,44 @@
+{
+  "header": {
+    "title": "Hubungi Saya",
+    "subtitle": "Hubungi saya untuk membahas proyek, bertanya, atau sekadar menyapa."
+  },
+  "form": {
+    "labels": {
+      "name": "Nama",
+      "email": "Email",
+      "phone": "Telepon",
+      "message": "Pesan"
+    },
+    "name": "Nama",
+    "email": "Email",
+    "phone": "Telepon",
+    "message": "Pesan Anda...",
+    "submit": "Kirim Pesan",
+    "sending": "Mengirim...",
+    "success": "Pesan terkirim. Saya akan segera menghubungi Anda.",
+    "error": "Pesan gagal dikirim. Coba lagi atau kirim email langsung.",
+    "not_configured": "Form kontak belum dikonfigurasi. Silakan kirim email ke alpinnz@gmail.com."
+  },
+  "validation": {
+    "required": "Kolom ini wajib diisi.",
+    "email": "Masukkan alamat email yang valid."
+  },
+  "contactItems": [
+    {
+      "title": "Jalan Raya Losawi No. 15, Malang",
+      "icon": "ic_address"
+    },
+    {
+      "title": "alpinnz@gmail.com",
+      "icon": "ic_email",
+      "link": "mailto:alpinnz@gmail.com"
+    },
+    {
+      "title": "github.com/alpinnz",
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz"
+    }
+  ],
+  "copyright": "© {year} Alfin Noviaji. Semua hak dilindungi."
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="48" x2="1080" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18132e"/>
+      <stop offset="1" stop-color="#321c64"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="785" y1="112" x2="1052" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v675H0z"/>
+  <circle cx="954" cy="333" r="245" fill="#8b5cf6" fill-opacity=".11"/>
+  <path d="M0 542c198-70 327-59 471 0v133H0V542Z" fill="#fff" fill-opacity=".025"/>
+  <text x="78" y="96" fill="#c4b5fd" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="3">DART · FLUTTER · CLI</text>
+  <text x="78" y="188" fill="#fff" font-family="Arial,sans-serif" font-size="50" font-weight="700">Type-safe</text>
+  <text x="78" y="248" fill="#fff" font-family="Arial,sans-serif" font-size="50" font-weight="700">localization</text>
+  <text x="80" y="300" fill="#d6d3e4" font-family="Arial,sans-serif" font-size="22">JSON / JSONC → generated APIs</text>
+  <rect x="78" y="350" width="185" height="43" rx="21" fill="#fff" fill-opacity=".1" stroke="#c4b5fd" stroke-opacity=".35"/>
+  <text x="104" y="378" fill="#ede9fe" font-family="Arial,sans-serif" font-size="16" font-weight="600">Nested keys · CLI</text>
+  <rect x="78" y="520" width="392" height="1" fill="#fff" fill-opacity=".14"/>
+  <text x="78" y="563" fill="#a8a3bc" font-family="Arial,sans-serif" font-size="16" letter-spacing="1">LOCALIZATION GENERATOR</text>
+  <rect x="688" y="142" width="378" height="382" rx="24" fill="#171426" stroke="#c4b5fd" stroke-opacity=".3" stroke-width="2"/>
+  <rect x="716" y="169" width="322" height="52" rx="12" fill="#2a2440"/>
+  <circle cx="741" cy="195" r="6" fill="#f87171"/><circle cx="762" cy="195" r="6" fill="#fbbf24"/><circle cx="783" cy="195" r="6" fill="#4ade80"/>
+  <text x="814" y="201" fill="#c4b5fd" font-family="Arial,sans-serif" font-size="15" font-weight="700">app_common_*.json</text>
+  <rect x="716" y="242" width="322" height="112" rx="14" fill="#241e38"/>
+  <text x="740" y="277" fill="#a78bfa" font-family="Arial,sans-serif" font-size="15">@@locale</text><text x="837" y="277" fill="#e9d5ff" font-family="Arial,sans-serif" font-size="15">"en"</text>
+  <text x="740" y="311" fill="#a78bfa" font-family="Arial,sans-serif" font-size="15">welcome_user</text><text x="872" y="311" fill="#bbf7d0" font-family="Arial,sans-serif" font-size="15">"Welcome, {name}"</text>
+  <rect x="716" y="376" width="322" height="119" rx="14" fill="#202a35"/>
+  <circle cx="756" cy="416" r="15" fill="#4ade80" fill-opacity=".18"/><path d="m749 416 5 5 10-11" stroke="#4ade80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="785" y="422" fill="#ecfdf5" font-family="Arial,sans-serif" font-size="17" font-weight="700">Generated, checked, typed</text>
+  <text x="742" y="460" fill="#9ca3af" font-family="Arial,sans-serif" font-size="15">Compile-time keys · consistent locales</text>
+  <path d="M1054 295h48m-12-12 12 12-12 12" stroke="url(#glow)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

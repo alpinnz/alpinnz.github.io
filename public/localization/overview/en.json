@@ -1,0 +1,11 @@
+{
+  "@@module": "overview",
+  "@@locale": "en",
+  "title": "Hello, I’m Alfin — a Software Engineer",
+  "descriptions": {
+    "0": "I build full-stack products across mobile, frontend, and backend—from user-facing apps to the APIs behind them.",
+    "1": "Currently, I work as a Lead Mobile Engineer at PT. Ada Ide Langsung Jalan."
+  },
+  "cta": "Say Hello",
+  "download_cta": "Download CV (PDF)"
+}

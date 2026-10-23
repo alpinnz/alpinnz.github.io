@@ -1,0 +1,13 @@
+localization:
+  input_dir: public/localization
+  output_dir: src/generated/localizations
+  framework: react
+  base_locale: en
+  fallback_locale: id
+  strict: true
+  namespace_prefix: module
+  validation:
+    max_depth: 8
+    require_key_parity: true
+    require_placeholder_parity: true
+    require_structured_parity: true

@@ -1,0 +1,46 @@
+{
+  "@@module": "footer",
+  "@@locale": "en",
+  "header": {
+    "title": "Get in Touch",
+    "subtitle": "Get in touch about a project, a question, or just to say hello."
+  },
+  "form": {
+    "labels": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message"
+    },
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Your message...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent. I’ll get back to you soon.",
+    "error": "Your message could not be sent. Please try again or email me directly.",
+    "not_configured": "The contact form is not configured yet. Please email alpinnz@gmail.com directly."
+  },
+  "validation": {
+    "required": "This field is required.",
+    "email": "Enter a valid email address."
+  },
+  "contactItems": {
+    "0": {
+      "title": "Jalan Raya Losawi No. 15, Malang",
+      "icon": "ic_address"
+    },
+    "1": {
+      "title": "alpinnz@gmail.com",
+      "icon": "ic_email",
+      "link": "mailto:alpinnz@gmail.com"
+    },
+    "2": {
+      "title": "github.com/alpinnz",
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz"
+    }
+  },
+  "copyright": "© {year} Alfin Noviaji. All rights reserved."
+}

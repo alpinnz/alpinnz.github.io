@@ -1,0 +1,166 @@
+{
+  "header": {
+    "title": "Beberapa Proyek yang Saya Buat",
+    "subtitle": "Pilihan karya di bidang rekayasa produk, perangkat bantu developer, dan keamanan aplikasi."
+  },
+  "categories": {
+    "all": "Semua",
+    "mobile": "Aplikasi mobile",
+    "frontend": "Frontend",
+    "fullstack": "Full-stack",
+    "backend": "Backend",
+    "design": "Desain",
+    "packages": "Paket"
+  },
+  "features_label": "Yang tersedia",
+  "empty_state": "Belum ada proyek untuk kategori ini.",
+  "project_details_label": "Lihat detail proyek {title}",
+  "close_details_label": "Tutup detail proyek",
+  "tech_stack_label": "Teknologi",
+  "live_label": "Demo langsung",
+  "repository_label": "Repositori",
+  "website_label": "Situs web",
+  "play_store_label": "Play Store",
+  "app_store_label": "App Store",
+  "items": [
+    {
+      "title": "Valfuse Node",
+      "descriptions": "Toolkit TypeScript untuk state formulir, validasi, lokalisasi, dan pembuatan kode di Node.js, React, Vue, dan Express.",
+      "details": "Toolkit modular untuk state formulir dan validasi schema lintas framework, lokalisasi, adapter React dan Vue, middleware Express, serta pembuatan aset dan barrel melalui API Node.js.",
+      "features": [
+        "@valfuse-node/core/assets dan @valfuse-node/core/barrel: API Node.js untuk path aset bertipe dan pembuatan barrel TypeScript.",
+        "@valfuse-node/core/express: middleware Express untuk validasi request dan lokalisasi.",
+        "@valfuse-node/form dan @valfuse-node/validation: state formulir lintas framework, schema, rules, validasi, dan transformasi.",
+        "@valfuse-node/localization: kompiler CLI, validator locale, dan runtime browser.",
+        "@valfuse-node/react: useValfuseForm, <ValfuseController>, dan <LocalizationProvider>; facade core mengekspor useReactValfuseForm.",
+        "@valfuse-node/vue: useValfuseForm, provider lokalisasi, dan composables; facade core mengekspor useVueValfuseForm."
+      ],
+      "thumbnail": "/portfolio/valfuse-node/valfuse-node.svg",
+      "gallery": ["/portfolio/valfuse-node/valfuse-node.svg"],
+      "category": "packages",
+      "techStack": ["TypeScript", "Node.js", "React", "Vue", "Express", "CLI", "i18n"],
+      "created_at": "2026-05-23",
+      "webUrl": "https://www.npmjs.com/org/valfuse-node",
+      "repoUrl": "https://github.com/alpinnz/valfuse-node"
+    },
+    {
+      "title": "localization_gen",
+      "descriptions": "Generator lokalisasi bertipe untuk Flutter dan Dart dengan dukungan nested JSON serta CLI.",
+      "details": "Generator kode lokalisasi untuk Flutter dan Dart dengan dukungan nested JSON, struktur modular, interpolasi parameter, pluralisasi, bentuk gender dan konteks, watch mode, serta CLI dengan beberapa perintah. API lokalisasi yang dihasilkan memiliki tipe yang jelas.",
+      "thumbnail": "/portfolio/localization-gen/localization-gen.svg",
+      "gallery": [
+        "/portfolio/localization-gen/localization-gen.svg"
+      ],
+      "category": "packages",
+      "techStack": ["Dart", "Flutter", "Code Generation", "CLI", "i18n"],
+      "created_at": "2026-01-27",
+      "liveUrl": "https://pub.dev/packages/localization_gen",
+      "repoUrl": "https://github.com/alpinnz/localization_gen"
+    },
+    {
+      "title": "automation_keys_gen",
+      "descriptions": "Menjaga konsistensi kunci automation pada pengujian UI Flutter melalui validasi CLI dan pembuatan dokumentasi.",
+      "details": "Paket pengujian Flutter untuk menstandarkan kunci automation di seluruh codebase. CLI-nya dapat memvalidasi kunci dan membuat dokumentasi Markdown agar tim QA dan developer memiliki acuan yang sama. Konsistensi ini membantu mencegah kegagalan pengujian UI akibat kunci yang berbeda atau tidak terdokumentasi.",
+      "thumbnail": "/portfolio/automation-keys-gen/automation-keys-gen.svg",
+      "gallery": [
+        "/portfolio/automation-keys-gen/automation-keys-gen.svg"
+      ],
+      "category": "packages",
+      "techStack": ["Dart", "Flutter", "Testing", "CLI", "Documentation"],
+      "created_at": "2026-01-27",
+      "liveUrl": "https://pub.dev/packages/automation_keys_gen",
+      "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
+    },
+    {
+      "title": "idle_activity_detector",
+      "descriptions": "Mendeteksi aktivitas dan kondisi tidak aktif pengguna melalui event browser dan batas waktu yang dapat diatur.",
+      "details": "Paket Flutter lintas platform untuk mendeteksi apakah pengguna sedang aktif atau tidak. Di web, paket ini memantau aktivitas mouse, keyboard, scroll, dan sentuhan. Dapat digunakan untuk logout otomatis, peringatan batas waktu sesi, atau pencatatan aktivitas pengguna.",
+      "thumbnail": "/portfolio/idle-activity-detector/idle-activity-detector.svg",
+      "gallery": [
+        "/portfolio/idle-activity-detector/idle-activity-detector.svg"
+      ],
+      "category": "packages",
+      "techStack": ["Dart", "Flutter", "Web Events", "State Management"],
+      "created_at": "2025-12-24",
+      "liveUrl": "https://pub.dev/packages/idle_activity_detector"
+    },
+    {
+      "title": "Riset Sanitasi Input Frontend",
+      "descriptions": "Studi keamanan React dan Flutter dengan demo sanitasi HTML serta pengujian otomatis terhadap lebih dari 60 payload XSS.",
+      "details": "Membandingkan sanitasi HTML berbasis whitelist di React dan Flutter. Repositori publik ini memuat demo, kumpulan lebih dari 60 kasus payload XSS, dan pengujian otomatis untuk kedua implementasi.",
+      "features": [
+        "Demo React dengan sanitasi HTML berbasis whitelist.",
+        "Demo Flutter dengan alur sanitasi yang sepadan.",
+        "Pengujian otomatis terhadap lebih dari 60 kasus payload XSS."
+      ],
+      "thumbnail": "/portfolio/research-sanitazion-frontend/input-sanitization-study.svg",
+      "gallery": ["/portfolio/research-sanitazion-frontend/input-sanitization-study.svg"],
+      "category": "frontend",
+      "techStack": ["React", "TypeScript", "Flutter", "Dart", "Pengujian XSS"],
+      "created_at": "2025-10-17",
+      "repoUrl": "https://github.com/alpinnz/research-sanitazion-frontend"
+    },
+    {
+      "title": "Sistem Pemesanan Kafe Bukit Delight",
+      "descriptions": "Aplikasi pemesanan dan pengelolaan kafe full-stack dengan pengelompokan penjualan menu menggunakan k-means.",
+      "details": "Proyek akademik full-stack untuk pemesanan pelanggan, operasional kasir, dan administrasi. Proyek ini menerapkan k-means pada data pesanan untuk mengelompokkan menu berdasarkan performa penjualan.",
+      "features": [
+        "Pemesanan pelanggan dan penelusuran menu.",
+        "Alur kerja kasir dan administrator.",
+        "Pengelompokan menu berdasarkan penjualan dengan k-means."
+      ],
+      "thumbnail": "/portfolio/bukit-delight-node/bukit-delight.svg",
+      "gallery": ["/portfolio/bukit-delight-node/bukit-delight.svg"],
+      "category": "fullstack",
+      "techStack": ["React", "Express", "MongoDB", "JavaScript", "K-means"],
+      "created_at": "2020-11-10"
+    },
+    {
+      "title": "HORA Pro",
+      "descriptions": "Aplikasi mobile untuk absensi karyawan, check-in berbasis lokasi, pengajuan cuti, dan komunikasi tim.",
+      "details": "HORA Pro mendukung check-in dan check-out berbasis lokasi dengan verifikasi swafoto. Aplikasi ini juga menyediakan geolokasi, pengelolaan cuti, chat, dan laporan kehadiran.",
+      "thumbnail": "/portfolio/hora-pro/hora-pro-1.jpg",
+      "gallery": [
+        "/portfolio/hora-pro/hora-pro-1.jpg",
+        "/portfolio/hora-pro/hora-pro-2.jpg"
+      ],
+      "category": "mobile",
+      "techStack": [
+        "Flutter",
+        ".NET",
+        "MySQL",
+        "Integrasi GPS",
+        "Deteksi Wajah"
+      ],
+      "created_at": "2025-01-01",
+      "webUrl": "https://horaapp.id",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en",
+      "appStoreUrl": "https://apps.apple.com/id/app/id6748695513"
+    },
+    {
+      "title": "Go REST API Boilerplate",
+      "descriptions": "Starter REST API Go modular dengan konfigurasi beberapa environment dan dukungan Docker.",
+      "details": "Starter REST API berbasis Go dengan konfigurasi terpisah untuk development, testing, dan production. Fitur yang disertakan mencakup dukungan Docker, autentikasi JWT, GORM, pengelolaan transaksi, dan penyimpanan file persisten. Struktur modularnya terinspirasi prinsip Clean Architecture.",
+      "thumbnail": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
+      "gallery": [
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-2.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-3.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-4.jpg",
+        "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-5.jpg"
+      ],
+      "category": "backend",
+      "techStack": [
+        "Golang",
+        "Gin",
+        "GORM",
+        "Docker",
+        "JWT",
+        "PostgreSQL",
+        "Air"
+      ],
+      "created_at": "2024-01-01",
+      "repoUrl": "https://github.com/alpinnz/go-rest-api-boilerplate"
+    }
+  ]
+}

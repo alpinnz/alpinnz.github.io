@@ -1,0 +1,60 @@
+{
+  "header": {
+    "title": "My Core Skills",
+    "subtitle": "I build maintainable products for mobile, web, and APIs, with clear architecture, well-defined contracts, and repeatable workflows.",
+    "tools_label": "Tools and frameworks"
+  },
+  "skills": [
+    {
+      "title": "Mobile Engineer",
+      "description": "Build mobile apps and reusable modules with clear architecture, navigation and dependency injection, and state management suited to the product and team.",
+      "tools": [
+        "Flutter",
+        "Dart",
+        "React Native",
+        "Kotlin",
+        "Provider",
+        "Riverpod",
+        "BLoC/Cubit",
+        "GetX",
+        "Redux",
+        "get_it",
+        "injectable",
+        "go_router",
+        "Clean Architecture",
+        "DDD",
+        "MVVM",
+        "MVP"
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "description": "Build responsive web interfaces and maintain modular frontend architecture with modern tools.",
+      "tools": [
+        "React",
+        "Next.js",
+        "Vue",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "Zustand",
+        "i18next",
+        "Redux"
+      ]
+    },
+    {
+      "title": "Backend Engineer",
+      "description": "Develop REST APIs with clear architecture, input validation, and operational practices suited to the project.",
+      "tools": [
+        "Golang",
+        "Gin",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "MySQL",
+        "Redis",
+        "Docker"
+      ]
+    }
+  ]
+}

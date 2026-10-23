@@ -1,0 +1,60 @@
+{
+  "header": {
+    "title": "Keahlian Inti Saya",
+    "subtitle": "Saya membangun produk yang mudah dipelihara untuk mobile, web, dan API, dengan arsitektur jelas, kontrak yang terdefinisi, dan alur kerja yang konsisten.",
+    "tools_label": "Teknologi dan framework"
+  },
+  "skills": [
+    {
+      "title": "Mobile Engineer",
+      "description": "Membangun aplikasi mobile dan modul yang dapat digunakan kembali, dengan arsitektur terstruktur, navigasi dan dependency injection, serta pengelolaan state sesuai kebutuhan produk dan tim.",
+      "tools": [
+        "Flutter",
+        "Dart",
+        "React Native",
+        "Kotlin",
+        "Provider",
+        "Riverpod",
+        "BLoC/Cubit",
+        "GetX",
+        "Redux",
+        "get_it",
+        "injectable",
+        "go_router",
+        "Clean Architecture",
+        "DDD",
+        "MVVM",
+        "MVP"
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "description": "Membangun antarmuka web responsif dan menjaga struktur frontend modular dengan tools modern.",
+      "tools": [
+        "React",
+        "Next.js",
+        "Vue",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "Zustand",
+        "i18next",
+        "Redux"
+      ]
+    },
+    {
+      "title": "Backend Engineer",
+      "description": "Mengembangkan REST API dengan arsitektur terstruktur, validasi input, dan praktik operasional sesuai kebutuhan proyek.",
+      "tools": [
+        "Golang",
+        "Gin",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "MySQL",
+        "Redis",
+        "Docker"
+      ]
+    }
+  ]
+}

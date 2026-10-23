@@ -1,0 +1,62 @@
+{
+  "@@module": "skills",
+  "@@locale": "id",
+  "header": {
+    "title": "Keahlian Inti Saya",
+    "subtitle": "Saya membangun produk yang mudah dipelihara untuk mobile, web, dan API, dengan arsitektur jelas, kontrak yang terdefinisi, dan alur kerja yang konsisten.",
+    "tools_label": "Teknologi dan framework"
+  },
+  "skills": {
+    "0": {
+      "title": "Mobile Engineer",
+      "description": "Membangun aplikasi mobile dan modul yang dapat digunakan kembali, dengan arsitektur terstruktur, navigasi dan dependency injection, serta pengelolaan state sesuai kebutuhan produk dan tim.",
+      "tools": {
+        "0": "Flutter",
+        "1": "Dart",
+        "2": "React Native",
+        "3": "Kotlin",
+        "4": "Provider",
+        "5": "Riverpod",
+        "6": "BLoC/Cubit",
+        "7": "GetX",
+        "8": "Redux",
+        "9": "get_it",
+        "10": "injectable",
+        "11": "go_router",
+        "12": "Clean Architecture",
+        "13": "DDD",
+        "14": "MVVM",
+        "15": "MVP"
+      }
+    },
+    "1": {
+      "title": "Frontend Engineer",
+      "description": "Membangun antarmuka web responsif dan menjaga struktur frontend modular dengan tools modern.",
+      "tools": {
+        "0": "React",
+        "1": "Next.js",
+        "2": "Vue",
+        "3": "TypeScript",
+        "4": "Tailwind CSS",
+        "5": "Vite",
+        "6": "Zustand",
+        "7": "i18next",
+        "8": "Redux"
+      }
+    },
+    "2": {
+      "title": "Backend Engineer",
+      "description": "Mengembangkan REST API dengan arsitektur terstruktur, validasi input, dan praktik operasional sesuai kebutuhan proyek.",
+      "tools": {
+        "0": "Golang",
+        "1": "Gin",
+        "2": "Node.js",
+        "3": "Express.js",
+        "4": "PostgreSQL",
+        "5": "MySQL",
+        "6": "Redis",
+        "7": "Docker"
+      }
+    }
+  }
+}

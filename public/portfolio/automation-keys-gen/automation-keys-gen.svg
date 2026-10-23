@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="75" y1="56" x2="1090" y2="626" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101d32"/>
+      <stop offset="1" stop-color="#123d59"/>
+    </linearGradient>
+    <linearGradient id="key" x1="768" y1="214" x2="1022" y2="434" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v675H0z"/>
+  <circle cx="907" cy="339" r="258" fill="#38bdf8" fill-opacity=".08"/>
+  <text x="78" y="96" fill="#7dd3fc" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="3">FLUTTER · QA TOOLING</text>
+  <text x="78" y="190" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700">Consistent keys.</text>
+  <text x="78" y="250" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700">Reliable UI tests.</text>
+  <text x="80" y="305" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="21">Validate automation IDs and</text>
+  <text x="80" y="337" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="21">generate a shared key reference.</text>
+  <rect x="78" y="383" width="246" height="47" rx="12" fill="#0b1724" stroke="#38bdf8" stroke-opacity=".5"/>
+  <text x="98" y="413" fill="#bae6fd" font-family="monospace" font-size="17">app_catalog_list_btn_search</text>
+  <text x="78" y="563" fill="#90a9bd" font-family="Arial,sans-serif" font-size="16" letter-spacing="1">AUTOMATION KEY GENERATOR</text>
+  <rect x="704" y="144" width="350" height="378" rx="24" fill="#0a1826" stroke="#7dd3fc" stroke-opacity=".28" stroke-width="2"/>
+  <rect x="730" y="170" width="298" height="49" rx="11" fill="#162a3a"/>
+  <circle cx="752" cy="194" r="5" fill="#f87171"/><circle cx="770" cy="194" r="5" fill="#fbbf24"/><circle cx="788" cy="194" r="5" fill="#4ade80"/>
+  <text x="816" y="200" fill="#94a3b8" font-family="monospace" font-size="14">catalog_page.dart</text>
+  <rect x="730" y="243" width="298" height="72" rx="12" fill="#13283a"/>
+  <text x="751" y="271" fill="#7dd3fc" font-family="monospace" font-size="14">final searchKey =</text><text x="751" y="294" fill="#c4b5fd" font-family="monospace" font-size="14">  inputKey('search');</text>
+  <rect x="730" y="330" width="298" height="62" rx="12" fill="#12352f"/>
+  <path d="m751 360 7 7 14-16" stroke="#4ade80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="787" y="366" fill="#bbf7d0" font-family="Arial,sans-serif" font-size="16" font-weight="700">Key format validated</text>
+  <rect x="730" y="407" width="298" height="88" rx="12" fill="#182b3b"/>
+  <path d="M755 435h20m-20 13h34m-34 13h26" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <text x="831" y="443" fill="#dbeafe" font-family="Arial,sans-serif" font-size="15" font-weight="700">Markdown key catalog</text>
+  <text x="831" y="468" fill="#94a3b8" font-family="Arial,sans-serif" font-size="13">Generated for QA and development</text>
+  <circle cx="1090" cy="336" r="34" fill="#0b2539" stroke="url(#key)" stroke-width="4"/>
+  <circle cx="1090" cy="336" r="9" stroke="#7dd3fc" stroke-width="4"/>
+  <path d="M1119 336h48m-15 0v14m-13-14v11" stroke="#7dd3fc" stroke-width="11" stroke-linecap="round"/>
+</svg>

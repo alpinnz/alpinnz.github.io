@@ -1,0 +1,12 @@
+{
+  "language_label": "Bahasa",
+  "menu_open": "Buka navigasi",
+  "menu_close": "Tutup navigasi",
+  "nav_items": [
+    { "label": "Tentang Saya", "href": "#about-me" },
+    { "label": "Keterampilan", "href": "#skills" },
+    { "label": "Timeline", "href": "#timeline" },
+    { "label": "Portofolio", "href": "#portfolio" },
+    { "label": "Kontak", "href": "#contact" }
+  ]
+}
