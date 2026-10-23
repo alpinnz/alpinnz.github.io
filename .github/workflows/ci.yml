@@ -33,11 +33,16 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
+    concurrency:
+      group: github-pages-deploy
+      cancel-in-progress: false
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -50,8 +55,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          git remote set-url origin "https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git remote set-url origin "https://x-access-token:${GH_PAGES_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
           NEXT_PUBLIC_FORMSPREE_FORM_ID: ${{ secrets.NEXT_PUBLIC_FORMSPREE_FORM_ID || vars.NEXT_PUBLIC_FORMSPREE_FORM_ID }}
