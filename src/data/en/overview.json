@@ -6,6 +6,7 @@
   ],
   "cta": "Contact Me",
   "cv_cta": "Download CV",
+  "cv_summary": "Full Stack Developer and Senior Frontend Developer based in Malang, Indonesia. Experienced in web and mobile products, API integration, reusable components, and frontend team leadership; currently developing Smartlink products at PT Ada Ide Langsung Jalan.",
   "cv_generating": "Preparing CV…",
   "cv_success": "CV is ready. Your download has started.",
   "cv_error": "Could not create the CV. Please try again.",

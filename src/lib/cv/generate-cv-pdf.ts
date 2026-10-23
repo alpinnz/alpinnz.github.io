@@ -81,7 +81,7 @@ function addText(
 
 function addSection(doc: PDFKit.PDFDocument, title: string) {
   ensureSpace(doc, 80)
-  doc.moveDown(0.8).font(boldFont).fontSize(11).fillColor(colors.primary)
+  doc.moveDown(0.8).font(boldFont).fontSize(11.5).fillColor(colors.primary)
   addText(doc, title.toUpperCase(), 'H2', { characterSpacing: 0.5 })
   doc.moveDown(0.25)
 }
@@ -97,13 +97,13 @@ function addEntry(
   doc.font(boldFont).fontSize(10).fillColor(colors.ink)
   addText(doc, title, 'H3')
   if (detail) {
-    doc.font(regularFont).fontSize(9).fillColor(colors.muted)
+    doc.font(regularFont).fontSize(10).fillColor(colors.muted)
     addText(doc, detail, 'P')
   }
   doc.font(regularFont).fontSize(10).fillColor(colors.ink)
   addText(doc, description, 'P', { lineGap: 2 })
   if (url) {
-    doc.fontSize(9).fillColor(colors.primary)
+    doc.fontSize(10).fillColor(colors.primary)
     addText(doc, url, 'P', { link: url, underline: true })
   }
   doc.moveDown(0.5)
@@ -123,6 +123,17 @@ function timelinePeriod(item: TimelineItem, locale: Locale) {
     ? labels[locale].present
     : item.date_end ? formatDate(item.date_end, locale) : ''
   return end ? `${start} - ${end}` : start
+}
+
+function addExperience(doc: PDFKit.PDFDocument, item: TimelineItem, locale: Locale) {
+  const separator = locale === 'id' ? ' di ' : ' at '
+  const separatorIndex = item.title.lastIndexOf(separator)
+  const role = separatorIndex === -1 ? item.title : item.title.slice(0, separatorIndex)
+  const organization = separatorIndex === -1
+    ? ''
+    : `${item.title.slice(separatorIndex + separator.length)}  |  `
+
+  addEntry(doc, role, item.descriptions, `${organization}${timelinePeriod(item, locale)}`)
 }
 
 function createPdfBlob(doc: PDFKit.PDFDocument): Promise<Blob> {
@@ -172,39 +183,41 @@ export async function generateCvPdf(locale: Locale): Promise<Blob> {
   doc.font(regularFont).fontSize(10.5).fillColor(colors.ink)
   addText(doc, content.overview.title.split('—').at(-1)?.trim().replace(/^a /, '') ?? '', 'P')
   doc.moveDown(0.3)
-  doc.fontSize(8.5).fillColor(colors.muted)
+  doc.fontSize(10).fillColor(colors.muted)
   const contact = content.footer.contactItems.map((item) => item.title).join('  |  ')
   addText(doc, contact, 'P')
   for (const social of socialLinks) {
-    doc.fontSize(8.5).fillColor(colors.primary)
+    doc.fontSize(10).fillColor(colors.primary)
     addText(doc, `${social.label}: ${social.href}`, 'P', { link: social.href })
   }
-  doc.fontSize(8.5).fillColor(colors.primary)
+  doc.fontSize(10).fillColor(colors.primary)
   addText(doc, `${text.portfolio}: ${siteUrl}/#portfolio`, 'P', { link: `${siteUrl}/#portfolio` })
 
   addSection(doc, text.profile)
   doc.font(regularFont).fontSize(10).fillColor(colors.ink)
-  addText(doc, content.overview.descriptions.join(' '), 'P', { lineGap: 2 })
+  addText(doc, content.overview.cv_summary, 'P', { lineGap: 2 })
 
   addSection(doc, text.experience)
   for (const item of items.filter((entry) =>
     (entry.icon === 'ic_desktop' || entry.icon === 'ic_mobile') && entry.cv_include !== false,
   )) {
-    addEntry(doc, item.title, item.descriptions, timelinePeriod(item, locale))
+    addExperience(doc, item, locale)
   }
 
   addSection(doc, text.skills)
   for (const skill of content.skills.skills) {
     ensureSpace(doc, 28)
     doc.addStructure(doc.struct('P', {}, () => {
-      doc.font(boldFont).fontSize(9.5).fillColor(colors.ink).text(`${skill.title}: `, { continued: true })
-      doc.font(regularFont).fontSize(9.5).text(skill.tools.join(', '))
+      doc.font(boldFont).fontSize(10).fillColor(colors.ink).text(`${skill.title}: `, { continued: true })
+      doc.font(regularFont).fontSize(10).text(skill.tools.join(', '))
     }))
     doc.moveDown(0.2)
   }
 
   // Keep the selected work and credentials together after the experience-focused first page.
   doc.addPage()
+  doc.font(boldFont).fontSize(10).fillColor(colors.muted)
+  addText(doc, siteName, 'P')
   addSection(doc, text.projects)
   for (const project of projects) {
     addEntry(
