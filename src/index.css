@@ -5,21 +5,21 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: Sora, sans-serif;
-    }
+  html {
+    font-family: Sora, sans-serif;
+  }
 }
 
 @layer components {
-    .card {
-        background-color: theme('colors.white');
-        border-radius: theme('borderRadius.lg');
-        padding: theme('spacing.6');
-        box-shadow: theme('boxShadow.xl');
-    }
-    /* ... */
+  .card {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+  }
+  /* ... */
 }
 
 .border-1 {
-    border-width: 1px;
+  border-width: 1px;
 }

@@ -1,5 +1,21 @@
 # React + TypeScript + Vite
 
+## Development
+
+Install dependencies and set up the Git hooks:
+
+```sh
+npm ci
+```
+
+Start the development server with `npm run dev`. Run `npm run lint` and
+`npm run typecheck` to check the code, `npm run lint:fix` to apply ESLint fixes,
+and `npm run format` or `npm run format:check` to format or check formatting.
+
+Husky runs lint-staged before each commit. It lints and formats staged
+JavaScript and TypeScript files, and formats staged CSS, HTML, JSON, Markdown,
+and YAML files.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

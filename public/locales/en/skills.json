@@ -7,17 +7,53 @@
     {
       "title": "Mobile Engineer",
       "description": "Build production mobile apps and reusable modules with clean architecture, scalable navigation/DI, and state management that fits the product and team.",
-      "tools": ["Flutter","Dart","React Native","Kotlin","Provider","Riverpod","BLoC/Cubit","GetX","Redux","get_it","injectable","go_router","Clean Architecture","DDD","MVVM","MVP"]
+      "tools": [
+        "Flutter",
+        "Dart",
+        "React Native",
+        "Kotlin",
+        "Provider",
+        "Riverpod",
+        "BLoC/Cubit",
+        "GetX",
+        "Redux",
+        "get_it",
+        "injectable",
+        "go_router",
+        "Clean Architecture",
+        "DDD",
+        "MVVM",
+        "MVP"
+      ]
     },
     {
       "title": "Frontend Engineer",
       "description": "Build responsive web UIs and maintain scalable front-end architecture with modern tooling and clean modular patterns.",
-      "tools": ["React","Next.js","Vue","TypeScript","Tailwind CSS","Vite","Zustand","i18next","Redux"]
+      "tools": [
+        "React",
+        "Next.js",
+        "Vue",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "Zustand",
+        "i18next",
+        "Redux"
+      ]
     },
     {
       "title": "Backend Engineer",
       "description": "Develop robust RESTful APIs with clean architecture, strong validation, and production-ready practices when needed.",
-      "tools": ["Golang","Gin","Node.js","Express.js","PostgreSQL","MySQL","Redis","Docker"]
+      "tools": [
+        "Golang",
+        "Gin",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "MySQL",
+        "Redis",
+        "Docker"
+      ]
     }
   ]
 }

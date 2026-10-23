@@ -21,13 +21,7 @@
         "https://dummyimage.com/1200x800/7c3aed/ffffff&text=localization_gen"
       ],
       "category": "packages",
-      "techStack": [
-        "Dart",
-        "Flutter",
-        "Code Generation",
-        "CLI",
-        "i18n"
-      ],
+      "techStack": ["Dart", "Flutter", "Code Generation", "CLI", "i18n"],
       "created_at": "2026-01-27",
       "liveUrl": "https://pub.dev/packages/localization_gen",
       "repoUrl": "https://github.com/alpinnz/localization_gen"
@@ -41,13 +35,7 @@
         "https://dummyimage.com/1200x800/0ea5e9/ffffff&text=automation_keys_gen"
       ],
       "category": "packages",
-      "techStack": [
-        "Dart",
-        "Flutter",
-        "Testing",
-        "CLI",
-        "Documentation"
-      ],
+      "techStack": ["Dart", "Flutter", "Testing", "CLI", "Documentation"],
       "created_at": "2026-01-27",
       "liveUrl": "https://pub.dev/packages/automation_keys_gen",
       "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
@@ -61,12 +49,7 @@
         "https://dummyimage.com/1200x800/22c55e/ffffff&text=idle_activity_detector"
       ],
       "category": "packages",
-      "techStack": [
-        "Dart",
-        "Flutter",
-        "Web Events",
-        "State Management"
-      ],
+      "techStack": ["Dart", "Flutter", "Web Events", "State Management"],
       "created_at": "2025-12-24",
       "liveUrl": "https://pub.dev/packages/idle_activity_detector",
       "repoUrl": "https://github.com/alpinnz/idle_activity_detector"

@@ -3,7 +3,7 @@ name: CI
 on:
   pull_request:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
 
 jobs:
   build:
@@ -17,16 +17,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn
+          cache: npm
 
       - name: Install
-        run: yarn --frozen-lockfile
+        run: npm ci
+
+      - name: Format
+        run: npm run format:check
 
       - name: Lint
-        run: yarn -s lint
+        run: npm run lint
 
       - name: Typecheck
-        run: yarn -s typecheck
+        run: npm run typecheck
 
       - name: Build
-        run: yarn -s build
+        run: npm run build
