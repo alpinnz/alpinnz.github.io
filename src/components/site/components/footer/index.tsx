@@ -140,10 +140,10 @@ export function Footer(): React.ReactElement {
   return (
     <section
       id="footer"
-      className="scroll-mt-20 border-t border-neutral-100 bg-neutral-50 px-5 py-12 sm:px-8 md:py-16 lg:px-10"
+      className="scroll-mt-24 border-t border-neutral-200/80 bg-white px-5 py-10 sm:px-8 sm:py-12 lg:px-10"
     >
       <motion.div
-        className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-12"
+        className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:gap-10"
         initial={{ y: 40 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -196,7 +196,7 @@ export function Footer(): React.ReactElement {
         {/* Contact Form */}
         <form
           id="contact"
-          className="flex scroll-mt-24 flex-col gap-3 rounded-2xl border border-neutral-100 bg-neutral-0 p-5 shadow-sm sm:p-6"
+          className="flex scroll-mt-24 flex-col gap-3 rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-sm sm:p-5"
           onSubmit={sendContactMessage}
           noValidate
         >
@@ -238,7 +238,7 @@ export function Footer(): React.ReactElement {
       </motion.div>
 
       {/* Copyright */}
-      <div className="mx-auto mt-10 max-w-6xl border-t border-neutral-100 pt-6 text-center text-xs text-neutral-500 sm:text-sm">
+      <div className="mx-auto mt-8 max-w-6xl border-t border-neutral-200/80 pt-5 text-center text-xs text-neutral-500 sm:text-sm">
         {format('footer.copyright', { year: String(new Date().getFullYear()) })}
       </div>
     </section>

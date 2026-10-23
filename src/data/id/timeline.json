@@ -1,5 +1,6 @@
 {
   "header": {
+    "eyebrow": "Karier & kontribusi",
     "title": "Timeline Perjalanan",
     "subtitle": "Pilihan perjalanan kerja, pendidikan, pengembangan perangkat bantu, dan kontribusi open source."
   },
@@ -96,5 +97,7 @@
     }
   ],
   "now": "Sekarang",
-  "view_link": "Buka tautan"
+  "view_link": "Buka tautan",
+  "show_all": "Lihat seluruh timeline",
+  "show_less": "Tampilkan lebih sedikit"
 }

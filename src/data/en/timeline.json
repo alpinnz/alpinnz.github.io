@@ -1,5 +1,6 @@
 {
   "header": {
+    "eyebrow": "Career & contributions",
     "title": "Journey Timeline",
     "subtitle": "Selected roles, education, developer tools, and open-source contributions."
   },
@@ -96,5 +97,7 @@
     }
   ],
   "now": "Now",
-  "view_link": "View link"
+  "view_link": "View link",
+  "show_all": "View full timeline",
+  "show_less": "Show less"
 }

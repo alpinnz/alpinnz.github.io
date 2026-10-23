@@ -28,10 +28,10 @@ export function Skill(): React.ReactElement {
   ]
 
   return (
-    <section id="skills" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-12 sm:px-8 md:py-16 lg:px-10">
+    <section id="skills" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-10 sm:px-8 sm:py-12 lg:px-10">
       {/* Header */}
       <motion.div
-        className="mb-8 text-center"
+        className="mb-6 text-center"
         initial={{ y: 40 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
@@ -47,14 +47,14 @@ export function Skill(): React.ReactElement {
       </motion.div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
         {skills.map((item, index) => (
           <motion.div
             key={index}
-            className="flex flex-col rounded-2xl border border-neutral-100 bg-white p-5 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md sm:p-6"
+            className="flex flex-col rounded-2xl border border-neutral-200/80 bg-white p-4 text-left shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-400 hover:shadow-md sm:p-5"
             initial={{ y: 40 }}
             whileInView={{ y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            transition={{ duration: 0.35, delay: index * 0.08 }}
             viewport={{ once: true }}
           >
             <div className="mb-4 flex items-center gap-3">
@@ -76,13 +76,20 @@ export function Skill(): React.ReactElement {
               {item.description}
             </p>
 
-            <div className="border-t border-neutral-100 pt-4 text-xs sm:text-sm">
-              <p className="mb-1 font-semibold text-primary-700">
+            <div className="border-t border-neutral-100 pt-3 text-xs sm:text-sm">
+              <p className="mb-2 font-semibold text-primary-800">
                 {header.tools_label}:
               </p>
-              <p className="leading-relaxed text-neutral-600">
-                {item.tools.join(', ')}
-              </p>
+              <ul className="flex flex-wrap gap-1" aria-label={header.tools_label}>
+                {item.tools.map((tool) => (
+                  <li
+                    key={tool}
+                    className="rounded-full bg-primary-50 px-2 py-0.5 text-[11px] font-medium leading-5 text-primary-900"
+                  >
+                    {tool}
+                  </li>
+                ))}
+              </ul>
             </div>
           </motion.div>
         ))}

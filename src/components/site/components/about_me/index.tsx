@@ -15,14 +15,10 @@ export function AboutMe(): React.ReactElement {
   }
 
   return (
-    <section
-      id="about-me"
-      className="mx-auto max-w-6xl scroll-mt-20 px-5 py-12 sm:px-8 md:py-16 lg:px-10"
-    >
-      <div className="mx-auto max-w-3xl">
-        {/* Title */}
+    <section id="about-me" className="scroll-mt-24 bg-white px-5 py-10 sm:px-8 sm:py-12">
+      <div className="mx-auto max-w-4xl">
         <motion.h2
-          className="mb-6 text-center text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl"
+          className="mb-4 text-center text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl"
           initial={{ y: 30 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 0.6 }}
@@ -31,9 +27,8 @@ export function AboutMe(): React.ReactElement {
           {aboutMeItem.title}
         </motion.h2>
 
-        {/* Descriptions */}
         <motion.div
-          className="space-y-4"
+          className="space-y-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -45,7 +40,7 @@ export function AboutMe(): React.ReactElement {
           {aboutMeItem.descriptions.map((desc, index) => (
             <motion.p
               key={index}
-              className="text-left text-sm leading-relaxed text-neutral-700 sm:text-base"
+              className="text-left text-sm leading-7 text-neutral-700 sm:text-base"
               variants={{
                 hidden: { y: 20 },
                 visible: { y: 0 },

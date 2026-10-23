@@ -1,5 +1,6 @@
 {
   "header": {
+    "eyebrow": "Karya pilihan",
     "title": "Beberapa Proyek yang Saya Buat",
     "subtitle": "Pilihan karya di bidang rekayasa produk, perangkat bantu developer, dan keamanan aplikasi."
   },
@@ -12,10 +13,38 @@
     "design": "Desain",
     "packages": "Paket"
   },
+  "repository_index": {
+    "title": "Repositori publik GitHub",
+    "description": "Jelajahi repositori publik berdasarkan area proyek dan teknologi.",
+    "count": "{count} repositori publik",
+    "results_count": "Menampilkan {shown} dari {total} repositori",
+    "search_label": "Cari repositori",
+    "search_placeholder": "Cari nama, area, atau teknologi",
+    "filter_label": "Filter repositori berdasarkan area",
+    "empty_state": "Tidak ada repositori yang cocok dengan pencarian.",
+    "details_pending": "Ringkasan belum tersedia",
+    "open_repository": "Buka repositori",
+    "category_labels": {
+      "all": "Semua",
+      "tools": "Perangkat pengembangan",
+      "backend": "Backend & API",
+      "web": "Web & produk",
+      "mobile": "Aplikasi mobile",
+      "research": "Riset",
+      "learning": "Proyek pembelajaran",
+      "profile": "Profil"
+    }
+  },
   "features_label": "Yang tersedia",
   "empty_state": "Belum ada proyek untuk kategori ini.",
+  "show_all_projects": "Lihat semua {count} proyek",
+  "show_less_projects": "Tampilkan lebih sedikit proyek",
   "project_details_label": "Lihat detail proyek {title}",
   "close_details_label": "Tutup detail proyek",
+  "open_image_label": "Lihat gambar layar penuh",
+  "close_image_label": "Tutup gambar",
+  "previous_image_label": "Gambar sebelumnya",
+  "next_image_label": "Gambar berikutnya",
   "tech_stack_label": "Teknologi",
   "live_label": "Demo langsung",
   "repository_label": "Repositori",
@@ -113,7 +142,8 @@
       "gallery": ["/portfolio/bukit-delight-node/bukit-delight.svg"],
       "category": "fullstack",
       "techStack": ["React", "Express", "MongoDB", "JavaScript", "K-means"],
-      "created_at": "2020-11-10"
+      "created_at": "2020-11-10",
+      "repoUrl": "https://github.com/alpinnz/bukit-delight-node"
     },
     {
       "title": "HORA Pro",

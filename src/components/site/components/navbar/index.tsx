@@ -9,7 +9,7 @@ export function Navbar(): React.ReactElement {
 
   React.useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024 && isOpen) setIsOpen(false)
+      if (window.innerWidth >= 768 && isOpen) setIsOpen(false)
     }
 
     window.addEventListener('resize', handleResize)
@@ -21,7 +21,7 @@ export function Navbar(): React.ReactElement {
   }, [locale])
 
   const genericHamburgerLine =
-    'h-1 w-6 my-1 rounded-full bg-neutral-800 transition ease transform duration-300'
+    'my-1 h-0.5 w-5 rounded-full bg-neutral-800 transition duration-200 ease-in-out'
 
   const navItems = translations.nav_items
 
@@ -31,19 +31,19 @@ export function Navbar(): React.ReactElement {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-100 bg-white/90 px-5 py-3 shadow-sm backdrop-blur-sm sm:px-8 lg:px-10">
+    <header className="sticky top-0 z-50 border-b border-neutral-200/80 bg-white/90 px-5 py-2 shadow-sm backdrop-blur-xl sm:px-8 lg:px-10">
       <div className="mx-auto flex max-w-6xl flex-row items-center justify-between">
         <a
           href="#alpinnz"
-          className="text-2xl font-semibold tracking-tight text-neutral-800 transition-colors hover:text-primary-700 sm:text-3xl"
+          className="text-xl font-bold tracking-tight text-neutral-900 transition-colors hover:text-primary-800 sm:text-2xl"
         >
           Alpinnz
         </a>
 
         {/* Hamburger menu button */}
-        <div className="block lg:hidden">
+        <div className="block md:hidden">
           <button
-            className="flex flex-col h-12 w-12 rounded justify-center items-center group"
+            className="group flex h-11 w-11 flex-col items-center justify-center rounded-xl transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
             type="button"
             aria-label={isOpen ? translations.menu_close : translations.menu_open}
             aria-expanded={isOpen}
@@ -73,7 +73,7 @@ export function Navbar(): React.ReactElement {
 
         {/* Navigation items + Language selector */}
         <nav
-          className={`${isOpen ? 'flex' : 'hidden'} absolute inset-x-0 top-full flex-col gap-1 border-b border-neutral-100 bg-white px-5 py-4 shadow-md sm:px-8 lg:static lg:flex lg:flex-row lg:items-center lg:gap-5 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none`}
+          className={`${isOpen ? 'flex' : 'hidden'} absolute inset-x-0 top-full flex-col gap-1 border-b border-neutral-200 bg-white px-5 py-3 shadow-lg sm:px-8 md:static md:flex md:flex-row md:items-center md:gap-4 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
         >
           {navItems.map((item, idx) => (
             <NavButton
@@ -83,8 +83,8 @@ export function Navbar(): React.ReactElement {
               onClick={() => setIsOpen(false)}
             />
           ))}
-          <div className="mt-2 flex w-full items-center justify-between border-t border-neutral-100 pt-4 lg:mt-0 lg:w-auto lg:border-0 lg:p-0">
-            <span className="text-sm font-medium text-neutral-600 lg:hidden">
+          <div className="mt-2 flex w-full items-center justify-between border-t border-neutral-100 pt-3 md:mt-0 md:w-auto md:border-0 md:p-0">
+            <span className="text-sm font-medium text-neutral-600 md:hidden">
               {translations.language_label}
             </span>
             <div
@@ -100,7 +100,7 @@ export function Navbar(): React.ReactElement {
                   aria-label={language === 'en' ? 'English' : 'Bahasa Indonesia'}
                   aria-pressed={locale === language}
                   onClick={() => selectLanguage(language)}
-                  className={`h-11 min-w-11 rounded-full px-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 lg:h-7 lg:min-w-10 ${
+                  className={`min-h-11 min-w-11 rounded-full px-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 md:min-h-9 md:min-w-9 ${
                     locale === language
                       ? 'bg-primary-600 text-neutral-0 shadow-sm'
                       : 'text-neutral-600 hover:text-primary-700'
@@ -128,7 +128,7 @@ function NavButton({ label, href, onClick }: NavButtonProps) {
     <a
       href={href}
       onClick={onClick}
-      className="block rounded-lg py-3 font-medium text-neutral-700 transition-colors duration-200 hover:text-primary-700 focus-visible:outline-2 focus-visible:outline-primary-500 lg:py-0"
+      className="block rounded-lg py-2.5 text-sm font-medium text-neutral-700 transition-colors duration-200 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-primary-600 md:py-2"
     >
       {label}
     </a>

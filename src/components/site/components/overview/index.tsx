@@ -22,11 +22,11 @@ export function Overview(): React.ReactElement {
   return (
     <section
       id="overview"
-      className="mx-auto flex max-w-6xl scroll-mt-20 flex-col-reverse items-center gap-8 px-5 py-12 sm:px-8 md:flex-row md:gap-10 md:py-16 lg:px-10"
+      className="mx-auto flex max-w-6xl scroll-mt-24 flex-col-reverse items-center gap-7 px-5 py-10 sm:px-8 sm:py-12 md:flex-row md:gap-10 md:py-16 lg:px-10"
     >
       {/* Left: Text content */}
       <div className="min-w-0 flex-1 text-center md:text-left">
-        <h1 className="text-3xl font-bold leading-tight tracking-tight text-neutral-900 sm:text-4xl">
+        <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
           {overviewItem.title}
         </h1>
 
@@ -72,13 +72,13 @@ export function Overview(): React.ReactElement {
 
       {/* Right: Profile image */}
       <div className="flex flex-1 justify-center md:justify-end">
-        <Image
+          <Image
           src={'/assets/images/profile.png'}
           alt="Portrait of Alfin Noviaji"
           width={384}
           height={384}
           preload
-          className="h-auto w-52 rounded-3xl object-cover shadow-lg sm:w-60 md:w-72 lg:w-80"
+          className="h-auto w-48 rounded-[2rem] object-cover shadow-xl ring-1 ring-neutral-200/60 sm:w-56 md:w-64 lg:w-72"
         />
       </div>
     </section>
