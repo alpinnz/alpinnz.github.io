@@ -6,6 +6,15 @@
   },
   "items": [
     {
+      "title": "Senior Frontend Developer di PT Ada Ide Langsung Jalan",
+      "descriptions": "Mengembangkan fitur web dan mobile untuk Smartlink dan Groapp, dengan fokus pada arsitektur, integrasi API, performa, komponen pakai ulang, dan kualitas kode. Berkolaborasi dengan tim produk dan backend.",
+      "date_start": "2026-08-01",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_desktop",
+      "link": "https://smartlink.id/"
+    },
+    {
       "title": "Kontributor Open Source – kekland Inspector BorderRadius (LTRB)",
       "descriptions": "Menambahkan nilai radius sudut LTR dari BoxDecoration ke Inspector untuk membantu audit UI dan pemeriksaan design token.",
       "date_start": "2026-02-11",
@@ -33,12 +42,12 @@
       "link": "https://github.com/fluttercandies/flutter_image_compress/pull/343"
     },
     {
-      "title": "Lead Mobile Engineer di PT. Ada Ide Langsung Jalan",
-      "descriptions": "Memimpin tim mobile untuk produk Smartlink Kasir (POS Android) dan Smartlink Owner (dashboard manajemen). Tanggung jawab saya mencakup perencanaan dan peluncuran, membimbing engineer, menetapkan standar teknis, meninjau kode, serta mengoordinasikan pekerjaan lintas modul agar rilis tetap stabil dan mudah dipelihara.",
+      "title": "Frontend Engineer Lead di PT Ada Ide Langsung Jalan",
+      "descriptions": "Memimpin pengembangan frontend untuk produk web, mobile, dan lintas platform. Menyusun prioritas dan sumber daya, membimbing engineer, meninjau kode, serta membangun fondasi dan standar teknis yang dapat digunakan kembali.",
       "date_start": "2022-01-01",
-      "date_end": null,
-      "currently": true,
-      "icon": "ic_mobile",
+      "date_end": "2026-07-31",
+      "currently": false,
+      "icon": "ic_desktop",
       "link": "https://smartlink.id/"
     },
     {
@@ -60,8 +69,8 @@
       "link": "https://smartlink.id"
     },
     {
-      "title": "Full Stack Engineer di CV. Gumcode",
-      "descriptions": "Mengembangkan beberapa proyek skala kecil menggunakan Flutter dan CodeIgniter, dengan fokus pada pengerjaan yang efisien dan penggunaan ulang kode.",
+      "title": "Android Engineer di CV Gumcode",
+      "descriptions": "Mengembangkan aplikasi Android dan fitur klien dalam peran pengembangan jangka pendek.",
       "date_start": "2021-03-01",
       "date_end": "2021-05-31",
       "currently": false,
@@ -78,7 +87,7 @@
       "link": null
     },
     {
-      "title": "Android Engineer Intern di PT. Aku Peduli Indonesia",
+      "title": "Android Engineer di PT Aku Peduli Indonesia",
       "descriptions": "Mengembangkan aplikasi Android menggunakan Kotlin dan Flutter, termasuk IzzyResto, IzzyInventory, dan Rema.",
       "date_start": "2020-02-01",
       "date_end": "2020-08-01",
@@ -94,6 +103,15 @@
       "currently": false,
       "icon": "ic_school",
       "link": "https://asia.ac.id"
+    },
+    {
+      "title": "System Administrator di Star Nt Game Center",
+      "descriptions": "Menjaga sistem dan operasional teknis sehari-hari sebelum beralih ke pengembangan perangkat lunak.",
+      "date_start": "2017-08-01",
+      "date_end": "2020-02-29",
+      "currently": false,
+      "icon": "ic_desktop",
+      "link": null
     }
   ],
   "now": "Sekarang",

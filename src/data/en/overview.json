@@ -1,9 +1,9 @@
 {
-  "title": "Hello, I’m Alfin — a Software Engineer",
+  "title": "Hello, I’m Alfin — a Senior Frontend Developer",
   "descriptions": [
-    "I build full-stack products across mobile, frontend, and backend—from user-facing apps to the APIs behind them.",
-    "Currently, I work as a Lead Mobile Engineer at PT. Ada Ide Langsung Jalan."
+    "I build clear, reliable experiences for web and mobile products, backed by practical engineering and strong collaboration.",
+    "Based in Malang, I work on the Smartlink and Groapp products at PT Ada Ide Langsung Jalan."
   ],
   "cta": "Say Hello",
-  "download_cta": "Download CV (PDF)"
+  "profile_cta": "View LinkedIn profile"
 }

@@ -75,7 +75,7 @@
   body {
     background: #f8fafc;
     color: #2f3a49;
-    font-family: var(--font-sans);
+    font-family: var(--font-sora), sans-serif;
   }
 
   ::selection {

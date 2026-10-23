@@ -18,9 +18,9 @@ const structuredData = {
       "@id": personId,
       name: siteName,
       url: `${siteUrl}/`,
-      jobTitle: "Software Engineer",
+      jobTitle: "Senior Frontend Developer",
       image: `${siteUrl}/assets/images/profile.png`,
-      sameAs: ["https://github.com/alpinnz"],
+      sameAs: ["https://github.com/alpinnz", "https://www.linkedin.com/in/alpinnz/"],
     },
     {
       "@type": "WebSite",
@@ -37,7 +37,7 @@ const structuredData = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName} | Software Engineer`,
+    default: `${siteName} | Senior Frontend Developer`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
@@ -47,17 +47,17 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: `${siteUrl}/`,
     siteName,
-    title: `${siteName} | Software Engineer`,
+    title: `${siteName} | Senior Frontend Developer`,
     description: siteDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} | Software Engineer`,
+    title: `${siteName} | Senior Frontend Developer`,
     description: siteDescription,
     images: [
       {
         url: `${siteUrl}/opengraph-image`,
-        alt: "Alfin Noviaji, Software Engineer building mobile, web, and backend products",
+        alt: "Alfin Noviaji, Senior Frontend Developer in Malang, Indonesia",
       },
     ],
   },

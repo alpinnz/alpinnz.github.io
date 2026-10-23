@@ -3,11 +3,26 @@
   "@@locale": "en",
   "header": {
     "title": "My Core Skills",
-    "subtitle": "I build maintainable products for mobile, web, and APIs, with clear architecture, well-defined contracts, and repeatable workflows.",
+    "subtitle": "Frontend engineering is my current focus, supported by experience in mobile products and backend APIs.",
     "tools_label": "Tools and frameworks"
   },
   "skills": {
     "0": {
+      "title": "Frontend Engineer",
+      "description": "Build responsive web interfaces and reusable frontend foundations for product teams, with attention to performance and API integration.",
+      "tools": {
+        "0": "React",
+        "1": "Next.js",
+        "2": "Vue",
+        "3": "TypeScript",
+        "4": "Tailwind CSS",
+        "5": "Vite",
+        "6": "Zustand",
+        "7": "i18next",
+        "8": "Redux"
+      }
+    },
+    "1": {
       "title": "Mobile Engineer",
       "description": "Build mobile apps and reusable modules with clear architecture, navigation and dependency injection, and state management suited to the product and team.",
       "tools": {
@@ -27,21 +42,6 @@
         "13": "DDD",
         "14": "MVVM",
         "15": "MVP"
-      }
-    },
-    "1": {
-      "title": "Frontend Engineer",
-      "description": "Build responsive web interfaces and maintain modular frontend architecture with modern tools.",
-      "tools": {
-        "0": "React",
-        "1": "Next.js",
-        "2": "Vue",
-        "3": "TypeScript",
-        "4": "Tailwind CSS",
-        "5": "Vite",
-        "6": "Zustand",
-        "7": "i18next",
-        "8": "Redux"
       }
     },
     "2": {

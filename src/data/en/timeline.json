@@ -6,6 +6,15 @@
   },
   "items": [
     {
+      "title": "Senior Frontend Developer at PT Ada Ide Langsung Jalan",
+      "descriptions": "Build web and mobile features across Smartlink and Groapp, with a focus on architecture, API integration, performance, reusable components, and code quality. Collaborate with product and backend teams.",
+      "date_start": "2026-08-01",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_desktop",
+      "link": "https://smartlink.id/"
+    },
+    {
       "title": "Open Source Contributor – kekland Inspector BorderRadius (LTRB)",
       "descriptions": "Exposed LTR corner-radius values from BoxDecoration in the Inspector, improving UI audits and design-token checks.",
       "date_start": "2026-02-11",
@@ -33,12 +42,12 @@
       "link": "https://github.com/fluttercandies/flutter_image_compress/pull/343"
     },
     {
-      "title": "Lead Mobile Engineer at PT. Ada Ide Langsung Jalan",
-      "descriptions": "Lead the mobile team for Smartlink products: Smartlink Kasir (Android POS) and Smartlink Owner (management dashboard). Own planning and delivery, mentor engineers, set technical standards, review code, and coordinate cross-module work to keep releases stable and maintainable.",
+      "title": "Frontend Engineer Lead at PT Ada Ide Langsung Jalan",
+      "descriptions": "Led frontend delivery across web, mobile, and cross-platform products. Planned priorities and resources, mentored engineers, reviewed code, and established reusable foundations and technical standards.",
       "date_start": "2022-01-01",
-      "date_end": null,
-      "currently": true,
-      "icon": "ic_mobile",
+      "date_end": "2026-07-31",
+      "currently": false,
+      "icon": "ic_desktop",
       "link": "https://smartlink.id/"
     },
     {
@@ -60,8 +69,8 @@
       "link": "https://smartlink.id"
     },
     {
-      "title": "Full Stack Engineer at CV. Gumcode",
-      "descriptions": "Developed several small-scale projects using Flutter and CodeIgniter, focusing on efficient delivery and reusability.",
+      "title": "Android Engineer at CV Gumcode",
+      "descriptions": "Developed Android applications and delivered client features during a short-term engineering role.",
       "date_start": "2021-03-01",
       "date_end": "2021-05-31",
       "currently": false,
@@ -78,7 +87,7 @@
       "link": null
     },
     {
-      "title": "Android Engineer Intern at PT. Aku Peduli Indonesia",
+      "title": "Android Engineer at PT Aku Peduli Indonesia",
       "descriptions": "Developed Android apps using Kotlin and Flutter, including IzzyResto, IzzyInventory, and Rema.",
       "date_start": "2020-02-01",
       "date_end": "2020-08-01",
@@ -94,6 +103,15 @@
       "currently": false,
       "icon": "ic_school",
       "link": "https://asia.ac.id"
+    },
+    {
+      "title": "System Administrator at Star Nt Game Center",
+      "descriptions": "Maintained day-to-day systems and technical operations before moving into software engineering.",
+      "date_start": "2017-08-01",
+      "date_end": "2020-02-29",
+      "currently": false,
+      "icon": "ic_desktop",
+      "link": null
     }
   ],
   "now": "Now",

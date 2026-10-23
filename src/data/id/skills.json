@@ -1,10 +1,25 @@
 {
   "header": {
     "title": "Keahlian Inti Saya",
-    "subtitle": "Saya membangun produk yang mudah dipelihara untuk mobile, web, dan API, dengan arsitektur jelas, kontrak yang terdefinisi, dan alur kerja yang konsisten.",
+    "subtitle": "Fokus saya saat ini adalah pengembangan frontend, didukung pengalaman membangun produk mobile dan API backend.",
     "tools_label": "Teknologi dan framework"
   },
   "skills": [
+    {
+      "title": "Frontend Engineer",
+      "description": "Membangun antarmuka web responsif dan fondasi frontend yang dapat digunakan kembali, dengan perhatian pada performa dan integrasi API.",
+      "tools": [
+        "React",
+        "Next.js",
+        "Vue",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "Zustand",
+        "i18next",
+        "Redux"
+      ]
+    },
     {
       "title": "Mobile Engineer",
       "description": "Membangun aplikasi mobile dan modul yang dapat digunakan kembali, dengan arsitektur terstruktur, navigasi dan dependency injection, serta pengelolaan state sesuai kebutuhan produk dan tim.",
@@ -25,21 +40,6 @@
         "DDD",
         "MVVM",
         "MVP"
-      ]
-    },
-    {
-      "title": "Frontend Engineer",
-      "description": "Membangun antarmuka web responsif dan menjaga struktur frontend modular dengan tools modern.",
-      "tools": [
-        "React",
-        "Next.js",
-        "Vue",
-        "TypeScript",
-        "Tailwind CSS",
-        "Vite",
-        "Zustand",
-        "i18next",
-        "Redux"
       ]
     },
     {

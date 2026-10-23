@@ -22,8 +22,8 @@ export function Skill(): React.ReactElement {
   const skills: SkillItem[] = translations.skills
 
   const icons: string[] = [
-    '/assets/icons/ic_android.svg',
     '/assets/icons/ic_front_end.svg',
+    '/assets/icons/ic_android.svg',
     '/assets/icons/ic_back_end.svg',
   ]
 

@@ -6,7 +6,7 @@ type OverviewItem = {
   title: string
   descriptions: string[]
   cta?: string
-  downloadCta?: string
+  profileCta?: string
 }
 
 export function Overview(): React.ReactElement {
@@ -16,7 +16,7 @@ export function Overview(): React.ReactElement {
     title: translations.title,
     descriptions: translations.descriptions,
     cta: translations.cta,
-    downloadCta: translations.download_cta,
+    profileCta: translations.profile_cta,
   }
 
   return (
@@ -41,7 +41,7 @@ export function Overview(): React.ReactElement {
           ))}
         </div>
 
-        {(overviewItem.cta || overviewItem.downloadCta) && (
+        {(overviewItem.cta || overviewItem.profileCta) && (
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
             {overviewItem.cta && (
               <button
@@ -57,13 +57,14 @@ export function Overview(): React.ReactElement {
                 {overviewItem.cta}
               </button>
             )}
-            {overviewItem.downloadCta && (
+            {overviewItem.profileCta && (
               <a
-                href="/CV%20Alfin%20Noviaji%20-%20FullStack.pdf"
-                download="CV Alfin Noviaji - FullStack.pdf"
+                href="https://www.linkedin.com/in/alpinnz/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-11 items-center justify-center rounded-full bg-primary-600 px-6 py-2.5 font-medium text-white transition-colors hover:bg-primary-700"
               >
-                {overviewItem.downloadCta}
+                {overviewItem.profileCta}
               </a>
             )}
           </div>
@@ -72,11 +73,11 @@ export function Overview(): React.ReactElement {
 
       {/* Right: Profile image */}
       <div className="flex flex-1 justify-center md:justify-end">
-          <Image
-          src={'/assets/images/profile.png'}
+        <Image
+          src="/assets/images/profile.png"
           alt="Portrait of Alfin Noviaji"
-          width={384}
-          height={384}
+          width={340}
+          height={340}
           preload
           className="h-auto w-48 rounded-[2rem] object-cover shadow-xl ring-1 ring-neutral-200/60 sm:w-56 md:w-64 lg:w-72"
         />
