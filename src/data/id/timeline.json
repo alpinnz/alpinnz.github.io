@@ -25,7 +25,6 @@
     },
     {
       "title": "Kontribusi Flutter Inspector: radius sudut",
-      "cv_featured": true,
       "descriptions": "Menambahkan akses ke nilai radius setiap sudut dari BoxDecoration di Inspector agar pemeriksaan antarmuka lebih akurat.",
       "date_start": "2026-02-11",
       "date_end": "2026-03-30",
@@ -52,8 +51,9 @@
       "link": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
     {
-      "title": "Usulan kompatibilitas iOS 26",
-      "descriptions": "Mengusulkan perpindahan penanganan metadata gambar dari ALAsset ke PHAsset agar kompatibel dengan iOS 26. Pengelola proyek kemudian memakai perbaikan lain dan menutup usulan tersebut.",
+      "title": "flutter_image_compress — usulan kompatibilitas iOS 26",
+      "cv_featured": true,
+      "descriptions": "Mengusulkan penggantian penanganan metadata gambar berbasis ALAsset dengan PHAsset agar kompatibel dengan iOS 26. Pengelola proyek menggabungkan perbaikan lain dan menutup pull request ini.",
       "date_start": "2025-09-21",
       "date_end": "2026-07-12",
       "currently": false,

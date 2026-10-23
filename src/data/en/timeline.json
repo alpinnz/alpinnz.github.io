@@ -25,7 +25,6 @@
     },
     {
       "title": "Flutter Inspector: border radius contribution",
-      "cv_featured": true,
       "descriptions": "Added access to individual corner-radius values from BoxDecoration in the Inspector, making UI inspection more precise.",
       "date_start": "2026-02-11",
       "date_end": "2026-03-30",
@@ -52,8 +51,9 @@
       "link": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
     {
-      "title": "iOS 26 compatibility proposal",
-      "descriptions": "Proposed moving image metadata handling from ALAsset to PHAsset for iOS 26 compatibility. Maintainers later used a different fix and closed the proposal.",
+      "title": "flutter_image_compress — iOS 26 compatibility proposal",
+      "cv_featured": true,
+      "descriptions": "Proposed replacing ALAsset-based image metadata handling with PHAsset for iOS 26 compatibility. Maintainers merged a different fix and closed this pull request.",
       "date_start": "2025-09-21",
       "date_end": "2026-07-12",
       "currently": false,
