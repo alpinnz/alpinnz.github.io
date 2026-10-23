@@ -7,12 +7,28 @@ export type RepositoryCategory =
   | 'learning'
   | 'profile'
 
+export type PortfolioCategory =
+  | 'mobile'
+  | 'frontend'
+  | 'fullstack'
+  | 'backend'
+  | 'design'
+  | 'packages'
+  | 'learning'
+
 export type GitHubRepository = {
   name: string
   url: string
   category: RepositoryCategory
   language: string | null
   detailsPending?: boolean
+  portfolio?: {
+    title: {
+      en: string
+      id: string
+    }
+    category: PortfolioCategory
+  }
   description: {
     en: string
     id: string
@@ -75,6 +91,13 @@ export const githubRepositories: GitHubRepository[] = [
     url: 'https://github.com/alpinnz/hono-rest-api-boilerplate',
     category: 'backend',
     language: 'TypeScript',
+    portfolio: {
+      title: {
+        en: 'Hono REST API Starter',
+        id: 'Starter REST API Hono',
+      },
+      category: 'backend',
+    },
     description: {
       en: 'REST API starter using Bun, Hono, Prisma, and PostgreSQL with authentication and release scripts.',
       id: 'Starter REST API dengan Bun, Hono, Prisma, dan PostgreSQL, termasuk autentikasi dan skrip rilis.',
@@ -95,6 +118,13 @@ export const githubRepositories: GitHubRepository[] = [
     url: 'https://github.com/alpinnz/research',
     category: 'research',
     language: 'Dart',
+    portfolio: {
+      title: {
+        en: 'Firebase Google Sign-In Study',
+        id: 'Riset Google Sign-In Firebase',
+      },
+      category: 'mobile',
+    },
     description: {
       en: 'Research project on Google sign-in with Firebase Authentication across Flutter web and Android.',
       id: 'Riset Google Sign-In dengan Firebase Authentication untuk Flutter web dan Android.',
@@ -116,6 +146,13 @@ export const githubRepositories: GitHubRepository[] = [
     url: 'https://github.com/alpinnz/synapsis-challenge',
     category: 'learning',
     language: 'Dart',
+    portfolio: {
+      title: {
+        en: 'Synapsis Flutter Challenge',
+        id: 'Tantangan Flutter Synapsis',
+      },
+      category: 'mobile',
+    },
     description: {
       en: 'Flutter coding challenge with generated models and unit-test instructions.',
       id: 'Tantangan coding Flutter dengan model hasil generator dan panduan pengujian unit.',
@@ -224,6 +261,13 @@ export const githubRepositories: GitHubRepository[] = [
     url: 'https://github.com/alpinnz/Seleksi-Bootcamp-Arkademy-Batch-13-5',
     category: 'learning',
     language: 'JavaScript',
+    portfolio: {
+      title: {
+        en: 'Arkademy CRUD Assignment',
+        id: 'Tugas CRUD Arkademy',
+      },
+      category: 'learning',
+    },
     description: {
       en: 'Bootcamp CRUD assignment using Node.js, Express, EJS, Bootstrap, and MySQL.',
       id: 'Tugas CRUD bootcamp dengan Node.js, Express, EJS, Bootstrap, dan MySQL.',
@@ -234,6 +278,13 @@ export const githubRepositories: GitHubRepository[] = [
     url: 'https://github.com/alpinnz/Seleksi-Bootcamp-Arkademy-Batch-14-1',
     category: 'learning',
     language: 'JavaScript',
+    portfolio: {
+      title: {
+        en: 'Web & SQL Fundamentals',
+        id: 'Dasar Web & SQL',
+      },
+      category: 'learning',
+    },
     description: {
       en: 'Early bootcamp exercises covering JavaScript, SQL, HTML, and PHP/MySQL.',
       id: 'Latihan bootcamp awal yang mencakup JavaScript, SQL, HTML, dan PHP/MySQL.',
@@ -244,6 +295,13 @@ export const githubRepositories: GitHubRepository[] = [
     url: 'https://github.com/alpinnz/Bootcamp-DumbWays-Batch-14-Kloter-1',
     category: 'learning',
     language: 'HTML · JavaScript · CSS',
+    portfolio: {
+      title: {
+        en: 'Coding Bootcamp Exercises',
+        id: 'Latihan Bootcamp Coding',
+      },
+      category: 'learning',
+    },
     description: {
       en: 'Early web and database exercises from a coding bootcamp selection project.',
       id: 'Latihan web dan basis data dari proyek seleksi bootcamp coding.',

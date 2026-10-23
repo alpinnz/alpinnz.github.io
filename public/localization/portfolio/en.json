@@ -4,7 +4,7 @@
   "header": {
     "eyebrow": "Selected work",
     "title": "Some Things I’ve Built",
-    "subtitle": "Selected work in product engineering, developer tooling, and application security."
+    "subtitle": "Selected product work, developer tools, and research projects."
   },
   "categories": {
     "all": "All",
@@ -13,35 +13,15 @@
     "fullstack": "Full stack",
     "backend": "Backend",
     "design": "Design",
-    "packages": "Packages"
-  },
-  "repository_index": {
-    "title": "Public GitHub repositories",
-    "description": "Browse the public repositories by project area and technology.",
-    "count": "{count} public repositories",
-    "results_count": "Showing {shown} of {total} repositories",
-    "search_label": "Search repositories",
-    "search_placeholder": "Search by name, area, or technology",
-    "filter_label": "Filter repositories by area",
-    "empty_state": "No repositories match your search.",
-    "details_pending": "Overview pending",
-    "open_repository": "Open repository",
-    "category_labels": {
-      "all": "All",
-      "tools": "Developer tools",
-      "backend": "Backend & API",
-      "web": "Web & product",
-      "mobile": "Mobile",
-      "research": "Research",
-      "learning": "Learning projects",
-      "profile": "Profile"
-    }
+    "packages": "Packages",
+    "learning": "Learning"
   },
   "features_label": "What it includes",
   "empty_state": "No projects in this category yet.",
-  "show_all_projects": "View all {count} projects",
+  "load_more_projects": "Load {count} more projects",
   "show_less_projects": "Show fewer projects",
   "project_details_label": "View {title} project details",
+  "project_repository_label": "Open {title} repository",
   "close_details_label": "Close project details",
   "open_image_label": "View image full screen",
   "close_image_label": "Close image",

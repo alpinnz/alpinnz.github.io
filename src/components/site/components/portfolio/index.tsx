@@ -4,7 +4,10 @@ import { motion } from 'framer-motion'
 import { Dialog, Transition } from '@headlessui/react'
 import { useLocalization } from '@valfuse-node/react'
 import { useLocalizedModule } from '../../locales/use-localized-module'
-import { githubRepositories, type RepositoryCategory } from '@/data/github-repositories'
+import {
+  githubRepositories,
+  type PortfolioCategory,
+} from '@/data/github-repositories'
 
 const initialPortfolioItems = 6
 
@@ -14,6 +17,8 @@ type PortfolioHeader = {
   subtitle: string
 }
 
+type PortfolioCategoryWithAll = PortfolioCategory | 'all'
+
 type PortfolioItem = {
   title: string
   descriptions: string
@@ -21,7 +26,7 @@ type PortfolioItem = {
   features?: string[]
   thumbnail: string
   gallery: string[]
-  category: 'mobile' | 'frontend' | 'fullstack' | 'backend' | 'design' | 'packages'
+  category: PortfolioCategory
   techStack: string[]
   created_at?: string
   liveUrl?: string
@@ -31,12 +36,33 @@ type PortfolioItem = {
   appStoreUrl?: string
 }
 
+type PortfolioProject =
+  | {
+      kind: 'case-study'
+      id: string
+      title: string
+      descriptions: string
+      category: PortfolioCategory
+      createdAt?: string
+      item: PortfolioItem
+    }
+  | {
+      kind: 'repository'
+      id: string
+      title: string
+      descriptions: string
+      category: PortfolioCategory
+      repositoryName: string
+      url: string
+      language: string | null
+    }
+
 export function Portfolio(): React.ReactElement {
   const { locale } = useLocalization()
   const translations = useLocalizedModule('portfolio')
 
   const header: PortfolioHeader = translations.header
-  const categories = [
+  const categories: PortfolioCategoryWithAll[] = [
     'all',
     'packages',
     'mobile',
@@ -44,59 +70,72 @@ export function Portfolio(): React.ReactElement {
     'fullstack',
     'backend',
     'design',
+    'learning',
   ]
-  const [activeCategory, setActiveCategory] = React.useState(categories[0])
+  const [activeCategory, setActiveCategory] = React.useState<PortfolioCategoryWithAll>('all')
   const [selectedItem, setSelectedItem] = React.useState<PortfolioItem | null>(
     null,
   )
   const [isOpen, setIsOpen] = React.useState(false)
-  const [showAllPortfolioItems, setShowAllPortfolioItems] = React.useState(false)
+  const [visiblePortfolioCount, setVisiblePortfolioCount] = React.useState(
+    initialPortfolioItems,
+  )
   const [currentGalleryIndex, setCurrentGalleryIndex] = React.useState(0)
   const [isImageModalOpen, setIsImageModalOpen] = React.useState(false) // 🆕 state baru
-  const [activeRepositoryCategory, setActiveRepositoryCategory] =
-    React.useState<'all' | RepositoryCategory>('all')
-  const [repositoryQuery, setRepositoryQuery] = React.useState('')
   const portfolioItems: PortfolioItem[] = translations.items as PortfolioItem[]
-  const repositoryCategories: Array<'all' | RepositoryCategory> = [
-    'all',
-    'tools',
-    'backend',
-    'web',
-    'mobile',
-    'research',
-    'learning',
-    'profile',
-  ]
 
-  const sortedItems = React.useMemo(() => {
-    return [...portfolioItems].sort((a, b) => {
-      const aTime = a.created_at ? Date.parse(a.created_at) : 0
-      const bTime = b.created_at ? Date.parse(b.created_at) : 0
+  const linkedRepositoryUrls = new Set(
+    portfolioItems.flatMap((item) => (item.repoUrl ? [item.repoUrl] : [])),
+  )
+  const caseStudyProjects: PortfolioProject[] = portfolioItems.map((item) => ({
+    kind: 'case-study',
+    id: `case-study:${item.title}`,
+    title: item.title,
+    descriptions: item.descriptions,
+    category: item.category,
+    createdAt: item.created_at,
+    item,
+  }))
+  const repositoryProjects: PortfolioProject[] = githubRepositories.flatMap(
+    (repository): PortfolioProject[] => {
+      if (!repository.portfolio || linkedRepositoryUrls.has(repository.url)) {
+        return []
+      }
+
+      const localeKey = locale === 'id' ? 'id' : 'en'
+
+      return [
+        {
+          kind: 'repository',
+          id: `repository:${repository.name}`,
+          title: repository.portfolio.title[localeKey],
+          descriptions: repository.description[localeKey],
+          category: repository.portfolio.category,
+          repositoryName: repository.name,
+          url: repository.url,
+          language: repository.language,
+        },
+      ]
+    },
+  )
+  const sortedItems = [...caseStudyProjects, ...repositoryProjects].sort(
+    (a, b) => {
+      const aTime = a.kind === 'case-study' && a.createdAt
+        ? Date.parse(a.createdAt)
+        : 0
+      const bTime = b.kind === 'case-study' && b.createdAt
+        ? Date.parse(b.createdAt)
+        : 0
       return bTime - aTime
-    })
-  }, [portfolioItems])
+    },
+  )
 
   const filteredItems =
     activeCategory === 'all'
       ? sortedItems
       : sortedItems.filter((item) => item.category === activeCategory)
-  const visibleItems = showAllPortfolioItems
-    ? filteredItems
-    : filteredItems.slice(0, initialPortfolioItems)
-
-  const filteredRepositories = React.useMemo(() => {
-    const query = repositoryQuery.trim().toLocaleLowerCase()
-    return githubRepositories.filter((repository) => {
-      const matchesCategory =
-        activeRepositoryCategory === 'all' ||
-        repository.category === activeRepositoryCategory
-      const description = repository.description[locale === 'id' ? 'id' : 'en']
-      const searchableText = [repository.name, repository.language ?? '', description]
-        .join(' ')
-        .toLocaleLowerCase()
-      return matchesCategory && (!query || searchableText.includes(query))
-    })
-  }, [activeRepositoryCategory, locale, repositoryQuery])
+  const visibleItems = filteredItems.slice(0, visiblePortfolioCount)
+  const remainingProjectCount = filteredItems.length - visibleItems.length
 
   const openModal = (item: PortfolioItem) => {
     setSelectedItem(item)
@@ -151,7 +190,7 @@ export function Portfolio(): React.ReactElement {
             aria-pressed={activeCategory === cat}
             onClick={() => {
               setActiveCategory(cat)
-              setShowAllPortfolioItems(false)
+              setVisiblePortfolioCount(initialPortfolioItems)
             }}
             className={`min-h-10 shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 ${
               activeCategory === cat
@@ -166,44 +205,62 @@ export function Portfolio(): React.ReactElement {
 
       {/* Cards Grid */}
       <motion.div
+        id="portfolio-projects"
         layout
         className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4"
       >
-        {visibleItems.map((item, index) => (
-          <motion.button
-            key={`${item.title}-${index}`}
-            layout
-            type="button"
-            aria-label={translations.project_details_label.replace('{title}', item.title)}
-            className="group overflow-hidden rounded-2xl border border-neutral-100 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-primary-500"
-            initial={{ y: 40 }}
-            whileInView={{ y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.06 }}
-            viewport={{ once: true }}
-            onClick={() => openModal(item)}
-          >
-            <div className="relative aspect-[16/9] bg-neutral-50 sm:aspect-[16/8]">
-              <Image
-                src={item.thumbnail}
-                alt={`${item.title} project preview`}
-                fill
-                loading="lazy"
-                className="object-contain p-3"
-              />
-            </div>
-            <div className="p-4">
-              <span className="text-xs font-semibold uppercase tracking-wide text-primary-700">
-                {translations.categories[item.category]}
-              </span>
-              <h3 className="mt-1 text-base font-semibold leading-snug text-neutral-900">
-                {item.title}
-              </h3>
-              <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-neutral-600">
-                {item.descriptions}
-              </p>
-            </div>
-          </motion.button>
-        ))}
+        {visibleItems.map((project, index) =>
+          project.kind === 'case-study' ? (
+            <motion.button
+              key={project.id}
+              layout
+              type="button"
+              aria-label={translations.project_details_label.replace(
+                '{title}',
+                project.title,
+              )}
+              className="group overflow-hidden rounded-2xl border border-neutral-100 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-primary-500"
+              initial={{ y: 24, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: (index % 6) * 0.04 }}
+              viewport={{ once: true }}
+              onClick={() => openModal(project.item)}
+            >
+              <div className="relative aspect-[16/9] bg-neutral-50 sm:aspect-[16/8]">
+                <Image
+                  src={project.item.thumbnail}
+                  alt={`${project.title} project preview`}
+                  fill
+                  loading="lazy"
+                  className="object-contain p-3"
+                />
+              </div>
+              <div className="p-4">
+                <span className="text-xs font-semibold uppercase tracking-wide text-primary-700">
+                  {translations.categories[project.category]}
+                </span>
+                <h3 className="mt-1 text-base font-semibold leading-snug text-neutral-900">
+                  {project.title}
+                </h3>
+                <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-neutral-600">
+                  {project.descriptions}
+                </p>
+              </div>
+            </motion.button>
+          ) : (
+            <RepositoryProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              categoryLabel={translations.categories[project.category]}
+              repositoryLabel={translations.repository_label}
+              openLabel={translations.project_repository_label.replace(
+                '{title}',
+                project.title,
+              )}
+            />
+          ),
+        )}
       </motion.div>
       {filteredItems.length === 0 && (
         <p className="rounded-2xl border border-dashed border-neutral-200 bg-neutral-50 px-5 py-10 text-center text-sm text-neutral-600">
@@ -214,129 +271,29 @@ export function Portfolio(): React.ReactElement {
         <div className="mt-5 text-center">
           <button
             type="button"
-            aria-expanded={showAllPortfolioItems}
-            onClick={() => setShowAllPortfolioItems((current) => !current)}
+            aria-expanded={visibleItems.length > initialPortfolioItems}
+            aria-controls="portfolio-projects"
+            onClick={() => {
+              if (remainingProjectCount === 0) {
+                setVisiblePortfolioCount(initialPortfolioItems)
+                return
+              }
+
+              setVisiblePortfolioCount((current) =>
+                Math.min(current + initialPortfolioItems, filteredItems.length),
+              )
+            }}
             className="min-h-11 rounded-full border border-neutral-200 bg-white px-5 py-2 text-sm font-semibold text-neutral-800 transition-colors hover:border-primary-400 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           >
-            {showAllPortfolioItems
+            {remainingProjectCount === 0
               ? translations.show_less_projects
-              : translations.show_all_projects.replace(
+              : translations.load_more_projects.replace(
                   '{count}',
-                  String(filteredItems.length),
+                  String(Math.min(initialPortfolioItems, remainingProjectCount)),
                 )}
           </button>
         </div>
       )}
-
-      <details className="group mt-8 overflow-hidden rounded-3xl border border-neutral-200/80 bg-white shadow-sm open:shadow-md">
-        <summary className="flex min-h-20 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 marker:hidden focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary-600 sm:px-6">
-          <span className="min-w-0">
-            <span className="block text-base font-semibold text-neutral-900 sm:text-lg">
-              {translations.repository_index.title}
-            </span>
-            <span className="mt-1 block text-sm leading-relaxed text-neutral-600">
-              {translations.repository_index.description}
-            </span>
-          </span>
-          <span className="flex shrink-0 items-center gap-2 text-sm font-semibold text-primary-800">
-            {translations.repository_index.count.replace(
-              '{count}',
-              String(githubRepositories.length),
-            )}
-            <span
-              aria-hidden="true"
-              className="text-xl transition-transform group-open:rotate-180"
-            >
-              ⌄
-            </span>
-          </span>
-        </summary>
-
-        <div className="border-t border-neutral-100 p-4 sm:p-6">
-          <label className="relative block">
-            <span className="sr-only">{translations.repository_index.search_label}</span>
-            <input
-              type="search"
-              value={repositoryQuery}
-              onChange={(event) => setRepositoryQuery(event.target.value)}
-              placeholder={translations.repository_index.search_placeholder}
-              className="min-h-11 w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 text-sm text-neutral-900 outline-none transition focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-100"
-            />
-          </label>
-
-          <div
-            role="group"
-            aria-label={translations.repository_index.filter_label}
-            className="mt-3 flex gap-2 overflow-x-auto pb-1 sm:flex-wrap"
-          >
-            {repositoryCategories.map((category) => (
-              <button
-                key={category}
-                type="button"
-                aria-pressed={activeRepositoryCategory === category}
-                onClick={() => setActiveRepositoryCategory(category)}
-                className={`min-h-9 shrink-0 rounded-full px-3.5 py-1.5 text-xs font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 sm:text-sm ${
-                  activeRepositoryCategory === category
-                    ? 'bg-neutral-900 text-white'
-                    : 'border border-neutral-200 bg-white text-neutral-700 hover:border-primary-300 hover:text-primary-800'
-                }`}
-              >
-                {translations.repository_index.category_labels[category]}
-              </button>
-            ))}
-          </div>
-
-          <p className="mt-4 text-xs font-medium text-neutral-500" role="status" aria-live="polite">
-            {translations.repository_index.results_count
-              .replace('{shown}', String(filteredRepositories.length))
-              .replace('{total}', String(githubRepositories.length))}
-          </p>
-
-          {filteredRepositories.length > 0 ? (
-            <ul className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2 xl:grid-cols-3">
-              {filteredRepositories.map((repository) => (
-                <li key={repository.name} className="min-w-0">
-                  <a
-                    href={repository.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${translations.repository_index.open_repository}: ${repository.name}`}
-                    className="group block h-full rounded-2xl border border-neutral-200/80 bg-white p-4 transition-colors hover:border-primary-300 hover:bg-primary-50/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
-                  >
-                    <div className="flex flex-wrap items-center gap-1.5">
-                      <span className="rounded-full bg-primary-50 px-2.5 py-1 text-[11px] font-semibold text-primary-900">
-                        {translations.repository_index.category_labels[repository.category]}
-                      </span>
-                      {repository.detailsPending && (
-                        <span className="rounded-full bg-neutral-100 px-2.5 py-1 text-[11px] font-medium text-neutral-600">
-                          {translations.repository_index.details_pending}
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="mt-2 break-words text-sm font-semibold text-neutral-900">
-                      {repository.name}
-                    </h3>
-                    <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-neutral-600">
-                      {repository.description[locale === 'id' ? 'id' : 'en']}
-                    </p>
-                    <div className="mt-3 flex items-center justify-between gap-2 border-t border-neutral-100 pt-2.5 text-[11px] font-medium text-neutral-500">
-                      <span>{repository.language ?? 'GitHub'}</span>
-                      <span className="inline-flex items-center gap-1 text-primary-800">
-                        {translations.repository_index.open_repository}
-                        <span aria-hidden="true">↗</span>
-                      </span>
-                    </div>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mt-4 rounded-2xl border border-dashed border-neutral-200 px-5 py-8 text-center text-sm text-neutral-600">
-              {translations.repository_index.empty_state}
-            </p>
-          )}
-        </div>
-      </details>
 
       {/* Detail Modal */}
       <Transition show={isOpen} as={React.Fragment}>
@@ -542,5 +499,75 @@ export function Portfolio(): React.ReactElement {
         </Dialog>
       </Transition>
     </section>
+  )
+}
+
+type RepositoryProjectCardProps = {
+  project: Extract<PortfolioProject, { kind: 'repository' }>
+  index: number
+  categoryLabel: string
+  repositoryLabel: string
+  openLabel: string
+}
+
+function RepositoryProjectCard({
+  project,
+  index,
+  categoryLabel,
+  repositoryLabel,
+  openLabel,
+}: RepositoryProjectCardProps): React.ReactElement {
+  return (
+    <motion.a
+      layout
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={openLabel}
+      className="group block overflow-hidden rounded-2xl border border-neutral-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-primary-500"
+      initial={{ y: 24, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.3, delay: (index % 6) * 0.04 }}
+      viewport={{ once: true }}
+    >
+      <div className="relative flex aspect-[16/9] flex-col justify-between overflow-hidden bg-gradient-to-br from-primary-50 via-white to-slate-100 p-4 sm:aspect-[16/8] sm:p-5">
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-2 -top-7 select-none text-[8rem] font-bold leading-none text-primary-100/80"
+        >
+          {project.title.slice(0, 1)}
+        </span>
+        <div className="relative flex items-center justify-between gap-2">
+          <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-primary-800 shadow-sm">
+            {categoryLabel}
+          </span>
+          <span className="rounded-full border border-white/80 bg-white/70 px-2.5 py-1 text-[11px] font-medium text-neutral-600">
+            {project.language ?? 'GitHub'}
+          </span>
+        </div>
+        <div className="relative flex min-w-0 items-end justify-between gap-3">
+          <div className="min-w-0">
+            <p className="truncate text-xs font-medium text-neutral-600">
+              alpinnz/{project.repositoryName}
+            </p>
+            <div className="mt-2 h-1 w-12 rounded-full bg-primary-500 transition-all group-hover:w-16" />
+          </div>
+          <span aria-hidden="true" className="shrink-0 text-xl text-primary-700">
+            ↗
+          </span>
+        </div>
+      </div>
+      <div className="p-4">
+        <h3 className="text-base font-semibold leading-snug text-neutral-900">
+          {project.title}
+        </h3>
+        <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-neutral-600">
+          {project.descriptions}
+        </p>
+        <div className="mt-3 border-t border-neutral-100 pt-2.5 text-xs font-semibold text-primary-800">
+          {repositoryLabel}
+        </div>
+      </div>
+    </motion.a>
   )
 }
