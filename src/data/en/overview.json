@@ -1,9 +1,11 @@
 {
-  "title": "Hello, I’m Alfin — a Senior Frontend Developer",
+  "title": "Hello, I’m Alfin — a Software Engineer",
   "descriptions": [
     "I build web and mobile products that are easy to use and maintain, from the interface to API integration.",
-    "At PT Ada Ide Langsung Jalan, I develop Smartlink products across the full stack."
+    "At PT Ada Ide Langsung Jalan, I develop Smartlink products as a Senior Frontend Developer."
   ],
   "cta": "Contact Me",
+  "cv_cta": "Download CV",
+  "cv_file": "/Alfin-Noviaji-CV-EN.pdf",
   "portrait_alt": "Portrait of Alfin Noviaji"
 }

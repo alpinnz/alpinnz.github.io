@@ -1,0 +1,87 @@
+{
+  "role": "Software Engineer | Senior Frontend Developer",
+  "updated": "October 2026",
+  "summary": "Software engineer based in Malang with experience across web, mobile, and backend development. Currently a Senior Frontend Developer at PT Ada Ide Langsung Jalan, building Smartlink products and contributing to Groapp. Previously led frontend delivery across multiple products. I focus on clear product workflows, maintainable architecture, API integration, and practical developer tooling.",
+  "sections": {
+    "summary": "Profile",
+    "skills": "Core skills",
+    "experience": "Experience",
+    "projects": "Selected public work",
+    "education": "Education & certification"
+  },
+  "skills": [
+    { "label": "Frontend", "value": "TypeScript, React, Next.js, Vue, responsive UI, localization, API integration" },
+    { "label": "Mobile", "value": "Flutter, Dart, Kotlin, React Native, cross-platform delivery, UI testing" },
+    { "label": "Backend", "value": "Node.js, Go, Hono, PostgreSQL, MongoDB, authentication, Docker" },
+    { "label": "Leadership", "value": "Technical planning, mentoring, code review, shared components and standards" }
+  ],
+  "experience": [
+    {
+      "role": "Senior Frontend Developer",
+      "organization": "PT Ada Ide Langsung Jalan",
+      "period": "Aug 2026 - Present",
+      "description": "Develop Smartlink products as a Senior Frontend Developer, including web and mobile features, architecture, API integration, performance, and code quality. Contribute to Groapp modules such as Access and Accounting in collaboration with product and backend teams."
+    },
+    {
+      "role": "Frontend Engineer Lead",
+      "organization": "PT Ada Ide Langsung Jalan",
+      "period": "Jan 2022 - Jul 2026",
+      "description": "Led frontend delivery for Smartlink Owner, Smartlink Kasir, KasirMudah, Smartlink White Label, and Groapp modules across web and mobile. Planned work and team capacity, mentored engineers, reviewed code, and established reusable foundations and technical standards."
+    },
+    {
+      "role": "Full Stack Engineer (Freelance)",
+      "organization": "Independent",
+      "period": "Jan 2020 - Present",
+      "description": "Independent full-stack work across web and mobile applications alongside product engineering roles."
+    },
+    {
+      "role": "Back End Engineer",
+      "organization": "Stellarlab",
+      "period": "Oct 2021 - Oct 2022",
+      "description": "Developed backend features with Node.js and collaborated on implementation and technical learning."
+    },
+    {
+      "role": "Mobile Engineer",
+      "organization": "PT Ada Ide Langsung Jalan",
+      "period": "Jun 2021 - Dec 2021",
+      "description": "Built core Flutter features for Smartlink Kasir using modular code and domain-driven design principles."
+    },
+    {
+      "role": "Android Engineer",
+      "organization": "Gumcode",
+      "period": "Mar 2021 - May 2021",
+      "description": "Developed Android features for the CloseBuy property marketplace using MVVM."
+    },
+    {
+      "role": "Android Engineer",
+      "organization": "PT Aku Peduli Indonesia",
+      "period": "Feb 2020 - Aug 2020",
+      "description": "Contributed to IzzyResto, IzzyInventory, and Rema Android applications using Kotlin and Flutter."
+    },
+    {
+      "role": "System Administrator",
+      "organization": "Star Nt Game Center",
+      "period": "Aug 2017 - Feb 2020",
+      "description": "Maintained daily technical operations and an ERP application for products, finance, and employee scheduling."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Valfuse Node",
+      "description": "TypeScript toolkit for forms, validation, localization, and code generation with React, Vue, and Express integrations.",
+      "url": "https://github.com/alpinnz/valfuse-node"
+    },
+    {
+      "name": "Flutter developer tools",
+      "description": "Published localization_gen for typed translations and automation_keys_gen for consistent UI test identifiers.",
+      "url": "https://github.com/alpinnz/localization_gen"
+    },
+    {
+      "name": "Frontend HTML sanitization study",
+      "description": "Compared React and Flutter sanitization with automated tests covering more than 60 XSS examples.",
+      "url": "https://github.com/alpinnz/research-sanitazion-frontend"
+    }
+  ],
+  "education": "Bachelor of Computer Science, Institut Teknologi dan Bisnis ASIA (Oct 2017 - Feb 2021).",
+  "certification": "Microsoft Technology Associate: HTML5 Application Development Fundamentals."
+}

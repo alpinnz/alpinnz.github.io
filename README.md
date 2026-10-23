@@ -29,6 +29,7 @@ After this workflow is merged into `master`, pushes to `master` run deployment t
 - `npm run localization:validate` checks the generated source without emitting runtime files.
 - React uses `@valfuse-node/react` for localization state and the contact form. `@valfuse-node/validation` owns its schema and rules. The project does not need the Express or Vue adapters.
 - Images, icons, project galleries, and CV: `public/assets`, `public/portfolio`, and `public`
+- Public CV sources: `cv/id.json` and `cv/en.json`. After editing either file, install `cv/requirements.txt` and run `python cv/generate.py` to rebuild both downloadable PDFs in `public/`. Keep private contact details out of these public files.
 
 ## Contact form delivery
 

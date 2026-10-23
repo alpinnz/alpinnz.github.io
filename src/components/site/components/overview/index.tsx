@@ -6,6 +6,8 @@ type OverviewItem = {
   title: string
   descriptions: string[]
   cta?: string
+  cvCta: string
+  cvFile: string
 }
 
 export function Overview(): React.ReactElement {
@@ -15,6 +17,8 @@ export function Overview(): React.ReactElement {
     title: translations.title,
     descriptions: translations.descriptions,
     cta: translations.cta,
+    cvCta: translations.cv_cta,
+    cvFile: translations.cv_file,
   }
 
   return (
@@ -39,20 +43,29 @@ export function Overview(): React.ReactElement {
           ))}
         </div>
 
-        {overviewItem.cta && (
-          <button
-            type="button"
-            onClick={() =>
-              document.getElementById('contact')?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-              })
-            }
-            className="mt-6 inline-flex min-h-11 items-center justify-center rounded-full bg-primary-600 px-6 py-2.5 font-medium text-white transition-colors duration-200 hover:bg-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3 md:justify-start">
+          {overviewItem.cta && (
+            <button
+              type="button"
+              onClick={() =>
+                document.getElementById('contact')?.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                })
+              }
+              className="inline-flex min-h-11 items-center justify-center rounded-full bg-primary-600 px-6 py-2.5 font-medium text-white transition-colors duration-200 hover:bg-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+            >
+              {overviewItem.cta}
+            </button>
+          )}
+          <a
+            href={overviewItem.cvFile}
+            download
+            className="inline-flex min-h-11 items-center justify-center rounded-full border border-primary-600 bg-white px-6 py-2.5 font-medium text-primary-800 transition-colors duration-200 hover:bg-primary-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           >
-            {overviewItem.cta}
-          </button>
-        )}
+            {overviewItem.cvCta}
+          </a>
+        </div>
       </div>
 
       {/* Right: Profile image */}
