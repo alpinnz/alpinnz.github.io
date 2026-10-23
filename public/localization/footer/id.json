@@ -5,6 +5,7 @@
     "title": "Hubungi Saya",
     "subtitle": "Hubungi saya untuk membahas proyek, bertanya, atau sekadar menyapa."
   },
+  "social_label": "Temukan saya di",
   "form": {
     "labels": {
       "name": "Nama",
@@ -28,18 +29,13 @@
   },
   "contactItems": {
     "0": {
-      "title": "Jalan Raya Losawi No. 15, Malang",
+      "title": "Malang, Jawa Timur, Indonesia",
       "icon": "ic_address"
     },
     "1": {
       "title": "alpinnz@gmail.com",
       "icon": "ic_email",
       "link": "mailto:alpinnz@gmail.com"
-    },
-    "2": {
-      "title": "github.com/alpinnz",
-      "icon": "ic_github",
-      "link": "https://github.com/alpinnz"
     }
   },
   "copyright": "© {year} Alfin Noviaji. Semua hak dilindungi."

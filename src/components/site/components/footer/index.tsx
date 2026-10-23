@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 import { useLocalization, useValfuseForm } from '@valfuse-node/react'
 import { createSchema, t as transforms } from '@valfuse-node/validation'
 import { useLocalizedModule } from '../../locales/use-localized-module'
+import { socialLinks } from '@/data/social-links'
 
 const iconMap: Record<string, string> = {
   ic_address: '/assets/icons/ic_address.svg',
   ic_email: '/assets/icons/ic_email.svg',
-  ic_github: '/assets/icons/ic_github.svg',
 }
 
 interface ButtonProps {
@@ -169,7 +169,7 @@ export function Footer(): React.ReactElement {
               >
                 <Image
                   src={iconMap[item.icon]}
-                  alt={item.title}
+                  alt=""
                   width={20}
                   height={20}
                   className="mt-0.5 h-5 w-5 shrink-0 brightness-0 opacity-70"
@@ -191,6 +191,24 @@ export function Footer(): React.ReactElement {
               </motion.div>
             ))}
           </div>
+          <nav aria-label={translations.social_label} className="mt-1">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-600">
+              {translations.social_label}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-neutral-200 bg-neutral-50 px-3.5 text-sm font-semibold text-neutral-700 transition-colors hover:border-primary-400 hover:bg-primary-50 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                >
+                  {link.label} <span aria-hidden="true">↗</span>
+                </a>
+              ))}
+            </div>
+          </nav>
         </div>
 
         {/* Contact Form */}

@@ -1,12 +1,13 @@
 import * as React from 'react'
 import Image from 'next/image'
 import { useLocalizedModule } from '../../locales/use-localized-module'
+import { socialLinks } from '@/data/social-links'
 
 type OverviewItem = {
   title: string
   descriptions: string[]
   cta?: string
-  profileCta?: string
+  socialLabel: string
 }
 
 export function Overview(): React.ReactElement {
@@ -16,7 +17,7 @@ export function Overview(): React.ReactElement {
     title: translations.title,
     descriptions: translations.descriptions,
     cta: translations.cta,
-    profileCta: translations.profile_cta,
+    socialLabel: translations.social_label,
   }
 
   return (
@@ -41,34 +42,37 @@ export function Overview(): React.ReactElement {
           ))}
         </div>
 
-        {(overviewItem.cta || overviewItem.profileCta) && (
-          <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
-            {overviewItem.cta && (
-              <button
-                type="button"
-                onClick={() =>
-                  document.getElementById('contact')?.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                  })
-                }
-                className="inline-flex min-h-11 items-center justify-center rounded-full border border-primary-500 px-6 py-2.5 font-medium text-primary-700 transition-colors duration-200 hover:bg-primary-500 hover:text-white"
-              >
-                {overviewItem.cta}
-              </button>
-            )}
-            {overviewItem.profileCta && (
-              <a
-                href="https://www.linkedin.com/in/alpinnz/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center justify-center rounded-full bg-primary-600 px-6 py-2.5 font-medium text-white transition-colors hover:bg-primary-700"
-              >
-                {overviewItem.profileCta}
-              </a>
-            )}
-          </div>
+        {overviewItem.cta && (
+          <button
+            type="button"
+            onClick={() =>
+              document.getElementById('contact')?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              })
+            }
+            className="mt-6 inline-flex min-h-11 items-center justify-center rounded-full bg-primary-600 px-6 py-2.5 font-medium text-white transition-colors duration-200 hover:bg-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+          >
+            {overviewItem.cta}
+          </button>
         )}
+
+        <nav aria-label={overviewItem.socialLabel} className="mt-5 flex flex-wrap items-center justify-center gap-2 md:justify-start">
+          <span className="mr-1 text-xs font-semibold uppercase tracking-wide text-neutral-600">
+            {overviewItem.socialLabel}
+          </span>
+          {socialLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-3.5 text-sm font-semibold text-neutral-700 transition-colors hover:border-primary-400 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+            >
+              {link.label} <span aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </nav>
       </div>
 
       {/* Right: Profile image */}

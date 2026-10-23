@@ -5,6 +5,7 @@
     "title": "Get in Touch",
     "subtitle": "Get in touch about a project, a question, or just to say hello."
   },
+  "social_label": "Find me online",
   "form": {
     "labels": {
       "name": "Name",
@@ -28,18 +29,13 @@
   },
   "contactItems": {
     "0": {
-      "title": "Jalan Raya Losawi No. 15, Malang",
+      "title": "Malang, East Java, Indonesia",
       "icon": "ic_address"
     },
     "1": {
       "title": "alpinnz@gmail.com",
       "icon": "ic_email",
       "link": "mailto:alpinnz@gmail.com"
-    },
-    "2": {
-      "title": "github.com/alpinnz",
-      "icon": "ic_github",
-      "link": "https://github.com/alpinnz"
     }
   },
   "copyright": "© {year} Alfin Noviaji. All rights reserved."
