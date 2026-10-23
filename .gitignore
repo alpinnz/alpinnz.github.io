@@ -12,6 +12,8 @@
 
 # testing
 /coverage
+/.playwright-mcp/
+/artifacts/
 
 # next.js
 /.next/

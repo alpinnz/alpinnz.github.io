@@ -20,6 +20,8 @@ p { margin: 0; line-height: 1.62; }
 .cv-entry { margin: 0 0 19px; break-inside: avoid; }
 .cv-entry:last-child { margin-bottom: 0; }
 .cv-entry .cv-meta { margin-bottom: 5px; color: #40515e; font-size: 14px; }
+.cv-highlights { margin: 4px 0 0; padding-left: 20px; line-height: 1.5; }
+.cv-highlights li + li { margin-top: 4px; }
 .cv-entry a { display: inline-block; margin-top: 5px; font-size: 14px; }
 @media (max-width: 600px) {
   .cv { width: 100%; margin: 0; padding: 24px 20px 38px; border: 0; border-radius: 0; box-shadow: none; }
@@ -30,9 +32,20 @@ p { margin: 0; line-height: 1.62; }
   section { margin-top: 26px; }
 }
 @media print {
-  html { background: white; }
+  @page { size: A4; margin: 14mm 15mm; }
+  html { background: white; font-size: 10pt; }
   .cv { width: 100%; margin: 0; padding: 0; border: 0; box-shadow: none; }
   .cv-actions { display: none; }
+  .cv-header h1 { font-size: 21pt; }
+  .cv-role { font-size: 11pt; }
+  .cv-contact, .cv-entry .cv-meta, .cv-entry a { font-size: 9.5pt; }
+  h2 { font-size: 12pt; margin-bottom: 7px; }
+  h3 { font-size: 10.5pt; }
+  p { line-height: 1.38; }
+  section { margin-top: 17px; break-inside: auto; }
+  .cv-entry { margin-bottom: 11px; }
+  .cv-highlights { padding-left: 17px; line-height: 1.38; }
+  .cv-highlights li + li { margin-top: 2px; }
   a { color: #172b3a; text-decoration: none; }
-  section { break-inside: avoid-page; }
+  h2, h3 { break-after: avoid-page; }
 }

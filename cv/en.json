@@ -20,13 +20,19 @@
       "role": "Senior Frontend Developer",
       "organization": "PT Ada Ide Langsung Jalan",
       "period": "Aug 2026 - Present",
-      "description": "Develop Smartlink products as a Senior Frontend Developer, including web and mobile features, architecture, API integration, performance, and code quality. Contribute to Groapp modules such as Access and Accounting in collaboration with product and backend teams."
+      "highlights": [
+        "Develop web and mobile features for Smartlink, including Smartlink Owner and Smartlink Kasir, with reusable components and API integrations.",
+        "Contribute to Groapp Access and Accounting, working with product and backend teams on architecture, performance, and code quality."
+      ]
     },
     {
       "role": "Frontend Engineer Lead",
       "organization": "PT Ada Ide Langsung Jalan",
       "period": "Jan 2022 - Jul 2026",
-      "description": "Led frontend delivery for Smartlink Owner, Smartlink Kasir, KasirMudah, Smartlink White Label, and Groapp modules across web and mobile. Planned work and team capacity, mentored engineers, reviewed code, and established reusable foundations and technical standards."
+      "highlights": [
+        "Led frontend delivery for Smartlink Owner, Smartlink Kasir, KasirMudah, Smartlink White Label, and Groapp modules across web and mobile.",
+        "Planned priorities and team capacity, mentored engineers, reviewed code, and established shared components and technical standards."
+      ]
     },
     {
       "role": "Full Stack Engineer (Freelance)",
