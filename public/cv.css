@@ -38,7 +38,7 @@ p { margin: 0; line-height: 1.62; }
   .cv-actions { display: none; }
   .cv-header h1 { font-size: 21pt; }
   .cv-role { font-size: 11pt; }
-  .cv-contact, .cv-entry .cv-meta, .cv-entry a { font-size: 9.5pt; }
+  .cv-contact, .cv-entry .cv-meta, .cv-entry a { font-size: 10pt; }
   h2 { font-size: 12pt; margin-bottom: 7px; }
   h3 { font-size: 10.5pt; }
   p { line-height: 1.38; }
