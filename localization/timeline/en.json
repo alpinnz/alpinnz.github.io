@@ -44,8 +44,8 @@
       "link": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
     "5": {
-      "title": "iOS 26 compatibility proposal",
-      "descriptions": "Proposed moving image metadata handling from ALAsset to PHAsset for iOS 26 compatibility. Maintainers later used a different fix and closed the proposal.",
+      "title": "flutter_image_compress — iOS 26 compatibility proposal",
+      "descriptions": "Proposed replacing ALAsset-based image metadata handling with PHAsset for iOS 26 compatibility. Maintainers merged a different fix and closed this pull request.",
       "date_start": "2025-09-21",
       "date_end": "2026-07-12",
       "icon": "ic_github",
