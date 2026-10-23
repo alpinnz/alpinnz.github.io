@@ -35,6 +35,7 @@
   "items": [
     {
       "title": "Valfuse Node",
+      "cv_priority": 1,
       "descriptions": "A TypeScript toolkit for forms, validation, and localization across React, Vue, Express, and Node.js.",
       "details": "Valfuse Node brings shared form behavior, validation, localization, and code generation into one modular toolkit. Its core works across frameworks, with dedicated integrations for React, Vue, and Express.",
       "features": [
@@ -52,6 +53,7 @@
     },
     {
       "title": "localization_gen",
+      "cv_priority": 4,
       "descriptions": "Generates type-safe translations for Flutter apps from modular JSON files.",
       "details": "This Dart tool turns modular JSON translations into typed Flutter APIs. It supports nested keys, placeholders, plural and context variants, and watch mode, helping teams catch missing translations during development.",
       "thumbnail": "/portfolio/localization-gen/localization-gen.svg",
@@ -93,6 +95,7 @@
     },
     {
       "title": "Frontend Input Sanitization Study",
+      "cv_priority": 5,
       "descriptions": "Tests safe HTML rendering in React and Flutter against more than 60 XSS attack examples.",
       "details": "This study compares HTML sanitization in React and Flutter. The repository includes working demos and automated tests using a shared set of more than 60 XSS examples, showing how each platform treats unsafe content.",
       "features": [
@@ -109,6 +112,7 @@
     },
     {
       "title": "Hono REST API Starter",
+      "cv_priority": 3,
       "descriptions": "A TypeScript API starter with authentication, PostgreSQL access, and build scripts.",
       "details": "Built with Bun, Hono, Prisma, and PostgreSQL, this starter separates routes, controllers, and services. It includes basic account flows and documents environment setup, database migrations, and release steps.",
       "features": [
@@ -157,6 +161,7 @@
     },
     {
       "title": "HORA Pro",
+      "cv_priority": 2,
       "descriptions": "A mobile app for employee attendance, location-based check-ins, leave requests, and team chat.",
       "details": "HORA Pro supports location-based check-in and check-out with selfie verification. Employees can also request leave, chat with their team, and view attendance reports.",
       "thumbnail": "/portfolio/hora-pro/hora-pro-1.jpg",

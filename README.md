@@ -29,7 +29,13 @@ After this workflow is merged into `master`, pushes to `master` run deployment t
 - `npm run localization:validate` checks the generated source without emitting runtime files.
 - React uses `@valfuse-node/react` for localization state and the contact form. `@valfuse-node/validation` owns its schema and rules. The project does not need the Express or Vue adapters.
 - Images, icons, and project galleries: `public/assets` and `public/portfolio`
-- The **Download CV** button generates `CV-Alfin-Noviaji.pdf` in the browser from the selected language's content in `src/data/en` or `src/data/id`, plus the curated project and social-link data. No CV PDF or duplicate CV content file is stored in the repository. Keep private contact details out of the public site data.
+- The **Download CV** button generates `CV-Alfin-Noviaji.pdf` in the browser from
+  `src/data/en` or `src/data/id` and the shared social links. Portfolio entries
+  with `cv_priority` appear in priority order; other projects remain on the
+  linked website portfolio. Timeline entries can use `cv_include: false` for
+  older roles and `cv_featured: true` for notable public contributions. No CV
+  PDF or duplicate CV content file is stored in the repository. Keep private
+  contact details out of the public site data.
 
 ## Contact form delivery
 

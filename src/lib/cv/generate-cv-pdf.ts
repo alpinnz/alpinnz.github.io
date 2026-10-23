@@ -2,9 +2,8 @@ import PDFDocument from 'pdfkit'
 import Helvetica from 'pdfkit/standard-fonts/Helvetica'
 import en from '@/data/en'
 import id from '@/data/id'
-import { githubRepositories } from '@/data/github-repositories'
 import { socialLinks } from '@/data/social-links'
-import { siteName } from '@/app/site-config'
+import { siteName, siteUrl } from '@/app/site-config'
 
 type Locale = 'en' | 'id'
 type TimelineItem = {
@@ -16,11 +15,14 @@ type TimelineItem = {
   icon: string
   link: string | null
   cv_section?: 'education' | 'certification'
+  cv_featured?: boolean
+  cv_include?: boolean
 }
 type PortfolioItem = {
   title: string
   descriptions: string
   techStack: string[]
+  cv_priority?: number
   repoUrl?: string
   webUrl?: string
   liveUrl?: string
@@ -39,21 +41,25 @@ const boldFont = 'Sora-Bold'
 
 const labels = {
   en: {
-    profile: 'Professional Profile',
-    experience: 'Work Experience',
-    projects: 'Selected Projects & Open Source',
-    contributions: 'Public Contributions',
+    profile: 'Professional Summary',
+    experience: 'Professional Experience',
+    skills: 'Technical Skills',
+    projects: 'Selected Projects',
+    contributions: 'Open Source Contribution',
     education: 'Education',
     certification: 'Certification',
+    portfolio: 'Full portfolio',
     present: 'Present',
   },
   id: {
-    profile: 'Profil Profesional',
-    experience: 'Pengalaman Kerja',
-    projects: 'Proyek Pilihan & Sumber Terbuka',
-    contributions: 'Kontribusi Publik',
+    profile: 'Ringkasan Profesional',
+    experience: 'Pengalaman Profesional',
+    skills: 'Keahlian Teknis',
+    projects: 'Proyek Pilihan',
+    contributions: 'Kontribusi Sumber Terbuka',
     education: 'Pendidikan',
     certification: 'Sertifikasi',
+    portfolio: 'Portofolio lengkap',
     present: 'Saat ini',
   },
 } as const
@@ -74,7 +80,7 @@ function addText(
 }
 
 function addSection(doc: PDFKit.PDFDocument, title: string) {
-  ensureSpace(doc, 55)
+  ensureSpace(doc, 80)
   doc.moveDown(0.8).font(boldFont).fontSize(11).fillColor(colors.primary)
   addText(doc, title.toUpperCase(), 'H2', { characterSpacing: 0.5 })
   doc.moveDown(0.25)
@@ -87,17 +93,17 @@ function addEntry(
   detail?: string,
   url?: string,
 ) {
-  ensureSpace(doc, 60)
-  doc.font(boldFont).fontSize(9.5).fillColor(colors.ink)
+  ensureSpace(doc, 65)
+  doc.font(boldFont).fontSize(10).fillColor(colors.ink)
   addText(doc, title, 'H3')
   if (detail) {
-    doc.font(regularFont).fontSize(8.5).fillColor(colors.muted)
+    doc.font(regularFont).fontSize(9).fillColor(colors.muted)
     addText(doc, detail, 'P')
   }
-  doc.font(regularFont).fontSize(9.5).fillColor(colors.ink)
+  doc.font(regularFont).fontSize(10).fillColor(colors.ink)
   addText(doc, description, 'P', { lineGap: 2 })
   if (url) {
-    doc.fontSize(8.5).fillColor(colors.primary)
+    doc.fontSize(9).fillColor(colors.primary)
     addText(doc, url, 'P', { link: url, underline: true })
   }
   doc.moveDown(0.5)
@@ -132,13 +138,9 @@ export async function generateCvPdf(locale: Locale): Promise<Blob> {
   const content = locale === 'id' ? id : en
   const text = labels[locale]
   const items = content.timeline.items as TimelineItem[]
-  const projects = content.portfolio.items as PortfolioItem[]
-  const knownRepositories = new Set(projects.flatMap((project) => project.repoUrl ? [project.repoUrl] : []))
-  const additionalProjects = githubRepositories.filter((repository) =>
-    repository.portfolio &&
-    !knownRepositories.has(repository.url) &&
-    !projects.some((project) => project.repoUrl?.startsWith(`${repository.url}/`)),
-  )
+  const projects = (content.portfolio.items as PortfolioItem[])
+    .filter((project) => project.cv_priority !== undefined)
+    .sort((a, b) => a.cv_priority! - b.cv_priority!)
 
   const [regularResponse, boldResponse] = await Promise.all([
     fetch('/assets/fonts/Sora-Regular.ttf'),
@@ -177,24 +179,32 @@ export async function generateCvPdf(locale: Locale): Promise<Blob> {
     doc.fontSize(8.5).fillColor(colors.primary)
     addText(doc, `${social.label}: ${social.href}`, 'P', { link: social.href })
   }
+  doc.fontSize(8.5).fillColor(colors.primary)
+  addText(doc, `${text.portfolio}: ${siteUrl}/#portfolio`, 'P', { link: `${siteUrl}/#portfolio` })
 
   addSection(doc, text.profile)
-  for (const description of content.about_me.descriptions) {
-    doc.font(regularFont).fontSize(9.5).fillColor(colors.ink)
-    addText(doc, description, 'P', { lineGap: 2 })
-    doc.moveDown(0.35)
-  }
-
-  addSection(doc, content.skills.header.title)
-  for (const skill of content.skills.skills) {
-    addEntry(doc, skill.title, skill.description, skill.tools.join('  |  '))
-  }
+  doc.font(regularFont).fontSize(10).fillColor(colors.ink)
+  addText(doc, content.overview.descriptions.join(' '), 'P', { lineGap: 2 })
 
   addSection(doc, text.experience)
-  for (const item of items.filter((entry) => entry.icon === 'ic_desktop' || entry.icon === 'ic_mobile')) {
+  for (const item of items.filter((entry) =>
+    (entry.icon === 'ic_desktop' || entry.icon === 'ic_mobile') && entry.cv_include !== false,
+  )) {
     addEntry(doc, item.title, item.descriptions, timelinePeriod(item, locale))
   }
 
+  addSection(doc, text.skills)
+  for (const skill of content.skills.skills) {
+    ensureSpace(doc, 28)
+    doc.addStructure(doc.struct('P', {}, () => {
+      doc.font(boldFont).fontSize(9.5).fillColor(colors.ink).text(`${skill.title}: `, { continued: true })
+      doc.font(regularFont).fontSize(9.5).text(skill.tools.join(', '))
+    }))
+    doc.moveDown(0.2)
+  }
+
+  // Keep the selected work and credentials together after the experience-focused first page.
+  doc.addPage()
   addSection(doc, text.projects)
   for (const project of projects) {
     addEntry(
@@ -205,17 +215,7 @@ export async function generateCvPdf(locale: Locale): Promise<Blob> {
       project.repoUrl ?? project.webUrl ?? project.liveUrl ?? project.playStoreUrl ?? project.appStoreUrl,
     )
   }
-  for (const repository of additionalProjects) {
-    addEntry(
-      doc,
-      repository.portfolio!.title[locale],
-      repository.description[locale],
-      repository.language ?? undefined,
-      repository.url,
-    )
-  }
-
-  const contributions = items.filter((item) => item.icon === 'ic_github' && item.link?.includes('/pull/'))
+  const contributions = items.filter((item) => item.cv_featured === true)
   if (contributions.length) {
     addSection(doc, text.contributions)
     for (const item of contributions) {

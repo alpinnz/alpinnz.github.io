@@ -35,6 +35,7 @@
   "items": [
     {
       "title": "Valfuse Node",
+      "cv_priority": 1,
       "descriptions": "Toolkit TypeScript untuk formulir, validasi, dan lokalisasi di React, Vue, Express, dan Node.js.",
       "details": "Valfuse Node menyatukan pengelolaan formulir, validasi, lokalisasi, dan pembuatan kode dalam toolkit modular. Komponen intinya dapat digunakan di berbagai framework, dengan integrasi khusus untuk React, Vue, dan Express.",
       "features": [
@@ -52,6 +53,7 @@
     },
     {
       "title": "localization_gen",
+      "cv_priority": 4,
       "descriptions": "Membuat terjemahan bertipe untuk aplikasi Flutter dari berkas JSON modular.",
       "details": "Alat Dart ini mengubah berkas terjemahan JSON modular menjadi API Flutter yang bertipe. Fitur utamanya mencakup kunci bertingkat, parameter, variasi jamak dan konteks, serta pemantauan perubahan berkas. Tim dapat menemukan terjemahan yang hilang saat pengembangan.",
       "thumbnail": "/portfolio/localization-gen/localization-gen.svg",
@@ -93,6 +95,7 @@
     },
     {
       "title": "Riset Sanitasi Input Frontend",
+      "cv_priority": 5,
       "descriptions": "Menguji keamanan tampilan HTML di React dan Flutter dengan lebih dari 60 contoh serangan XSS.",
       "details": "Riset ini membandingkan cara React dan Flutter menyaring HTML berbahaya. Repositorinya berisi demo dan pengujian otomatis dengan lebih dari 60 contoh serangan XSS yang sama untuk kedua platform.",
       "features": [
@@ -109,6 +112,7 @@
     },
     {
       "title": "Starter REST API Hono",
+      "cv_priority": 3,
       "descriptions": "Fondasi API TypeScript dengan autentikasi, PostgreSQL, dan skrip build.",
       "details": "Dibangun dengan Bun, Hono, Prisma, dan PostgreSQL, proyek ini memisahkan rute, pengendali, dan layanan. Fitur dasarnya mencakup pengelolaan akun serta panduan konfigurasi, migrasi basis data, dan proses rilis.",
       "features": [
@@ -157,6 +161,7 @@
     },
     {
       "title": "HORA Pro",
+      "cv_priority": 2,
       "descriptions": "Aplikasi mobile untuk absensi karyawan, pencatatan kehadiran berbasis lokasi, pengajuan cuti, dan percakapan tim.",
       "details": "HORA Pro mendukung pencatatan masuk dan pulang berbasis lokasi dengan verifikasi swafoto. Karyawan juga dapat mengajukan cuti, berkomunikasi dengan tim, dan melihat laporan kehadiran.",
       "thumbnail": "/portfolio/hora-pro/hora-pro-1.jpg",

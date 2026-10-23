@@ -25,6 +25,7 @@
     },
     {
       "title": "Flutter Inspector: border radius contribution",
+      "cv_featured": true,
       "descriptions": "Added access to individual corner-radius values from BoxDecoration in the Inspector, making UI inspection more precise.",
       "date_start": "2026-02-11",
       "date_end": "2026-03-30",
@@ -126,6 +127,7 @@
     },
     {
       "title": "System Administrator at Star Nt Game Center",
+      "cv_include": false,
       "descriptions": "Maintained day-to-day systems and technical operations before moving into software engineering.",
       "date_start": "2017-08-01",
       "date_end": "2020-02-29",
