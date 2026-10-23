@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Firebase Google Sign-In Study</title>
+  <desc id="description">Web and Android authentication paths converging on a Firebase session.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22213e"/><stop offset="1" stop-color="#173955"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1200v675H0z"/>
+  <circle cx="975" cy="310" r="258" fill="#8b5cf6" opacity=".08"/>
+  <text x="78" y="96" fill="#c4b5fd" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="3">FLUTTER · FIREBASE · OAUTH</text>
+  <text x="78" y="193" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="700">One sign-in goal.</text>
+  <text x="78" y="254" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="700">Two platform flows.</text>
+  <text x="80" y="312" fill="#cad4e4" font-family="Arial,sans-serif" font-size="22">Google authentication on web and Android.</text>
+  <rect x="78" y="362" width="192" height="44" rx="22" fill="#a78bfa" opacity=".17" stroke="#c4b5fd" stroke-opacity=".5"/>
+  <text x="106" y="390" fill="#ede9fe" font-family="Arial,sans-serif" font-size="17" font-weight="700">Platform-specific paths</text>
+  <path d="M78 521h430" stroke="#fff" stroke-opacity=".16"/>
+  <text x="78" y="562" fill="#a8b5cb" font-family="Arial,sans-serif" font-size="16" letter-spacing="1">FIREBASE SIGN-IN RESEARCH</text>
+  <rect x="686" y="151" width="415" height="374" rx="26" fill="#171f3c" stroke="#a78bfa" stroke-opacity=".35" stroke-width="2"/>
+  <rect x="716" y="187" width="160" height="85" rx="16" fill="#293358"/>
+  <text x="773" y="222" fill="#dbeafe" font-family="Arial,sans-serif" font-size="19" font-weight="700">Web</text>
+  <text x="741" y="251" fill="#b6c4dc" font-family="Arial,sans-serif" font-size="15">Popup / redirect</text>
+  <rect x="910" y="187" width="160" height="85" rx="16" fill="#293358"/>
+  <text x="946" y="222" fill="#dbeafe" font-family="Arial,sans-serif" font-size="19" font-weight="700">Android</text>
+  <text x="939" y="251" fill="#b6c4dc" font-family="Arial,sans-serif" font-size="15">Native sign-in</text>
+  <path d="M796 276v58h90m104-58v58H886v44" fill="none" stroke="#a78bfa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m878 369 8 10 8-10" fill="none" stroke="#a78bfa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="759" y="385" width="254" height="72" rx="17" fill="#3a315e" stroke="#c4b5fd" stroke-opacity=".4"/>
+  <text x="798" y="428" fill="#f5f3ff" font-family="Arial,sans-serif" font-size="20" font-weight="700">Firebase session</text>
+  <text x="751" y="491" fill="#a8b5cb" font-family="Arial,sans-serif" font-size="15">Auth state · errors · persistence</text>
+</svg>

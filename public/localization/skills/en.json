@@ -3,59 +3,69 @@
   "@@locale": "en",
   "header": {
     "title": "My Core Skills",
-    "subtitle": "Frontend engineering is my current focus, supported by experience in mobile products and backend APIs.",
-    "tools_label": "Tools and frameworks"
+    "subtitle": "I turn product requirements into usable interfaces and maintainable systems, from frontend delivery to mobile and API integration.",
+    "tools_label": "Selected tools",
+    "example_label": "Explore a related project"
   },
   "skills": {
     "0": {
-      "title": "Frontend Engineer",
-      "description": "Build responsive web interfaces and reusable frontend foundations for product teams, with attention to performance and API integration.",
+      "title": "Frontend Development",
+      "description": "Build responsive web interfaces and shared components that make complex product workflows easier to use and maintain.",
+      "highlights": {
+        "0": "Connect frontend features to APIs with clear validation and error states.",
+        "1": "Improve consistency through reusable components, localization, and code review."
+      },
       "tools": {
-        "0": "React",
-        "1": "Next.js",
-        "2": "Vue",
-        "3": "TypeScript",
+        "0": "TypeScript",
+        "1": "React",
+        "2": "Next.js",
+        "3": "Vue",
         "4": "Tailwind CSS",
-        "5": "Vite",
-        "6": "Zustand",
-        "7": "i18next",
-        "8": "Redux"
+        "5": "API integration"
+      },
+      "example": {
+        "label": "Valfuse Node",
+        "url": "https://github.com/alpinnz/valfuse-node"
       }
     },
     "1": {
-      "title": "Mobile Engineer",
-      "description": "Build mobile apps and reusable modules with clear architecture, navigation and dependency injection, and state management suited to the product and team.",
+      "title": "Mobile Development",
+      "description": "Develop cross-platform applications and the tooling teams need to ship consistent mobile experiences.",
+      "highlights": {
+        "0": "Build Flutter features with clear state, navigation, and platform behavior.",
+        "1": "Create typed localization and stable UI test keys for larger codebases."
+      },
       "tools": {
         "0": "Flutter",
         "1": "Dart",
-        "2": "React Native",
-        "3": "Kotlin",
-        "4": "Provider",
-        "5": "Riverpod",
-        "6": "BLoC/Cubit",
-        "7": "GetX",
-        "8": "Redux",
-        "9": "get_it",
-        "10": "injectable",
-        "11": "go_router",
-        "12": "Clean Architecture",
-        "13": "DDD",
-        "14": "MVVM",
-        "15": "MVP"
+        "2": "Kotlin",
+        "3": "React Native",
+        "4": "Localization",
+        "5": "UI testing"
+      },
+      "example": {
+        "label": "localization_gen",
+        "url": "https://github.com/alpinnz/localization_gen"
       }
     },
     "2": {
-      "title": "Backend Engineer",
-      "description": "Develop REST APIs with clear architecture, input validation, and operational practices suited to the project.",
+      "title": "Backend & APIs",
+      "description": "Design and integrate APIs that support product features with explicit contracts and operational basics.",
+      "highlights": {
+        "0": "Work with authentication, validation, databases, and service boundaries.",
+        "1": "Build reusable API starters with documentation and deployment configuration."
+      },
       "tools": {
-        "0": "Golang",
+        "0": "Go",
         "1": "Gin",
         "2": "Node.js",
-        "3": "Express.js",
+        "3": "Hono",
         "4": "PostgreSQL",
-        "5": "MySQL",
-        "6": "Redis",
-        "7": "Docker"
+        "5": "Docker"
+      },
+      "example": {
+        "label": "Go REST API Boilerplate",
+        "url": "https://github.com/alpinnz/go-rest-api-boilerplate"
       }
     }
   }

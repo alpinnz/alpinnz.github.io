@@ -2,7 +2,7 @@
   "header": {
     "eyebrow": "Career & contributions",
     "title": "Journey Timeline",
-    "subtitle": "Selected roles, education, developer tools, and open-source contributions."
+    "subtitle": "Career milestones and selected public projects, with links to the work behind them."
   },
   "items": [
     {
@@ -15,6 +15,15 @@
       "link": "https://smartlink.id/"
     },
     {
+      "title": "Valfuse Node: reusable TypeScript tooling",
+      "descriptions": "Built a public toolkit spanning form state, validation, localization, and asset generation, with React, Vue, and Express integrations. It brings shared behavior into product applications without tying it to one UI framework.",
+      "date_start": "2026-08-23",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz/valfuse-node"
+    },
+    {
       "title": "Open Source Contributor – kekland Inspector BorderRadius (LTRB)",
       "descriptions": "Exposed LTR corner-radius values from BoxDecoration in the Inspector, improving UI audits and design-token checks.",
       "date_start": "2026-02-11",
@@ -24,13 +33,22 @@
       "link": "https://github.com/kekland/inspector/pull/22"
     },
     {
-      "title": "Open-source Developer Tooling",
-      "descriptions": "Building and maintaining tools across Dart/Flutter and TypeScript: localization_gen for typed localization, automation_keys_gen for consistent UI test keys, and Valfuse Node for form validation, localization, and framework adapters.",
+      "title": "Flutter tooling for localization and UI tests",
+      "descriptions": "Published localization_gen to generate typed translation APIs from modular JSON, then automation_keys_gen to standardize and document Flutter test keys. Both address recurring maintenance work in larger app codebases.",
       "date_start": "2025-11-28",
       "date_end": null,
       "currently": true,
       "icon": "ic_github",
-      "link": "https://github.com/alpinnz/valfuse-node"
+      "link": "https://github.com/alpinnz/localization_gen"
+    },
+    {
+      "title": "Frontend input security research",
+      "descriptions": "Compared HTML sanitization in React and Flutter through working demos and automated tests using more than 60 XSS payload cases. The repository documents the approach and its limits for frontend teams.",
+      "date_start": "2025-10-17",
+      "date_end": null,
+      "currently": false,
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
     {
       "title": "Open Source Contribution – iOS 26 Compatibility Proposal",

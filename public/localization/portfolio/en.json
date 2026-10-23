@@ -4,7 +4,7 @@
   "header": {
     "eyebrow": "Selected work",
     "title": "Some Things I’ve Built",
-    "subtitle": "Selected product work, developer tools, and research projects."
+    "subtitle": "Selected product work, public developer tools, and applied research with links to the work."
   },
   "categories": {
     "all": "All",
@@ -60,7 +60,7 @@
         "5": "CLI",
         "6": "i18n"
       },
-      "created_at": "2026-05-23",
+      "created_at": "2026-08-23",
       "webUrl": "https://www.npmjs.com/org/valfuse-node",
       "repoUrl": "https://github.com/alpinnz/valfuse-node"
     },
@@ -80,7 +80,7 @@
         "3": "CLI",
         "4": "i18n"
       },
-      "created_at": "2026-01-27",
+      "created_at": "2025-11-28",
       "liveUrl": "https://pub.dev/packages/localization_gen",
       "repoUrl": "https://github.com/alpinnz/localization_gen"
     },
@@ -100,7 +100,7 @@
         "3": "CLI",
         "4": "Documentation"
       },
-      "created_at": "2026-01-27",
+      "created_at": "2025-12-19",
       "liveUrl": "https://pub.dev/packages/automation_keys_gen",
       "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
     },
@@ -147,6 +147,55 @@
       "repoUrl": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
     "5": {
+      "title": "Hono REST API Starter",
+      "descriptions": "A modular TypeScript API foundation with authentication, database access, and repeatable release scripts.",
+      "details": "A public API starter using Bun, Hono, Prisma, and PostgreSQL. It separates routes, controllers, and services, includes basic login and registration flows, and documents environment setup and database migrations.",
+      "features": {
+        "0": "Basic login, registration, and logout flows.",
+        "1": "Prisma migrations and PostgreSQL configuration across environments.",
+        "2": "Build and release scripts with Biome checks."
+      },
+      "thumbnail": "/portfolio/hono-rest-api/hono-rest-api.svg",
+      "gallery": {
+        "0": "/portfolio/hono-rest-api/hono-rest-api.svg"
+      },
+      "category": "backend",
+      "techStack": {
+        "0": "TypeScript",
+        "1": "Bun",
+        "2": "Hono",
+        "3": "Prisma",
+        "4": "PostgreSQL",
+        "5": "Biome"
+      },
+      "created_at": "2025-11-28",
+      "repoUrl": "https://github.com/alpinnz/hono-rest-api-boilerplate"
+    },
+    "6": {
+      "title": "Firebase Google Sign-In Study",
+      "descriptions": "A Flutter study of Google authentication across web and Android, with platform-specific flows and documented failure cases.",
+      "details": "Explores how Google OAuth credentials become Firebase sessions on Flutter web and Android. The repository documents popup and redirect flows on web, native sign-in on Android, authentication state, and error handling.",
+      "features": {
+        "0": "Web popup sign-in with redirect fallback when popups are blocked.",
+        "1": "Android Google Sign-In credential exchange with Firebase Authentication.",
+        "2": "Documentation of auth state, session behavior, and common setup failures."
+      },
+      "thumbnail": "/portfolio/firebase-sign-in/firebase-sign-in.svg",
+      "gallery": {
+        "0": "/portfolio/firebase-sign-in/firebase-sign-in.svg"
+      },
+      "category": "mobile",
+      "techStack": {
+        "0": "Flutter",
+        "1": "Dart",
+        "2": "Firebase Authentication",
+        "3": "Google Sign-In",
+        "4": "OAuth"
+      },
+      "created_at": "2025-10-24",
+      "repoUrl": "https://github.com/alpinnz/research/tree/master/research_firebase_google"
+    },
+    "7": {
       "title": "Bukit Delight Cafe Ordering System",
       "descriptions": "A full-stack cafe ordering and management app with menu sales grouping using k-means clustering.",
       "details": "An academic full-stack project for customer ordering, cashier operations, and administration. It applies k-means clustering to order data to group menu items by sales performance.",
@@ -170,7 +219,7 @@
       "created_at": "2020-11-10",
       "repoUrl": "https://github.com/alpinnz/bukit-delight-node"
     },
-    "6": {
+    "8": {
       "title": "HORA Pro",
       "descriptions": "Mobile app for employee attendance, location-based check-ins, leave requests, and team communication.",
       "details": "HORA Pro supports location-based check-in and check-out with selfie verification. The app also includes geolocation, leave management, chat, and attendance reports.",
@@ -192,7 +241,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en",
       "appStoreUrl": "https://apps.apple.com/en/app/id6748695513"
     },
-    "7": {
+    "9": {
       "title": "Go REST API Boilerplate",
       "descriptions": "A modular Go REST API starter with environment configuration and Docker support.",
       "details": "A Go REST API starter with separate development, testing, and production configuration. It includes Docker support, JWT authentication, GORM, transaction handling, and persistent file uploads. Its modular structure draws on Clean Architecture principles.",
@@ -214,7 +263,7 @@
         "5": "PostgreSQL",
         "6": "Air"
       },
-      "created_at": "2024-01-01",
+      "created_at": "2025-12-31",
       "repoUrl": "https://github.com/alpinnz/go-rest-api-boilerplate"
     }
   }

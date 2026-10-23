@@ -98,7 +98,11 @@ export function Portfolio(): React.ReactElement {
   }))
   const repositoryProjects: PortfolioProject[] = githubRepositories.flatMap(
     (repository): PortfolioProject[] => {
-      if (!repository.portfolio || linkedRepositoryUrls.has(repository.url)) {
+      if (
+        !repository.portfolio ||
+        linkedRepositoryUrls.has(repository.url) ||
+        portfolioItems.some((item) => item.repoUrl?.startsWith(`${repository.url}/`))
+      ) {
         return []
       }
 

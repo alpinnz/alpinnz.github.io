@@ -8,12 +8,15 @@ type SkillHeader = {
   title: string
   subtitle: string
   tools_label: string
+  example_label: string
 }
 
 type SkillItem = {
   title: string
   description: string
+  highlights: string[]
   tools: string[]
+  example: { label: string; url: string }
 }
 
 export function Skill(): React.ReactElement {
@@ -72,9 +75,18 @@ export function Skill(): React.ReactElement {
               </h3>
             </div>
 
-            <p className="mb-4 flex-1 text-sm leading-relaxed text-neutral-700">
+            <p className="text-sm leading-relaxed text-neutral-700">
               {item.description}
             </p>
+
+            <ul className="my-4 flex-1 space-y-2 text-sm leading-relaxed text-neutral-700">
+              {item.highlights.map((highlight) => (
+                <li key={highlight} className="flex gap-2">
+                  <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-600" />
+                  <span>{highlight}</span>
+                </li>
+              ))}
+            </ul>
 
             <div className="border-t border-neutral-100 pt-3 text-xs sm:text-sm">
               <p className="mb-2 font-semibold text-primary-800">
@@ -90,6 +102,17 @@ export function Skill(): React.ReactElement {
                   </li>
                 ))}
               </ul>
+              <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-neutral-600">
+                {header.example_label}
+              </p>
+              <a
+                href={item.example.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-10 items-center gap-1 text-sm font-semibold text-primary-800 underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+              >
+                {item.example.label} <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </motion.div>
         ))}

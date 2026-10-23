@@ -2,7 +2,7 @@
   "header": {
     "eyebrow": "Karya pilihan",
     "title": "Beberapa Proyek yang Saya Buat",
-    "subtitle": "Pilihan proyek produk, perangkat bantu developer, dan riset yang saya bangun."
+    "subtitle": "Pilihan proyek produk, perangkat bantu developer publik, dan riset terapan dengan tautan ke karyanya."
   },
   "categories": {
     "all": "Semua",
@@ -48,7 +48,7 @@
       "gallery": ["/portfolio/valfuse-node/valfuse-node.svg"],
       "category": "packages",
       "techStack": ["TypeScript", "Node.js", "React", "Vue", "Express", "CLI", "i18n"],
-      "created_at": "2026-05-23",
+      "created_at": "2026-08-23",
       "webUrl": "https://www.npmjs.com/org/valfuse-node",
       "repoUrl": "https://github.com/alpinnz/valfuse-node"
     },
@@ -62,7 +62,7 @@
       ],
       "category": "packages",
       "techStack": ["Dart", "Flutter", "Code Generation", "CLI", "i18n"],
-      "created_at": "2026-01-27",
+      "created_at": "2025-11-28",
       "liveUrl": "https://pub.dev/packages/localization_gen",
       "repoUrl": "https://github.com/alpinnz/localization_gen"
     },
@@ -76,7 +76,7 @@
       ],
       "category": "packages",
       "techStack": ["Dart", "Flutter", "Testing", "CLI", "Documentation"],
-      "created_at": "2026-01-27",
+      "created_at": "2025-12-19",
       "liveUrl": "https://pub.dev/packages/automation_keys_gen",
       "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
     },
@@ -108,6 +108,38 @@
       "techStack": ["React", "TypeScript", "Flutter", "Dart", "Pengujian XSS"],
       "created_at": "2025-10-17",
       "repoUrl": "https://github.com/alpinnz/research-sanitazion-frontend"
+    },
+    {
+      "title": "Starter REST API Hono",
+      "descriptions": "Fondasi API TypeScript modular dengan autentikasi, akses basis data, dan skrip rilis yang konsisten.",
+      "details": "Starter API publik dengan Bun, Hono, Prisma, dan PostgreSQL. Strukturnya memisahkan route, controller, dan service, menyertakan alur dasar login dan registrasi, serta mendokumentasikan konfigurasi environment dan migrasi basis data.",
+      "features": [
+        "Alur dasar login, registrasi, dan logout.",
+        "Migrasi Prisma dan konfigurasi PostgreSQL untuk beberapa environment.",
+        "Skrip build dan rilis dengan pemeriksaan Biome."
+      ],
+      "thumbnail": "/portfolio/hono-rest-api/hono-rest-api.svg",
+      "gallery": ["/portfolio/hono-rest-api/hono-rest-api.svg"],
+      "category": "backend",
+      "techStack": ["TypeScript", "Bun", "Hono", "Prisma", "PostgreSQL", "Biome"],
+      "created_at": "2025-11-28",
+      "repoUrl": "https://github.com/alpinnz/hono-rest-api-boilerplate"
+    },
+    {
+      "title": "Riset Google Sign-In Firebase",
+      "descriptions": "Riset autentikasi Google di Flutter web dan Android, dengan alur khusus tiap platform dan kasus kegagalan yang terdokumentasi.",
+      "details": "Mengkaji bagaimana kredensial Google OAuth menjadi sesi Firebase di Flutter web dan Android. Repositori ini mendokumentasikan alur popup dan redirect pada web, sign-in native pada Android, status autentikasi, dan penanganan galat.",
+      "features": [
+        "Sign-in popup web dengan fallback redirect saat popup diblokir.",
+        "Pertukaran kredensial Google Sign-In Android dengan Firebase Authentication.",
+        "Dokumentasi status autentikasi, perilaku sesi, dan kegagalan konfigurasi umum."
+      ],
+      "thumbnail": "/portfolio/firebase-sign-in/firebase-sign-in.svg",
+      "gallery": ["/portfolio/firebase-sign-in/firebase-sign-in.svg"],
+      "category": "mobile",
+      "techStack": ["Flutter", "Dart", "Firebase Authentication", "Google Sign-In", "OAuth"],
+      "created_at": "2025-10-24",
+      "repoUrl": "https://github.com/alpinnz/research/tree/master/research_firebase_google"
     },
     {
       "title": "Sistem Pemesanan Kafe Bukit Delight",
@@ -169,7 +201,7 @@
         "PostgreSQL",
         "Air"
       ],
-      "created_at": "2024-01-01",
+      "created_at": "2025-12-31",
       "repoUrl": "https://github.com/alpinnz/go-rest-api-boilerplate"
     }
   ]

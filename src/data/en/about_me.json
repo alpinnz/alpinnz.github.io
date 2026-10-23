@@ -1,7 +1,13 @@
 {
   "title": "A little bit about me",
+  "facts": [
+    { "label": "Current role", "text": "Senior Frontend Developer" },
+    { "label": "Team leadership", "text": "Jan 2022 – Jul 2026" },
+    { "label": "Public work", "text": "Developer tools & research" }
+  ],
   "descriptions": [
-    "I’m a developer from Malang, Indonesia, with a computer science degree from Institut Teknologi dan Bisnis ASIA Malang. My work spans web, mobile, and the APIs that connect them.",
-    "As a Senior Frontend Developer, I build features for the Smartlink and Groapp ecosystems, improve architecture and performance, and work closely with product and backend teams. From 2022 to July 2026, I led a frontend engineering team, mentoring developers and shaping technical standards."
+    "I’m Alfin, a software engineer based in Malang and a computer science graduate of Institut Teknologi dan Bisnis ASIA. I work across web, mobile, and APIs, with frontend product engineering as my current focus.",
+    "At PT Ada Ide Langsung Jalan, I build features across the Smartlink and Groapp ecosystems, including cashier, owner, access, and accounting products. I work with product owners and backend engineers to turn requirements into responsive interfaces, reliable API integrations, and reusable components.",
+    "Before becoming a Senior Frontend Developer in August 2026, I led frontend engineering from January 2022 to July 2026. That work included planning, mentoring, code review, and technical standards. I also publish developer tools for localization, UI testing, and form validation—practical solutions to problems I have encountered on product teams."
   ]
 }

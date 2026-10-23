@@ -14,7 +14,7 @@ type TimelineItem = {
   link?: string | null
 }
 
-const initialTimelineItems = 5
+const initialTimelineItems = 7
 
 const iconMap: Record<string, string> = {
   ic_school: '/assets/icons/ic_school.svg',

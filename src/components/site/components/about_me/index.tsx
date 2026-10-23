@@ -4,6 +4,7 @@ import { useLocalizedModule } from '../../locales/use-localized-module'
 
 type AboutMeItem = {
   title: string
+  facts: { label: string; text: string }[]
   descriptions: string[]
 }
 
@@ -11,6 +12,7 @@ export function AboutMe(): React.ReactElement {
   const translations = useLocalizedModule('about_me')
   const aboutMeItem: AboutMeItem = {
     title: translations.title,
+    facts: translations.facts,
     descriptions: translations.descriptions,
   }
 
@@ -27,8 +29,17 @@ export function AboutMe(): React.ReactElement {
           {aboutMeItem.title}
         </motion.h2>
 
+        <dl className="mb-6 grid gap-2 sm:grid-cols-3 sm:gap-3">
+          {aboutMeItem.facts.map((fact) => (
+            <div key={fact.label} className="rounded-xl border border-neutral-100 bg-slate-50 px-4 py-3">
+              <dt className="text-xs font-semibold uppercase tracking-wide text-primary-800">{fact.label}</dt>
+              <dd className="mt-1 text-sm font-semibold leading-snug text-neutral-900">{fact.text}</dd>
+            </div>
+          ))}
+        </dl>
+
         <motion.div
-          className="space-y-3"
+          className="mx-auto max-w-3xl space-y-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

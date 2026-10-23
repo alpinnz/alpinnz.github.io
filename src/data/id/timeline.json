@@ -2,7 +2,7 @@
   "header": {
     "eyebrow": "Karier & kontribusi",
     "title": "Timeline Perjalanan",
-    "subtitle": "Pilihan perjalanan kerja, pendidikan, pengembangan perangkat bantu, dan kontribusi open source."
+    "subtitle": "Tonggak karier dan proyek publik pilihan, dilengkapi tautan ke karya terkait."
   },
   "items": [
     {
@@ -15,6 +15,15 @@
       "link": "https://smartlink.id/"
     },
     {
+      "title": "Valfuse Node: perangkat bantu TypeScript pakai ulang",
+      "descriptions": "Membangun toolkit publik untuk state formulir, validasi, lokalisasi, dan pembuatan aset, dengan integrasi React, Vue, dan Express. Perilaku bersama dapat digunakan dalam produk tanpa terikat pada satu framework UI.",
+      "date_start": "2026-08-23",
+      "date_end": null,
+      "currently": true,
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz/valfuse-node"
+    },
+    {
       "title": "Kontributor Open Source – kekland Inspector BorderRadius (LTRB)",
       "descriptions": "Menambahkan nilai radius sudut LTR dari BoxDecoration ke Inspector untuk membantu audit UI dan pemeriksaan design token.",
       "date_start": "2026-02-11",
@@ -24,13 +33,22 @@
       "link": "https://github.com/kekland/inspector/pull/22"
     },
     {
-      "title": "Pengembangan Perangkat Bantu Open Source",
-      "descriptions": "Mengembangkan dan memelihara perangkat bantu Dart/Flutter dan TypeScript: localization_gen untuk lokalisasi bertipe, automation_keys_gen untuk konsistensi kunci pengujian UI, serta Valfuse Node untuk validasi formulir, lokalisasi, dan adapter framework.",
+      "title": "Perangkat bantu Flutter untuk lokalisasi dan pengujian UI",
+      "descriptions": "Menerbitkan localization_gen untuk menghasilkan API terjemahan bertipe dari JSON modular, lalu automation_keys_gen untuk menstandarkan dan mendokumentasikan kunci pengujian Flutter. Keduanya menjawab pekerjaan pemeliharaan yang berulang pada codebase aplikasi besar.",
       "date_start": "2025-11-28",
       "date_end": null,
       "currently": true,
       "icon": "ic_github",
-      "link": "https://github.com/alpinnz/valfuse-node"
+      "link": "https://github.com/alpinnz/localization_gen"
+    },
+    {
+      "title": "Riset keamanan input frontend",
+      "descriptions": "Membandingkan sanitasi HTML di React dan Flutter melalui demo serta pengujian otomatis dengan lebih dari 60 kasus payload XSS. Repositori ini mendokumentasikan pendekatan dan batasannya untuk tim frontend.",
+      "date_start": "2025-10-17",
+      "date_end": null,
+      "currently": false,
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
     {
       "title": "Kontribusi Open Source – Usulan Kompatibilitas iOS 26",
