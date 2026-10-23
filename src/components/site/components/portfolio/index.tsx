@@ -233,7 +233,7 @@ export function Portfolio(): React.ReactElement {
               <div className="relative aspect-[16/9] bg-neutral-50 sm:aspect-[16/8]">
                 <Image
                   src={project.item.thumbnail}
-                  alt={`${project.title} project preview`}
+                  alt={translations.project_preview_alt.replace('{title}', project.title)}
                   fill
                   loading="lazy"
                   className="object-contain p-3"

@@ -43,7 +43,7 @@ export const githubRepositories: GitHubRepository[] = [
     language: 'TypeScript',
     description: {
       en: 'Personal portfolio built with Next.js static export and GitHub Pages.',
-      id: 'Portofolio pribadi dengan Next.js static export dan GitHub Pages.',
+      id: 'Portofolio pribadi dengan ekspor statis Next.js untuk GitHub Pages.',
     },
   },
   {
@@ -53,7 +53,7 @@ export const githubRepositories: GitHubRepository[] = [
     language: 'TypeScript',
     description: {
       en: 'Framework-neutral form validation, localization, and developer tooling for Node.js, React, Vue, and Express.',
-      id: 'Validasi form, lokalisasi, dan perangkat pengembangan lintas framework untuk Node.js, React, Vue, dan Express.',
+      id: 'Alat validasi formulir dan lokalisasi untuk Node.js, React, Vue, serta Express.',
     },
   },
   {
@@ -73,7 +73,7 @@ export const githubRepositories: GitHubRepository[] = [
     language: 'Dart',
     description: {
       en: 'Standardizes Flutter automation keys with CLI validation and generated documentation.',
-      id: 'Menstandarkan automation key Flutter dengan validasi CLI dan dokumentasi otomatis.',
+      id: 'Menyeragamkan penanda pengujian UI Flutter melalui pemeriksaan CLI dan dokumentasi otomatis.',
     },
   },
   {
@@ -83,7 +83,7 @@ export const githubRepositories: GitHubRepository[] = [
     language: 'Go',
     description: {
       en: 'Go API starter with PostgreSQL, Redis-backed sessions, JWT authentication, WebSockets, and generated API docs.',
-      id: 'Starter API Go dengan PostgreSQL, sesi Redis, autentikasi JWT, WebSocket, dan dokumentasi API otomatis.',
+      id: 'Fondasi API Go dengan PostgreSQL, sesi Redis, autentikasi JWT, WebSocket, dan dokumentasi otomatis.',
     },
   },
   {
@@ -100,7 +100,7 @@ export const githubRepositories: GitHubRepository[] = [
     },
     description: {
       en: 'REST API starter using Bun, Hono, Prisma, and PostgreSQL with authentication and release scripts.',
-      id: 'Starter REST API dengan Bun, Hono, Prisma, dan PostgreSQL, termasuk autentikasi dan skrip rilis.',
+      id: 'Fondasi REST API dengan Bun, Hono, Prisma, dan PostgreSQL, termasuk autentikasi dan skrip rilis.',
     },
   },
   {
@@ -155,7 +155,7 @@ export const githubRepositories: GitHubRepository[] = [
     },
     description: {
       en: 'Flutter coding challenge with generated models and unit-test instructions.',
-      id: 'Tantangan coding Flutter dengan model hasil generator dan panduan pengujian unit.',
+      id: 'Tantangan pemrograman Flutter dengan model yang dihasilkan otomatis dan panduan pengujian unit.',
     },
   },
   {
@@ -177,7 +177,7 @@ export const githubRepositories: GitHubRepository[] = [
     detailsPending: true,
     description: {
       en: 'Flutter public-transport app for passengers and drivers; the repository needs a project overview.',
-      id: 'Aplikasi angkutan umum Flutter untuk penumpang dan pengemudi; repositori masih memerlukan ringkasan proyek.',
+      id: 'Repositori awal aplikasi angkutan umum Flutter untuk penumpang dan pengemudi; ringkasan proyek belum tersedia.',
     },
   },
   {
@@ -263,14 +263,14 @@ export const githubRepositories: GitHubRepository[] = [
     language: 'JavaScript',
     portfolio: {
       title: {
-        en: 'Arkademy CRUD Assignment',
-        id: 'Tugas CRUD Arkademy',
+        en: 'Arkademy Data Management Exercise',
+        id: 'Latihan Pengelolaan Data Arkademy',
       },
       category: 'learning',
     },
     description: {
-      en: 'Bootcamp CRUD assignment using Node.js, Express, EJS, Bootstrap, and MySQL.',
-      id: 'Tugas CRUD bootcamp dengan Node.js, Express, EJS, Bootstrap, dan MySQL.',
+      en: 'Bootcamp exercise to add, view, edit, and delete records with Node.js, Express, EJS, Bootstrap, and MySQL.',
+      id: 'Tugas membuat fitur tambah, lihat, ubah, dan hapus data dengan Node.js, Express, EJS, Bootstrap, dan MySQL.',
     },
   },
   {
@@ -287,7 +287,7 @@ export const githubRepositories: GitHubRepository[] = [
     },
     description: {
       en: 'Early bootcamp exercises covering JavaScript, SQL, HTML, and PHP/MySQL.',
-      id: 'Latihan bootcamp awal yang mencakup JavaScript, SQL, HTML, dan PHP/MySQL.',
+      id: 'Latihan dasar JavaScript, SQL, HTML, dan PHP/MySQL dari seleksi bootcamp.',
     },
   },
   {
@@ -304,7 +304,7 @@ export const githubRepositories: GitHubRepository[] = [
     },
     description: {
       en: 'Early web and database exercises from a coding bootcamp selection project.',
-      id: 'Latihan web dan basis data dari proyek seleksi bootcamp coding.',
+      id: 'Latihan web dan basis data dari seleksi bootcamp pemrograman.',
     },
   },
   {

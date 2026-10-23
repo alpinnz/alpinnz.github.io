@@ -3,9 +3,10 @@
   "@@locale": "id",
   "title": "Halo, saya Alfin — Senior Frontend Developer",
   "descriptions": {
-    "0": "Saya membangun pengalaman web dan mobile yang jelas dan andal, dengan pendekatan teknis yang praktis dan kolaboratif.",
-    "1": "Berbasis di Malang, saya mengembangkan produk Smartlink dan Groapp di PT Ada Ide Langsung Jalan."
+    "0": "Saya mengembangkan produk web dan mobile yang mudah digunakan dan dipelihara, dari antarmuka hingga integrasi API.",
+    "1": "Dari Malang, saya mengembangkan produk Smartlink dan Groapp di PT Ada Ide Langsung Jalan."
   },
-  "cta": "Sapa Saya",
-  "social_label": "Temukan saya di"
+  "cta": "Hubungi Saya",
+  "social_label": "Temukan saya di",
+  "portrait_alt": "Foto Alfin Noviaji"
 }

@@ -3,14 +3,14 @@
   "@@locale": "en",
   "header": {
     "title": "Get in Touch",
-    "subtitle": "Get in touch about a project, a question, or just to say hello."
+    "subtitle": "Have a project or a question? Send me a message or reach me by email."
   },
   "social_label": "Find me online",
   "form": {
     "labels": {
       "name": "Name",
       "email": "Email",
-      "phone": "Phone",
+      "phone": "Phone (optional)",
       "message": "Message"
     },
     "name": "Name",
@@ -21,7 +21,7 @@
     "sending": "Sending...",
     "success": "Message sent. I’ll get back to you soon.",
     "error": "Your message could not be sent. Please try again or email me directly.",
-    "not_configured": "The contact form is not configured yet. Please email alpinnz@gmail.com directly."
+    "not_configured": "The contact form is unavailable right now. Please email alpinnz@gmail.com directly."
   },
   "validation": {
     "required": "This field is required.",

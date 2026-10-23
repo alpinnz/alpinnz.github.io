@@ -1,7 +1,7 @@
 {
   "header": {
     "eyebrow": "Karier & kontribusi",
-    "title": "Timeline Perjalanan",
+    "title": "Perjalanan Karier",
     "subtitle": "Tonggak karier dan proyek publik pilihan, dilengkapi tautan ke karya terkait."
   },
   "items": [
@@ -15,8 +15,8 @@
       "link": "https://smartlink.id/"
     },
     {
-      "title": "Valfuse Node: perangkat bantu TypeScript pakai ulang",
-      "descriptions": "Membangun toolkit publik untuk state formulir, validasi, lokalisasi, dan pembuatan aset, dengan integrasi React, Vue, dan Express. Perilaku bersama dapat digunakan dalam produk tanpa terikat pada satu framework UI.",
+      "title": "Valfuse Node: toolkit TypeScript lintas framework",
+      "descriptions": "Membangun toolkit open source untuk mengelola formulir, validasi, lokalisasi, dan aset, dengan integrasi React, Vue, serta Express. Komponen dasarnya dapat digunakan di berbagai produk tanpa terikat pada satu framework antarmuka.",
       "date_start": "2026-08-23",
       "date_end": null,
       "currently": true,
@@ -24,8 +24,8 @@
       "link": "https://github.com/alpinnz/valfuse-node"
     },
     {
-      "title": "Kontributor Open Source – kekland Inspector BorderRadius (LTRB)",
-      "descriptions": "Menambahkan nilai radius sudut LTR dari BoxDecoration ke Inspector untuk membantu audit UI dan pemeriksaan design token.",
+      "title": "Kontribusi Flutter Inspector: radius sudut",
+      "descriptions": "Menambahkan akses ke nilai radius setiap sudut dari BoxDecoration di Inspector agar pemeriksaan antarmuka lebih akurat.",
       "date_start": "2026-02-11",
       "date_end": "2026-03-30",
       "currently": false,
@@ -34,7 +34,7 @@
     },
     {
       "title": "Perangkat bantu Flutter untuk lokalisasi dan pengujian UI",
-      "descriptions": "Menerbitkan localization_gen untuk menghasilkan API terjemahan bertipe dari JSON modular, lalu automation_keys_gen untuk menstandarkan dan mendokumentasikan kunci pengujian Flutter. Keduanya menjawab pekerjaan pemeliharaan yang berulang pada codebase aplikasi besar.",
+      "descriptions": "Menerbitkan localization_gen untuk membuat API terjemahan bertipe dari berkas JSON modular, lalu automation_keys_gen untuk menyeragamkan dan mendokumentasikan kunci pengujian Flutter. Keduanya mengurangi pekerjaan berulang saat memelihara aplikasi.",
       "date_start": "2025-11-28",
       "date_end": null,
       "currently": true,
@@ -42,8 +42,8 @@
       "link": "https://github.com/alpinnz/localization_gen"
     },
     {
-      "title": "Riset keamanan input frontend",
-      "descriptions": "Membandingkan sanitasi HTML di React dan Flutter melalui demo serta pengujian otomatis dengan lebih dari 60 kasus payload XSS. Repositori ini mendokumentasikan pendekatan dan batasannya untuk tim frontend.",
+      "title": "Riset keamanan konten HTML",
+      "descriptions": "Membandingkan cara React dan Flutter menyaring HTML berbahaya melalui demo dan pengujian otomatis dengan lebih dari 60 contoh serangan XSS. Repositori ini juga menjelaskan batasan pendekatannya.",
       "date_start": "2025-10-17",
       "date_end": null,
       "currently": false,
@@ -51,8 +51,8 @@
       "link": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
     {
-      "title": "Kontribusi Open Source – Usulan Kompatibilitas iOS 26",
-      "descriptions": "Mengusulkan migrasi penanganan metadata dari ALAsset ke PHAsset untuk mengatasi masalah kompatibilitas iOS 26. Pull request tersebut kemudian ditutup setelah maintainer menggantinya dengan perbaikan lain.",
+      "title": "Usulan kompatibilitas iOS 26",
+      "descriptions": "Mengusulkan perpindahan penanganan metadata gambar dari ALAsset ke PHAsset agar kompatibel dengan iOS 26. Pengelola proyek kemudian memakai perbaikan lain dan menutup usulan tersebut.",
       "date_start": "2025-09-21",
       "date_end": "2026-07-12",
       "currently": false,
@@ -61,7 +61,7 @@
     },
     {
       "title": "Frontend Engineer Lead di PT Ada Ide Langsung Jalan",
-      "descriptions": "Memimpin pengembangan frontend untuk produk web, mobile, dan lintas platform. Menyusun prioritas dan sumber daya, membimbing engineer, meninjau kode, serta membangun fondasi dan standar teknis yang dapat digunakan kembali.",
+      "descriptions": "Memimpin pengembangan antarmuka untuk produk web dan mobile. Saya menyusun prioritas kerja, membimbing engineer, meninjau kode, serta menetapkan komponen dan standar teknis bersama.",
       "date_start": "2022-01-01",
       "date_end": "2026-07-31",
       "currently": false,
@@ -78,7 +78,7 @@
       "link": "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
     },
     {
-      "title": "Mobile Engineer di PT. Ada Ide Langsung Jalan",
+      "title": "Mobile Engineer di PT Ada Ide Langsung Jalan",
       "descriptions": "Mengembangkan fitur inti untuk aplikasi kasir Smartlink menggunakan Flutter, menerapkan prinsip DDD dan Clean Architecture.",
       "date_start": "2021-06-01",
       "date_end": "2021-12-31",
@@ -88,7 +88,7 @@
     },
     {
       "title": "Android Engineer di CV Gumcode",
-      "descriptions": "Mengembangkan aplikasi Android dan fitur klien dalam peran pengembangan jangka pendek.",
+      "descriptions": "Mengembangkan aplikasi Android dan fitur untuk proyek klien.",
       "date_start": "2021-03-01",
       "date_end": "2021-05-31",
       "currently": false,
@@ -123,7 +123,7 @@
       "link": "https://asia.ac.id"
     },
     {
-      "title": "System Administrator di Star Nt Game Center",
+      "title": "Administrator Sistem di Star Nt Game Center",
       "descriptions": "Menjaga sistem dan operasional teknis sehari-hari sebelum beralih ke pengembangan perangkat lunak.",
       "date_start": "2017-08-01",
       "date_end": "2020-02-29",
@@ -132,8 +132,8 @@
       "link": null
     }
   ],
-  "now": "Sekarang",
-  "view_link": "Buka tautan",
-  "show_all": "Lihat seluruh timeline",
+  "now": "Saat ini",
+  "view_link": "Lihat selengkapnya",
+  "show_all": "Lihat seluruh perjalanan",
   "show_less": "Tampilkan lebih sedikit"
 }

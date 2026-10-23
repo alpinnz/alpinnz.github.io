@@ -1,16 +1,16 @@
 {
   "header": {
     "title": "My Core Skills",
-    "subtitle": "I turn product requirements into usable interfaces and maintainable systems, from frontend delivery to mobile and API integration.",
+    "subtitle": "I turn product requirements into usable interfaces and reliable features across web, mobile, and APIs.",
     "tools_label": "Selected tools",
     "example_label": "Explore a related project"
   },
   "skills": [
     {
       "title": "Frontend Development",
-      "description": "Build responsive web interfaces and shared components that make complex product workflows easier to use and maintain.",
+      "description": "Build responsive web interfaces and reusable components that make complex workflows easier to use and maintain.",
       "highlights": [
-        "Connect frontend features to APIs with clear validation and error states.",
+        "Connect interfaces to APIs with clear validation, loading, and error states.",
         "Improve consistency through reusable components, localization, and code review."
       ],
       "tools": [
@@ -28,10 +28,10 @@
     },
     {
       "title": "Mobile Development",
-      "description": "Develop cross-platform applications and the tooling teams need to ship consistent mobile experiences.",
+      "description": "Develop mobile apps and shared tools that help teams deliver consistent experiences across platforms.",
       "highlights": [
-        "Build Flutter features with clear state, navigation, and platform behavior.",
-        "Create typed localization and stable UI test keys for larger codebases."
+        "Build Flutter features with predictable state, navigation, and platform-specific behavior.",
+        "Create typed translations and consistent UI test keys for growing applications."
       ],
       "tools": [
         "Flutter",
@@ -48,10 +48,10 @@
     },
     {
       "title": "Backend & APIs",
-      "description": "Design and integrate APIs that support product features with explicit contracts and operational basics.",
+      "description": "Build and integrate APIs with clear contracts, authentication, and documentation.",
       "highlights": [
-        "Work with authentication, validation, databases, and service boundaries.",
-        "Build reusable API starters with documentation and deployment configuration."
+        "Work with authentication, input validation, databases, and service boundaries.",
+        "Create API starters with practical configuration, tests, and deployment support."
       ],
       "tools": [
         "Go",

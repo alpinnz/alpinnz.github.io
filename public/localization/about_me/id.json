@@ -1,7 +1,7 @@
 {
   "@@module": "about_me",
   "@@locale": "id",
-  "title": "Sedikit Tentang Saya",
+  "title": "Tentang Saya",
   "facts": {
     "0": {
       "label": "Peran saat ini",
@@ -13,12 +13,12 @@
     },
     "2": {
       "label": "Karya publik",
-      "text": "Perangkat bantu & riset"
+      "text": "Alat pengembangan & riset"
     }
   },
   "descriptions": {
-    "0": "Saya Alfin, software engineer yang berbasis di Malang dan lulusan Ilmu Komputer Institut Teknologi dan Bisnis ASIA. Pengalaman saya mencakup web, mobile, dan API, dengan fokus saat ini pada pengembangan produk frontend.",
-    "1": "Di PT Ada Ide Langsung Jalan, saya mengembangkan fitur untuk ekosistem Smartlink dan Groapp, termasuk produk kasir, owner, access, dan accounting. Saya bekerja bersama product owner dan backend engineer untuk menerjemahkan kebutuhan menjadi antarmuka responsif, integrasi API yang andal, dan komponen yang dapat digunakan kembali.",
-    "2": "Sebelum menjadi Senior Frontend Developer pada Agustus 2026, saya memimpin pengembangan frontend dari Januari 2022 hingga Juli 2026. Lingkupnya meliputi perencanaan, pembimbingan engineer, code review, dan standar teknis. Saya juga menerbitkan perangkat bantu untuk lokalisasi, pengujian UI, dan validasi formulir sebagai solusi atas masalah yang saya temui dalam pengembangan produk."
+    "0": "Saya Alfin, pengembang perangkat lunak yang berbasis di Malang dan lulusan Ilmu Komputer Institut Teknologi dan Bisnis ASIA. Saya pernah mengerjakan antarmuka web, aplikasi mobile, dan API yang menghubungkannya. Kini saya berfokus pada pengembangan produk frontend.",
+    "1": "Di PT Ada Ide Langsung Jalan, saya mengembangkan fitur untuk produk Smartlink dan Groapp, termasuk Smartlink Kasir, Smartlink Owner, Groapp Access, dan Groapp Accounting. Saya bekerja dengan tim produk dan engineer backend untuk menerjemahkan kebutuhan menjadi antarmuka responsif, integrasi API yang andal, dan komponen yang dapat digunakan kembali.",
+    "2": "Dari Januari 2022 hingga Juli 2026, saya memimpin tim frontend: merencanakan pekerjaan, membimbing engineer, meninjau kode, dan menetapkan standar teknis. Saya juga menerbitkan alat untuk lokalisasi, pengujian UI, dan validasi formulir berdasarkan tantangan yang berulang dalam pengembangan produk."
   }
 }

@@ -1,9 +1,10 @@
 {
   "title": "Hello, I’m Alfin — a Senior Frontend Developer",
   "descriptions": [
-    "I build clear, reliable experiences for web and mobile products, backed by practical engineering and strong collaboration.",
-    "Based in Malang, I work on the Smartlink and Groapp products at PT Ada Ide Langsung Jalan."
+    "I build web and mobile products that are easy to use and maintain, from the interface to API integration.",
+    "Based in Malang, I work on Smartlink and Groapp products at PT Ada Ide Langsung Jalan."
   ],
-  "cta": "Say Hello",
-  "social_label": "Find me online"
+  "cta": "Contact Me",
+  "social_label": "Find me online",
+  "portrait_alt": "Portrait of Alfin Noviaji"
 }

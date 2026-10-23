@@ -1,14 +1,14 @@
 {
   "header": {
     "title": "Hubungi Saya",
-    "subtitle": "Hubungi saya untuk membahas proyek, bertanya, atau sekadar menyapa."
+    "subtitle": "Punya proyek atau pertanyaan? Kirim pesan melalui formulir ini atau email saya langsung."
   },
   "social_label": "Temukan saya di",
   "form": {
     "labels": {
       "name": "Nama",
       "email": "Email",
-      "phone": "Telepon",
+      "phone": "Telepon (opsional)",
       "message": "Pesan"
     },
     "name": "Nama",
@@ -19,7 +19,7 @@
     "sending": "Mengirim...",
     "success": "Pesan terkirim. Saya akan segera menghubungi Anda.",
     "error": "Pesan gagal dikirim. Coba lagi atau kirim email langsung.",
-    "not_configured": "Form kontak belum dikonfigurasi. Silakan kirim email ke alpinnz@gmail.com."
+    "not_configured": "Formulir kontak sedang tidak tersedia. Silakan kirim email langsung ke alpinnz@gmail.com."
   },
   "validation": {
     "required": "Kolom ini wajib diisi.",

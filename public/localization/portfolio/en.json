@@ -4,7 +4,7 @@
   "header": {
     "eyebrow": "Selected work",
     "title": "Some Things I’ve Built",
-    "subtitle": "Selected product work, public developer tools, and applied research with links to the work."
+    "subtitle": "Selected products, open-source tools, and research, with links to explore each project."
   },
   "categories": {
     "all": "All",
@@ -14,13 +14,14 @@
     "backend": "Backend",
     "design": "Design",
     "packages": "Packages",
-    "learning": "Learning"
+    "learning": "Practice"
   },
-  "features_label": "What it includes",
+  "features_label": "Key features",
   "empty_state": "No projects in this category yet.",
   "load_more_projects": "Load {count} more projects",
   "show_less_projects": "Show fewer projects",
   "project_details_label": "View {title} project details",
+  "project_preview_alt": "Preview of {title}",
   "project_repository_label": "Open {title} repository",
   "close_details_label": "Close project details",
   "open_image_label": "View image full screen",
@@ -28,7 +29,7 @@
   "previous_image_label": "Previous image",
   "next_image_label": "Next image",
   "tech_stack_label": "Tech stack",
-  "live_label": "Live",
+  "live_label": "Package page",
   "repository_label": "Repository",
   "website_label": "Website",
   "play_store_label": "Play Store",
@@ -36,15 +37,12 @@
   "items": {
     "0": {
       "title": "Valfuse Node",
-      "descriptions": "A TypeScript toolkit for form state, validation, localization, and code generation across Node.js, React, Vue, and Express.",
-      "details": "A modular toolkit for framework-neutral form state and schema validation, localization, React and Vue adapters, Express middleware, and Node.js asset and barrel generation.",
+      "descriptions": "A TypeScript toolkit for forms, validation, and localization across React, Vue, Express, and Node.js.",
+      "details": "Valfuse Node brings shared form behavior, validation, localization, and code generation into one modular toolkit. Its core works across frameworks, with dedicated integrations for React, Vue, and Express.",
       "features": {
-        "0": "@valfuse-node/core/assets and @valfuse-node/core/barrel: Node.js APIs for typed asset paths and TypeScript barrel generation.",
-        "1": "@valfuse-node/core/express: Express middleware for request validation and localization.",
-        "2": "@valfuse-node/form and @valfuse-node/validation: framework-neutral form state, schemas, rules, validation, and transformations.",
-        "3": "@valfuse-node/localization: CLI compiler, locale validators, and browser runtime.",
-        "4": "@valfuse-node/react: useValfuseForm, <ValfuseController>, and <LocalizationProvider>; the core facade exports useReactValfuseForm.",
-        "5": "@valfuse-node/vue: useValfuseForm, localization provider, and composables; the core facade exports useVueValfuseForm."
+        "0": "Shared form state, validation rules, and error handling for web apps.",
+        "1": "Tools for typed translations and generated asset paths.",
+        "2": "React, Vue, and Express integrations built on a shared core."
       },
       "thumbnail": "/portfolio/valfuse-node/valfuse-node.svg",
       "gallery": {
@@ -58,7 +56,7 @@
         "3": "Vue",
         "4": "Express",
         "5": "CLI",
-        "6": "i18n"
+        "6": "Localization"
       },
       "created_at": "2026-08-23",
       "webUrl": "https://www.npmjs.com/org/valfuse-node",
@@ -66,8 +64,8 @@
     },
     "1": {
       "title": "localization_gen",
-      "descriptions": "A strongly typed localization generator for Flutter and Dart, with nested JSON support and a CLI.",
-      "details": "A localization code generator for Flutter and Dart. It supports nested JSON, modular organization, parameter interpolation, pluralization, gender and context forms, watch mode, and a multi-command CLI. Generated localization APIs are strongly typed.",
+      "descriptions": "Generates type-safe translations for Flutter apps from modular JSON files.",
+      "details": "This Dart tool turns modular JSON translations into typed Flutter APIs. It supports nested keys, placeholders, plural and context variants, and watch mode, helping teams catch missing translations during development.",
       "thumbnail": "/portfolio/localization-gen/localization-gen.svg",
       "gallery": {
         "0": "/portfolio/localization-gen/localization-gen.svg"
@@ -78,7 +76,7 @@
         "1": "Flutter",
         "2": "Code Generation",
         "3": "CLI",
-        "4": "i18n"
+        "4": "Localization"
       },
       "created_at": "2025-11-28",
       "liveUrl": "https://pub.dev/packages/localization_gen",
@@ -86,8 +84,8 @@
     },
     "2": {
       "title": "automation_keys_gen",
-      "descriptions": "Keeps Flutter UI test automation keys consistent with CLI validation and documentation generation.",
-      "details": "A Flutter testing utility that standardizes automation keys across a codebase. Its CLI validates keys and generates Markdown documentation, giving QA and development teams a shared reference and helping prevent UI test failures caused by inconsistent or undocumented keys.",
+      "descriptions": "Keeps Flutter UI test identifiers consistent through CLI checks and generated documentation.",
+      "details": "This Flutter package gives developers and QA teams one naming pattern for UI test keys. A CLI checks keys and generates documentation, making automated tests easier to maintain as an app grows.",
       "thumbnail": "/portfolio/automation-keys-gen/automation-keys-gen.svg",
       "gallery": {
         "0": "/portfolio/automation-keys-gen/automation-keys-gen.svg"
@@ -106,8 +104,8 @@
     },
     "3": {
       "title": "idle_activity_detector",
-      "descriptions": "Detects user activity and idle states with browser event support and configurable timeouts.",
-      "details": "A cross-platform Flutter package for detecting whether a user is active or idle. On the web, it listens for mouse, keyboard, scroll, and touch events. It can support automatic logout, session timeout warnings, and activity tracking.",
+      "descriptions": "Detects when users become inactive in Flutter apps, with configurable timeouts and web input support.",
+      "details": "This Flutter package detects activity and inactivity across platforms. On the web, it watches mouse, keyboard, scroll, and touch input. Apps can use it for session warnings or automatic logout.",
       "thumbnail": "/portfolio/idle-activity-detector/idle-activity-detector.svg",
       "gallery": {
         "0": "/portfolio/idle-activity-detector/idle-activity-detector.svg"
@@ -124,8 +122,8 @@
     },
     "4": {
       "title": "Frontend Input Sanitization Study",
-      "descriptions": "A React and Flutter security study with HTML sanitization demos and automated tests against a 60+ case XSS payload set.",
-      "details": "Compares whitelist-based HTML sanitization in React and Flutter. The public repository includes working demos, a shared set of more than 60 XSS payload cases, and automated tests for both implementations.",
+      "descriptions": "Tests safe HTML rendering in React and Flutter against more than 60 XSS attack examples.",
+      "details": "This study compares HTML sanitization in React and Flutter. The repository includes working demos and automated tests using a shared set of more than 60 XSS examples, showing how each platform treats unsafe content.",
       "features": {
         "0": "React demo with whitelist-based HTML sanitization.",
         "1": "Flutter demo with a matching sanitization flow.",
@@ -148,8 +146,8 @@
     },
     "5": {
       "title": "Hono REST API Starter",
-      "descriptions": "A modular TypeScript API foundation with authentication, database access, and repeatable release scripts.",
-      "details": "A public API starter using Bun, Hono, Prisma, and PostgreSQL. It separates routes, controllers, and services, includes basic login and registration flows, and documents environment setup and database migrations.",
+      "descriptions": "A TypeScript API starter with authentication, PostgreSQL access, and build scripts.",
+      "details": "Built with Bun, Hono, Prisma, and PostgreSQL, this starter separates routes, controllers, and services. It includes basic account flows and documents environment setup, database migrations, and release steps.",
       "features": {
         "0": "Basic login, registration, and logout flows.",
         "1": "Prisma migrations and PostgreSQL configuration across environments.",
@@ -173,8 +171,8 @@
     },
     "6": {
       "title": "Firebase Google Sign-In Study",
-      "descriptions": "A Flutter study of Google authentication across web and Android, with platform-specific flows and documented failure cases.",
-      "details": "Explores how Google OAuth credentials become Firebase sessions on Flutter web and Android. The repository documents popup and redirect flows on web, native sign-in on Android, authentication state, and error handling.",
+      "descriptions": "A Flutter study of Google Sign-In on web and Android, including fallback and error handling.",
+      "details": "This study documents how Google sign-in becomes a Firebase session on Flutter web and Android. It covers web popup and redirect flows, Android sign-in, authentication state, and common setup issues.",
       "features": {
         "0": "Web popup sign-in with redirect fallback when popups are blocked.",
         "1": "Android Google Sign-In credential exchange with Firebase Authentication.",
@@ -197,8 +195,8 @@
     },
     "7": {
       "title": "Bukit Delight Cafe Ordering System",
-      "descriptions": "A full-stack cafe ordering and management app with menu sales grouping using k-means clustering.",
-      "details": "An academic full-stack project for customer ordering, cashier operations, and administration. It applies k-means clustering to order data to group menu items by sales performance.",
+      "descriptions": "A cafe ordering system that groups menu items by sales patterns using k-means.",
+      "details": "This academic web app supports customer orders, cashier operations, and administration. It also uses k-means clustering to group menu items by sales performance.",
       "features": {
         "0": "Customer ordering and menu browsing.",
         "1": "Cashier and administrator workflows.",
@@ -221,8 +219,8 @@
     },
     "8": {
       "title": "HORA Pro",
-      "descriptions": "Mobile app for employee attendance, location-based check-ins, leave requests, and team communication.",
-      "details": "HORA Pro supports location-based check-in and check-out with selfie verification. The app also includes geolocation, leave management, chat, and attendance reports.",
+      "descriptions": "A mobile app for employee attendance, location-based check-ins, leave requests, and team chat.",
+      "details": "HORA Pro supports location-based check-in and check-out with selfie verification. Employees can also request leave, chat with their team, and view attendance reports.",
       "thumbnail": "/portfolio/hora-pro/hora-pro-1.jpg",
       "gallery": {
         "0": "/portfolio/hora-pro/hora-pro-1.jpg",
@@ -243,8 +241,8 @@
     },
     "9": {
       "title": "Go REST API Boilerplate",
-      "descriptions": "A modular Go REST API starter with environment configuration and Docker support.",
-      "details": "A Go REST API starter with separate development, testing, and production configuration. It includes Docker support, JWT authentication, GORM, transaction handling, and persistent file uploads. Its modular structure draws on Clean Architecture principles.",
+      "descriptions": "A Go API starter with authentication, PostgreSQL, Redis sessions, and API documentation.",
+      "details": "This starter provides a modular Go API with JWT authentication, PostgreSQL, Redis-backed sessions, WebSockets, and generated API docs. Docker setup and environment configuration support local development and deployment.",
       "thumbnail": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
       "gallery": {
         "0": "/portfolio/go-rest-api-boilerplate/go-rest-api-boilerplate-1.jpg",
@@ -255,7 +253,7 @@
       },
       "category": "backend",
       "techStack": {
-        "0": "Golang",
+        "0": "Go",
         "1": "Gin",
         "2": "GORM",
         "3": "Docker",

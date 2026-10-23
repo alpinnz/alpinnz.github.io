@@ -22,8 +22,8 @@
       "link": "https://github.com/alpinnz/valfuse-node"
     },
     "2": {
-      "title": "Open Source Contributor – kekland Inspector BorderRadius (LTRB)",
-      "descriptions": "Exposed LTR corner-radius values from BoxDecoration in the Inspector, improving UI audits and design-token checks.",
+      "title": "Flutter Inspector: border radius contribution",
+      "descriptions": "Added access to individual corner-radius values from BoxDecoration in the Inspector, making UI inspection more precise.",
       "date_start": "2026-02-11",
       "date_end": "2026-03-30",
       "icon": "ic_github",
@@ -44,8 +44,8 @@
       "link": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
     "5": {
-      "title": "Open Source Contribution – iOS 26 Compatibility Proposal",
-      "descriptions": "Proposed migrating metadata handling from ALAsset to PHAsset to address iOS 26 compatibility. The pull request was later closed after maintainers replaced it with another fix.",
+      "title": "iOS 26 compatibility proposal",
+      "descriptions": "Proposed moving image metadata handling from ALAsset to PHAsset for iOS 26 compatibility. Maintainers later used a different fix and closed the proposal.",
       "date_start": "2025-09-21",
       "date_end": "2026-07-12",
       "icon": "ic_github",
@@ -68,7 +68,7 @@
       "link": "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
     },
     "8": {
-      "title": "Mobile Engineer at PT. Ada Ide Langsung Jalan",
+      "title": "Mobile Engineer at PT Ada Ide Langsung Jalan",
       "descriptions": "Developed core features for the Smartlink cashier app using Flutter, following DDD and Clean Architecture principles.",
       "date_start": "2021-06-01",
       "date_end": "2021-12-31",
@@ -77,7 +77,7 @@
     },
     "9": {
       "title": "Android Engineer at CV Gumcode",
-      "descriptions": "Developed Android applications and delivered client features during a short-term engineering role.",
+      "descriptions": "Developed Android apps and features for client projects.",
       "date_start": "2021-03-01",
       "date_end": "2021-05-31",
       "icon": "ic_desktop"
@@ -112,7 +112,7 @@
     }
   },
   "now": "Now",
-  "view_link": "View link",
+  "view_link": "Learn more",
   "show_all": "View full timeline",
   "show_less": "Show less"
 }

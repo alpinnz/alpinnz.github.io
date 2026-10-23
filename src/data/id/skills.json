@@ -1,17 +1,17 @@
 {
   "header": {
     "title": "Keahlian Inti Saya",
-    "subtitle": "Saya menerjemahkan kebutuhan produk menjadi antarmuka yang mudah digunakan dan sistem yang mudah dipelihara, dari frontend hingga integrasi mobile dan API.",
+    "subtitle": "Saya menerjemahkan kebutuhan produk menjadi antarmuka yang mudah digunakan dan fitur yang andal untuk web, mobile, dan API.",
     "tools_label": "Teknologi pilihan",
-    "example_label": "Lihat proyek terkait"
+    "example_label": "Contoh proyek"
   },
   "skills": [
     {
       "title": "Pengembangan Frontend",
-      "description": "Membangun antarmuka web responsif dan komponen bersama agar alur produk yang kompleks lebih mudah dipakai dan dipelihara.",
+      "description": "Membangun antarmuka web responsif dan komponen yang dapat digunakan kembali agar alur kerja yang rumit lebih mudah dipakai dan dipelihara.",
       "highlights": [
-        "Menghubungkan fitur frontend dengan API melalui validasi dan penanganan galat yang jelas.",
-        "Menjaga konsistensi lewat komponen pakai ulang, lokalisasi, dan code review."
+        "Menghubungkan antarmuka dengan API, lengkap dengan validasi, indikator pemuatan, dan pesan kesalahan.",
+        "Menjaga konsistensi melalui komponen bersama, lokalisasi, dan peninjauan kode."
       ],
       "tools": [
         "TypeScript",
@@ -28,10 +28,10 @@
     },
     {
       "title": "Pengembangan Mobile",
-      "description": "Mengembangkan aplikasi lintas platform dan perangkat bantu yang mendukung pengalaman mobile yang konsisten.",
+      "description": "Mengembangkan aplikasi mobile dan alat bersama agar pengalaman pengguna tetap konsisten di berbagai platform.",
       "highlights": [
-        "Membangun fitur Flutter dengan state, navigasi, dan perilaku platform yang jelas.",
-        "Membuat lokalisasi bertipe dan kunci pengujian UI yang konsisten untuk codebase besar."
+        "Membangun fitur Flutter dengan pengelolaan state, navigasi, dan penyesuaian untuk setiap platform.",
+        "Membuat terjemahan bertipe dan kunci pengujian UI yang konsisten untuk aplikasi yang berkembang."
       ],
       "tools": [
         "Flutter",
@@ -48,10 +48,10 @@
     },
     {
       "title": "Backend & API",
-      "description": "Merancang dan mengintegrasikan API yang mendukung fitur produk dengan kontrak yang jelas dan kebutuhan operasional dasar.",
+      "description": "Membangun dan mengintegrasikan API dengan kontrak yang jelas, autentikasi, dan dokumentasi.",
       "highlights": [
-        "Menangani autentikasi, validasi, basis data, dan batas antar layanan.",
-        "Membangun starter API dengan dokumentasi dan konfigurasi deployment."
+        "Menangani autentikasi, validasi input, basis data, dan pemisahan layanan.",
+        "Membuat fondasi API dengan konfigurasi, pengujian, dan proses rilis yang jelas."
       ],
       "tools": [
         "Go",

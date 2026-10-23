@@ -79,7 +79,7 @@ export function Overview(): React.ReactElement {
       <div className="flex flex-1 justify-center md:justify-end">
         <Image
           src="/assets/images/profile.png"
-          alt="Portrait of Alfin Noviaji"
+          alt={translations.portrait_alt}
           width={340}
           height={340}
           preload
