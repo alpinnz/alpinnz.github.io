@@ -1,13 +1,11 @@
 import * as React from 'react'
 import Image from 'next/image'
 import { useLocalizedModule } from '../../locales/use-localized-module'
-import { socialLinks } from '@/data/social-links'
 
 type OverviewItem = {
   title: string
   descriptions: string[]
   cta?: string
-  socialLabel: string
 }
 
 export function Overview(): React.ReactElement {
@@ -17,7 +15,6 @@ export function Overview(): React.ReactElement {
     title: translations.title,
     descriptions: translations.descriptions,
     cta: translations.cta,
-    socialLabel: translations.social_label,
   }
 
   return (
@@ -56,23 +53,6 @@ export function Overview(): React.ReactElement {
             {overviewItem.cta}
           </button>
         )}
-
-        <nav aria-label={overviewItem.socialLabel} className="mt-5 flex flex-wrap items-center justify-center gap-2 md:justify-start">
-          <span className="mr-1 text-xs font-semibold uppercase tracking-wide text-neutral-600">
-            {overviewItem.socialLabel}
-          </span>
-          {socialLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-3.5 text-sm font-semibold text-neutral-700 transition-colors hover:border-primary-400 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
-            >
-              {link.label} <span aria-hidden="true">↗</span>
-            </a>
-          ))}
-        </nav>
       </div>
 
       {/* Right: Profile image */}
