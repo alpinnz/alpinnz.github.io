@@ -1,11 +1,15 @@
 {
   "@@module": "overview",
   "@@locale": "en",
-  "title": "Hello, I’m Alfin — a Software Engineer",
+  "title": "Hello, I’m Alfin — a Full Stack Developer",
   "descriptions": {
-    "0": "I build full-stack products across mobile, frontend, and backend—from user-facing apps to the APIs behind them.",
-    "1": "Currently, I work as a Lead Mobile Engineer at PT. Ada Ide Langsung Jalan."
+    "0": "I build web and mobile products that are easy to use and maintain, from the interface to API integration.",
+    "1": "At PT Ada Ide Langsung Jalan, I develop Smartlink products as a Senior Frontend Developer."
   },
-  "cta": "Say Hello",
-  "download_cta": "Download CV (PDF)"
+  "cta": "Contact Me",
+  "cv_cta": "Download CV",
+  "cv_generating": "Preparing CV…",
+  "cv_success": "CV is ready. Your download has started.",
+  "cv_error": "Could not create the CV. Please try again.",
+  "portrait_alt": "Portrait of Alfin Noviaji"
 }

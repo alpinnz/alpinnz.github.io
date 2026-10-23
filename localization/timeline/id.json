@@ -2,41 +2,64 @@
   "@@module": "timeline",
   "@@locale": "id",
   "header": {
-    "title": "Timeline Perjalanan",
-    "subtitle": "Pilihan perjalanan kerja, pendidikan, pengembangan perangkat bantu, dan kontribusi open source."
+    "eyebrow": "Karier & kontribusi",
+    "title": "Perjalanan Karier",
+    "subtitle": "Tonggak karier dan proyek publik pilihan, dilengkapi tautan ke karya terkait."
   },
   "items": {
     "0": {
-      "title": "Kontributor Open Source – kekland Inspector BorderRadius (LTRB)",
-      "descriptions": "Menambahkan nilai radius sudut LTR dari BoxDecoration ke Inspector untuk membantu audit UI dan pemeriksaan design token.",
+      "title": "Senior Frontend Developer di PT Ada Ide Langsung Jalan",
+      "descriptions": "Mengembangkan fitur web dan mobile untuk Smartlink dan Groapp, dengan fokus pada arsitektur, integrasi API, performa, komponen pakai ulang, dan kualitas kode. Berkolaborasi dengan tim produk dan backend.",
+      "date_start": "2026-08-01",
+      "icon": "ic_desktop",
+      "link": "https://smartlink.id/"
+    },
+    "1": {
+      "title": "Valfuse Node: toolkit TypeScript lintas framework",
+      "descriptions": "Membangun toolkit open source untuk mengelola formulir, validasi, lokalisasi, dan aset, dengan integrasi React, Vue, serta Express. Komponen dasarnya dapat digunakan di berbagai produk tanpa terikat pada satu framework antarmuka.",
+      "date_start": "2026-08-23",
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz/valfuse-node"
+    },
+    "2": {
+      "title": "Kontribusi Flutter Inspector: radius sudut",
+      "descriptions": "Menambahkan akses ke nilai radius setiap sudut dari BoxDecoration di Inspector agar pemeriksaan antarmuka lebih akurat.",
       "date_start": "2026-02-11",
       "date_end": "2026-03-30",
       "icon": "ic_github",
       "link": "https://github.com/kekland/inspector/pull/22"
     },
-    "1": {
-      "title": "Pengembangan Perangkat Bantu Open Source",
-      "descriptions": "Mengembangkan dan memelihara perangkat bantu Dart/Flutter dan TypeScript: localization_gen untuk lokalisasi bertipe, automation_keys_gen untuk konsistensi kunci pengujian UI, serta Valfuse Node untuk validasi formulir, lokalisasi, dan adapter framework.",
+    "3": {
+      "title": "Perangkat bantu Flutter untuk lokalisasi dan pengujian UI",
+      "descriptions": "Menerbitkan localization_gen untuk membuat API terjemahan bertipe dari berkas JSON modular, lalu automation_keys_gen untuk menyeragamkan dan mendokumentasikan kunci pengujian Flutter. Keduanya mengurangi pekerjaan berulang saat memelihara aplikasi.",
       "date_start": "2025-11-28",
       "icon": "ic_github",
-      "link": "https://github.com/alpinnz/valfuse-node"
+      "link": "https://github.com/alpinnz/localization_gen"
     },
-    "2": {
-      "title": "Kontribusi Open Source – Usulan Kompatibilitas iOS 26",
-      "descriptions": "Mengusulkan migrasi penanganan metadata dari ALAsset ke PHAsset untuk mengatasi masalah kompatibilitas iOS 26. Pull request tersebut kemudian ditutup setelah maintainer menggantinya dengan perbaikan lain.",
+    "4": {
+      "title": "Riset keamanan konten HTML",
+      "descriptions": "Membandingkan cara React dan Flutter menyaring HTML berbahaya melalui demo dan pengujian otomatis dengan lebih dari 60 contoh serangan XSS. Repositori ini juga menjelaskan batasan pendekatannya.",
+      "date_start": "2025-10-17",
+      "icon": "ic_github",
+      "link": "https://github.com/alpinnz/research-sanitazion-frontend"
+    },
+    "5": {
+      "title": "Usulan kompatibilitas iOS 26",
+      "descriptions": "Mengusulkan perpindahan penanganan metadata gambar dari ALAsset ke PHAsset agar kompatibel dengan iOS 26. Pengelola proyek kemudian memakai perbaikan lain dan menutup usulan tersebut.",
       "date_start": "2025-09-21",
       "date_end": "2026-07-12",
       "icon": "ic_github",
       "link": "https://github.com/fluttercandies/flutter_image_compress/pull/343"
     },
-    "3": {
-      "title": "Lead Mobile Engineer di PT. Ada Ide Langsung Jalan",
-      "descriptions": "Memimpin tim mobile untuk produk Smartlink Kasir (POS Android) dan Smartlink Owner (dashboard manajemen). Tanggung jawab saya mencakup perencanaan dan peluncuran, membimbing engineer, menetapkan standar teknis, meninjau kode, serta mengoordinasikan pekerjaan lintas modul agar rilis tetap stabil dan mudah dipelihara.",
+    "6": {
+      "title": "Frontend Engineer Lead di PT Ada Ide Langsung Jalan",
+      "descriptions": "Memimpin pengembangan antarmuka untuk produk web dan mobile. Saya menyusun prioritas kerja, membimbing engineer, meninjau kode, serta menetapkan komponen dan standar teknis bersama.",
       "date_start": "2022-01-01",
-      "icon": "ic_mobile",
+      "date_end": "2026-07-31",
+      "icon": "ic_desktop",
       "link": "https://smartlink.id/"
     },
-    "4": {
+    "7": {
       "title": "Back End Engineer di Stellarlab",
       "descriptions": "Bekerja paruh waktu menggunakan Node.js dan MongoDB, serta berkolaborasi dengan mentor untuk mengembangkan sistem backend yang dapat diskalakan.",
       "date_start": "2021-10-01",
@@ -44,43 +67,54 @@
       "icon": "ic_desktop",
       "link": "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
     },
-    "5": {
-      "title": "Mobile Engineer di PT. Ada Ide Langsung Jalan",
+    "8": {
+      "title": "Mobile Engineer di PT Ada Ide Langsung Jalan",
       "descriptions": "Mengembangkan fitur inti untuk aplikasi kasir Smartlink menggunakan Flutter, menerapkan prinsip DDD dan Clean Architecture.",
       "date_start": "2021-06-01",
       "date_end": "2021-12-31",
       "icon": "ic_mobile",
       "link": "https://smartlink.id"
     },
-    "6": {
-      "title": "Full Stack Engineer di CV. Gumcode",
-      "descriptions": "Mengembangkan beberapa proyek skala kecil menggunakan Flutter dan CodeIgniter, dengan fokus pada pengerjaan yang efisien dan penggunaan ulang kode.",
+    "9": {
+      "title": "Android Engineer di CV Gumcode",
+      "descriptions": "Mengembangkan aplikasi Android dan fitur untuk proyek klien.",
       "date_start": "2021-03-01",
       "date_end": "2021-05-31",
       "icon": "ic_desktop"
     },
-    "7": {
+    "10": {
       "title": "Microsoft Technology Associate: HTML5 Application Development Fundamentals (MTA)",
+      "cv_section": "certification",
       "descriptions": "Sertifikasi Microsoft. ID kredensial: wMRzb-HanT.",
       "date_start": "2021-02-01",
       "icon": "ic_school"
     },
-    "8": {
-      "title": "Android Engineer Intern di PT. Aku Peduli Indonesia",
+    "11": {
+      "title": "Android Engineer di PT Aku Peduli Indonesia",
       "descriptions": "Mengembangkan aplikasi Android menggunakan Kotlin dan Flutter, termasuk IzzyResto, IzzyInventory, dan Rema.",
       "date_start": "2020-02-01",
       "date_end": "2020-08-01",
       "icon": "ic_mobile"
     },
-    "9": {
+    "12": {
       "title": "Institut Teknologi & Bisnis ASIA",
+      "cv_section": "education",
       "descriptions": "Sarjana Ilmu Komputer (IPK 3,66).",
       "date_start": "2017-10-01",
       "date_end": "2021-02-01",
       "icon": "ic_school",
       "link": "https://asia.ac.id"
+    },
+    "13": {
+      "title": "Administrator Sistem di Star Nt Game Center",
+      "descriptions": "Menjaga sistem dan operasional teknis sehari-hari sebelum beralih ke pengembangan perangkat lunak.",
+      "date_start": "2017-08-01",
+      "date_end": "2020-02-29",
+      "icon": "ic_desktop"
     }
   },
-  "now": "Sekarang",
-  "view_link": "Buka tautan"
+  "now": "Saat ini",
+  "view_link": "Lihat selengkapnya",
+  "show_all": "Lihat seluruh perjalanan",
+  "show_less": "Tampilkan lebih sedikit"
 }

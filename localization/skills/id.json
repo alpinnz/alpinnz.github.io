@@ -3,59 +3,69 @@
   "@@locale": "id",
   "header": {
     "title": "Keahlian Inti Saya",
-    "subtitle": "Saya membangun produk yang mudah dipelihara untuk mobile, web, dan API, dengan arsitektur jelas, kontrak yang terdefinisi, dan alur kerja yang konsisten.",
-    "tools_label": "Teknologi dan framework"
+    "subtitle": "Saya menerjemahkan kebutuhan produk menjadi antarmuka yang mudah digunakan dan fitur yang andal untuk web, mobile, dan API.",
+    "tools_label": "Teknologi pilihan",
+    "example_label": "Contoh proyek"
   },
   "skills": {
     "0": {
-      "title": "Mobile Engineer",
-      "description": "Membangun aplikasi mobile dan modul yang dapat digunakan kembali, dengan arsitektur terstruktur, navigasi dan dependency injection, serta pengelolaan state sesuai kebutuhan produk dan tim.",
+      "title": "Pengembangan Frontend",
+      "description": "Membangun antarmuka web responsif dan komponen yang dapat digunakan kembali agar alur kerja yang rumit lebih mudah dipakai dan dipelihara.",
+      "highlights": {
+        "0": "Menghubungkan antarmuka dengan API, lengkap dengan validasi, indikator pemuatan, dan pesan kesalahan.",
+        "1": "Menjaga konsistensi melalui komponen bersama, lokalisasi, dan peninjauan kode."
+      },
       "tools": {
-        "0": "Flutter",
-        "1": "Dart",
-        "2": "React Native",
-        "3": "Kotlin",
-        "4": "Provider",
-        "5": "Riverpod",
-        "6": "BLoC/Cubit",
-        "7": "GetX",
-        "8": "Redux",
-        "9": "get_it",
-        "10": "injectable",
-        "11": "go_router",
-        "12": "Clean Architecture",
-        "13": "DDD",
-        "14": "MVVM",
-        "15": "MVP"
+        "0": "TypeScript",
+        "1": "React",
+        "2": "Next.js",
+        "3": "Vue",
+        "4": "Tailwind CSS",
+        "5": "Integrasi API"
+      },
+      "example": {
+        "label": "Valfuse Node",
+        "url": "https://github.com/alpinnz/valfuse-node"
       }
     },
     "1": {
-      "title": "Frontend Engineer",
-      "description": "Membangun antarmuka web responsif dan menjaga struktur frontend modular dengan tools modern.",
+      "title": "Pengembangan Mobile",
+      "description": "Mengembangkan aplikasi mobile dan alat bersama agar pengalaman pengguna tetap konsisten di berbagai platform.",
+      "highlights": {
+        "0": "Membangun fitur Flutter dengan pengelolaan state, navigasi, dan penyesuaian untuk setiap platform.",
+        "1": "Membuat terjemahan bertipe dan kunci pengujian UI yang konsisten untuk aplikasi yang berkembang."
+      },
       "tools": {
-        "0": "React",
-        "1": "Next.js",
-        "2": "Vue",
-        "3": "TypeScript",
-        "4": "Tailwind CSS",
-        "5": "Vite",
-        "6": "Zustand",
-        "7": "i18next",
-        "8": "Redux"
+        "0": "Flutter",
+        "1": "Dart",
+        "2": "Kotlin",
+        "3": "React Native",
+        "4": "Lokalisasi",
+        "5": "Pengujian UI"
+      },
+      "example": {
+        "label": "localization_gen",
+        "url": "https://github.com/alpinnz/localization_gen"
       }
     },
     "2": {
-      "title": "Backend Engineer",
-      "description": "Mengembangkan REST API dengan arsitektur terstruktur, validasi input, dan praktik operasional sesuai kebutuhan proyek.",
+      "title": "Backend & API",
+      "description": "Membangun dan mengintegrasikan API dengan kontrak yang jelas, autentikasi, dan dokumentasi.",
+      "highlights": {
+        "0": "Menangani autentikasi, validasi input, basis data, dan pemisahan layanan.",
+        "1": "Membuat fondasi API dengan konfigurasi, pengujian, dan proses rilis yang jelas."
+      },
       "tools": {
-        "0": "Golang",
+        "0": "Go",
         "1": "Gin",
         "2": "Node.js",
-        "3": "Express.js",
+        "3": "Hono",
         "4": "PostgreSQL",
-        "5": "MySQL",
-        "6": "Redis",
-        "7": "Docker"
+        "5": "Docker"
+      },
+      "example": {
+        "label": "Go REST API Boilerplate",
+        "url": "https://github.com/alpinnz/go-rest-api-boilerplate"
       }
     }
   }

@@ -1,9 +1,10 @@
 {
   "@@module": "about_me",
   "@@locale": "id",
-  "title": "Sedikit Tentang Saya",
+  "title": "Tentang Saya",
   "descriptions": {
-    "0": "Saya lahir dan besar di Malang, Indonesia, serta meraih gelar Sarjana Ilmu Komputer dari Institut Teknologi dan Bisnis ASIA Malang. Ketertarikan pada teknologi yang mempermudah aktivitas sehari-hari mendorong saya berkarier di bidang pengembangan perangkat lunak.",
-    "1": "Saya terutama bekerja dengan Dart dan JavaScript, dengan fokus pada aplikasi mobile dan arsitektur perangkat lunak seperti MVP, MVVM, Domain-Driven Design, dan Clean Architecture. Sejak 2022, saya memimpin tim mobile, menjaga kualitas produk, membimbing engineer, dan menetapkan arah teknis. Di luar pekerjaan, saya membuat proyek sampingan dan bermain basket."
+    "0": "Saya Alfin, Senior Frontend Developer berbasis di Malang dan lulusan Ilmu Komputer Institut Teknologi dan Bisnis ASIA. Pengalaman saya mencakup antarmuka web, aplikasi mobile, dan integrasi API, dengan fokus saat ini pada pengembangan produk frontend.",
+    "1": "Sebagai Senior Frontend Developer di PT Ada Ide Langsung Jalan, saya mengembangkan produk Smartlink, termasuk Smartlink Kasir dan Smartlink Owner. Saya juga berkontribusi pada Groapp Access dan Groapp Accounting. Bersama tim produk dan engineer lain, saya menerjemahkan kebutuhan menjadi antarmuka responsif, integrasi API yang andal, dan komponen yang dapat digunakan kembali.",
+    "2": "Dari Januari 2022 hingga Juli 2026, saya memimpin tim frontend: merencanakan pekerjaan, membimbing engineer, meninjau kode, dan menetapkan standar teknis. Di luar pekerjaan produk, saya menerbitkan alat pengembangan untuk lokalisasi, pengujian UI, dan validasi formulir, serta melakukan riset teknis berdasarkan tantangan yang saya temui."
   }
 }

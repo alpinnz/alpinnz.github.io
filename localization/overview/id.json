@@ -1,11 +1,15 @@
 {
   "@@module": "overview",
   "@@locale": "id",
-  "title": "Halo, saya Alfin — seorang Software Engineer",
+  "title": "Halo, saya Alfin — Full Stack Developer",
   "descriptions": {
-    "0": "Saya membangun produk full-stack untuk mobile, frontend, dan backend, mulai dari aplikasi yang digunakan langsung hingga API pendukungnya.",
-    "1": "Saat ini, saya bekerja sebagai Lead Mobile Engineer di PT. Ada Ide Langsung Jalan."
+    "0": "Saya mengembangkan produk web dan mobile yang mudah digunakan dan dipelihara, dari antarmuka hingga integrasi API.",
+    "1": "Di PT Ada Ide Langsung Jalan, saya mengembangkan produk Smartlink sebagai Senior Frontend Developer."
   },
-  "cta": "Sapa Saya",
-  "download_cta": "Unduh CV (PDF)"
+  "cta": "Hubungi Saya",
+  "cv_cta": "Unduh CV",
+  "cv_generating": "Menyiapkan CV…",
+  "cv_success": "CV siap. Unduhan telah dimulai.",
+  "cv_error": "CV belum dapat dibuat. Silakan coba lagi.",
+  "portrait_alt": "Foto Alfin Noviaji"
 }
