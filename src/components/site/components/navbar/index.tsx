@@ -25,8 +25,8 @@ export function Navbar(): React.ReactElement {
 
   const navItems = translations.nav_items
 
-  const selectLanguage = (language: 'en' | 'id') => {
-    if (locale !== language) setLocale(language)
+  const switchLanguage = () => {
+    setLocale(locale === 'en' ? 'id' : 'en')
     setIsOpen(false)
   }
 
@@ -55,29 +55,22 @@ export function Navbar(): React.ReactElement {
         </nav>
 
         <div className="ml-auto flex shrink-0 items-center gap-2 md:ml-0">
-          <div
-            role="group"
-            aria-label={translations.language_label}
-            className="inline-flex items-center rounded-full border border-neutral-200 bg-neutral-100 p-0.5"
+          <button
+            type="button"
+            lang={locale === 'id' ? 'id' : 'en'}
+            aria-label={`${translations.language_label}: ${locale.toUpperCase()}. ${translations.switch_language}`}
+            title={translations.switch_language}
+            onClick={switchLanguage}
+            className="group inline-flex h-11 w-12 shrink-0 items-center justify-center rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 md:h-10"
           >
-            {(['en', 'id'] as const).map((language) => (
-              <button
-                key={language}
-                type="button"
-                lang={language}
-                aria-label={language === 'en' ? 'English' : 'Bahasa Indonesia'}
-                aria-pressed={locale === language}
-                onClick={() => selectLanguage(language)}
-                className={`h-10 w-10 rounded-full text-xs font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 ${
-                  locale === language
-                    ? 'bg-primary-600 text-white shadow-sm'
-                    : 'text-neutral-600 hover:text-primary-800'
-                }`}
-              >
-                {language.toUpperCase()}
-              </button>
-            ))}
-          </div>
+            <span className="inline-flex h-8 w-12 items-center justify-center gap-1 rounded-lg border border-neutral-200 bg-white text-xs font-semibold text-primary-800 transition-colors group-hover:border-primary-300 group-hover:bg-primary-50">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="size-3.5">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3Z" />
+              </svg>
+              {locale === 'id' ? 'ID' : 'EN'}
+            </span>
+          </button>
 
           <button
             className="group flex h-11 w-11 flex-col items-center justify-center rounded-xl transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 md:hidden"

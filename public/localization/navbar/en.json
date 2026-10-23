@@ -2,6 +2,7 @@
   "@@module": "navbar",
   "@@locale": "en",
   "language_label": "Language",
+  "switch_language": "Switch to Bahasa Indonesia",
   "menu_open": "Open navigation",
   "menu_close": "Close navigation",
   "nav_items": {
