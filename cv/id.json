@@ -1,13 +1,13 @@
 {
   "role": "Full Stack Developer | Senior Frontend Developer",
-  "updated": "Oktober 2026",
-  "summary": "Full Stack Developer berbasis di Malang dengan pengalaman pengembangan web, mobile, dan backend. Saat ini saya bekerja sebagai Senior Frontend Developer di PT Ada Ide Langsung Jalan untuk produk Smartlink dan turut berkontribusi pada Groapp. Sebelumnya saya memimpin pengembangan frontend untuk beberapa produk. Fokus saya mencakup alur produk yang jelas, arsitektur yang mudah dipelihara, integrasi API, dan alat bantu pengembangan.",
+  "summary": "Full Stack Developer berbasis di Malang dengan pengalaman pengembangan web, mobile, dan backend. Saat ini bekerja sebagai Senior Frontend Developer di PT Ada Ide Langsung Jalan untuk Smartlink serta berkontribusi pada Groapp. Sebelumnya memimpin tim frontend, dengan fokus pada arsitektur yang mudah dipelihara, integrasi API, dan alat pengembangan.",
   "sections": {
-    "summary": "Profil",
-    "skills": "Keahlian inti",
+    "summary": "Ringkasan Profesional",
+    "skills": "Keahlian Teknis",
     "experience": "Pengalaman kerja",
-    "projects": "Karya publik pilihan",
-    "education": "Pendidikan & sertifikasi"
+    "projects": "Proyek",
+    "education": "Pendidikan",
+    "certification": "Sertifikasi"
   },
   "skills": [
     { "label": "Frontend", "value": "TypeScript, React, Next.js, Vue, antarmuka responsif, lokalisasi, integrasi API" },

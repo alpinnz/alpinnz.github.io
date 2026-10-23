@@ -8,6 +8,8 @@ type OverviewItem = {
   cta?: string
   cvCta: string
   cvFile: string
+  cvView: string
+  cvPage: string
 }
 
 export function Overview(): React.ReactElement {
@@ -19,6 +21,8 @@ export function Overview(): React.ReactElement {
     cta: translations.cta,
     cvCta: translations.cv_cta,
     cvFile: translations.cv_file,
+    cvView: translations.cv_view,
+    cvPage: translations.cv_page,
   }
 
   return (
@@ -66,6 +70,12 @@ export function Overview(): React.ReactElement {
             {overviewItem.cvCta}
           </a>
         </div>
+        <a
+          href={overviewItem.cvPage}
+          className="mt-3 inline-flex min-h-10 items-center text-sm font-medium text-primary-800 underline decoration-primary-300 underline-offset-4 transition-colors hover:text-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+        >
+          {overviewItem.cvView} <span aria-hidden="true" className="ml-1">↗</span>
+        </a>
       </div>
 
       {/* Right: Profile image */}
