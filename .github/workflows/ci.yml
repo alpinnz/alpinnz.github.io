@@ -53,6 +53,15 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Verify GitHub Pages token
+        env:
+          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+        run: |
+          if [ -z "$GH_PAGES_TOKEN" ]; then
+            echo "::error::Add the GH_PAGES_TOKEN repository Actions secret before deploying to gh-pages."
+            exit 1
+          fi
+
       - name: Deploy to GitHub Pages
         run: |
           git remote set-url origin "https://x-access-token:${GH_PAGES_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"

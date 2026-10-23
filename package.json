@@ -17,7 +17,7 @@
     "prelint": "npm run localization:generate",
     "lint": "eslint .",
     "pretypecheck": "npm run localization:generate",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.10",
