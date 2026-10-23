@@ -1,13 +1,8 @@
 {
   "title": "Tentang Saya",
-  "facts": [
-    { "label": "Peran saat ini", "text": "Senior Frontend Developer" },
-    { "label": "Memimpin tim", "text": "Jan 2022 – Jul 2026" },
-    { "label": "Karya publik", "text": "Alat pengembangan & riset" }
-  ],
   "descriptions": [
-    "Saya Alfin, pengembang perangkat lunak yang berbasis di Malang dan lulusan Ilmu Komputer Institut Teknologi dan Bisnis ASIA. Saya pernah mengerjakan antarmuka web, aplikasi mobile, dan API yang menghubungkannya. Kini saya berfokus pada pengembangan produk frontend.",
+    "Saya Alfin, Senior Frontend Developer berbasis di Malang dan lulusan Ilmu Komputer Institut Teknologi dan Bisnis ASIA. Pengalaman saya mencakup antarmuka web, aplikasi mobile, dan integrasi API, dengan fokus saat ini pada pengembangan produk frontend.",
     "Di PT Ada Ide Langsung Jalan, saya mengembangkan fitur untuk produk Smartlink dan Groapp, termasuk Smartlink Kasir, Smartlink Owner, Groapp Access, dan Groapp Accounting. Saya bekerja dengan tim produk dan engineer backend untuk menerjemahkan kebutuhan menjadi antarmuka responsif, integrasi API yang andal, dan komponen yang dapat digunakan kembali.",
-    "Dari Januari 2022 hingga Juli 2026, saya memimpin tim frontend: merencanakan pekerjaan, membimbing engineer, meninjau kode, dan menetapkan standar teknis. Saya juga menerbitkan alat untuk lokalisasi, pengujian UI, dan validasi formulir berdasarkan tantangan yang berulang dalam pengembangan produk."
+    "Dari Januari 2022 hingga Juli 2026, saya memimpin tim frontend: merencanakan pekerjaan, membimbing engineer, meninjau kode, dan menetapkan standar teknis. Di luar pekerjaan produk, saya menerbitkan alat pengembangan untuk lokalisasi, pengujian UI, dan validasi formulir, serta melakukan riset teknis berdasarkan tantangan yang saya temui."
   ]
 }
