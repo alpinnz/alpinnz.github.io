@@ -18,7 +18,9 @@ npm run typecheck
 npm run build
 ```
 
-`npm run build` creates the deployable static site in `out/`. Run `npm run deploy` to check, build, and publish `out/` to the `gh-pages` branch. Pushing to `master` runs this deploy automatically through GitHub Actions; pull requests to `master` run validation and build only. Set the Pages source to the `gh-pages` branch and root folder in **Repository Settings → Pages**. This project uses Next.js static export, so production hosting serves the exported files directly; `next start` is not used. The site is configured for the root domain `alpinnz.github.io`; set `basePath` in `next.config.ts` if deploying under a repository subpath instead.
+`npm run build` creates the deployable static site in `out/`. Run `npm run deploy` to run the `predeploy` checks (lint, typecheck, and build) and publish `out/` to the root of the `gh-pages` branch. The script adds `.nojekyll` so GitHub Pages serves Next.js files under `_next/` without Jekyll filtering them. In GitHub, open **Repository Settings → Pages**, choose **Deploy from a branch**, then select `gh-pages` and `/(root)`.
+
+Pushing to `master` runs the same deployment through GitHub Actions; pull requests to `master` run validation and build only. The workflow uses the automatically provided `GITHUB_TOKEN` and follows the [`gh-pages` GitHub Actions instructions](https://github.com/tschaub/gh-pages#deploying-with-github-actions-and-a-named-script). This project uses Next.js static export, so production hosting serves the exported files directly; `next start` is not used. The site is configured for the root domain `alpinnz.github.io`; set `basePath` in `next.config.ts` if deploying under a repository subpath instead.
 
 ## Content and assets
 
