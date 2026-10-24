@@ -61,8 +61,8 @@
       "link": "https://github.com/fluttercandies/flutter_image_compress/pull/343"
     },
     {
-      "title": "Frontend Engineer Lead at PT Ada Ide Langsung Jalan",
-      "descriptions": "Led frontend delivery across web, mobile, and cross-platform products. Planned priorities and resources, mentored engineers, reviewed code, and established reusable foundations and technical standards.",
+      "title": "Frontend Developer Lead at PT Ada Ide Langsung Jalan",
+      "descriptions": "Led frontend delivery across web, mobile, and cross-platform products. Planned priorities and resources, mentored developers, reviewed code, and established reusable foundations and technical standards.",
       "date_start": "2022-01-01",
       "date_end": "2026-07-31",
       "currently": false,
@@ -70,7 +70,7 @@
       "link": "https://smartlink.id/"
     },
     {
-      "title": "Back End Engineer at Stellarlab",
+      "title": "Back End Developer at Stellarlab",
       "descriptions": "Worked part-time with Node.js and MongoDB. Collaborated closely with mentors to improve scalable backend systems.",
       "date_start": "2021-10-01",
       "date_end": "2022-10-01",
@@ -79,7 +79,7 @@
       "link": "https://www.linkedin.com/company/stellarlabid/posts/?feedView=all"
     },
     {
-      "title": "Mobile Engineer at PT Ada Ide Langsung Jalan",
+      "title": "Mobile Developer at PT Ada Ide Langsung Jalan",
       "descriptions": "Developed core features for the Smartlink cashier app using Flutter, following DDD and Clean Architecture principles.",
       "date_start": "2021-06-01",
       "date_end": "2021-12-31",
@@ -88,7 +88,7 @@
       "link": "https://smartlink.id"
     },
     {
-      "title": "Android Engineer at CV Gumcode",
+      "title": "Android Developer at CV Gumcode",
       "descriptions": "Developed Android apps and features for client projects.",
       "date_start": "2021-03-01",
       "date_end": "2021-05-31",
@@ -107,7 +107,7 @@
       "link": null
     },
     {
-      "title": "Android Engineer at PT Aku Peduli Indonesia",
+      "title": "Android Developer at PT Aku Peduli Indonesia",
       "descriptions": "Developed Android apps using Kotlin and Flutter, including IzzyResto, IzzyInventory, and Rema.",
       "date_start": "2020-02-01",
       "date_end": "2020-08-01",
@@ -128,7 +128,7 @@
     {
       "title": "System Administrator at Star Nt Game Center",
       "cv_include": false,
-      "descriptions": "Maintained day-to-day systems and technical operations before moving into software engineering.",
+      "descriptions": "Maintained day-to-day systems and technical operations before moving into software development.",
       "date_start": "2017-08-01",
       "date_end": "2020-02-29",
       "currently": false,

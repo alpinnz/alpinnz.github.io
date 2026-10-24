@@ -58,7 +58,7 @@ export default function OpenGraphImage() {
             Full Stack Developer
           </div>
           <div style={{ fontSize: 25, color: "#d3d3d3" }}>
-            Web · Mobile · Product Engineering
+            Web · Mobile · Product Development
           </div>
         </div>
         <div style={{ fontSize: 22, color: "#bdbdbd" }}>
