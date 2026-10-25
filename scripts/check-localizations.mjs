@@ -28,8 +28,9 @@ for (const moduleName of modules) {
     const messages = toLocalizationSource(source)
     const expected = `${JSON.stringify({ '@@module': moduleName, '@@locale': locale, ...messages }, null, 2)}\n`
     const actual = await readFile(outputPath, 'utf8').catch(() => null)
+    const normalizedActual = actual?.replace(/\r\n/g, '\n')
 
-    if (actual !== expected) staleFiles.push(outputPath)
+    if (normalizedActual !== expected) staleFiles.push(outputPath)
   }
 }
 
