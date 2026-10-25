@@ -235,9 +235,7 @@
         "4": "Deteksi Wajah"
       },
       "created_at": "2025-01-01",
-      "webUrl": "https://horaapp.id",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en",
-      "appStoreUrl": "https://apps.apple.com/id/app/id6748695513"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en"
     },
     "9": {
       "title": "Go REST API Boilerplate",
