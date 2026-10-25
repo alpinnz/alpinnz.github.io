@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Hubungi Saya",
-    "subtitle": "Punya proyek atau pertanyaan? Kirim pesan melalui formulir ini atau email saya langsung."
+    "subtitle": "Untuk peluang kepemimpinan frontend, pengembangan produk, atau kolaborasi, email adalah cara terbaik menghubungi saya. Anda juga dapat memakai formulir di bawah."
   },
   "social_label": "Profil profesional",
   "form": {
@@ -15,6 +15,7 @@
     "email": "Email",
     "phone": "Telepon",
     "message": "Pesan Anda...",
+    "privacy_note": "Nama, email, nomor telepon (opsional), dan pesan Anda dikirim ke Formspree agar saya dapat membalas. Mohon jangan sertakan informasi sensitif.",
     "submit": "Kirim Pesan",
     "sending": "Mengirim...",
     "success": "Pesan terkirim. Saya akan segera menghubungi Anda.",

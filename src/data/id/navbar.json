@@ -5,7 +5,7 @@
   "menu_close": "Tutup navigasi",
   "nav_items": [
     { "label": "Tentang Saya", "href": "#about-me" },
-    { "label": "Keahlian", "href": "#skills" },
+    { "label": "Peran", "href": "#developer-roles" },
     { "label": "Timeline", "href": "#timeline" },
     { "label": "Portofolio", "href": "#portfolio" },
     { "label": "Kontak", "href": "#contact" }

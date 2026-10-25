@@ -254,6 +254,9 @@ export function Footer(): React.ReactElement {
               disabled={form.formState.isSubmitting}
             />
           </div>
+          <p className="text-xs leading-relaxed text-neutral-600">
+            {translations.form.privacy_note}
+          </p>
           {submissionStatus !== 'idle' && (
             <p
               role={submissionStatus === 'success' ? 'status' : 'alert'}

@@ -1,17 +1,20 @@
 {
   "header": {
-    "title": "My Core Skills",
-    "subtitle": "I turn product requirements into usable interfaces and reliable features across web, mobile, and APIs.",
-    "tools_label": "Selected tools",
-    "example_label": "Explore a related project"
+    "eyebrow": "Professional focus",
+    "title": "Developer Roles",
+    "subtitle": "I work across frontend, backend, and mobile product development, with a current focus on senior frontend engineering.",
+    "current_label": "Current role",
+    "tools_label": "Core technologies",
+    "selected_work_label": "Selected work"
   },
   "skills": [
     {
-      "title": "Frontend Development",
-      "description": "Build responsive web interfaces and reusable components that make complex workflows easier to use and maintain.",
+      "title": "Frontend Developer",
+      "description": "Build responsive, accessible interfaces and reusable components that help product teams deliver consistent user workflows.",
       "highlights": [
-        "Connect interfaces to APIs with clear validation, loading, and error states.",
-        "Improve consistency through reusable components, localization, and code review."
+        "Develop web applications with clear component boundaries and maintainable state.",
+        "Connect interfaces to APIs with validation and useful loading, empty, and error states.",
+        "Collaborate on frontend architecture, code quality, and shared UI patterns."
       ],
       "tools": [
         "TypeScript",
@@ -21,37 +24,26 @@
         "Tailwind CSS",
         "API integration"
       ],
-      "example": {
-        "label": "Valfuse Node",
-        "url": "https://github.com/alpinnz/valfuse-node"
-      }
+      "icon": "/assets/icons/ic_front_end.svg",
+      "isCurrent": true,
+      "selectedWork": [
+        {
+          "label": "Valfuse Node",
+          "url": "https://github.com/alpinnz/valfuse-node"
+        },
+        {
+          "label": "Frontend Input Sanitization Study",
+          "url": "https://github.com/alpinnz/research-sanitazion-frontend"
+        }
+      ]
     },
     {
-      "title": "Mobile Development",
-      "description": "Develop mobile apps and shared tools that help teams deliver consistent experiences across platforms.",
+      "title": "Backend Developer",
+      "description": "Build API services with clear contracts, secure authentication, reliable persistence, and practical deployment workflows.",
       "highlights": [
-        "Build Flutter features with predictable state, navigation, and platform-specific behavior.",
-        "Create typed translations and consistent UI test keys for growing applications."
-      ],
-      "tools": [
-        "Flutter",
-        "Dart",
-        "Kotlin",
-        "React Native",
-        "Localization",
-        "UI testing"
-      ],
-      "example": {
-        "label": "localization_gen",
-        "url": "https://github.com/alpinnz/localization_gen"
-      }
-    },
-    {
-      "title": "Backend & APIs",
-      "description": "Build and integrate APIs with clear contracts, authentication, and documentation.",
-      "highlights": [
-        "Work with authentication, input validation, databases, and service boundaries.",
-        "Create API starters with practical configuration, tests, and deployment support."
+        "Design REST APIs and separate transport, application, and data concerns.",
+        "Work with authentication, validation, relational databases, and caching.",
+        "Document setup and release steps so services are easier to run and maintain."
       ],
       "tools": [
         "Go",
@@ -59,12 +51,50 @@
         "Node.js",
         "Hono",
         "PostgreSQL",
+        "Redis",
         "Docker"
       ],
-      "example": {
-        "label": "Go REST API Boilerplate",
-        "url": "https://github.com/alpinnz/go-rest-api-boilerplate"
-      }
+      "icon": "/assets/icons/ic_back_end.svg",
+      "isCurrent": false,
+      "selectedWork": [
+        {
+          "label": "Hono REST API Starter",
+          "url": "https://github.com/alpinnz/hono-rest-api-boilerplate"
+        },
+        {
+          "label": "Go REST API Boilerplate",
+          "url": "https://github.com/alpinnz/go-rest-api-boilerplate"
+        }
+      ]
+    },
+    {
+      "title": "Mobile Developer",
+      "description": "Develop mobile product features across Flutter and Android, including platform integrations and production app workflows.",
+      "highlights": [
+        "Build cross-platform interfaces and connect them to backend services.",
+        "Integrate authentication and device capabilities with platform-aware behavior.",
+        "Apply reusable architecture and localization to mobile product development."
+      ],
+      "tools": [
+        "Flutter",
+        "Dart",
+        "Kotlin",
+        "Firebase",
+        "Android",
+        "API integration"
+      ],
+      "icon": "/assets/icons/ic_android.svg",
+      "isCurrent": false,
+      "selectedWork": [
+        {
+          "label": "HORA Pro on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en"
+        },
+        {
+          "label": "Firebase Google Sign-In Study",
+          "url": "https://github.com/alpinnz/research/tree/master/research_firebase_google"
+        }
+      ]
     }
   ]
 }

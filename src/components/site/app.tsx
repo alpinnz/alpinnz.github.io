@@ -8,7 +8,7 @@ import { Overview } from './components/overview'
 import { Navbar } from './components/navbar'
 import { AboutMe } from './components/about_me'
 import { Timeline } from './components/timeline'
-import { Skill } from './components/skills'
+import { DeveloperRoles } from './components/developer-roles'
 import { Portfolio } from './components/portfolio'
 import { Footer } from './components/footer'
 
@@ -27,7 +27,7 @@ export function App({ locale }: { locale: 'en' | 'id' }): React.ReactElement {
           <main id="main-content" tabIndex={-1}>
             <Overview />
             <AboutMe />
-            <Skill />
+            <DeveloperRoles />
             <Timeline />
             <Portfolio />
             <Footer />

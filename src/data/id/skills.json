@@ -1,17 +1,20 @@
 {
   "header": {
-    "title": "Keahlian Inti Saya",
-    "subtitle": "Saya menerjemahkan kebutuhan produk menjadi antarmuka yang mudah digunakan dan fitur yang andal untuk web, mobile, dan API.",
-    "tools_label": "Teknologi pilihan",
-    "example_label": "Contoh proyek"
+    "eyebrow": "Fokus profesional",
+    "title": "Peran Developer",
+    "subtitle": "Saya bekerja di bidang frontend, backend, dan pengembangan produk mobile, dengan fokus saat ini pada rekayasa frontend senior.",
+    "current_label": "Peran saat ini",
+    "tools_label": "Teknologi utama",
+    "selected_work_label": "Karya pilihan"
   },
   "skills": [
     {
-      "title": "Pengembangan Frontend",
-      "description": "Membangun antarmuka web responsif dan komponen yang dapat digunakan kembali agar alur kerja yang rumit lebih mudah dipakai dan dipelihara.",
+      "title": "Frontend Developer",
+      "description": "Membangun antarmuka responsif, aksesibel, dan komponen pakai ulang agar alur kerja produk konsisten dan mudah dipelihara.",
       "highlights": [
-        "Menghubungkan antarmuka dengan API, lengkap dengan validasi, indikator pemuatan, dan pesan kesalahan.",
-        "Menjaga konsistensi melalui komponen bersama, lokalisasi, dan peninjauan kode."
+        "Mengembangkan aplikasi web dengan batas komponen dan pengelolaan state yang mudah dipelihara.",
+        "Menghubungkan antarmuka dengan API, termasuk validasi serta kondisi memuat, kosong, dan gagal.",
+        "Berkolaborasi dalam arsitektur frontend, kualitas kode, dan pola UI bersama."
       ],
       "tools": [
         "TypeScript",
@@ -21,37 +24,26 @@
         "Tailwind CSS",
         "Integrasi API"
       ],
-      "example": {
-        "label": "Valfuse Node",
-        "url": "https://github.com/alpinnz/valfuse-node"
-      }
+      "icon": "/assets/icons/ic_front_end.svg",
+      "isCurrent": true,
+      "selectedWork": [
+        {
+          "label": "Valfuse Node",
+          "url": "https://github.com/alpinnz/valfuse-node"
+        },
+        {
+          "label": "Riset Sanitasi Input Frontend",
+          "url": "https://github.com/alpinnz/research-sanitazion-frontend"
+        }
+      ]
     },
     {
-      "title": "Pengembangan Mobile",
-      "description": "Mengembangkan aplikasi mobile dan alat bersama agar pengalaman pengguna tetap konsisten di berbagai platform.",
+      "title": "Backend Developer",
+      "description": "Membangun layanan API dengan kontrak yang jelas, autentikasi aman, penyimpanan data yang andal, dan alur rilis yang praktis.",
       "highlights": [
-        "Membangun fitur Flutter dengan pengelolaan state, navigasi, dan penyesuaian untuk setiap platform.",
-        "Membuat terjemahan bertipe dan kunci pengujian UI yang konsisten untuk aplikasi yang berkembang."
-      ],
-      "tools": [
-        "Flutter",
-        "Dart",
-        "Kotlin",
-        "React Native",
-        "Lokalisasi",
-        "Pengujian UI"
-      ],
-      "example": {
-        "label": "localization_gen",
-        "url": "https://github.com/alpinnz/localization_gen"
-      }
-    },
-    {
-      "title": "Backend & API",
-      "description": "Membangun dan mengintegrasikan API dengan kontrak yang jelas, autentikasi, dan dokumentasi.",
-      "highlights": [
-        "Menangani autentikasi, validasi input, basis data, dan pemisahan layanan.",
-        "Membuat fondasi API dengan konfigurasi, pengujian, dan proses rilis yang jelas."
+        "Merancang REST API dengan pemisahan concern transport, aplikasi, dan data.",
+        "Mengembangkan autentikasi, validasi, basis data relasional, dan caching.",
+        "Mendokumentasikan konfigurasi dan rilis agar layanan mudah dijalankan serta dipelihara."
       ],
       "tools": [
         "Go",
@@ -59,12 +51,50 @@
         "Node.js",
         "Hono",
         "PostgreSQL",
+        "Redis",
         "Docker"
       ],
-      "example": {
-        "label": "Go REST API Boilerplate",
-        "url": "https://github.com/alpinnz/go-rest-api-boilerplate"
-      }
+      "icon": "/assets/icons/ic_back_end.svg",
+      "isCurrent": false,
+      "selectedWork": [
+        {
+          "label": "Starter REST API Hono",
+          "url": "https://github.com/alpinnz/hono-rest-api-boilerplate"
+        },
+        {
+          "label": "Go REST API Boilerplate",
+          "url": "https://github.com/alpinnz/go-rest-api-boilerplate"
+        }
+      ]
+    },
+    {
+      "title": "Mobile Developer",
+      "description": "Mengembangkan fitur produk mobile dengan Flutter dan Android, termasuk integrasi platform dan alur kerja aplikasi produksi.",
+      "highlights": [
+        "Membangun antarmuka lintas platform dan menghubungkannya ke layanan backend.",
+        "Mengintegrasikan autentikasi serta kemampuan perangkat dengan perilaku sesuai platform.",
+        "Menerapkan arsitektur pakai ulang dan lokalisasi untuk pengembangan produk mobile."
+      ],
+      "tools": [
+        "Flutter",
+        "Dart",
+        "Kotlin",
+        "Firebase",
+        "Android",
+        "Integrasi API"
+      ],
+      "icon": "/assets/icons/ic_android.svg",
+      "isCurrent": false,
+      "selectedWork": [
+        {
+          "label": "HORA Pro di Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en"
+        },
+        {
+          "label": "Riset Firebase Google Sign-In",
+          "url": "https://github.com/alpinnz/research/tree/master/research_firebase_google"
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,7 @@
   "menu_close": "Close navigation",
   "nav_items": [
     { "label": "About Me", "href": "#about-me" },
-    { "label": "Skills", "href": "#skills" },
+    { "label": "Roles", "href": "#developer-roles" },
     { "label": "Timeline", "href": "#timeline" },
     { "label": "Portfolio", "href": "#portfolio" },
     { "label": "Contact", "href": "#contact" }

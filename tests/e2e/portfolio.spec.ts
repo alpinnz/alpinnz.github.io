@@ -9,6 +9,16 @@ test("serves English and Indonesian pages with their own metadata", async ({ pag
     "https://alpinnz.github.io/",
   );
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /opengraph-image/);
+  await expect(page.locator("#developer-roles-title")).toHaveText("Developer Roles");
+  await expect(page.locator("#developer-roles").getByRole("heading", { level: 3 })).toHaveText([
+    "Frontend Developer",
+    "Backend Developer",
+    "Mobile Developer",
+  ]);
+  await expect(page.getByRole("link", { name: "Hono REST API Starter" })).toHaveAttribute(
+    "href",
+    "https://github.com/alpinnz/hono-rest-api-boilerplate",
+  );
 
   await page.locator('a[href="/id/"]').click();
 
@@ -20,6 +30,12 @@ test("serves English and Indonesian pages with their own metadata", async ({ pag
     "href",
     "https://alpinnz.github.io/id/",
   );
+  await expect(page.locator("#developer-roles-title")).toHaveText("Peran Developer");
+  await expect(page.locator("#developer-roles").getByRole("heading", { level: 3 })).toHaveText([
+    "Frontend Developer",
+    "Backend Developer",
+    "Mobile Developer",
+  ]);
 });
 
 test("mobile navigation opens and closes after selecting a section", async ({ page }) => {
@@ -37,6 +53,21 @@ test("mobile navigation opens and closes after selecting a section", async ({ pa
   await navigation.locator('a[href="#contact"]').click();
   await expect(menuToggle).toHaveAttribute("aria-expanded", "false");
   await expect(page).toHaveURL(/#contact$/);
+});
+
+test("developer role cards adapt across phone, tablet, and desktop widths", async ({ page }) => {
+  await page.goto("/");
+
+  const roleGrid = page.locator("#developer-roles > .grid");
+  for (const [width, expectedColumns] of [[390, 1], [768, 2], [1280, 3]]) {
+    await page.setViewportSize({ width, height: 900 });
+    await expect.poll(() =>
+      roleGrid.evaluate((element) => getComputedStyle(element).gridTemplateColumns.split(" ").length),
+    ).toBe(expectedColumns);
+    await expect.poll(() =>
+      page.locator("#developer-roles").evaluate((element) => element.scrollWidth <= element.clientWidth),
+    ).toBe(true);
+  }
 });
 
 test("keyboard users can skip directly to the main content", async ({ page }) => {
@@ -71,6 +102,9 @@ test("portfolio detail dialog closes with Escape", async ({ page }) => {
 
 test("contact form associates validation errors with fields", async ({ page }) => {
   await page.goto("/#contact");
+  await expect(page.locator("#contact")).toContainText(
+    "Your name, email, optional phone number, and message are sent to Formspree so I can reply.",
+  );
   await page.locator("#contact-name").fill("Visitor");
   await page.locator("#contact-email").fill("not-an-email");
   await page.locator("#contact-message").fill("Hello");
