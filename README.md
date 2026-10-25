@@ -1,6 +1,6 @@
 # Alfin Noviaji Portfolio
 
-Portfolio website built with Next.js 16 and exported as a static site for GitHub Pages. Use Node.js 22 or newer for the Valfuse compiler and build.
+Portfolio website built with Next.js 16 and exported as a static site for GitHub Pages. English is served at `/` and Indonesian at `/id/`, each with localized metadata and language declarations. Use Node.js 22 or newer for the Valfuse compiler and build.
 The original portfolio layout is styled with Tailwind CSS v4. The color palettes and Sora font from the Vite project are defined in `src/app/globals.css` with `@theme`.
 
 ## Local development
@@ -16,11 +16,18 @@ npm run dev
 npm run lint
 npm run typecheck
 npm run build
+npm run localization:check
+npm run verify:export
+npm run test:e2e
 ```
+
+The `predeploy` lifecycle checks generated localization parity, runs lint and type checks, builds the static export, verifies both localized pages and their social metadata, and runs the Chromium browser tests. The E2E suite uses a local static server and intercepts the Formspree request, so it never sends a real contact message. Install the browser once with `npx playwright install chromium` before running `npm run test:e2e` locally.
+
+Before enabling deployments, configure branch protection for `master` in GitHub repository settings: require pull requests and require the CI validation check to pass before merging. The rule itself is repository-hosted configuration and is not enforced by the checked-out source.
 
 `npm run build` creates the deployable static site in `out/`. Run `npm run deploy` to run the `predeploy` checks (lint, typecheck, and build) and publish `out/` to the root of the `gh-pages` branch. The script adds `.nojekyll` so GitHub Pages serves Next.js files under `_next/` without Jekyll filtering them. In GitHub, open **Repository Settings → Pages**, choose **Deploy from a branch**, then select `gh-pages` and `/(root)`.
 
-After this workflow is merged into `master`, pushes to `master` run deployment through GitHub Actions; pull requests to `master` run validation and build only. The workflow uses a fine-grained personal access token saved as the repository Actions secret `GH_PAGES_TOKEN`. Restrict the token to this repository and grant **Contents: Read and write**; add it under **Settings → Secrets and variables → Actions**. GitHub documents that commits pushed by workflows using `GITHUB_TOKEN` do not trigger a Pages build, so the deploy uses this separate token. Keep it out of `.env` and `.env.example`; it is used only by GitHub Actions. The command follows the [`gh-pages` GitHub Actions instructions](https://github.com/tschaub/gh-pages#deploying-with-github-actions-and-a-named-script). This project uses Next.js static export, so production hosting serves the exported files directly; `next start` is not used. The site is configured for the root domain `alpinnz.github.io`; set `basePath` in `next.config.ts` if deploying under a repository subpath instead.
+After this workflow is merged into `master`, pushes to `master` run deployment through GitHub Actions; pull requests to `master` run validation and build only. Deployment requires `NEXT_PUBLIC_FORMSPREE_FORM_ID` as a repository Actions variable or secret; the deploy preflight stops with a clear error if it is missing. The workflow uses a fine-grained personal access token saved as the repository Actions secret `GH_PAGES_TOKEN`. Restrict the token to this repository and grant **Contents: Read and write**; add it under **Settings → Secrets and variables → Actions**. GitHub documents that commits pushed by workflows using `GITHUB_TOKEN` do not trigger a Pages build, so the deploy uses this separate token. Keep it out of `.env` and `.env.example`; it is used only by GitHub Actions. The command follows the [`gh-pages` GitHub Actions instructions](https://github.com/tschaub/gh-pages#deploying-with-github-actions-and-a-named-script). This project uses Next.js static export, so production hosting serves the exported files directly; `next start` is not used. The site is configured for the root domain `alpinnz.github.io`; set `basePath` in `next.config.ts` if deploying under a repository subpath instead.
 
 ## Content and assets
 
@@ -40,5 +47,7 @@ After this workflow is merged into `master`, pushes to `master` run deployment t
 ## Contact form delivery
 
 The site is exported as static files for GitHub Pages, so it cannot run a Next.js POST Route Handler. The contact form sends a browser POST to Formspree and keeps email delivery outside the client. Create a Formspree form, verify `alpinnz@gmail.com`, and set it as the form's target email. Formspree's endpoint is available in the dashboard's Integration section.
+
+The form includes Formspree's `_gotcha` honeypot as an additional spam signal. Use Formspree's Submissions inbox and Spam folder to review received messages, and enable its usage limit notifications. The static site only reports submission success or failure to the visitor; it does not collect personal message contents in analytics or provide remote client-error telemetry. For delivery monitoring, periodically send a real test message and confirm it appears in the Formspree inbox and notification email.
 
 Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_FORMSPREE_FORM_ID` to your Formspree form ID for local builds. GitHub Actions reads that name from **Repository Settings → Secrets and variables → Actions**, accepting either a repository secret or variable. Because `NEXT_PUBLIC_` values are included in the static site, this form ID is public configuration; storing it as a variable is sufficient. Without it, the contact form shows a setup message and does not submit. See the [Formspree HTML form guide](https://help.formspree.io/articles/building-your-form/building-an-html-form/) for endpoint setup.

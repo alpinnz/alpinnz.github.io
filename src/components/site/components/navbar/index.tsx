@@ -3,7 +3,7 @@ import { useLocalization } from '@valfuse-node/react'
 import { useLocalizedModule } from '../../locales/use-localized-module'
 
 export function Navbar(): React.ReactElement {
-  const { locale, setLocale } = useLocalization()
+  const { locale } = useLocalization()
   const translations = useLocalizedModule('navbar')
   const [isOpen, setIsOpen] = React.useState(false)
 
@@ -16,19 +16,10 @@ export function Navbar(): React.ReactElement {
     return () => window.removeEventListener('resize', handleResize)
   }, [isOpen])
 
-  React.useEffect(() => {
-    document.documentElement.lang = locale
-  }, [locale])
-
   const genericHamburgerLine =
     'my-1 h-0.5 w-5 rounded-full bg-neutral-800 transition duration-200 ease-in-out'
 
   const navItems = translations.nav_items
-
-  const switchLanguage = () => {
-    setLocale(locale === 'en' ? 'id' : 'en')
-    setIsOpen(false)
-  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200/80 bg-white/90 px-5 py-2 shadow-sm backdrop-blur-xl sm:px-8 lg:px-10">
@@ -55,12 +46,12 @@ export function Navbar(): React.ReactElement {
         </nav>
 
         <div className="ml-auto flex shrink-0 items-center gap-2 md:ml-0">
-          <button
-            type="button"
+          <a
+            href={locale === 'en' ? '/id/' : '/'}
+            hrefLang={locale === 'en' ? 'id' : 'en'}
             lang={locale === 'id' ? 'id' : 'en'}
             aria-label={`${translations.language_label}: ${locale.toUpperCase()}. ${translations.switch_language}`}
             title={translations.switch_language}
-            onClick={switchLanguage}
             className="group inline-flex h-11 w-12 shrink-0 items-center justify-center rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 md:h-10"
           >
             <span className="inline-flex h-8 w-12 items-center justify-center gap-1 rounded-lg border border-neutral-200 bg-white text-xs font-semibold text-primary-800 transition-colors group-hover:border-primary-300 group-hover:bg-primary-50">
@@ -70,7 +61,7 @@ export function Navbar(): React.ReactElement {
               </svg>
               {locale === 'id' ? 'ID' : 'EN'}
             </span>
-          </button>
+          </a>
 
           <button
             className="group flex h-11 w-11 flex-col items-center justify-center rounded-xl transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 md:hidden"

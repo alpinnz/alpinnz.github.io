@@ -26,8 +26,13 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
       - name: Validate and build
         run: npm run predeploy
+        env:
+          NEXT_PUBLIC_FORMSPREE_FORM_ID: playwright-test-form
 
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
@@ -52,6 +57,18 @@ jobs:
 
       - name: Install
         run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Verify contact form configuration
+        env:
+          NEXT_PUBLIC_FORMSPREE_FORM_ID: ${{ secrets.NEXT_PUBLIC_FORMSPREE_FORM_ID || vars.NEXT_PUBLIC_FORMSPREE_FORM_ID }}
+        run: |
+          if [ -z "$NEXT_PUBLIC_FORMSPREE_FORM_ID" ]; then
+            echo "::error::Set NEXT_PUBLIC_FORMSPREE_FORM_ID as a repository Actions secret or variable before deploying."
+            exit 1
+          fi
 
       - name: Verify GitHub Pages token
         env:

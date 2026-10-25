@@ -1,0 +1,10 @@
+import { createOpenGraphImage, size } from "@/components/site/generated-open-graph-image";
+
+export const alt = "Alfin Noviaji, Full Stack Developer in Malang, Indonesia";
+export const dynamic = "force-static";
+export { size };
+export const contentType = "image/png";
+
+export default function OpenGraphImage() {
+  return createOpenGraphImage("en");
+}

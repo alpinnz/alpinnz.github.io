@@ -94,11 +94,12 @@ export function Overview(): React.ReactElement {
 
       <div className="flex flex-1 justify-center md:justify-end">
         <Image
-          src="/assets/images/profile.png"
+          src="/assets/images/profile.webp"
           alt={translations.portrait_alt}
           width={340}
           height={340}
           preload
+          fetchPriority="high"
           className="h-auto w-48 rounded-[2rem] object-cover shadow-xl ring-1 ring-neutral-200/60 sm:w-56 md:w-64 lg:w-72"
         />
       </div>

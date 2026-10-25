@@ -100,6 +100,7 @@ export function Portfolio(): React.ReactElement {
     (repository): PortfolioProject[] => {
       if (
         !repository.portfolio ||
+        repository.detailsPending ||
         linkedRepositoryUrls.has(repository.url) ||
         portfolioItems.some((item) => item.repoUrl?.startsWith(`${repository.url}/`))
       ) {

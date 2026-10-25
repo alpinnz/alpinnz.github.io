@@ -109,6 +109,10 @@ export function Footer(): React.ReactElement {
     payload.set('phone', values.phone.trim())
     payload.set('message', values.message.trim())
     payload.set('_subject', `Portfolio contact from ${values.name.trim()}`)
+    payload.set(
+      '_gotcha',
+      document.querySelector<HTMLInputElement>('#contact input[name="_gotcha"]')?.value ?? '',
+    )
 
     const controller = new AbortController()
     const timeoutId = window.setTimeout(() => controller.abort(), contactRequestTimeoutMs)
@@ -218,6 +222,14 @@ export function Footer(): React.ReactElement {
           onSubmit={sendContactMessage}
           noValidate
         >
+          <input
+            type="text"
+            name="_gotcha"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden"
+          />
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
             <div className="grid gap-1.5">
               <label htmlFor="contact-name" className="text-xs font-medium text-neutral-700">{translations.form.labels.name}</label>
