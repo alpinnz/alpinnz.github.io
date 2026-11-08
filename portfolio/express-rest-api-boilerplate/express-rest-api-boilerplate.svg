@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Express REST API Boilerplate</title>
+  <desc id="description">An Express API request moving through validation, application services, and PostgreSQL.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/><stop offset="1" stop-color="#24346a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="730" y1="170" x2="1060" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a5b4fc"/><stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1200v675H0z"/>
+  <circle cx="965" cy="305" r="285" fill="#818cf8" opacity=".08"/>
+  <text x="78" y="96" fill="#a5b4fc" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="3">EXPRESS 5 · TYPESCRIPT · POSTGRESQL</text>
+  <text x="78" y="193" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="700">A reliable base</text>
+  <text x="78" y="254" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="700">for REST APIs.</text>
+  <text x="80" y="312" fill="#c4cce2" font-family="Arial,sans-serif" font-size="22">Auth, roles, persistence, and API contracts.</text>
+  <rect x="78" y="362" width="222" height="44" rx="22" fill="#818cf8" opacity=".16" stroke="#a5b4fc" stroke-opacity=".55"/>
+  <text x="105" y="390" fill="#e0e7ff" font-family="Arial,sans-serif" font-size="17" font-weight="700">Domain-based modules</text>
+  <path d="M78 521h404" stroke="#fff" stroke-opacity=".16"/>
+  <text x="78" y="562" fill="#aab5d0" font-family="Arial,sans-serif" font-size="16" letter-spacing="1">EXPRESS REST API BOILERPLATE</text>
+  <rect x="680" y="127" width="425" height="420" rx="26" fill="#151f3d" stroke="#a5b4fc" stroke-opacity=".32" stroke-width="2"/>
+  <rect x="710" y="157" width="365" height="60" rx="13" fill="#222f56"/>
+  <circle cx="739" cy="187" r="7" fill="#a5b4fc"/>
+  <text x="764" y="194" fill="#f1f5f9" font-family="Arial,sans-serif" font-size="18" font-weight="700">POST /api/v1/auth/login</text>
+  <path d="M892 228v30m0 77v29m0 77v29" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <path d="m884 251 8 9 8-9m-16 100 8 9 8-9m-16 106 8 9 8-9" fill="none" stroke="#a5b4fc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="750" y="262" width="284" height="66" rx="15" fill="#242f58" stroke="#a5b4fc" stroke-opacity=".28"/>
+  <text x="804" y="303" fill="#e0e7ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Route + validation</text>
+  <rect x="750" y="368" width="284" height="66" rx="15" fill="#242f58" stroke="#818cf8" stroke-opacity=".32"/>
+  <text x="804" y="409" fill="#e0e7ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Service + Sequelize</text>
+  <rect x="750" y="474" width="284" height="46" rx="14" fill="#173849" stroke="#38bdf8" stroke-opacity=".35"/>
+  <text x="824" y="503" fill="#d9f4fc" font-family="Arial,sans-serif" font-size="18" font-weight="700">PostgreSQL</text>
+</svg>

@@ -36,6 +36,67 @@
   "app_store_label": "App Store",
   "items": {
     "0": {
+      "title": "React App Boilerplate",
+      "descriptions": "A modular React starter for authentication, account, user, role, and service status flows, with Indonesian and English localization.",
+      "details": "This Vite single-page app demonstrates a reusable React and TypeScript structure. It includes example modules for sign-in, registration, account management, users, roles, and service health. A configurable REST API client connects the UI to a separate backend; the repository does not include a backend.",
+      "features": {
+        "0": "Feature modules separate domain rules, API adapters, presentation, and routes.",
+        "1": "Authenticated account, user, and role management flows connect to a configurable API.",
+        "2": "Indonesian and English localization with light and dark themes."
+      },
+      "thumbnail": "/portfolio/react-app-boilerplate/react-app-boilerplate-users.png",
+      "gallery": {
+        "0": "/portfolio/react-app-boilerplate/react-app-boilerplate-users.png",
+        "1": "/portfolio/react-app-boilerplate/react-app-boilerplate-user-detail.png",
+        "2": "/portfolio/react-app-boilerplate/react-app-boilerplate-roles.png",
+        "3": "/portfolio/react-app-boilerplate/react-app-boilerplate-account.png",
+        "4": "/portfolio/react-app-boilerplate/react-app-boilerplate-status-authenticated.png",
+        "5": "/portfolio/react-app-boilerplate/react-app-boilerplate-onboarding.png",
+        "6": "/portfolio/react-app-boilerplate/react-app-boilerplate-login.png",
+        "7": "/portfolio/react-app-boilerplate/react-app-boilerplate-register.png",
+        "8": "/portfolio/react-app-boilerplate/react-app-boilerplate-status.png"
+      },
+      "category": "frontend",
+      "techStack": {
+        "0": "React",
+        "1": "TypeScript",
+        "2": "React Router",
+        "3": "Zustand",
+        "4": "Tailwind CSS",
+        "5": "Vite",
+        "6": "Valfuse Localization"
+      },
+      "created_at": "2026-11-08",
+      "repoUrl": "https://github.com/alpinnz/react-app-boilerplate"
+    },
+    "1": {
+      "title": "Express REST API Boilerplate",
+      "descriptions": "An Express 5 and TypeScript API starter with PostgreSQL, authentication, user and role management, and OpenAPI documentation.",
+      "details": "This REST API boilerplate organizes Health, Auth, Users, and Roles into domain-based modules. It uses Sequelize migrations with PostgreSQL, hashed session tokens with refresh-token rotation, and role-level authorization. The v1 API contract is documented with OpenAPI, with Docker workflows for local development and deployment.",
+      "features": {
+        "0": "Modular health, authentication, user, and role endpoints with request validation and localized errors.",
+        "1": "PostgreSQL migrations and seeders with role-level access rules.",
+        "2": "OpenAPI documentation and Docker workflows for local setup and deployment."
+      },
+      "thumbnail": "/portfolio/express-rest-api-boilerplate/express-rest-api-boilerplate.svg",
+      "gallery": {
+        "0": "/portfolio/express-rest-api-boilerplate/express-rest-api-boilerplate.svg"
+      },
+      "category": "backend",
+      "techStack": {
+        "0": "Node.js",
+        "1": "Express 5",
+        "2": "TypeScript",
+        "3": "PostgreSQL",
+        "4": "Sequelize",
+        "5": "Awilix",
+        "6": "OpenAPI",
+        "7": "Docker"
+      },
+      "created_at": "2026-10-27",
+      "repoUrl": "https://github.com/alpinnz/express-rest-api-boilerplate"
+    },
+    "2": {
       "title": "Valfuse Node",
       "descriptions": "A TypeScript toolkit for forms, validation, and localization across React, Vue, Express, and Node.js.",
       "details": "Valfuse Node brings shared form behavior, validation, localization, and code generation into one modular toolkit. Its core works across frameworks, with dedicated integrations for React, Vue, and Express.",
@@ -62,7 +123,7 @@
       "webUrl": "https://www.npmjs.com/org/valfuse-node",
       "repoUrl": "https://github.com/alpinnz/valfuse-node"
     },
-    "1": {
+    "3": {
       "title": "localization_gen",
       "descriptions": "Generates type-safe translations for Flutter apps from modular JSON files.",
       "details": "This Dart tool turns modular JSON translations into typed Flutter APIs. It supports nested keys, placeholders, plural and context variants, and watch mode, helping teams catch missing translations during development.",
@@ -82,7 +143,7 @@
       "liveUrl": "https://pub.dev/packages/localization_gen",
       "repoUrl": "https://github.com/alpinnz/localization_gen"
     },
-    "2": {
+    "4": {
       "title": "automation_keys_gen",
       "descriptions": "Keeps Flutter UI test identifiers consistent through CLI checks and generated documentation.",
       "details": "This Flutter package gives developers and QA teams one naming pattern for UI test keys. A CLI checks keys and generates documentation, making automated tests easier to maintain as an app grows.",
@@ -102,7 +163,7 @@
       "liveUrl": "https://pub.dev/packages/automation_keys_gen",
       "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
     },
-    "3": {
+    "5": {
       "title": "idle_activity_detector",
       "descriptions": "Detects when users become inactive in Flutter apps, with configurable timeouts and web input support.",
       "details": "This Flutter package detects activity and inactivity across platforms. On the web, it watches mouse, keyboard, scroll, and touch input. Apps can use it for session warnings or automatic logout.",
@@ -120,7 +181,7 @@
       "created_at": "2025-12-24",
       "liveUrl": "https://pub.dev/packages/idle_activity_detector"
     },
-    "4": {
+    "6": {
       "title": "Frontend Input Sanitization Study",
       "descriptions": "Tests safe HTML rendering in React and Flutter against more than 60 XSS attack examples.",
       "details": "This study compares HTML sanitization in React and Flutter. The repository includes working demos and automated tests using a shared set of more than 60 XSS examples, showing how each platform treats unsafe content.",
@@ -144,7 +205,7 @@
       "created_at": "2025-10-17",
       "repoUrl": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
-    "5": {
+    "7": {
       "title": "Hono REST API Starter",
       "descriptions": "A TypeScript API starter with authentication, PostgreSQL access, and build scripts.",
       "details": "Built with Bun, Hono, Prisma, and PostgreSQL, this starter separates routes, controllers, and services. It includes basic account flows and documents environment setup, database migrations, and release steps.",
@@ -169,7 +230,7 @@
       "created_at": "2025-11-28",
       "repoUrl": "https://github.com/alpinnz/hono-rest-api-boilerplate"
     },
-    "6": {
+    "8": {
       "title": "Firebase Google Sign-In Study",
       "descriptions": "A Flutter study of Google Sign-In on web and Android, including fallback and error handling.",
       "details": "This study documents how Google sign-in becomes a Firebase session on Flutter web and Android. It covers web popup and redirect flows, Android sign-in, authentication state, and common setup issues.",
@@ -193,7 +254,7 @@
       "created_at": "2025-10-24",
       "repoUrl": "https://github.com/alpinnz/research/tree/master/research_firebase_google"
     },
-    "7": {
+    "9": {
       "title": "Bukit Delight Cafe Ordering System",
       "descriptions": "A cafe ordering system that groups menu items by sales patterns using k-means.",
       "details": "This academic web app supports customer orders, cashier operations, and administration. It also uses k-means clustering to group menu items by sales performance.",
@@ -217,7 +278,7 @@
       "created_at": "2020-11-10",
       "repoUrl": "https://github.com/alpinnz/bukit-delight-node"
     },
-    "8": {
+    "10": {
       "title": "HORA Pro",
       "descriptions": "A mobile app for employee attendance, location-based check-ins, leave requests, and team chat.",
       "details": "HORA Pro supports location-based check-in and check-out with selfie verification. Employees can also request leave, chat with their team, and view attendance reports.",
@@ -237,7 +298,7 @@
       "created_at": "2025-01-01",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en"
     },
-    "9": {
+    "11": {
       "title": "Go REST API Boilerplate",
       "descriptions": "A Go API starter with authentication, PostgreSQL, Redis sessions, and API documentation.",
       "details": "This starter provides a modular Go API with JWT authentication, PostgreSQL, Redis-backed sessions, WebSockets, and generated API docs. Docker setup and environment configuration support local development and deployment.",
