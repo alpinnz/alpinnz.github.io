@@ -34,6 +34,48 @@
   "app_store_label": "App Store",
   "items": [
     {
+      "title": "React App Boilerplate",
+      "descriptions": "A modular React starter for authentication, account, user, role, and service status flows, with Indonesian and English localization.",
+      "details": "This Vite single-page app demonstrates a reusable React and TypeScript structure. It includes example modules for sign-in, registration, account management, users, roles, and service health. A configurable REST API client connects the UI to a separate backend; the repository does not include a backend.",
+      "features": [
+        "Feature modules separate domain rules, API adapters, presentation, and routes.",
+        "Authenticated account, user, and role management flows connect to a configurable API.",
+        "Indonesian and English localization with light and dark themes."
+      ],
+      "thumbnail": "/portfolio/react-app-boilerplate/react-app-boilerplate-users.png",
+      "gallery": [
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-users.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-user-detail.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-roles.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-account.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-status-authenticated.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-onboarding.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-login.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-register.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-status.png"
+      ],
+      "category": "frontend",
+      "techStack": ["React", "TypeScript", "React Router", "Zustand", "Tailwind CSS", "Vite", "Valfuse Localization"],
+      "created_at": "2026-11-08",
+      "repoUrl": "https://github.com/alpinnz/react-app-boilerplate"
+    },
+    {
+      "title": "Express REST API Boilerplate",
+      "descriptions": "An Express 5 and TypeScript API starter with PostgreSQL, authentication, user and role management, and OpenAPI documentation.",
+      "details": "This REST API boilerplate organizes Health, Auth, Users, and Roles into domain-based modules. It uses Sequelize migrations with PostgreSQL, hashed session tokens with refresh-token rotation, and role-level authorization. The v1 API contract is documented with OpenAPI, with Docker workflows for local development and deployment.",
+      "features": [
+        "Modular health, authentication, user, and role endpoints with request validation and localized errors.",
+        "PostgreSQL migrations and seeders with role-level access rules.",
+        "OpenAPI documentation and Docker workflows for local setup and deployment."
+      ],
+      "thumbnail": "/portfolio/express-rest-api-boilerplate/express-rest-api-boilerplate.svg",
+      "gallery": ["/portfolio/express-rest-api-boilerplate/express-rest-api-boilerplate.svg"],
+      "category": "backend",
+      "techStack": ["Node.js", "Express 5", "TypeScript", "PostgreSQL", "Sequelize", "Awilix", "OpenAPI", "Docker"],
+      "created_at": "2026-10-27",
+      "repoUrl": "https://github.com/alpinnz/express-rest-api-boilerplate"
+    },
+    {
       "title": "Valfuse Node",
       "cv_priority": 1,
       "descriptions": "A TypeScript toolkit for forms, validation, and localization across React, Vue, Express, and Node.js.",

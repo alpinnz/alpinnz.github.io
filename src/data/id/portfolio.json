@@ -34,6 +34,48 @@
   "app_store_label": "App Store",
   "items": [
     {
+      "title": "React App Boilerplate",
+      "descriptions": "Template React modular untuk alur autentikasi, akun, pengguna, peran, dan status layanan, dengan lokalisasi bahasa Indonesia dan Inggris.",
+      "details": "Aplikasi SPA berbasis Vite ini menunjukkan struktur React dan TypeScript yang dapat digunakan kembali. Di dalamnya terdapat modul contoh untuk login, registrasi, pengelolaan akun, pengguna, peran, dan status layanan. Klien REST API yang dapat dikonfigurasi menghubungkan UI ke backend terpisah; repositori ini tidak menyertakan backend.",
+      "features": [
+        "Modul fitur memisahkan aturan domain, adapter API, presentasi, dan rute.",
+        "Alur pengelolaan akun, pengguna, dan peran setelah login terhubung ke API yang dapat dikonfigurasi.",
+        "Lokalisasi bahasa Indonesia dan Inggris serta tema terang dan gelap."
+      ],
+      "thumbnail": "/portfolio/react-app-boilerplate/react-app-boilerplate-users.png",
+      "gallery": [
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-users.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-user-detail.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-roles.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-account.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-status-authenticated.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-onboarding.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-login.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-register.png",
+        "/portfolio/react-app-boilerplate/react-app-boilerplate-status.png"
+      ],
+      "category": "frontend",
+      "techStack": ["React", "TypeScript", "React Router", "Zustand", "Tailwind CSS", "Vite", "Valfuse Localization"],
+      "created_at": "2026-11-08",
+      "repoUrl": "https://github.com/alpinnz/react-app-boilerplate"
+    },
+    {
+      "title": "Express REST API Boilerplate",
+      "descriptions": "Starter API Express 5 dan TypeScript dengan PostgreSQL, autentikasi, pengelolaan pengguna dan peran, serta dokumentasi OpenAPI.",
+      "details": "Boilerplate REST API ini mengelompokkan Health, Auth, Users, dan Roles ke dalam modul berbasis domain. Proyek ini memakai migrasi Sequelize dengan PostgreSQL, token sesi tersimpan dalam bentuk hash dengan rotasi refresh token, serta otorisasi berdasarkan level peran. Kontrak API v1 didokumentasikan dengan OpenAPI dan alur Docker mendukung pengembangan lokal serta deployment.",
+      "features": [
+        "Endpoint health, autentikasi, pengguna, dan peran modular dengan validasi request serta pesan kesalahan terlokalisasi.",
+        "Migrasi dan seeder PostgreSQL dengan aturan akses berdasarkan level peran.",
+        "Dokumentasi OpenAPI dan alur Docker untuk pengaturan lokal serta deployment."
+      ],
+      "thumbnail": "/portfolio/express-rest-api-boilerplate/express-rest-api-boilerplate.svg",
+      "gallery": ["/portfolio/express-rest-api-boilerplate/express-rest-api-boilerplate.svg"],
+      "category": "backend",
+      "techStack": ["Node.js", "Express 5", "TypeScript", "PostgreSQL", "Sequelize", "Awilix", "OpenAPI", "Docker"],
+      "created_at": "2026-10-27",
+      "repoUrl": "https://github.com/alpinnz/express-rest-api-boilerplate"
+    },
+    {
       "title": "Valfuse Node",
       "cv_priority": 1,
       "descriptions": "Toolkit TypeScript untuk formulir, validasi, dan lokalisasi di React, Vue, Express, dan Node.js.",

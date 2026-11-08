@@ -36,6 +36,67 @@
   "app_store_label": "App Store",
   "items": {
     "0": {
+      "title": "React App Boilerplate",
+      "descriptions": "Template React modular untuk alur autentikasi, akun, pengguna, peran, dan status layanan, dengan lokalisasi bahasa Indonesia dan Inggris.",
+      "details": "Aplikasi SPA berbasis Vite ini menunjukkan struktur React dan TypeScript yang dapat digunakan kembali. Di dalamnya terdapat modul contoh untuk login, registrasi, pengelolaan akun, pengguna, peran, dan status layanan. Klien REST API yang dapat dikonfigurasi menghubungkan UI ke backend terpisah; repositori ini tidak menyertakan backend.",
+      "features": {
+        "0": "Modul fitur memisahkan aturan domain, adapter API, presentasi, dan rute.",
+        "1": "Alur pengelolaan akun, pengguna, dan peran setelah login terhubung ke API yang dapat dikonfigurasi.",
+        "2": "Lokalisasi bahasa Indonesia dan Inggris serta tema terang dan gelap."
+      },
+      "thumbnail": "/portfolio/react-app-boilerplate/react-app-boilerplate-users.png",
+      "gallery": {
+        "0": "/portfolio/react-app-boilerplate/react-app-boilerplate-users.png",
+        "1": "/portfolio/react-app-boilerplate/react-app-boilerplate-user-detail.png",
+        "2": "/portfolio/react-app-boilerplate/react-app-boilerplate-roles.png",
+        "3": "/portfolio/react-app-boilerplate/react-app-boilerplate-account.png",
+        "4": "/portfolio/react-app-boilerplate/react-app-boilerplate-status-authenticated.png",
+        "5": "/portfolio/react-app-boilerplate/react-app-boilerplate-onboarding.png",
+        "6": "/portfolio/react-app-boilerplate/react-app-boilerplate-login.png",
+        "7": "/portfolio/react-app-boilerplate/react-app-boilerplate-register.png",
+        "8": "/portfolio/react-app-boilerplate/react-app-boilerplate-status.png"
+      },
+      "category": "frontend",
+      "techStack": {
+        "0": "React",
+        "1": "TypeScript",
+        "2": "React Router",
+        "3": "Zustand",
+        "4": "Tailwind CSS",
+        "5": "Vite",
+        "6": "Valfuse Localization"
+      },
+      "created_at": "2026-11-08",
+      "repoUrl": "https://github.com/alpinnz/react-app-boilerplate"
+    },
+    "1": {
+      "title": "Express REST API Boilerplate",
+      "descriptions": "Starter API Express 5 dan TypeScript dengan PostgreSQL, autentikasi, pengelolaan pengguna dan peran, serta dokumentasi OpenAPI.",
+      "details": "Boilerplate REST API ini mengelompokkan Health, Auth, Users, dan Roles ke dalam modul berbasis domain. Proyek ini memakai migrasi Sequelize dengan PostgreSQL, token sesi tersimpan dalam bentuk hash dengan rotasi refresh token, serta otorisasi berdasarkan level peran. Kontrak API v1 didokumentasikan dengan OpenAPI dan alur Docker mendukung pengembangan lokal serta deployment.",
+      "features": {
+        "0": "Endpoint health, autentikasi, pengguna, dan peran modular dengan validasi request serta pesan kesalahan terlokalisasi.",
+        "1": "Migrasi dan seeder PostgreSQL dengan aturan akses berdasarkan level peran.",
+        "2": "Dokumentasi OpenAPI dan alur Docker untuk pengaturan lokal serta deployment."
+      },
+      "thumbnail": "/portfolio/express-rest-api-boilerplate/express-rest-api-boilerplate.svg",
+      "gallery": {
+        "0": "/portfolio/express-rest-api-boilerplate/express-rest-api-boilerplate.svg"
+      },
+      "category": "backend",
+      "techStack": {
+        "0": "Node.js",
+        "1": "Express 5",
+        "2": "TypeScript",
+        "3": "PostgreSQL",
+        "4": "Sequelize",
+        "5": "Awilix",
+        "6": "OpenAPI",
+        "7": "Docker"
+      },
+      "created_at": "2026-10-27",
+      "repoUrl": "https://github.com/alpinnz/express-rest-api-boilerplate"
+    },
+    "2": {
       "title": "Valfuse Node",
       "descriptions": "Toolkit TypeScript untuk formulir, validasi, dan lokalisasi di React, Vue, Express, dan Node.js.",
       "details": "Valfuse Node menyatukan pengelolaan formulir, validasi, lokalisasi, dan pembuatan kode dalam toolkit modular. Komponen intinya dapat digunakan di berbagai framework, dengan integrasi khusus untuk React, Vue, dan Express.",
@@ -62,7 +123,7 @@
       "webUrl": "https://www.npmjs.com/org/valfuse-node",
       "repoUrl": "https://github.com/alpinnz/valfuse-node"
     },
-    "1": {
+    "3": {
       "title": "localization_gen",
       "descriptions": "Membuat terjemahan bertipe untuk aplikasi Flutter dari berkas JSON modular.",
       "details": "Alat Dart ini mengubah berkas terjemahan JSON modular menjadi API Flutter yang bertipe. Fitur utamanya mencakup kunci bertingkat, parameter, variasi jamak dan konteks, serta pemantauan perubahan berkas. Tim dapat menemukan terjemahan yang hilang saat pengembangan.",
@@ -82,7 +143,7 @@
       "liveUrl": "https://pub.dev/packages/localization_gen",
       "repoUrl": "https://github.com/alpinnz/localization_gen"
     },
-    "2": {
+    "4": {
       "title": "automation_keys_gen",
       "descriptions": "Menyeragamkan penanda elemen UI untuk pengujian Flutter melalui pemeriksaan CLI dan dokumentasi otomatis.",
       "details": "Paket Flutter ini memberi developer dan tim QA satu pola penamaan untuk kunci pengujian UI. CLI-nya memeriksa kunci dan membuat dokumentasi, sehingga pengujian otomatis lebih mudah dipelihara saat aplikasi berkembang.",
@@ -102,7 +163,7 @@
       "liveUrl": "https://pub.dev/packages/automation_keys_gen",
       "repoUrl": "https://github.com/alpinnz/automation_keys_gen"
     },
-    "3": {
+    "5": {
       "title": "idle_activity_detector",
       "descriptions": "Mendeteksi saat pengguna tidak aktif di aplikasi Flutter, dengan batas waktu yang dapat diatur dan dukungan input web.",
       "details": "Paket Flutter ini mendeteksi aktivitas dan kondisi tidak aktif di berbagai platform. Di web, paket memantau mouse, keyboard, gulir, dan sentuhan. Aplikasi dapat memakainya untuk peringatan sesi atau keluar otomatis.",
@@ -120,7 +181,7 @@
       "created_at": "2025-12-24",
       "liveUrl": "https://pub.dev/packages/idle_activity_detector"
     },
-    "4": {
+    "6": {
       "title": "Riset Sanitasi Input Frontend",
       "descriptions": "Menguji keamanan tampilan HTML di React dan Flutter dengan lebih dari 60 contoh serangan XSS.",
       "details": "Riset ini membandingkan cara React dan Flutter menyaring HTML berbahaya. Repositorinya berisi demo dan pengujian otomatis dengan lebih dari 60 contoh serangan XSS yang sama untuk kedua platform.",
@@ -144,7 +205,7 @@
       "created_at": "2025-10-17",
       "repoUrl": "https://github.com/alpinnz/research-sanitazion-frontend"
     },
-    "5": {
+    "7": {
       "title": "Starter REST API Hono",
       "descriptions": "Fondasi API TypeScript dengan autentikasi, PostgreSQL, dan skrip build.",
       "details": "Dibangun dengan Bun, Hono, Prisma, dan PostgreSQL, proyek ini memisahkan rute, pengendali, dan layanan. Fitur dasarnya mencakup pengelolaan akun serta panduan konfigurasi, migrasi basis data, dan proses rilis.",
@@ -169,7 +230,7 @@
       "created_at": "2025-11-28",
       "repoUrl": "https://github.com/alpinnz/hono-rest-api-boilerplate"
     },
-    "6": {
+    "8": {
       "title": "Riset Google Sign-In Firebase",
       "descriptions": "Riset Google Sign-In di Flutter web dan Android, termasuk alur cadangan dan penanganan kesalahan.",
       "details": "Riset ini menjelaskan cara masuk dengan Google hingga terbentuk sesi Firebase di Flutter web dan Android. Pembahasannya mencakup popup dan pengalihan di web, proses masuk di Android, status autentikasi, serta kendala konfigurasi yang umum.",
@@ -193,7 +254,7 @@
       "created_at": "2025-10-24",
       "repoUrl": "https://github.com/alpinnz/research/tree/master/research_firebase_google"
     },
-    "7": {
+    "9": {
       "title": "Sistem Pemesanan Kafe Bukit Delight",
       "descriptions": "Sistem pemesanan kafe yang mengelompokkan menu berdasarkan pola penjualan dengan k-means.",
       "details": "Aplikasi web akademik ini mendukung pemesanan pelanggan, pekerjaan kasir, dan administrasi. Metode k-means digunakan untuk mengelompokkan menu berdasarkan hasil penjualannya.",
@@ -217,7 +278,7 @@
       "created_at": "2020-11-10",
       "repoUrl": "https://github.com/alpinnz/bukit-delight-node"
     },
-    "8": {
+    "10": {
       "title": "HORA Pro",
       "descriptions": "Aplikasi mobile untuk absensi karyawan, pencatatan kehadiran berbasis lokasi, pengajuan cuti, dan percakapan tim.",
       "details": "HORA Pro mendukung pencatatan masuk dan pulang berbasis lokasi dengan verifikasi swafoto. Karyawan juga dapat mengajukan cuti, berkomunikasi dengan tim, dan melihat laporan kehadiran.",
@@ -237,7 +298,7 @@
       "created_at": "2025-01-01",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hora.apppro&hl=en"
     },
-    "9": {
+    "11": {
       "title": "Go REST API Boilerplate",
       "descriptions": "Fondasi API Go dengan autentikasi, PostgreSQL, sesi Redis, dan dokumentasi API.",
       "details": "Proyek ini menyediakan API Go modular dengan autentikasi JWT, PostgreSQL, sesi berbasis Redis, WebSocket, dan dokumentasi API otomatis. Konfigurasi lingkungan dan Docker membantu pengembangan lokal serta penerapan aplikasi.",
