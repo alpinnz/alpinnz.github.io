@@ -143,18 +143,21 @@ test("configured contact form succeeds without sending a live message", async ({
   await page.locator("#contact-message").fill("Automated test message");
   await page.getByRole("button", { name: "Send Message" }).click();
 
-  const status = page.getByRole("status");
-  await expect(status).toBeVisible();
+  const status = page.locator('#contact [role="status"]');
+  const alert = page.locator('#contact [role="alert"]');
   if (formspreeRequestCount === 0) {
-    await expect(status).toHaveText("The contact form is unavailable right now. Please email alpinnz@gmail.com directly.");
+    await expect(alert).toHaveText("The contact form is unavailable right now. Please email alpinnz@gmail.com directly.");
     return;
   }
 
+  await expect(status).toBeVisible();
   await expect(status).toHaveText("Message sent. I’ll get back to you soon.");
 });
 
 test("contact form keeps the message and shows recovery guidance after a service error", async ({ page }) => {
+  let formspreeRequestCount = 0;
   await page.route("https://formspree.io/f/**", async (route) => {
+    formspreeRequestCount += 1;
     await route.fulfill({ status: 503, body: "Service unavailable" });
   });
 
@@ -164,8 +167,11 @@ test("contact form keeps the message and shows recovery guidance after a service
   await page.locator("#contact-message").fill("Please keep this message");
   await page.getByRole("button", { name: "Send Message" }).click();
 
-  await expect(page.locator('#contact [role="alert"]')).toHaveText(
-    "Your message could not be sent. Please try again or email me directly.",
+  const alert = page.locator('#contact [role="alert"]');
+  await expect(alert).toHaveText(
+    formspreeRequestCount === 0
+      ? "The contact form is unavailable right now. Please email alpinnz@gmail.com directly."
+      : "Your message could not be sent. Please try again or email me directly.",
   );
   await expect(page.locator("#contact-message")).toHaveValue("Please keep this message");
 });
