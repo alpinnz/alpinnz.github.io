@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "../globals.css";
 import { createSiteMetadata, createStructuredData } from "../site-metadata";
+import { ThemeInitScript } from "@/components/site/theme-init-script";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -13,7 +14,10 @@ export const metadata: Metadata = createSiteMetadata("id");
 
 export default function IndonesianLayout({ children }: LayoutProps<"/id">) {
   return (
-    <html lang="id">
+    <html lang="id" data-theme="light" suppressHydrationWarning>
+      <head>
+        <ThemeInitScript />
+      </head>
       <body className={sora.variable}>
         <script
           type="application/ld+json"

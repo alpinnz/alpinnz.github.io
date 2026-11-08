@@ -82,7 +82,7 @@ export function Overview(): React.ReactElement {
             onClick={downloadCv}
             disabled={cvStatus === 'generating'}
             aria-busy={cvStatus === 'generating'}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-primary-600 bg-white px-6 py-2.5 font-medium text-primary-800 transition-colors duration-200 hover:bg-primary-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 disabled:cursor-wait disabled:opacity-60"
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-primary-600 bg-neutral-0 px-6 py-2.5 font-medium text-primary-800 transition-colors duration-200 hover:bg-primary-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 disabled:cursor-wait disabled:opacity-60"
           >
             {cvStatus === 'generating' && (
               <span aria-hidden="true" className="size-4 animate-spin rounded-full border-2 border-primary-200 border-t-primary-700" />
@@ -112,7 +112,7 @@ export function Overview(): React.ReactElement {
               ? 'border-danger-200 bg-danger-50 text-danger-800'
               : cvStatus === 'success'
                 ? 'border-success-200 bg-success-50 text-success-900'
-                : 'border-primary-200 bg-white text-primary-900'
+                : 'border-primary-200 bg-neutral-0 text-primary-900'
           }`}
         >
           <span aria-hidden="true" className="text-lg leading-none">

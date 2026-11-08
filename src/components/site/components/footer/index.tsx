@@ -61,7 +61,7 @@ function Button({ label, disabled }: ButtonProps) {
     <button
       type="submit"
       disabled={disabled}
-      className="min-h-11 w-full rounded-full bg-primary-600 px-7 py-2.5 font-medium text-neutral-0 transition-colors hover:bg-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 disabled:opacity-60 sm:w-auto"
+      className="min-h-11 w-full rounded-full bg-primary-600 px-7 py-2.5 font-medium text-white transition-colors hover:bg-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 disabled:opacity-60 sm:w-auto"
     >
       {label}
     </button>
@@ -144,7 +144,7 @@ export function Footer(): React.ReactElement {
   return (
     <section
       id="footer"
-      className="scroll-mt-24 border-t border-neutral-200/80 bg-white px-5 py-10 sm:px-8 sm:py-12 lg:px-10"
+      className="scroll-mt-24 border-t border-neutral-200/80 bg-neutral-0 px-5 py-10 sm:px-8 sm:py-12 lg:px-10"
     >
       <motion.div
         className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:gap-10"
@@ -218,7 +218,7 @@ export function Footer(): React.ReactElement {
         {/* Contact Form */}
         <form
           id="contact"
-          className="flex scroll-mt-24 flex-col gap-3 rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-sm sm:p-5"
+          className="flex scroll-mt-24 flex-col gap-3 rounded-2xl border border-neutral-200/80 bg-neutral-0 p-4 shadow-sm sm:p-5"
           onSubmit={sendContactMessage}
           noValidate
         >
@@ -260,7 +260,7 @@ export function Footer(): React.ReactElement {
           {submissionStatus !== 'idle' && (
             <p
               role={submissionStatus === 'success' ? 'status' : 'alert'}
-              className={`text-sm ${submissionStatus === 'success' ? 'text-green-700' : 'text-danger-700'}`}
+              className={`text-sm ${submissionStatus === 'success' ? 'text-success-700' : 'text-danger-700'}`}
             >
               {submissionStatus === 'success' && translations.form.success}
               {submissionStatus === 'error' && translations.form.error}

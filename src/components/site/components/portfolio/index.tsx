@@ -199,7 +199,7 @@ export function Portfolio(): React.ReactElement {
             }}
             className={`min-h-10 shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 ${
               activeCategory === cat
-                ? 'bg-primary-600 text-neutral-0 shadow-sm'
+                ? 'bg-primary-600 text-white shadow-sm'
                 : 'border border-neutral-100 bg-neutral-50 text-neutral-700 hover:bg-primary-50'
             }`}
           >
@@ -224,7 +224,7 @@ export function Portfolio(): React.ReactElement {
                 '{title}',
                 project.title,
               )}
-              className="group overflow-hidden rounded-2xl border border-neutral-100 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-primary-500"
+              className="group overflow-hidden rounded-2xl border border-neutral-100 bg-neutral-0 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-primary-500"
               initial={{ y: 24, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: (index % 6) * 0.04 }}
@@ -288,7 +288,7 @@ export function Portfolio(): React.ReactElement {
                 Math.min(current + initialPortfolioItems, filteredItems.length),
               )
             }}
-            className="min-h-11 rounded-full border border-neutral-200 bg-white px-5 py-2 text-sm font-semibold text-neutral-800 transition-colors hover:border-primary-400 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+            className="min-h-11 rounded-full border border-neutral-200 bg-neutral-0 px-5 py-2 text-sm font-semibold text-neutral-800 transition-colors hover:border-primary-400 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           >
             {remainingProjectCount === 0
               ? translations.show_less_projects
@@ -323,7 +323,7 @@ export function Portfolio(): React.ReactElement {
               <Dialog.Panel className="relative max-h-[90dvh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-neutral-0 p-4 shadow-xl sm:p-6">
                 {selectedItem && (
                   <>
-                    <button type="button" onClick={closeModal} aria-label={translations.close_details_label} className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white text-xl text-neutral-800 shadow-md hover:bg-neutral-50">
+                    <button type="button" onClick={closeModal} aria-label={translations.close_details_label} className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-neutral-0 text-xl text-neutral-800 shadow-md hover:bg-neutral-50">
                       ×
                     </button>
                     {/* Gallery */}
@@ -441,7 +441,7 @@ export function Portfolio(): React.ReactElement {
                             href={selectedItem.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-neutral-0 rounded-lg hover:from-green-600 hover:to-green-700 transition"
+                            className="px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition"
                           >
                             {translations.live_label}
                           </a>
@@ -451,7 +451,7 @@ export function Portfolio(): React.ReactElement {
                             href={selectedItem.repoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-neutral-0 rounded-lg hover:from-blue-600 hover:to-blue-700 transition"
+                            className="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition"
                           >
                             {translations.repository_label}
                           </a>
@@ -461,7 +461,7 @@ export function Portfolio(): React.ReactElement {
                             href={selectedItem.webUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-neutral-0 rounded-lg hover:from-purple-600 hover:to-purple-700 transition"
+                            className="px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg hover:from-purple-600 hover:to-purple-700 transition"
                           >
                             {translations.website_label}
                           </a>
@@ -471,7 +471,7 @@ export function Portfolio(): React.ReactElement {
                             href={selectedItem.playStoreUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-neutral-0 rounded-lg hover:from-orange-600 hover:to-orange-700 transition"
+                            className="px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg hover:from-orange-600 hover:to-orange-700 transition"
                           >
                             {translations.play_store_label}
                           </a>
@@ -481,7 +481,7 @@ export function Portfolio(): React.ReactElement {
                             href={selectedItem.appStoreUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-600 text-neutral-0 rounded-lg hover:from-gray-600 hover:to-gray-700 transition"
+                            className="px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-600 text-white rounded-lg hover:from-gray-600 hover:to-gray-700 transition"
                           >
                             {translations.app_store_label}
                           </a>
@@ -553,13 +553,13 @@ function RepositoryProjectCard({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={openLabel}
-      className="group block overflow-hidden rounded-2xl border border-neutral-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-primary-500"
+      className="group block overflow-hidden rounded-2xl border border-neutral-100 bg-neutral-0 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-primary-500"
       initial={{ y: 24, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.3, delay: (index % 6) * 0.04 }}
       viewport={{ once: true }}
     >
-      <div className="relative flex aspect-[16/9] flex-col justify-between overflow-hidden bg-gradient-to-br from-primary-50 via-white to-slate-100 p-4 sm:aspect-[16/8] sm:p-5">
+      <div className="relative flex aspect-[16/9] flex-col justify-between overflow-hidden bg-gradient-to-br from-primary-50 via-neutral-0 to-neutral-50 p-4 sm:aspect-[16/8] sm:p-5">
         <span
           aria-hidden="true"
           className="pointer-events-none absolute -right-2 -top-7 select-none text-[8rem] font-bold leading-none text-primary-100/80"
@@ -567,10 +567,10 @@ function RepositoryProjectCard({
           {project.title.slice(0, 1)}
         </span>
         <div className="relative flex items-center justify-between gap-2">
-          <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-primary-800 shadow-sm">
+          <span className="rounded-full bg-neutral-0/90 px-3 py-1 text-xs font-semibold text-primary-800 shadow-sm">
             {categoryLabel}
           </span>
-          <span className="rounded-full border border-white/80 bg-white/70 px-2.5 py-1 text-[11px] font-medium text-neutral-600">
+          <span className="rounded-full border border-neutral-0/80 bg-neutral-0/70 px-2.5 py-1 text-[11px] font-medium text-neutral-600">
             {project.language ?? 'GitHub'}
           </span>
         </div>

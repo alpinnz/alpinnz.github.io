@@ -42,7 +42,7 @@ export function DeveloperRoles(): React.ReactElement {
         {roles.map((role, index) => (
           <motion.article
             key={role.title}
-            className="flex min-w-0 flex-col rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition-colors hover:border-primary-300 sm:p-6"
+            className="flex min-w-0 flex-col rounded-2xl border border-neutral-200 bg-neutral-0 p-5 shadow-sm transition-colors hover:border-primary-300 sm:p-6"
             initial={{ y: 24, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, delay: index * 0.06 }}
@@ -57,7 +57,7 @@ export function DeveloperRoles(): React.ReactElement {
                   {role.title}
                 </h3>
                 {role.isCurrent && (
-                  <span className="mt-1 inline-flex rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-800">
+                  <span className="mt-1 inline-flex rounded-full bg-success-50 px-2.5 py-1 text-xs font-semibold text-success-800">
                     {header.current_label}
                   </span>
                 )}

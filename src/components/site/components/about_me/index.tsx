@@ -15,7 +15,7 @@ export function AboutMe(): React.ReactElement {
   }
 
   return (
-    <section id="about-me" className="scroll-mt-24 bg-white px-5 py-10 sm:px-8 sm:py-12">
+    <section id="about-me" className="scroll-mt-24 bg-neutral-0 px-5 py-10 sm:px-8 sm:py-12">
       <div className="mx-auto max-w-4xl">
         <motion.h2
           className="mb-4 text-center text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl"

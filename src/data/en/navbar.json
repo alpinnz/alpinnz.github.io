@@ -3,6 +3,8 @@
   "switch_language": "Switch to Bahasa Indonesia",
   "menu_open": "Open navigation",
   "menu_close": "Close navigation",
+  "enable_dark_mode": "Enable dark mode",
+  "enable_light_mode": "Enable light mode",
   "nav_items": [
     { "label": "About Me", "href": "#about-me" },
     { "label": "Roles", "href": "#developer-roles" },

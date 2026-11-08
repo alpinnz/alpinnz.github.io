@@ -18,7 +18,7 @@ export function App({ locale }: { locale: 'en' | 'id' }): React.ReactElement {
       <MotionConfig reducedMotion="user">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:font-semibold focus:text-neutral-900 focus:shadow-lg focus:outline-2 focus:outline-primary-600"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-neutral-0 focus:px-4 focus:py-3 focus:font-semibold focus:text-neutral-900 focus:shadow-lg focus:outline-2 focus:outline-primary-600"
         >
           {locale === 'id' ? 'Lewati ke konten utama' : 'Skip to main content'}
         </a>

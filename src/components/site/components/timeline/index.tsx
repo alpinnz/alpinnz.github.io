@@ -73,7 +73,7 @@ export function Timeline(): React.ReactElement {
             type="button"
             aria-expanded={showAll}
             onClick={() => setShowAll((current) => !current)}
-            className="min-h-11 rounded-full border border-neutral-200 bg-white px-5 py-2 text-sm font-semibold text-neutral-800 transition-colors hover:border-primary-400 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+            className="min-h-11 rounded-full border border-neutral-200 bg-neutral-0 px-5 py-2 text-sm font-semibold text-neutral-800 transition-colors hover:border-primary-400 hover:text-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           >
             {showAll ? translations.show_less : translations.show_all}
           </button>
@@ -111,7 +111,7 @@ function TimelineCard({
       viewport={{ once: true }}
     >
       <article
-        className={`col-start-2 row-start-1 min-w-0 rounded-2xl border border-neutral-200/80 bg-white p-3.5 shadow-sm transition-shadow hover:shadow-md sm:p-4 ${
+        className={`col-start-2 row-start-1 min-w-0 rounded-2xl border border-neutral-200/80 bg-neutral-0 p-3.5 shadow-sm transition-shadow hover:shadow-md sm:p-4 ${
           isLeft
             ? 'md:col-start-1 md:pr-6 md:text-right'
             : 'md:col-start-3 md:pl-6'
@@ -148,7 +148,7 @@ function TimelineCard({
         aria-hidden="true"
         className="col-start-1 row-start-1 flex justify-center pt-3 md:col-start-2 md:pt-2"
       >
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-4 border-white bg-primary-600 shadow-sm ring-1 ring-primary-200 sm:h-10 sm:w-10">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-4 border-neutral-0 bg-primary-600 shadow-sm ring-1 ring-primary-200 sm:h-10 sm:w-10">
           <Image
             src={iconMap[data.icon]}
             alt=""
