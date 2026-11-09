@@ -23,11 +23,14 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Set up npm
+        run: npm install --global npm@11.20.0
+
       - name: Install
         run: npm ci
 
       - name: Install Playwright browser
-        run: npx playwright install --with-deps chromium
+        run: npm exec -- playwright install --with-deps chromium
 
       - name: Validate and build
         run: npm run predeploy
@@ -55,11 +58,14 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Set up npm
+        run: npm install --global npm@11.20.0
+
       - name: Install
         run: npm ci
 
       - name: Install Playwright browser
-        run: npx playwright install --with-deps chromium
+        run: npm exec -- playwright install --with-deps chromium
 
       - name: Verify contact form configuration
         env:

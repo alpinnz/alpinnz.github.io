@@ -21,7 +21,7 @@ npm run verify:export
 npm run test:e2e
 ```
 
-The `predeploy` lifecycle checks generated localization parity, runs lint and type checks, builds the static export, verifies both localized pages and their social metadata, and runs the Chromium browser tests. The E2E suite uses a local static server and intercepts the Formspree request, so it never sends a real contact message. Install the browser once with `npx playwright install chromium` before running `npm run test:e2e` locally.
+The `predeploy` lifecycle checks generated localization parity, runs lint and type checks, builds the static export, verifies both localized pages and their social metadata, and runs the Chromium browser tests. The E2E suite uses a local static server and intercepts the Formspree request, so it never sends a real contact message. Install the browser once with `npm exec -- playwright install chromium` before running `npm run test:e2e` locally.
 
 Before enabling deployments, configure branch protection for `master` in GitHub repository settings: require pull requests and require the CI validation check to pass before merging. The rule itself is repository-hosted configuration and is not enforced by the checked-out source.
 
